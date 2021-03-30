@@ -19,3 +19,4 @@ Table of Contents
    :maxdepth: 2
 
    topics/contrib/contributing
+   GitLab Repository <https://gitlab.com/saltstack/open/docs/salt-install-guide>
