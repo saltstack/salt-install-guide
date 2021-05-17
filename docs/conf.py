@@ -107,7 +107,7 @@ extensions = [
     "sphinx-prompt", # Required by sphinx_substitution_extensions
     "sphinx_copybutton",
     "sphinx_substitution_extensions",
-    "sphinx_tabs.tabs",
+    "sphinx_inline_tabs",
     "sphinx.ext.todo",
 ]
 # Render TODO directives

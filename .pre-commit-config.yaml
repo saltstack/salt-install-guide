@@ -27,7 +27,7 @@ repos:
         description: |
           Sort the lines in specified files (defaults to alphabetical).
           You must provide list of target files as input in your .pre-commit-config.yaml file.
-        files: ^(.*requirements.*\.txt|\.brokignore|docs/sitevars.rst)$
+        files: ^(.*requirements.*\.txt|\.brokignore)$
   - repo: https://github.com/timothycrosley/isort
     rev: "5.8.0"
     hooks:
@@ -48,7 +48,6 @@ repos:
         args: [--report=warning]
         additional_dependencies: [sphinx]
         files: ^(index|docs/.*|docs/_includes/.*|README|CONTRIBUTING)\.rst$
-        exclude: docs/topics/pillar.rst
   - repo: https://github.com/asottile/blacken-docs
     rev: v1.10.0
     hooks:
@@ -62,8 +61,8 @@ repos:
       - id: nox
         alias: Generate Sphinx docs
         description: Generate Sphinx docs, ensure they build
-        files: ^((index|README)|docs/.*)\.rst$
         args:
           - -e
-          - docs-html
+          - 'docs-html(clean=True)'
           - --
+          - -vv
