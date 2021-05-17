@@ -35,3 +35,4 @@ Install directions per OS
    :glob:
 
    *
+   native/index

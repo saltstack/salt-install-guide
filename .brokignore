@@ -1,8 +1,10 @@
+http://archive.repo.saltproject.io
 http://example.com
 http://example.org
 http://repo.saltproject.io
 http://www.example.com
 http://www.example.org
+https://archive.repo.saltproject.io
 https://example.com
 https://example.org
 https://github.com/saltstack/salt/issues/56642
