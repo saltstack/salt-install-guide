@@ -14,3 +14,4 @@ packages, testing, and technical support.
    This is a placeholder for:
 
    * `Salt Version Tables and Policy Description <https://saltproject.io/salt-platform-support/>`__
+   * GitLab issue: `Lifecycle Support page move to .rst file <https://gitlab.com/saltstack/open/docs/salt-install-guide/-/issues/2>`__
