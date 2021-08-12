@@ -58,21 +58,39 @@ Download and verify files
 The |solaris-native-minion| package file is available in the following file
 formats:
 
-.. list-table::
-  :widths: 20 80
-  :header-rows: 1
+.. grid:: 2
 
-  * - Version
-    - File description
-  * - Solaris 10
-    - A tarball containing the salt-minion
-  * - Solaris 11
-    - A p5p file containing the salt-minion
+  .. grid-item-card:: Downloads for Solaris 11 (i386)
+      :link: https://repo.saltproject.io/salt/py2/solaris/11/i386
 
-Currently, Solaris only supports up to v3000.x releases with Python 2.
+      :bdg-warning:`Python 2`
+      :bdg-info:`i386`
 
-* `Solaris 10 downloads on repo.saltproject.io <https://repo.saltproject.io/salt/py2/solaris/10/>`__
-* `Solaris 11 downloads on repo.saltproject.io <https://repo.saltproject.io/salt/py2/solaris/11/>`__
+      ``p5p`` files containing the ``salt-minion`` for Solaris 11.
+
+  .. grid-item-card:: Downloads for Solaris 11 (SPARC)
+      :link: https://repo.saltproject.io/salt/py2/solaris/11/sparc
+
+      :bdg-warning:`Python 2`
+      :bdg-secondary:`SPARC`
+
+      ``p5p`` files containing the ``salt-minion`` for Solaris 11.
+
+  .. grid-item-card:: Downloads for Solaris 10 (x86)
+      :link: https://repo.saltproject.io/salt/py2/solaris/10/x86
+
+      :bdg-warning:`Python 2`
+      :bdg-info:`x86`
+
+      Tarballs containing the ``salt-minion`` for Solaris 10.
+
+  .. grid-item-card:: Downloads for Solaris 10 (SPARC)
+      :link: https://repo.saltproject.io/salt/py2/solaris/10/sparc
+
+      :bdg-warning:`Python 2`
+      :bdg-secondary:`SPARC`
+
+      Tarballs containing the ``salt-minion`` for Solaris 10.
 
 ..
   .. include:: ../_includes/verify-download-native-minions.rst

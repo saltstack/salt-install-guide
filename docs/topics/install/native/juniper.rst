@@ -65,16 +65,23 @@ Download and verify files
 -------------------------
 The |juniper-native-minion| package is a **tgz** file.
 
-.. list-table::
-  :widths: 20 80
-  :header-rows: 1
+.. grid:: 3
 
-  * - Version
-    - Description
-  * - `Download 3001.2 for Juniper`_
-    - Latest supported 3001 release
-  * - `Download 3002 for Juniper`_
-    - Latest supported 3002 release
+   .. grid-item-card:: Download Salt v3003.1
+       :link: https://repo.saltproject.io/salt/py3/juniper/x86_64/3003/salt-junos-x86-64-20210729-172533.tgz
+
+       :bdg-primary:`Python 3`
+       :bdg-success:`Latest`
+
+   .. grid-item-card:: Download Salt v3002
+       :link: https://repo.saltproject.io/salt/py3/juniper/x86_64/3002/salt-junos-x86-64-20201026-235317.tgz
+
+       :bdg-primary:`Python 3`
+
+   .. grid-item-card:: Download Salt v3001.2
+       :link: https://repo.saltproject.io/salt/py3/juniper/x86_64/3001/salt-junos-x86-64-20200911-161120.tgz
+
+       :bdg-primary:`Python 3`
 
 ..
   .. include:: ../_includes/verify-download-native-minions.rst
@@ -368,7 +375,7 @@ A running native |minion| will typically have three processes running
    .. code-block::
       :substitutions:
 
-       Salt Minion |juniper-version| for JUNOS [20200911-161120]
+       Salt Minion |juniper-version| for JUNOS [|juniper-file-version|]
 
 
 3. To see the super-user created by, and used to manage, the native |minion|:
@@ -441,9 +448,3 @@ Additional documentation endpoints for reference:
 
 -  `PyEZ reference docs
    <https://www.juniper.net/documentation/product/en_US/junos-pyez>`__
-
-
-.. Download links
-
-.. _Download 3001.2 for Juniper: https://repo.saltproject.io/salt/py3/juniper/x86_64/3001/salt-junos-x86-64-20200911-161120.tgz
-.. _Download 3002 for Juniper: https://repo.saltproject.io/salt/py3/juniper/x86_64/3002/salt-junos-x86-64-20201026-235317.tgz
