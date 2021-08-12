@@ -1,12 +1,13 @@
-.. |release| replace:: 3003
-.. |delta-proxy-version| replace:: 3003
+.. |release| replace:: 3003.2
+.. |delta-proxy-version| replace:: 3003.2
 .. |solaris-version| replace:: 3000.4
-.. |aix-version| replace:: 3002.1
-.. |juniper-version| replace:: 3002
-.. |arista-version| replace:: 3002
+.. |aix-version| replace:: 3003.1
+.. |juniper-version| replace:: 3003.1
+.. |juniper-file-version| replace:: 20210729-172533
+.. |arista-version| replace:: 3003.1
 
-.. |arista-32-python-version| replace:: Python 3.7.7
-.. |arista-64-python-version| replace:: Python 3.7.8
+.. |aix-python-version| replace:: Python 3.7.10
+.. |arista-python-version| replace:: Python 3.7.10
 
 .. |master| replace:: master
 .. |masters| replace:: masters
@@ -26,7 +27,6 @@
 .. |juniper-native-minion| replace:: Juniper native minion
 .. |arista| replace:: Arista
 .. |arista-native-minion| replace:: Arista native minion
-.. |arista-python-version| replace:: Python 3.7.7
 .. |delta-proxy-minion| replace:: delta proxy minion
 .. |aix| replace:: AIX
 .. |aix-native-minion| replace:: AIX native minion

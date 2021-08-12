@@ -58,16 +58,23 @@ Download and verify files
 The |aix-native-minion| package is a tarball containing an installation and
 removal script and an |aix| bff package.
 
-.. list-table::
-  :widths: 20 80
-  :header-rows: 1
+.. grid:: 3
 
-  * - Version
-    - Description
-  * - `Download 3000.4`_
-    - Python 2 version of Salt minion
-  * - `Download 3002.1`_
-    - Python 3 version of Salt minion
+    .. grid-item-card:: Download Salt v3003.1
+        :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3003/salt_3003.1-1.tar.gz
+
+        :bdg-primary:`Python 3`
+        :bdg-success:`Latest`
+
+    .. grid-item-card:: Download Salt v3002.1
+        :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3002/salt_3002.1-1.tar.gz
+
+        :bdg-primary:`Python 3`
+
+    .. grid-item-card:: Download Salt v3000.4
+        :link: https://repo.saltproject.io/salt/py2/aix/7/powerpc/3000/salt_3000.4-1.tar.gz
+
+        :bdg-warning:`Python 2`
 
 ..
   .. include:: ../_includes/verify-download-native-minions.rst
@@ -116,7 +123,7 @@ To install the package:
 #. Ensure that you have sufficient privileges to install packages on the |aix|
    UNIX system.
 
-#. In the terminal on the |aix| device, navigate to the ``salt_3002``
+#. In the terminal on the |aix| device, navigate to the ``salt_|aix-version|``
    directory.
 
    .. Note::
@@ -308,7 +315,3 @@ Center:
 
 * `AIX System Resource Controller
   <https://www.ibm.com/support/knowledgecenter/ssw_aix_72/osmanagement/sysrescon.html>`_
-
-
-.. _Download 3000.4: https://repo.saltproject.io/salt/py2/aix/7/powerpc/3000/salt_3000.4-1.tar.gz
-.. _Download 3002.1: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3002/salt_3002.1-1.tar.gz

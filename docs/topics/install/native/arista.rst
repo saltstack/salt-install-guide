@@ -58,16 +58,60 @@ Management Interfaces.
 
 Download and verify files
 -------------------------
+
+.. note::
+
+  Changes in **Salt v3003.1** on Arista:
+
+  * Support for ``FastCLI`` on Arista
+  * Support for ``cacpirca`` on 64-bit
+  * Supports Python 3.7.10 internally
+  * Due to limitations on size (less than 65M), 32-bit support has dropped support for:
+
+    * ``M2Crypto`` (``pycryptodome`` is still used)
+    * ``remote-pdb``
+
 The |arista-native-minion| package is a **SWIX** file.
 
-.. list-table::
-  :header-rows: 1
+.. grid:: 2
 
-  * - Downloads
-  * - `Download 3001.2 for Arista 32-bit EOS`_
-  * - `Download 3002 for Arista 32-bit EOS`_
-  * - `Download 3001.2 for Arista 64-bit EOS`_
-  * - `Download 3002 for Arista 64-bit EOS`_
+  .. grid-item-card:: Download Salt v3003.1 (32-bit)
+      :link: https://repo.saltproject.io/salt/py3/arista/i386/3003/salt-3003.1-3.32.swix
+
+      :bdg-primary:`Python 3`
+      :bdg-secondary:`32-bit`
+      :bdg-success:`Latest`
+
+  .. grid-item-card:: Download Salt v3003.1 (64-bit)
+      :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3003/salt-3003.1-2.64.swix
+
+      :bdg-primary:`Python 3`
+      :bdg-info:`64-bit`
+      :bdg-success:`Latest`
+
+  .. grid-item-card:: Download Salt v3002 (32-bit)
+      :link: https://repo.saltproject.io/salt/py3/arista/i386/3002/salt-3002-1.32.swix
+
+      :bdg-primary:`Python 3`
+      :bdg-secondary:`32-bit`
+
+  .. grid-item-card:: Download Salt v3002 (64-bit)
+      :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3002/salt-3002-1.64.swix
+
+      :bdg-primary:`Python 3`
+      :bdg-info:`64-bit`
+
+  .. grid-item-card:: Download Salt v3001.2 (32-bit)
+      :link: https://repo.saltproject.io/salt/py3/arista/i386/3001/salt-3001.2-1.32.swix
+
+      :bdg-primary:`Python 3`
+      :bdg-secondary:`32-bit`
+
+  .. grid-item-card:: Download Salt v3001.2 (64-bit)
+      :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3001/salt-3001.2-1.64.swix
+
+      :bdg-primary:`Python 3`
+      :bdg-info:`64-bit`
 
 ..
   .. include:: ../_includes/verify-download-native-minions.rst
@@ -136,7 +180,7 @@ To install the SWIX package:
           Packages:
         Total size: 0 bytes
        Description:
-       Self contained Python 3.7.8 Salt Minion 64-bit binary
+       Self contained Python |arista-python-version| Salt Minion 64-bit binary
 
 #. Install the SWIX package, replacing the placeholder text with the correct
    file name:
@@ -167,7 +211,7 @@ To install the SWIX package:
           Packages: salt-|arista-version|.x86_64.rpm |arista-version|/1
         Total size: 222446843 bytes
        Description:
-       Self contained Python 3.7.8 Salt Minion 64-bit binary
+       Self contained Python |arista-python-version| Salt Minion 64-bit binary
 
 #. Run the following commands:
 
@@ -297,7 +341,7 @@ To install the SWIX package:
                    pycrypto: Not Installed
                pycryptodome: 3.9.8
                      pygit2: Not Installed
-                     Python: 3.7.8 (default, Aug 18 2020, 10:39:10)
+                     Python: |arista-python-version|
                python-gnupg: Not Installed
                      PyYAML: 5.3.1
                       PyZMQ: 19.0.2
@@ -515,7 +559,7 @@ To remove the SWIX package:
           Packages: salt-|arista-version|.x86_64.rpm |arista-version|/1
         Total size: 222446843 bytes
        Description:
-       Self contained Python 3.7.8 Salt Minion 64-bit binary
+       Self contained Python |arista-python-version| Salt Minion 64-bit binary
 
 
 #. Remove the SWIX package by running the following command, replacing the
@@ -547,7 +591,7 @@ To remove the SWIX package:
           Packages:
         Total size: 0 bytes
        Description:
-       Self contained Python 3.7.8 Salt Minion 64-bit binary
+       Self contained Python |arista-python-version| Salt Minion 64-bit binary
 
 .. _arista-postinstall:
 
@@ -583,7 +627,7 @@ leveraging Python PEP 538 and 540 and hence can function in locales which only
 support ‘C’ and POSIX without issue.
 
 .. Note::
-    The 64-bit |arista-native-minion| uses Python 3.7.8.
+    The 64-bit |arista-native-minion| uses Python |arista-python-version|.
 
 Since the |arista-native-minion| is a self contained binary, there are no
 external dependencies to be considered.
@@ -615,11 +659,3 @@ For reference, see:
 
 - `Enable SSH (Arista Forums)
   <https://eos.arista.com/forum/enable-ssh-2/>`_
-
-
-.. Download links
-
-.. _Download 3001.2 for Arista 32-bit EOS: https://repo.saltproject.io/salt/py3/arista/i386/3001/salt-3001.2-1.32.swix
-.. _Download 3002 for Arista 32-bit EOS: https://repo.saltproject.io/salt/py3/arista/i386/3002/salt-3002-1.32.swix
-.. _Download 3001.2 for Arista 64-bit EOS: https://repo.saltproject.io/salt/py3/arista/x86_64/3001/salt-3001.2-1.64.swix
-.. _Download 3002 for Arista 64-bit EOS: https://repo.saltproject.io/salt/py3/arista/x86_64/3002/salt-3002-1.64.swix
