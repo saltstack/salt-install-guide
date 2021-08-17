@@ -6,7 +6,8 @@ Solaris
 
 .. important::
 
-    The latest release of the |solaris-native-minion| is version |solaris-version|.
+    The latest release of the |solaris-native-minion| is version |solaris-version|,
+    bundled with |solaris-python-version|.
 
     This version will be used throughout this documentation, except for where
     version-specific differences need to be specified.
@@ -60,37 +61,72 @@ formats:
 
 .. grid:: 2
 
-  .. grid-item-card:: Downloads for Solaris 11 (i386)
-      :link: https://repo.saltproject.io/salt/py2/solaris/11/i386
+    .. grid-item-card:: Downloads for Solaris 11.4 (i386)
+        :link: https://repo.saltproject.io/salt/py3/solaris/11/i386
 
-      :bdg-warning:`Python 2`
-      :bdg-info:`i386`
+        :bdg-primary:`Python 3`
+        :bdg-info:`i386`
+        :bdg-success:`Latest`
 
-      ``p5p`` files containing the ``salt-minion`` for Solaris 11.
+        ``p5p`` files containing the ``salt-minion`` for **Solaris 11.4**.
 
-  .. grid-item-card:: Downloads for Solaris 11 (SPARC)
-      :link: https://repo.saltproject.io/salt/py2/solaris/11/sparc
+    .. grid-item-card:: Downloads for Solaris 11.4 (SPARC)
 
-      :bdg-warning:`Python 2`
-      :bdg-secondary:`SPARC`
+        :bdg-primary:`Python 3`
+        :bdg-secondary:`SPARC`
 
-      ``p5p`` files containing the ``salt-minion`` for Solaris 11.
+        TBA August / September 2021
 
-  .. grid-item-card:: Downloads for Solaris 10 (x86)
-      :link: https://repo.saltproject.io/salt/py2/solaris/10/x86
+    .. grid-item-card:: Downloads for Solaris 10 (x86)
+        :link: https://repo.saltproject.io/salt/py2/solaris/10/x86
 
-      :bdg-warning:`Python 2`
-      :bdg-info:`x86`
+        :bdg-primary:`Python 3`
+        :bdg-info:`x86`
+        :bdg-success:`Latest`
 
-      Tarballs containing the ``salt-minion`` for Solaris 10.
+        Tarballs containing the ``salt-minion`` for Solaris 10.
 
-  .. grid-item-card:: Downloads for Solaris 10 (SPARC)
-      :link: https://repo.saltproject.io/salt/py2/solaris/10/sparc
+    .. grid-item-card:: Downloads for Solaris 10 (SPARC)
+        :link: https://repo.saltproject.io/salt/py2/solaris/10/sparc
 
-      :bdg-warning:`Python 2`
-      :bdg-secondary:`SPARC`
+        :bdg-primary:`Python 3`
+        :bdg-secondary:`SPARC`
+        :bdg-success:`Latest`
 
-      Tarballs containing the ``salt-minion`` for Solaris 10.
+        Tarballs containing the ``salt-minion`` for Solaris 10.
+
+    .. grid-item-card:: Downloads for Solaris 11 (i386)
+        :link: https://repo.saltproject.io/salt/py2/solaris/11/i386
+
+        :bdg-warning:`Python 2`
+        :bdg-info:`i386`
+
+        ``p5p`` files containing the ``salt-minion`` for **Solaris 11.2 and 11.3**.
+
+    .. grid-item-card:: Downloads for Solaris 11 (SPARC)
+        :link: https://repo.saltproject.io/salt/py2/solaris/11/sparc
+
+        :bdg-warning:`Python 2`
+        :bdg-secondary:`SPARC`
+        :bdg-success:`Latest`
+
+        ``p5p`` files containing the ``salt-minion`` for **Solaris 11.2 and 11.3**.
+
+    .. grid-item-card:: Downloads for Solaris 10 (x86)
+        :link: https://repo.saltproject.io/salt/py2/solaris/10/x86
+
+        :bdg-warning:`Python 2`
+        :bdg-info:`x86`
+
+        Tarballs containing the ``salt-minion`` for Solaris 10.
+
+    .. grid-item-card:: Downloads for Solaris 10 (SPARC)
+        :link: https://repo.saltproject.io/salt/py2/solaris/10/sparc
+
+        :bdg-warning:`Python 2`
+        :bdg-secondary:`SPARC`
+
+        Tarballs containing the ``salt-minion`` for Solaris 10.
 
 ..
   .. include:: ../_includes/verify-download-native-minions.rst
