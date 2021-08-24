@@ -71,11 +71,13 @@ formats:
         ``p5p`` files containing the ``salt-minion`` for **Solaris 11.4**.
 
     .. grid-item-card:: Downloads for Solaris 11.4 (SPARC)
+        :link: https://repo.saltproject.io/salt/py3/solaris/11/sparc
 
         :bdg-primary:`Python 3`
         :bdg-secondary:`SPARC`
+        :bdg-success:`Latest`
 
-        TBA August / September 2021
+        ``p5p`` files containing the ``salt-minion`` for **Solaris 11.4**.
 
     .. grid-item-card:: Downloads for Solaris 10 (x86)
         :link: https://repo.saltproject.io/salt/py2/solaris/10/x86
@@ -108,7 +110,6 @@ formats:
 
         :bdg-warning:`Python 2`
         :bdg-secondary:`SPARC`
-        :bdg-success:`Latest`
 
         ``p5p`` files containing the ``salt-minion`` for **Solaris 11.2 and 11.3**.
 
