@@ -80,7 +80,7 @@ formats:
         ``p5p`` files containing the ``salt-minion`` for **Solaris 11.4**.
 
     .. grid-item-card:: Downloads for Solaris 10 (x86)
-        :link: https://repo.saltproject.io/salt/py2/solaris/10/x86
+        :link: https://repo.saltproject.io/salt/py3/solaris/10/x86
 
         :bdg-primary:`Python 3`
         :bdg-info:`x86`
@@ -89,7 +89,7 @@ formats:
         Tarballs containing the ``salt-minion`` for Solaris 10.
 
     .. grid-item-card:: Downloads for Solaris 10 (SPARC)
-        :link: https://repo.saltproject.io/salt/py2/solaris/10/sparc
+        :link: https://repo.saltproject.io/salt/py3/solaris/10/sparc
 
         :bdg-primary:`Python 3`
         :bdg-secondary:`SPARC`
