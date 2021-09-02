@@ -75,19 +75,31 @@ The |arista-native-minion| package is a **SWIX** file.
 
 .. grid:: 2
 
+  .. grid-item-card:: Download Salt v3003.3 (32-bit)
+    :link: https://repo.saltproject.io/salt/py3/arista/i386/3003/salt-3003.3-1.32.swix
+
+    :bdg-primary:`Python 3`
+    :bdg-secondary:`32-bit`
+    :bdg-success:`Latest`
+
+  .. grid-item-card:: Download Salt v3003.3 (64-bit)
+    :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3003/salt-3003.3-1.64.swix
+
+    :bdg-primary:`Python 3`
+    :bdg-info:`64-bit`
+    :bdg-success:`Latest`
+
   .. grid-item-card:: Download Salt v3003.1 (32-bit)
       :link: https://repo.saltproject.io/salt/py3/arista/i386/3003/salt-3003.1-3.32.swix
 
       :bdg-primary:`Python 3`
       :bdg-secondary:`32-bit`
-      :bdg-success:`Latest`
 
   .. grid-item-card:: Download Salt v3003.1 (64-bit)
       :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3003/salt-3003.1-2.64.swix
 
       :bdg-primary:`Python 3`
       :bdg-info:`64-bit`
-      :bdg-success:`Latest`
 
   .. grid-item-card:: Download Salt v3002 (32-bit)
       :link: https://repo.saltproject.io/salt/py3/arista/i386/3002/salt-3002-1.32.swix

@@ -58,13 +58,31 @@ Download and verify files
 The |aix-native-minion| package is a tarball containing an installation and
 removal script and an |aix| bff package.
 
+.. warning::
+
+    If upgrading to Salt ``v3003.3``, or newer, the following requirements need to be met:
+
+    - If upgrading from Salt ``v3000.4``, which was Python 2, an upgrade requires
+      **uninstalling Python 2.**
+    - If upgrading from Salt ``v3003.1``, Salt needs to be forcefully uninstalled before reinstalling
+      with Salt ``v3003.3`` or newer.
+      - A forceful uninstall can be done via: ``install_salt.sh -u -f``
+    - Salt ``v3003.1`` releases, and newer, will only work on **Power 8 or greater processors.**
+
 .. grid:: 3
+
+    .. grid-item-card:: Download Salt v3003.3
+        :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3003/salt_3003.3-1.tar.gz
+
+        :bdg-primary:`Python 3`
+        :bdg-secondary:`Power 8 or Greater Processors`
+        :bdg-success:`Latest`
 
     .. grid-item-card:: Download Salt v3003.1
         :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3003/salt_3003.1-1.tar.gz
 
         :bdg-primary:`Python 3`
-        :bdg-success:`Latest`
+        :bdg-secondary:`Power 8 or Greater Processors`
 
     .. grid-item-card:: Download Salt v3002.1
         :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3002/salt_3002.1-1.tar.gz
