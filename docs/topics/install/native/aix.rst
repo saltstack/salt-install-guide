@@ -65,8 +65,7 @@ removal script and an |aix| bff package.
     - If upgrading from Salt ``v3000.4``, which was Python 2, an upgrade requires
       **uninstalling Python 2.**
     - If upgrading from Salt ``v3003.1``, Salt needs to be forcefully uninstalled before reinstalling
-      with Salt ``v3003.3`` or newer.
-      - A forceful uninstall can be done via: ``install_salt.sh -u -f``
+      with Salt ``v3003.3`` or newer. A forceful uninstall can be done via: ``install_salt.sh -u -f``
     - Salt ``v3003.1`` releases, and newer, will only work on **Power 8 or greater processors.**
 
 .. grid:: 3
