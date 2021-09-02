@@ -1,10 +1,10 @@
-.. |release| replace:: 3003.2
-.. |delta-proxy-version| replace:: 3003.2
-.. |solaris-version| replace:: 3003.1
-.. |aix-version| replace:: 3003.1
-.. |juniper-version| replace:: 3003.1
-.. |juniper-file-version| replace:: 20210729-172533
-.. |arista-version| replace:: 3003.1
+.. |release| replace:: 3003.3
+.. |delta-proxy-version| replace:: 3003.3
+.. |solaris-version| replace:: 3003.3
+.. |aix-version| replace:: 3003.3
+.. |juniper-version| replace:: 3003.3
+.. |juniper-file-version| replace:: 20210827-213932
+.. |arista-version| replace:: 3003.3
 
 .. |aix-python-version| replace:: Python 3.7.10
 .. |arista-python-version| replace:: Python 3.7.10
