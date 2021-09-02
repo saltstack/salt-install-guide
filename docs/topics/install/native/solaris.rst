@@ -33,9 +33,9 @@ The following systems are supported:
 
    * - Device
      - Supported Firmware
-   * - Solaris 10 update 8 and higher
+   * - Solaris 10 update 8 and greater
      - Intel and SPARC processors
-   * - Solaris 11.2 and higher
+   * - Solaris 11.2 and greater
      - Intel and SPARC processors
 
 

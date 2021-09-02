@@ -26,13 +26,17 @@ Supported hardware and firmware versions
 The following systems are supported:
 
 .. list-table::
-   :widths: 40 60
    :header-rows: 1
 
    * - Device
      - Supported Firmware
-   * - AIX 7.1 and above
-     - Power8 and above
+     - Supported Salt versions
+   * - AIX 7.1 and greater
+     - Power 7 and greater
+     - Salt v3002.1
+   * - AIX 7.1 and greater
+     - Power 8 and greater
+     - Salt v3003.1 and greater
 
 .. Warning::
     Be aware that |aix| utilities may not be the same as a standard Linux
@@ -87,11 +91,13 @@ removal script and an |aix| bff package.
         :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3002/salt_3002.1-1.tar.gz
 
         :bdg-primary:`Python 3`
+        :bdg-info:`Power 7 and Greater Processors`
 
     .. grid-item-card:: Download Salt v3000.4
         :link: https://repo.saltproject.io/salt/py2/aix/7/powerpc/3000/salt_3000.4-1.tar.gz
 
         :bdg-warning:`Python 2`
+        :bdg-info:`Power 7 and Greater Processors`
 
 ..
   .. include:: ../_includes/verify-download-native-minions.rst

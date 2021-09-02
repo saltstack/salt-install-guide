@@ -32,9 +32,9 @@ The following systems are supported:
    * - Device
      - Supported Firmware
    * - Arista 32-bit EOS
-     - Versions 4.18 through 4.24
+     - Versions 4.18 and greater
    * - Arista 64-bit EOS
-     - Versions 4.23 through 4.24
+     - Versions 4.23 and greater
 
 The |arista-native-minion| already contains Arista’s `pyeapi
 <https://github.com/arista-eosplus/pyeapi>`_ software, as well as `Napalm

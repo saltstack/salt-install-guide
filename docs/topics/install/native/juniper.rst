@@ -34,9 +34,9 @@ The following systems are supported:
    * - Device
      - Supported Firmware
    * - QFX Series Switches
-     - **17.3R2-S6** and higher
+     - **17.3R2-S6** and greater
    * - MX Series Routers
-     - **17.4R2-S6** and higher
+     - **17.4R2-S6** and greater
 
 
 .. Note::
