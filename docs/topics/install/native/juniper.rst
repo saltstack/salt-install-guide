@@ -67,11 +67,16 @@ The |juniper-native-minion| package is a **tgz** file.
 
 .. grid:: 3
 
+   .. grid-item-card:: Download Salt v3004
+       :link: https://repo.saltproject.io/salt/py3/juniper/x86_64/3004/salt-junos-x86-64-20211022-223736.tgz
+
+       :bdg-primary:`Python 3`
+       :bdg-success:`Latest`
+
    .. grid-item-card:: Download Salt v3003.3
        :link: https://repo.saltproject.io/salt/py3/juniper/x86_64/3003/salt-junos-x86-64-20210827-213932.tgz
 
        :bdg-primary:`Python 3`
-       :bdg-success:`Latest`
 
    .. grid-item-card:: Download Salt v3003.1
        :link: https://repo.saltproject.io/salt/py3/juniper/x86_64/3003/salt-junos-x86-64-20210729-172533.tgz
