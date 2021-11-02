@@ -16,6 +16,10 @@ guide explains the process for installing a Salt native |minion| |aix-version|
 on |aix| UNIX systems. This guide is intended for system administrators with the
 general knowledge and experience required in the field.
 
+.. note::
+    There are separate builds for AIX v7.1 and AIX v7.2.
+
+
 .. _aix-preinstall:
 
 Pre-installation
@@ -33,10 +37,14 @@ The following systems are supported:
      - Supported Salt versions
    * - AIX 7.1 and greater
      - Power 7 and greater
-     - Salt v3002.1
+     - Salt v3002.1 and greater (Python 2)
    * - AIX 7.1 and greater
      - Power 8 and greater
      - Salt v3003.1 and greater
+   * - AIX 7.2 and greater
+     - Power 8 and greater
+     - Salt v3004 and greater
+
 
 .. Warning::
     Be aware that |aix| utilities may not be the same as a standard Linux
@@ -72,28 +80,41 @@ removal script and an |aix| bff package.
       with Salt ``v3003.3`` or newer. A forceful uninstall can be done via: ``install_salt.sh -u -f``
     - Salt ``v3003.1`` releases, and newer, will only work on **Power 8 or greater processors.**
 
-.. grid:: 3
+.. grid:: 2
 
-    .. grid-item-card:: Download Salt v3003.3
-        :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3003/salt_3003.3-1.tar.gz
+    .. grid-item-card:: Download Salt v3004 (v7.1)
+        :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3004/salt_3004-1.tar.gz
 
         :bdg-primary:`Python 3`
         :bdg-secondary:`Power 8 or Greater Processors`
         :bdg-success:`Latest`
 
-    .. grid-item-card:: Download Salt v3003.1
+    .. grid-item-card:: Download Salt v3004 (v7.2)
+        :link: https://repo.saltproject.io/salt/py3/aix/7.2/powerpc/3004/salt_3004-1.tar.gz
+
+        :bdg-primary:`Python 3`
+        :bdg-secondary:`Power 8 or Greater Processors`
+        :bdg-success:`Latest`
+
+    .. grid-item-card:: Download Salt v3003.3 (v7.1)
+        :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3003/salt_3003.3-1.tar.gz
+
+        :bdg-primary:`Python 3`
+        :bdg-secondary:`Power 8 or Greater Processors`
+
+    .. grid-item-card:: Download Salt v3003.1 (v7.1)
         :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3003/salt_3003.1-1.tar.gz
 
         :bdg-primary:`Python 3`
         :bdg-secondary:`Power 8 or Greater Processors`
 
-    .. grid-item-card:: Download Salt v3002.1
+    .. grid-item-card:: Download Salt v3002.1 (v7.1)
         :link: https://repo.saltproject.io/salt/py3/aix/7/powerpc/3002/salt_3002.1-1.tar.gz
 
         :bdg-primary:`Python 3`
         :bdg-info:`Power 7 and Greater Processors`
 
-    .. grid-item-card:: Download Salt v3000.4
+    .. grid-item-card:: Download Salt v3000.4 (v7.1)
         :link: https://repo.saltproject.io/salt/py2/aix/7/powerpc/3000/salt_3000.4-1.tar.gz
 
         :bdg-warning:`Python 2`
