@@ -80,7 +80,7 @@ else:
 
 # -- Project information -----------------------------------------------------
 
-project = "Salt Install Guide"
+project = "Salt install guide"
 copyright = f"{copyright_year}, VMware, Inc."
 author = "VMware, Inc."
 
@@ -140,7 +140,7 @@ exclude_patterns = [
 # More: https://pradyunsg.me/furo/customisation/
 html_show_sourcelink = True  # False on private repos; True on public repos
 html_theme = "furo"
-html_title = "Salt Install Guide"
+html_title = "Salt install guide"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

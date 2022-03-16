@@ -1,7 +1,7 @@
 .. _support:
 
 =====================
-Salt Platform Support
+Salt platform support
 =====================
 
 Before implementing Salt to manage any data center infrastructure it is

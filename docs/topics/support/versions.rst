@@ -1,7 +1,7 @@
 .. _support-salt-lifecycle:
 
 ======================
-Salt Version Lifecycle
+Salt version lifecycle
 ======================
 
 The :ref:`support-os` guidelines, in addition to these Salt product

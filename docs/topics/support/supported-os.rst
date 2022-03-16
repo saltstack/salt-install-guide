@@ -1,7 +1,7 @@
 .. _support-os:
 
 ===========================
-Supported Operating Systems
+Supported operating systems
 ===========================
 
 .. todo::
