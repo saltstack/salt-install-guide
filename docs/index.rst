@@ -2,7 +2,7 @@
 
 .. _table-of-contents:
 
-Table of Contents
+Table of contents
 =================
 
 .. toctree::

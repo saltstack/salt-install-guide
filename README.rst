@@ -1,5 +1,5 @@
 ==================
-Salt Install Guide
+Salt install guide
 ==================
 
 .. image:: https://img.shields.io/badge/slack-@saltstackcommunity-blue.svg?logo=slack
@@ -22,7 +22,7 @@ If you're looking to install Salt, you've come to the right place!
 - `View the Sphinx-built documentation here <https://saltstack.gitlab.io/open/docs/salt-install-guide>`__
 - `View the source repo here <https://gitlab.com/saltstack/open/docs/salt-install-guide>`__
 
-About the Salt Install Guide
+About the Salt install guide
 ============================
 
 The Salt Install Guide supplements and extends the core documentation for the
