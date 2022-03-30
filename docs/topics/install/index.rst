@@ -1,8 +1,8 @@
 .. _install-index:
 
-===============
-Installing Salt
-===============
+============
+Install Salt
+============
 
 This section contains instructions to install Salt. If you are setting up your
 environment for the first time, you should install a Salt master on a dedicated
