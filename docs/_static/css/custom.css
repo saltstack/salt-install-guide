@@ -1,3 +1,21 @@
+/* Headings */
+
+h2, h3 {
+  padding-top: 25px;
+}
+
+/* Tables */
+
 table.docutils th.stub {
   text-align: right;
+}
+
+table.docutils td {
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table.slim td {
+  padding: 0px;
 }

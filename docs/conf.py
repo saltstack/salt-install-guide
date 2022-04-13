@@ -127,7 +127,7 @@ exclude_patterns = [
     "Thumbs.db",
     ".DS_Store",
     "sitevars.rst",
-    "_includes",
+    "topics/_includes/*.rst",
 ]
 
 
