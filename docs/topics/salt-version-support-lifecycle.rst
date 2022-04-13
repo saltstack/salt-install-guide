@@ -8,7 +8,7 @@ Together with the :ref:`salt-supported-operating-systems` guidelines, this
 document is intended to clearly define how long a particular version of Salt
 will receive official packages, testing, and technical support.
 
-.. include:: ../_includes/supported-os-concepts.rst
+.. include:: _includes/supported-os-concepts.rst
 
 
 Product support lifecycle
@@ -19,6 +19,7 @@ Product support lifecycle
   :align: center
   :header-rows: 1
   :stub-columns: 1
+  :class: slim
 
   * - Salt version
     - `Phase 1 support`_ ends
@@ -158,6 +159,7 @@ Phase details
   :align: center
   :header-rows: 1
   :stub-columns: 1
+  :class: slim
 
   * -
     - Phase 1 support (6 months)

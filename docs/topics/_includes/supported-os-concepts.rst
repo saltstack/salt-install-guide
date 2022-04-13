@@ -17,3 +17,7 @@ and be managed by Salt.
 
 Other operating systems may only be able to run the `salt-minion` package and
 can only be managed by a Salt master running a different operating system.
+
+If you are setting up your environment for the first time, you should install a
+Salt master on a dedicated management server or VM, and then install a Salt
+minion on each system that you want to manage using Salt.
