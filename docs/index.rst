@@ -10,6 +10,7 @@ Install Salt
    :hidden:
 
    topics/overview
+   topics/announcements
 
 .. toctree::
    :maxdepth: 2
