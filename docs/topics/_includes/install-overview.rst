@@ -1,5 +1,14 @@
 .. _install-overview:
 
+.. sidebar:: **Latest Salt release**
+
+    |release| (|latest-release-date|)
+
+    **More info:**
+
+    * :ref:`announcements`
+    * `RSS feeds <https://saltproject.io/rss-feeds/>`_
+
 Welcome to the Salt install guide! This guide provides instructions for
 installing Salt on :ref:`salt-supported-operating-systems`. It also explains
 how to configure Salt, start Salt services, and verify your installation.
