@@ -19,3 +19,11 @@ table.docutils td {
 table.slim td {
   padding: 0px;
 }
+
+table.checkmarks td:not(:first-child) {
+  text-align: center;
+}
+
+table.checkmarks td {
+  padding: 0px;
+}

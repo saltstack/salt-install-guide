@@ -29,7 +29,7 @@ from nox.command import CommandFailed  # isort:skip
 # Global Path Definitions
 REPO_ROOT = os.path.abspath(os.path.dirname(__file__))
 # Python versions to run against
-_PYTHON_VERSIONS = ("3", "3.6", "3.7", "3.8", "3.9")
+_PYTHON_VERSIONS = ("3", "3.6", "3.7", "3.8", "3.9", "3.10")
 
 # Nox options
 #  Reuse existing virtualenvs
@@ -66,6 +66,7 @@ def _get_session_python_version_info(session):
                 'import sys; sys.stdout.write("{}.{}.{}".format(*sys.version_info))',
                 silent=True,
                 log=False,
+                external=True,
             )
             version_info = tuple(
                 int(part) for part in session_py_version.split(".") if part.isdigit()
