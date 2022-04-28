@@ -8,10 +8,27 @@
 .. |juniper-version| replace:: 3004.1
 .. |juniper-file-version| replace:: 20210827-213932
 .. |arista-version| replace:: 3004.1
-
 .. |aix-python-version| replace:: Python 3.7.10
 .. |arista-python-version| replace:: Python 3.7.10
 .. |solaris-python-version| replace:: Python 3.7.10
+
+.. |rhel8-tiamat-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/latest/SALTSTACK-GPG-KEY.pub
+.. |rhel8-tiamat-download| replace:: https://repo.saltproject.io/salt/py3/redhat/
+.. |rhel8-latest-gpg| replace:: https://repo.saltproject.io/py3/redhat/8/x86_64/latest/SALTSTACK-GPG-KEY.pub
+.. |rhel8-latest-download| replace:: https://repo.saltproject.io/py3/redhat/8/x86_64/latest.repo
+.. |rhel8-major-gpg| replace:: https://repo.saltproject.io/py3/redhat/8/x86_64/3004/SALTSTACK-GPG-KEY.pub
+.. |rhel8-major-download| replace:: https://repo.saltproject.io/py3/redhat/8/x86_64/3004.repo
+.. |rhel8-minor-gpg| replace:: https://repo.saltproject.io/py3/redhat/8/x86_64/archive/3004.1/SALTSTACK-GPG-KEY.pub
+.. |rhel8-minor-download| replace:: https://repo.saltproject.io/py3/redhat/8/x86_64/archive/3004.1.repo
+
+.. |rhel7-tiamat-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/latest/SALTSTACK-GPG-KEY.pub
+.. |rhel7-tiamat-download| replace:: https://repo.saltproject.io/salt/salt/py3/redhat/
+.. |rhel7-latest-gpg| replace:: https://repo.saltproject.io/py3/redhat/7/x86_64/latest/SALTSTACK-GPG-KEY.pub
+.. |rhel7-latest-download| replace:: https://repo.saltproject.io/py3/redhat/7/x86_64/latest.repo
+.. |rhel7-major-gpg| replace:: https://repo.saltproject.io/py3/redhat/7/x86_64/3004/SALTSTACK-GPG-KEY.pub
+.. |rhel7-major-download| replace:: https://repo.saltproject.io/py3/redhat/7/x86_64/3004.repo
+.. |rhel7-minor-gpg| replace:: https://repo.saltproject.io/py3/redhat/7/x86_64/archive/3004.1/SALTSTACK-GPG-KEY.pub
+.. |rhel7-minor-download| replace:: https://repo.saltproject.io/py3/redhat/7/x86_64/archive/3004.1.repo
 
 .. |master| replace:: master
 .. |masters| replace:: masters

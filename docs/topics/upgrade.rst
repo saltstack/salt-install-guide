@@ -7,10 +7,6 @@ Upgrade Salt
 The process for upgrading Salt depends on your operating system and your
 organization's policies and procedures for updating.
 
-.. todo::
-
-   Add instructions for air-gapped environments.
-
 
 Upgrade Linux systems
 =====================
