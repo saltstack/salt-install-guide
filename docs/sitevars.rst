@@ -1,5 +1,7 @@
-.. |release| replace:: 3004.1
-.. |latest-release-date| replace:: March 28, 2022
+.. |release| replace:: 3005
+.. |release-badge| replace:: :bdg-success:`3005`
+.. |supported-release-1-badge| replace:: :bdg-primary:`3004.1`
+.. |supported-release-2-badge| replace:: :bdg-warning:`3003.4`
 .. |delta-proxy-version| replace:: 3004.1
 .. |solaris-version| replace:: 3004.1
 .. |aix-version| replace:: 3004.1

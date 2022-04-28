@@ -154,13 +154,6 @@ Overview of supported operating systems
     - Yes
     - Package only
 
-  * - `macOS`_ 10.14 
-    -
-    - Yes
-    - Yes
-    -
-    -
-
   * - `macOS`_ 10.15
     -
     - Yes
@@ -169,6 +162,13 @@ Overview of supported operating systems
     -
 
   * - `macOS`_ 11
+    -
+    - Yes
+    - Yes
+    -
+    -
+
+  * - `macOS`_ 12
     -
     - Yes
     - Yes

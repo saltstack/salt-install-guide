@@ -19,6 +19,7 @@ Install Salt
 
    topics/check-system-requirements
    topics/check-network-ports
+   topics/install-salt-dependencies
 
 .. toctree::
    :maxdepth: 2
@@ -38,6 +39,7 @@ Install Salt
    :caption: Upgrade Salt
 
    topics/upgrade
+   topics/upgrade-to-tiamat
 
 .. toctree::
    :maxdepth: 2
@@ -46,6 +48,7 @@ Install Salt
 
    topics/salt-supported-operating-systems
    topics/salt-version-support-lifecycle
+   topics/salt-python-version-support
 
 .. toctree::
    :maxdepth: 2

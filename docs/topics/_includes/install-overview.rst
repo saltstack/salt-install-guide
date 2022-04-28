@@ -1,11 +1,19 @@
 .. _install-overview:
 
-.. sidebar:: **Latest Salt release**
+.. admonition:: The Salt install guide is in a draft state
 
-    |release| (|latest-release-date|)
+   This install guide is currently being drafted, intended for the Salt 3005
+   Phosphorus release. All documentation is written as though 3005 is the
+   current version. Contact Alyssa Rock for questions or comments.
 
-    **More info:**
 
+.. sidebar:: **Supported Salt releases**
+
+    |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+
+    **See also**
+
+    * `Release notes <https://docs.saltproject.io/en/3004/topics/releases/>`_
     * :ref:`announcements`
     * `RSS feeds <https://saltproject.io/rss-feeds/>`_
 
@@ -16,13 +24,15 @@ how to configure Salt, start Salt services, and verify your installation.
 Salt packages can be accessed from
 `repo.saltproject.io <https://repo.saltproject.io/>`_.
 
-.. Note::
-    Pay close attention to package versions when navigating
-    `repo.saltproject.io <https://repo.saltproject.io/>`_. For example,
-    if you are using a RedHat 7 variant, make sure you select RedHat and then
-    select version 7. Otherwise, you will get the wrong repo and will install
-    RedHat 8 Salt packages on a RedHat 7. Version incompatibility will throw
-    unknown errors.
+.. Warning::
+    Beginning with the 3005 (Phosphorus) release of Salt, the Salt Project is
+    changing its packaging system to Tiamat. Any new operating systems added in
+    3005 will only have Tiamat packages. The Salt Project will phase out the old
+    Salt package builds for currently supported operating systems by 3007.
+
+    Begin planning your migration or consider updating your Salt infrastructure
+    to the new Tiamat packages as soon as possible. See :ref:`upgrade-to-Tiamat`
+    for instructions.
 
 
 Standard installation overview
@@ -46,32 +56,41 @@ Standard installation overview
        * :ref:`check-network-ports`
        * :ref:`salt-supported-operating-systems`
        * :ref:`salt-version-support-lifecycle`
+       * :ref:`salt-python-version-support`
 
   * - 2
+    - Install Salt's dependencies.
+
+      NOTE: You do not need to install Salt dependencies if you are using the
+      Tiamat packages of Salt.
+    -  * :ref:`install-salt-dependencies`
+       * :ref:`upgrade-to-tiamat`
+
+  * - 3
     - Install the ``salt-master`` service on the node that will manage your
       other nodes, meaning it will send commands to other nodes.
     -  * :ref:`install-by-operating-system-index`
        * :ref:`install-by-method-index`
 
-  * - 3
+  * - 4
     - Install the ``salt-minion`` service on the nodes that you want to manage,
       meaning it will receive commands from the Salt master.
     - * :ref:`install-by-operating-system-index`
       * :ref:`install-by-method-index`
 
-  * - 4
+  * - 5
     - Configure the Salt master and minions.
     - :ref:`configure-master-minion`
 
-  * - 5
+  * - 6
     - Start the service on the minions, then the master.
     - :ref:`start-salt-services`
 
-  * - 6
+  * - 7
     - Accept the minion keys after the minion connects.
     - :ref:`accept-keys`
 
-  * - 7
+  * - 8
     - Verify that the installation was successful.
     - :ref:`verify-install`
 

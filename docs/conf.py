@@ -109,7 +109,7 @@ extensions = [
     "sphinx_substitution_extensions",
     "sphinx_inline_tabs",
     "sphinx_design",
-    "sphinx.ext.todo",
+    "sphinx.ext.todo"
 ]
 # Render TODO directives
 todo_include_todos = True
@@ -196,3 +196,5 @@ latex_elements = {
     \setmonofont{Source Code Pro}
 """,
 }
+
+suppress_warnings = ['autosectionlabel.*']
