@@ -29,13 +29,14 @@ Tiamat packages are self-contained binaries of Salt. Tiamat packages include:
   * - Salt's required dependencies
     - `Salt dependencies <https://github.com/saltstack/salt/blob/master/requirements/static/pkg/py3.9/linux.txt>`_
 
-      .. Note::
-          The dependencies included with Tiamat are required for Salt's core
-          functionality only. If you are using a Salt module that has an
-          additional dependency, you will need to additionally install any
-          dependencies required by that specific module. See the
-          `module documentation <https://docs.saltproject.io/en/latest/py-modindex.html>`_
-          for that specific module for a list of required dependencies.
+
+.. Note::
+    The dependencies included with Tiamat are required for Salt's core
+    functionality only. If you are using a Salt module that has an additional
+    dependency, you will need to additionally install any dependencies required
+    by that specific module. See the
+    `module documentation <https://docs.saltproject.io/en/latest/py-modindex.html>`_
+    for that specific module for a list of required dependencies.
 
 
 Timeline for upgrading to Tiamat packaging
@@ -45,7 +46,7 @@ of Salt, begin planning how you will update your Salt infrastructure to Tiamat
 before the 3007 release. See `How to upgrade to Tiamat`_ for more information.
 
 .. list-table::
-  :widths: 20 80
+  :widths: 15 85
   :header-rows: 1
   :stub-columns: 1
 
@@ -77,11 +78,25 @@ To upgrade to Tiamat:
    path to point to the new Tiamat repository paths for your operating system.
    See `Repository paths`_ for more information.
 
+   .. Tip::
+       Rather than manually updating the configuration files with the correct
+       repository link, you can re-run the installation commands for your
+       operating system. When you re-run the commands, make sure you select the
+       instructions for the **Tiamat** version of the package. See
+       :ref:`install-by-operating-system-index` for the specific commands.
+
 #. After the repository file is updated, upgrade your Salt packages.
+
+#. Restart the Salt services.
+
+   .. code-block:: bash
+
+       systemctl start salt-master
+       systemctl start salt-minion
 
 #. Ensure any 3rd party pip packages are installed in the correct Tiamat path.
 
-   This can be accomplished in two ways:
+   You can use two possible methods:
 
    * ``salt pip install <package name>``
    * Using the ``pip.installed`` Salt state.
@@ -139,11 +154,10 @@ Platform package support for Salt 3005
 ======================================
 
 .. list-table::
-  :widths: 30 35 35
+  :widths: 25 35 40
   :header-rows: 1
   :stub-columns: 1
-  :align: center
-  :class: slim
+  :class: checkmarks
 
   * -
     - New Tiamat packages

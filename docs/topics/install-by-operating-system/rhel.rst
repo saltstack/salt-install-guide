@@ -24,13 +24,6 @@ systems:
 
 Install Salt on RedHat (RHEL) 8
 ===============================
-
-.. admonition:: Draft comment from Alyssa
-
-   I need to implement Jinja templating on these pages to dynamically generate
-   the download links the way we do on the repo-landing site. For now, I've
-   just hard coded the links.
-
 To install Salt on RedHat 8:
 
 #. Run the following commands to install the Salt Project repository and key:
@@ -43,37 +36,41 @@ To install Salt on RedHat 8:
 
            To pin your Salt upgrades to the latest :ref:`tiamat` package of Salt for **RHEL 8**:
 
-           .. code-block:: bash
+           .. parsed-literal::
 
-               sudo rpm --import https://repo.saltproject.io/salt/py3/redhat/8/x86_64/latest/SALTSTACK-GPG-KEY.pub
-               curl -fsSL https://repo.saltproject.io/salt/py3/redhat/ | sudo tee /etc/yum.repos.d/salt.repo
+               sudo rpm --import \ |rhel8-tiamat-gpg|\
+
+               curl -fsSL \ |rhel8-tiamat-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
        .. tab-item:: RHEL 8 (Latest)
 
            To pin your Salt upgrades to the :ref:`latest` package of Salt for **RHEL 8**:
 
-           .. code-block:: bash
+           .. parsed-literal::
 
-               sudo rpm --import https://repo.saltproject.io/py3/redhat/8/x86_64/latest/SALTSTACK-GPG-KEY.pub
-               curl -fsSL https://repo.saltproject.io/py3/redhat/8/x86_64/latest.repo | sudo tee /etc/yum.repos.d/salt.repo
+               sudo rpm --import \ |rhel8-latest-gpg|\
+
+               curl -fsSL \ |rhel8-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
        .. tab-item:: RHEL 8 (Major)
 
            To pin your Salt upgrades to the latest :ref:`major` package of Salt for **RHEL 8**:
 
-           .. code-block:: bash
+           .. parsed-literal::
 
-               sudo rpm --import https://repo.saltproject.io/py3/redhat/8/x86_64/3004/SALTSTACK-GPG-KEY.pub
-               curl -fsSL https://repo.saltproject.io/py3/redhat/8/x86_64/3004.repo | sudo tee /etc/yum.repos.d/salt.repo
+               sudo rpm --import \ |rhel8-major-gpg|\
+
+               curl -fsSL \ |rhel8-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
        .. tab-item:: RHEL 8 (Minor)
 
            To pin your Salt upgrades to the latest :ref:`minor` package of Salt for **RHEL 8**:
 
-           .. code-block:: bash
+           .. parsed-literal::
 
-               sudo rpm --import https://repo.saltproject.io/py3/redhat/8/x86_64/archive/3004.1/SALTSTACK-GPG-KEY.pub
-               curl -fsSL https://repo.saltproject.io/py3/redhat/8/x86_64/archive/3004.1.repo | sudo tee /etc/yum.repos.d/salt.repo
+               sudo rpm --import \ |rhel8-major-gpg|\
+
+               curl -fsSL \ |rhel8-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
@@ -111,14 +108,7 @@ following post-installation steps:
 
 Install Salt on RedHat (RHEL) 7
 ===============================
-
-.. admonition:: Draft comment from Alyssa
-
-   I need to implement Jinja templating on these pages to dynamically generate
-   the download links the way we do on the repo-landing site. For now, I've
-   just hard coded the links.
-
-To install Salt on RedHat 8:
+To install Salt on RedHat 7:
 
 #. Run the following commands to install the Salt Project repository and key:
 
@@ -130,37 +120,41 @@ To install Salt on RedHat 8:
 
            To pin your Salt upgrades to the latest :ref:`tiamat` package of Salt for **RHEL 7**:
 
-           .. code-block:: bash
+           .. parsed-literal::
 
-               sudo rpm --import https://repo.saltproject.io/salt/py3/redhat/7/x86_64/latest/SALTSTACK-GPG-KEY.pub
-               curl -fsSL https://repo.saltproject.io/salt/salt/py3/redhat/ | sudo tee /etc/yum.repos.d/salt.repo
+               sudo rpm --import  \ |rhel7-tiamat-gpg|\
+
+               curl -fsSL \ |rhel7-tiamat-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
        .. tab-item:: RHEL 7 (Latest)
 
            To pin your Salt upgrades to the :ref:`latest` package of Salt for **RHEL 7**:
 
-           .. code-block:: bash
+           .. parsed-literal::
 
-               sudo rpm --import https://repo.saltproject.io/py3/redhat/7/x86_64/latest/SALTSTACK-GPG-KEY.pub
-               curl -fsSL https://repo.saltproject.io/py3/redhat/7/x86_64/latest.repo | sudo tee /etc/yum.repos.d/salt.repo
+               sudo rpm --import \ |rhel7-latest-gpg|\
+
+               curl -fsSL \ |rhel7-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
        .. tab-item:: RHEL 7 (Major)
 
            To pin your Salt upgrades to the latest :ref:`major` package of Salt for **RHEL 7**:
 
-           .. code-block:: bash
+           .. parsed-literal::
 
-               sudo rpm --import https://repo.saltproject.io/py3/redhat/7/x86_64/3004/SALTSTACK-GPG-KEY.pub
-               curl -fsSL https://repo.saltproject.io/py3/redhat/7/x86_64/3004.repo | sudo tee /etc/yum.repos.d/salt.repo
+               sudo rpm --import \ |rhel7-major-gpg|\
+
+               curl -fsSL \ |rhel7-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
        .. tab-item:: RHEL 7 (Minor)
 
            To pin your Salt upgrades to the latest :ref:`minor` package of Salt for **RHEL 7**:
 
-           .. code-block:: bash
+           .. parsed-literal::
 
-               sudo rpm --import https://repo.saltproject.io/py3/redhat/7/x86_64/archive/3004.1/SALTSTACK-GPG-KEY.pub
-               curl -fsSL https://repo.saltproject.io/py3/redhat/7/x86_64/archive/3004.1.repo | sudo tee /etc/yum.repos.d/salt.repo
+               sudo rpm --import \ |rhel7-minor-gpg|\
+
+               curl -fsSL \ |rhel7-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
