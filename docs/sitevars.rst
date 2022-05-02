@@ -12,6 +12,9 @@
 .. |arista-python-version| replace:: Python 3.7.10
 .. |solaris-python-version| replace:: Python 3.7.10
 
+..
+   IMPORTANT: macOS URLs need to be edited directly on the macOS topic when releasing.
+
 .. |rhel8-tiamat-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/latest/SALTSTACK-GPG-KEY.pub
 .. |rhel8-tiamat-download| replace:: https://repo.saltproject.io/salt/py3/redhat/
 .. |rhel8-latest-gpg| replace:: https://repo.saltproject.io/py3/redhat/8/x86_64/latest/SALTSTACK-GPG-KEY.pub
@@ -29,6 +32,9 @@
 .. |rhel7-major-download| replace:: https://repo.saltproject.io/py3/redhat/7/x86_64/3004.repo
 .. |rhel7-minor-gpg| replace:: https://repo.saltproject.io/py3/redhat/7/x86_64/archive/3004.1/SALTSTACK-GPG-KEY.pub
 .. |rhel7-minor-download| replace:: https://repo.saltproject.io/py3/redhat/7/x86_64/archive/3004.1.repo
+
+..
+   IMPORTANT: Windows URLs need to be edited directly on the Windows topic when releasing.
 
 .. |master| replace:: master
 .. |masters| replace:: masters

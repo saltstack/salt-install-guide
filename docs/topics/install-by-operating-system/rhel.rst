@@ -96,13 +96,7 @@ To install Salt on RedHat 8:
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
 
-After installing Salt on your operating system, you need to complete the
-following post-installation steps:
-
-* :ref:`configure-master-minion`
-* :ref:`start-salt-services`
-* :ref:`accept-keys`
-* :ref:`verify-install`
+.. include:: ../_includes/post-install-by-os.rst
 
 
 
@@ -180,10 +174,4 @@ To install Salt on RedHat 7:
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
 
-After installing Salt on your operating system, you need to complete the
-following post-installation steps:
-
-* :ref:`configure-master-minion`
-* :ref:`start-salt-services`
-* :ref:`accept-keys`
-* :ref:`verify-install`
+.. include:: ../_includes/post-install-by-os.rst
