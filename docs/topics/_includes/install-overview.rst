@@ -4,7 +4,8 @@
 
    This install guide is currently being drafted, intended for the Salt 3005
    Phosphorus release. All documentation is written as though 3005 is the
-   current version. Contact Alyssa Rock for questions or comments.
+   current version. Your feedback on this draft is welcome! Leave feedback
+   on this issue: `Community feedback needed on new Salt Install Guide <https://gitlab.com/saltstack/open/docs/salt-install-guide/-/issues/33>`_.
 
 
 .. sidebar:: **Supported Salt releases**
