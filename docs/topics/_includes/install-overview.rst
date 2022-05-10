@@ -2,7 +2,7 @@
 
 .. admonition:: The Salt install guide is in a draft state
 
-   This install guide is currently being drafted, intended for the Salt 3005
+   This install guide is currently in a draft state, intended for the Salt 3005
    Phosphorus release. All documentation is written as though 3005 is the
    current version. Your feedback on this draft is welcome! Leave feedback
    on this issue: `Community feedback needed on new Salt Install Guide <https://gitlab.com/saltstack/open/docs/salt-install-guide/-/issues/33>`_.
