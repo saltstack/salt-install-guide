@@ -46,7 +46,8 @@ removal script and an AIX bff package.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: AIX install guide
-        :link: :ref:`install-aix`
+        :link: install-aix
+        :link-type: ref
 
         :bdg-info:`Install Salt on AIX`
 
@@ -70,7 +71,8 @@ Install the Amazon Linux 2 package using a Linux package manager.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Amazon Linux 2 install guide
-        :link: :ref:`install-amazon`
+        :link: install-amazon
+        :link-type: ref
 
         :bdg-info:`Install Salt on Amazon Linux 2`
 
@@ -89,7 +91,8 @@ The Arista native minion package is a SWIX file.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Arista install guide
-        :link: :ref:`install-arista`
+        :link: install-arista
+        :link-type: ref
 
         :bdg-info:`Install Salt on Arista`
 
@@ -108,7 +111,8 @@ Install the CentOS package using a yum package manager.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: CentOS install guide
-        :link: :ref:`install-centos`
+        :link: install-centos
+        :link-type: ref
 
         :bdg-info:`Install Salt on CentOS`
 
@@ -127,7 +131,8 @@ Install the Debian package using an apt package manager.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Debian install guide
-        :link: :ref:`install-debian`
+        :link: install-debian
+        :link-type: ref
 
         :bdg-info:`Install Salt on Debian`
 
@@ -138,7 +143,8 @@ Fedora
 Install the Fedora package from the Fedora package manager.
 
 .. card:: Fedora install guide
-    :link: :ref:`install-fedora`
+    :link: install-fedora
+    :link-type: ref
     :width: 50%
 
     :bdg-info:`Install Salt on Fedora`
@@ -158,7 +164,8 @@ The Juniper native minion| package is a tarball (.tgz) file.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Juniper install guide
-        :link: :ref:`install-juniper`
+        :link: install-juniper
+        :link-type: ref
 
         :bdg-info:`Install Salt on Juniper`
 
@@ -180,10 +187,30 @@ Download the macOS package and run the file to install Salt. See the
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: macOS install guide
-        :link: :ref:`install-macos`
+        :link: install-macos
+        :link-type: ref
 
         :bdg-info:`Install Salt on macOS`
 
+
+Photon OS
+=========
+Install the Photon OS package using a yum package manager.
+
+.. grid:: 2
+
+    .. grid-item-card:: Browse the repo for Photon OS packages
+        :link: https://repo.saltproject.io/py3/
+
+        :bdg-danger:`Photon OS`
+        :bdg-secondary:`Python3`
+        |release-badge|
+
+    .. grid-item-card:: Photon OS install guide
+        :link: install-photonos
+        :link-type: ref
+
+        :bdg-info:`Install Salt on Photon OS`
 
 
 Raspbian
@@ -205,7 +232,8 @@ Install the RedHat package using a yum package manager.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: RedHat install guide
-        :link: :ref:`install-rhel`
+        :link: install-rhel
+        :link-type: ref
 
         :bdg-info:`Install Salt on RedHat`
 
@@ -226,7 +254,8 @@ tarball (.tgz) file.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Solaris install guide
-        :link: :ref:`install-solaris`
+        :link: install-solaris
+        :link-type: ref
 
         :bdg-info:`Install Salt on Solaris`
 
@@ -245,7 +274,8 @@ Install the Ubuntu package using an apt package manager.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Ubuntu install guide
-        :link: :ref:`install-ubuntu`
+        :link: install-ubuntu
+        :link-type: ref
 
         :bdg-info:`Install Salt on Ubuntu`
 
@@ -267,6 +297,7 @@ Download the Windows package and run the file to install Salt. See the
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Windows install guide
-        :link: :ref:`install-windows`
+        :link: install-windows
+        :link-type: ref
 
         :bdg-info:`Install Salt on Windows`

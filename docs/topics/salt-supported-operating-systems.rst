@@ -210,6 +210,13 @@ Overview of supported operating systems
     -
     - NONE [#f1]_
 
+  * - `Photon OS`_ 3
+    - Yes
+    - Yes
+    - Yes
+    -
+    - Package only
+
   * - `Raspberry Pi OS`_ 9 (Stretch)
     - Yes
     - Yes
@@ -544,6 +551,11 @@ Oracle Linux
 Oracle Linux versions 7 and 8 as of July 2016.
 
 https://www.oracle.com/technetwork/server-storage/linux/overview/index.html
+
+
+Photon OS
+---------
+Photon OS 3.0 as of the 3005 (Phosphorus) release.
 
 
 Raspberry Pi OS
