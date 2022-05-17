@@ -13,8 +13,7 @@ Install directions by operating system
     unknown errors.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :glob:
 
    *
-   native/index

@@ -12,7 +12,7 @@ These instructions explain how to install Salt on Debian operating systems:
 * `Install Salt on Debian 9 (Stretch)`_
 
 
-.. card:: Browse the repo for packages
+.. card:: Browse the repo for Debian packages
     :link: https://repo.saltproject.io/py3/debian/
     :width: 50%
 

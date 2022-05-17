@@ -1,4 +1,4 @@
-.. _install-amzn:
+.. _install-amazon:
 
 ==============
 Amazon Linux 2
@@ -8,7 +8,7 @@ These instructions explain how to install Salt on Amazon Linux 2 operating
 systems.
 
 
-.. card:: Browse the repo for packages
+.. card:: Browse the repo for Amazon Linux 2 packages
     :link: https://repo.saltproject.io/py3/amazon/
     :width: 50%
 

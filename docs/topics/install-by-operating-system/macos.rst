@@ -10,32 +10,15 @@ This page provides download files and instructions for installing Salt on macOS.
 macOS downloads
 ===============
 
-.. card:: Browse the repo for packages
+.. include:: ../_includes/macos-downloads.rst
+
+
+.. card:: Browse the repo for macOS packages
     :link: https://repo.saltproject.io/osx/
     :width: 50%
 
     :bdg-primary:`macOS`
     :bdg-secondary:`Python3`
-
-
-.. list-table::
-  :widths: 10 10 10 40 10 10
-  :header-rows: 1
-  :class: checkmarks
-
-  * - OS
-    - Arch
-    - File Type
-    - Download
-    - MD5
-    - SHA256
-
-  * - macOS
-    - x86_64
-    - pkg
-    - `salt-3004.1-1-py3-x86_64.pkg <https://repo.saltproject.io/osx/salt-3004.1-1-py3-x86_64.pkg>`_
-    - `MD5 <https://repo.saltproject.io/osx/salt-3004.1-1-py3-x86_64.pkg.md5>`_
-    - `SHA265 <https://repo.saltproject.io/osx/salt-3004.1-1-py3-x86_64.pkg.sha256>`_
 
 
 .. include:: ../_includes/intro-install-by-os.rst
