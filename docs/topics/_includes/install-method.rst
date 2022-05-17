@@ -1,5 +1,3 @@
-.. _install-method:
-
 The Salt Project provides a public repository for packages at the
 `Salt Project Package Repo <https://repo.saltproject.io/>`__.
 

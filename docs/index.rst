@@ -11,6 +11,7 @@ Install Salt
 
    topics/overview
    topics/announcements
+   topics/downloads
 
 .. toctree::
    :maxdepth: 2

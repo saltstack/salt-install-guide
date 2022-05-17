@@ -4,190 +4,61 @@
 Arista
 ======
 
-.. important::
+Welcome to the Arista native minion installation guide. This installation
+guide explains the process for installing a Salt native minion on Arista UNIX
+systems. This guide is intended for system administrators with the general
+knowledge and experience required in the field.
 
-    The latest release of the |arista-native-minion| is version |arista-version|.
+.. card:: Browse the repo for Arista packages
+    :link: https://repo.saltproject.io/salt/py3/arista/
+    :width: 50%
 
-    This version will be used throughout this documentation, except for where
-    version-specific differences need to be specified.
-
-Welcome to the |arista-native-minion| installation guide. This installation
-guide explains the process for installing a Salt native |minion|
-|arista-version| on |arista| network devices. This guide is intended for NetOps
-engineers with the general knowledge and experience required in the field.
-
-.. _arista-preinstall:
+    :bdg-primary:`Arista`
+    :bdg-secondary:`Python3`
 
 
-Pre-installation
+.. include:: ../_includes/what-is-a-native-minion.rst
+
+
+Before you start
 ================
 
-Supported hardware and firmware versions
-----------------------------------------
-The following systems are supported:
+Before installing the Arista native minion:
 
-.. list-table::
-   :header-rows: 1
-
-   * - Device
-     - Supported Firmware
-   * - Arista 32-bit EOS
-     - Versions 4.18 and greater
-   * - Arista 64-bit EOS
-     - Versions 4.23 and greater
-
-The |arista-native-minion| already contains Arista’s `pyeapi
-<https://github.com/arista-eosplus/pyeapi>`_ software, as well as `Napalm
-<https://github.com/napalm-automation/napalm>`_ and all of its dependencies.
-
-
-Prerequisites
--------------
-Before installing the |arista-native-minion|:
-
-* Ensure your network device and firmware are supported.
-* Ensure that ports 4505 and 4506 are open on the applicable |arista| switches
+* Check that your network device and firmware are supported. See
+  :ref:`arista-supported` for more information.
+* Ensure that ports 4505 and 4506 are open on the applicable Arista switches
   or routers.
 
-Salt uses ports 4505 and 4506 for communication between |masters| and |minions|.
-The |arista-native-minion| uses a direct connection to the |arista| switch or
-router and uses the Management Interface on the switch/router for communication.
-For that reason, ports 4505 and 4506 need to be open on the appropriate
-Management Interfaces.
+Salt uses ports 4505 and 4506 for outbound communication from the master to the
+minions. The Arista native minion uses a direct connection to the Arista switch
+or router and uses the Management Interface on the switch/router for
+communication. For that reason, ports 4505 and 4506 need to be open on the
+appropriate Management Interfaces.
 
-
-Download and verify files
--------------------------
-
-.. note::
-
-  Changes in **Salt v3003.1** on Arista:
-
-  * Support for ``FastCLI`` on Arista
-  * Support for ``cacpirca`` on 64-bit
-  * Supports Python 3.7.10 internally
-  * Due to limitations on size (less than 65M), 32-bit support has dropped support for:
-
-    * ``M2Crypto`` (``pycryptodome`` is still used)
-    * ``remote-pdb``
-
-The |arista-native-minion| package is a **SWIX** file.
-
-.. grid:: 2
-
-  .. grid-item-card:: Download Salt v3004 (32-bit)
-    :link: https://repo.saltproject.io/salt/py3/arista/i386/3004/salt-3004-1.32.swix
-
-    :bdg-primary:`Python 3`
-    :bdg-secondary:`32-bit`
-    :bdg-success:`Latest`
-
-  .. grid-item-card:: Download Salt v3004 (64-bit)
-    :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3004/salt-3004-1.64.swix
-
-    :bdg-primary:`Python 3`
-    :bdg-secondary:`64-bit`
-    :bdg-success:`Latest`
-
-  .. grid-item-card:: Download Salt v3003.3 (32-bit)
-    :link: https://repo.saltproject.io/salt/py3/arista/i386/3003/salt-3003.3-1.32.swix
-
-    :bdg-primary:`Python 3`
-    :bdg-secondary:`32-bit`
-
-  .. grid-item-card:: Download Salt v3003.3 (64-bit)
-    :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3003/salt-3003.3-1.64.swix
-
-    :bdg-primary:`Python 3`
-    :bdg-info:`64-bit`
-
-  .. grid-item-card:: Download Salt v3003.3 (32-bit)
-    :link: https://repo.saltproject.io/salt/py3/arista/i386/3003/salt-3003.3-1.32.swix
-
-    :bdg-primary:`Python 3`
-    :bdg-secondary:`32-bit`
-
-  .. grid-item-card:: Download Salt v3003.3 (64-bit)
-    :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3003/salt-3003.3-1.64.swix
-
-    :bdg-primary:`Python 3`
-    :bdg-info:`64-bit`
-
-  .. grid-item-card:: Download Salt v3003.1 (32-bit)
-      :link: https://repo.saltproject.io/salt/py3/arista/i386/3003/salt-3003.1-3.32.swix
-
-      :bdg-primary:`Python 3`
-      :bdg-secondary:`32-bit`
-
-  .. grid-item-card:: Download Salt v3003.1 (64-bit)
-      :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3003/salt-3003.1-2.64.swix
-
-      :bdg-primary:`Python 3`
-      :bdg-info:`64-bit`
-
-  .. grid-item-card:: Download Salt v3002 (32-bit)
-      :link: https://repo.saltproject.io/salt/py3/arista/i386/3002/salt-3002-1.32.swix
-
-      :bdg-primary:`Python 3`
-      :bdg-secondary:`32-bit`
-
-  .. grid-item-card:: Download Salt v3002 (64-bit)
-      :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3002/salt-3002-1.64.swix
-
-      :bdg-primary:`Python 3`
-      :bdg-info:`64-bit`
-
-  .. grid-item-card:: Download Salt v3001.2 (32-bit)
-      :link: https://repo.saltproject.io/salt/py3/arista/i386/3001/salt-3001.2-1.32.swix
-
-      :bdg-primary:`Python 3`
-      :bdg-secondary:`32-bit`
-
-  .. grid-item-card:: Download Salt v3001.2 (64-bit)
-      :link: https://repo.saltproject.io/salt/py3/arista/x86_64/3001/salt-3001.2-1.64.swix
-
-      :bdg-primary:`Python 3`
-      :bdg-info:`64-bit`
-
-..
-  .. include:: ../_includes/verify-download-native-minions.rst
-
-
-Transfer files
---------------
-Once the file is verified, transfer the file to the network device. Generally,
-on the enabled |arista| CLI, copy the SWIX file from the provided location to
-|arista|’s flash directory. For example:
-
-.. code-block:: bash
-
-    scp arista-native-minion-filename.swix admin@<ip address of switch/router>:/mnt/flash/
-
-
-.. Note::
-    If installing on a virtual machine, consult the documentation for your hypervisor
-    as the commands might differ slightly.
-
-.. _arista-install:
 
 Installation
 ============
-
-Before you begin the |arista-native-minion| installation process, ensure you
-have read and completed the :ref:`arista-preinstall` steps.
-
-|arista| network devices run *Arista EOS*, which includes the *Arista CLI*. When
-connecting to an |arista| network device, you start at the OS-level. |arista|
-has a mode called *Arista CLI privileged mode* in which you can enter a Bash
-shell if needed. The command ``enable`` enters privileged mode. With this in
-mind, this guide assumes all commands are entered into the |arista| CLI.
+Arista network devices run *Arista EOS*, which includes the *Arista CLI*. When
+connecting to an Arista network device, you start at the OS-level. Arista has a
+mode called *Arista CLI privileged mode* in which you can enter a Bash shell if
+needed. The command ``enable`` enters privileged mode. With this in mind, this
+guide assumes all commands are entered into the Arista CLI.
 
 
 Minion SWIX package installation
 --------------------------------
 To install the SWIX package:
 
-#. Once the |arista-native-minion| is available in the ``flash`` directory, enter
+#. Download, verify, and transfer the Arista installation files from
+   `repo.saltproject.io <https://repo.saltproject.io/salt/py3/arista/>`_. The
+   Arista native minion package is SWIX file.
+
+   .. Note::
+       If installing on a virtual machine, consult the documentation for your
+       hypervisor as the commands might differ slightly.
+
+#. Once the Arista native minion is available in the ``flash`` directory, enter
    privileged mode and copy the SWIX extension, replacing the placeholder text
    with the correct file name:
 
@@ -237,14 +108,14 @@ To install the SWIX package:
    .. code-block::
       :substitutions:
 
-              Name: salt-|arista-version|.64.swix
-           Version: |arista-version|
+              Name: salt-|release|.64.swix
+           Version: |release|
            Release: 1
           Presence: available
             Status: installed
             Vendor:
            Summary: Self contained Salt Minion binary
-          Packages: salt-|arista-version|.x86_64.rpm |arista-version|/1
+          Packages: salt-|release|.x86_64.rpm |release|/1
         Total size: 222446843 bytes
        Description:
        Self contained Python |arista-python-version| Salt Minion 64-bit binary
@@ -256,9 +127,9 @@ To install the SWIX package:
        bash
        sudo su
 
-#. Edit the ``/etc/salt/minion`` file to update the |minion| configuration with
-   your environment's specific details, such as the |master|’s IP address,
-   the |minion| ID, etc.
+#. Edit the ``/etc/salt/minion`` file to update the minion configuration with
+   your environment's specific details, such as the master’s IP address, the
+   minion ID, etc.
 
 #. (Optional): If your router does not have the ability to use Reverse DNS
    lookup to obtain the Fully Qualified Domain Name (fqdn) for an IP Address,
@@ -285,7 +156,7 @@ To install the SWIX package:
 
        ps -ef | grep salt
 
-   If the |minion| is installed correctly and is disabled, the output is similar
+   If the minion is installed correctly and is disabled, the output is similar
    to the following:
 
    .. code-block:: bash
@@ -297,7 +168,7 @@ To install the SWIX package:
                   file:///usr/share/doc/salt/html/contents.html
                   https://docs.saltproject.io/en/latest/contents.html
 
-#. Start the |arista-native-minion| as a daemon and check its status with the
+#. Start the Arista native minion as a daemon and check its status with the
    following command:
 
    .. code-block:: bash
@@ -327,19 +198,19 @@ To install the SWIX package:
       Alternatively, you can check whether Salt is running with the command:
       ``ps -ef | grep salt``.
 
-#. Once the |arista-native-minion| has been started and is running, you can use
-   the command ``salt-key`` to verify the |master| has received a request for
-   the |minion| key.
+#. Once the Arista native minion has been started and is running, you can use
+   the command ``salt-key`` to verify the master has received a request for the
+   minion key.
 
-#. On the |master|, accept the |minion|'s key with the following command,
-   replacing the placeholder test with the correct |minion| name:
+#. On the master, accept the minion's key with the following command, replacing
+   the placeholder test with the correct minion name:
 
    .. code-block:: bash
 
        salt-key -y -a your-minion-name
 
 #. After waiting a small period of time, verify the connectivity between the
-   |master| and |minion| using simple commands. For example, try running the
+   master and minion using simple commands. For example, try running the
    following commands:
 
    .. code-block:: bash
@@ -357,7 +228,7 @@ To install the SWIX package:
        salt-master# salt arista-423 test.versions
        arista64-423:
            Salt Version:
-                   Salt: |arista-version|
+                   Salt: |release|
 
            Dependency Versions:
                        cffi: 1.14.2
@@ -395,18 +266,18 @@ To install the SWIX package:
                     version: CentOS Linux 7 Core
 
 
-Enabling |arista| eAPI access for the |minion|
-----------------------------------------------
-The |arista-native-minion| uses the pyeapi library to communicate with the
-Arista device. The pyeapi library is provided and installed by default with the
-|arista-native-minion|. However, it is not installed by default with the
-standard |minion-salt| package.
+Enabling Arista eAPI access for the minion
+------------------------------------------
+The Arista native minion uses the pyeapi library to communicate with the Arista
+device. The pyeapi library is provided and installed by default with the Arista
+native minion. However, it is not installed by default with the standard Salt
+minion package.
 
 .. Note::
-    This document makes a distinction between a proxy |minion| connecting
-    remotely to an |arista| device and a standard |minion| making a remote
-    connection. In general, the |arista-native-minion| behaves more like the
-    proxy |minion|. The native |minion| has its own Salt keys, can be targeted
+    This document makes a distinction between a proxy minion connecting
+    remotely to an Arista device and a standard minion making a remote
+    connection. In general, the Arista native minion behaves more like the
+    proxy minion. The native minion has its own Salt keys, can be targeted
     with grains, and can report back.
 
 To enable eAPI access:
@@ -425,7 +296,7 @@ To enable eAPI access:
        arista # write
 
 
-#. Open the |minion| configuration file at ``/etc/salt/minion`` and add the
+#. Open the minion configuration file at ``/etc/salt/minion`` and add the
    following section:
 
    .. code-block:: yaml
@@ -437,17 +308,17 @@ To enable eAPI access:
          enablepwd: <password for enable mode, optional>
 
 
-#. Restart the |minion-service| on the device with the following command:
+#. Restart the salt-minion service on the device with the following command:
 
    .. code-block:: bash
 
        sudo systemctl restart salt-minion
 
-#. Connect the |arista-native-minion| to its |master| and ensure its key has
+#. Connect the Arista native minion to its master and ensure its key has
    has been accepted, as explained in `Minion SWIX package installation`_.
 
-#. Run the following command, replacing the placeholder text with the |minion|
-   ID for the |arista-native-minion|:
+#. Run the following command, replacing the placeholder text with the minion ID
+   for the Arista native minion:
 
    .. code-block:: bash
 
@@ -506,13 +377,13 @@ For more documentation on the capabilities of pyeapi, see the
 Configure the Napalm module
 ---------------------------
 
-The napalm library is provided and installed by default with the
-|arista-native-minion|. However, it is not installed by default with the
-standard |minion-salt| package.
+The napalm library is provided and installed by default with the Arista native
+minion. However, it is not installed by default with the standard Salt minion
+package.
 
-To configure the native |minion| to use the napalm module:
+To configure the native minion to use the napalm module:
 
-#. Open the |minion| configuration file at ``/etc/salt/minion`` and add the
+#. Open the minion configuration file at ``/etc/salt/minion`` and add the
    following section:
 
    .. code-block:: yaml
@@ -524,13 +395,13 @@ To configure the native |minion| to use the napalm module:
          driver: eos
          provider: napalm_netacl
 
-#. Restart the |minion-service| on the device with the following command:
+#. Restart the salt-minion service on the device with the following command:
 
    .. code-block:: bash
 
        sudo systemctl restart salt-minion
 
-#. Connect the |arista-native-minion| to its |master| and ensure its key has
+#. Connect the Arista native minion to its master and ensure its key has
    has been accepted, as explained in `Minion SWIX package installation`_.
 
 #. Run the following command to test that the module is configured correctly:
@@ -585,17 +456,17 @@ To remove the SWIX package:
       :substitutions:
 
 
-              Name: salt-|arista-version|.64.swix
-           Version: |arista-version|
+              Name: salt-|release|.64.swix
+           Version: |release|
            Release: 1
           Presence: available
             Status: installed
             Vendor:
            Summary: Self contained Salt Minion binary
-          Packages: salt-|arista-version|.x86_64.rpm |arista-version|/1
+          Packages: salt-|release|.x86_64.rpm |release|/1
         Total size: 222446843 bytes
        Description:
-       Self contained Python |arista-python-version| Salt Minion 64-bit binary
+       Self contained Python |release| Salt Minion 64-bit binary
 
 
 #. Remove the SWIX package by running the following command, replacing the
@@ -617,8 +488,8 @@ To remove the SWIX package:
    .. code-block:: bash
       :substitutions:
 
-              Name: salt-|arista-version|.64.swix
-           Version: |arista-version|
+              Name: salt-|release|.64.swix
+           Version: |release|
            Release: 1
           Presence: available
             Status: not installed
@@ -627,27 +498,26 @@ To remove the SWIX package:
           Packages:
         Total size: 0 bytes
        Description:
-       Self contained Python |arista-python-version| Salt Minion 64-bit binary
+       Self contained Python |release| Salt Minion 64-bit binary
 
-.. _arista-postinstall:
 
 Post-installation
 =================
 
-This reference section includes additional resources for porting the
-|minion-service| to |arista| devices.
+This reference section includes additional resources for porting the salt-minion
+service to Arista devices.
 
 
-Starting and stopping the |arista-native-minion|
-------------------------------------------------
-After installation, you can disable (start) and enable (stop) the
-|arista-native-minion| using the following commands:
+Starting and stopping the Arista native minion
+----------------------------------------------
+After installation, you can disable (start) and enable (stop) the Arista native
+minion using the following commands:
 
 .. code-block:: bash
 
     systemctl stop salt-minion
 
-To restart the |arista-native-minion|, use the following command:
+To restart the Arista native minion, use the following command:
 
 .. code-block:: bash
 
@@ -656,16 +526,16 @@ To restart the |arista-native-minion|, use the following command:
 
 Dependencies and known issues
 -----------------------------
-The |arista-native-minion| is a self-contained binary that includes Salt
-|arista-version| with pyeapi and other Naplam dependencies that internally use
-|arista-python-version|. All Python 3 utf-8 considerations are handled internally
-leveraging Python PEP 538 and 540 and hence can function in locales which only
-support ‘C’ and POSIX without issue.
+The Arista native minion is a self-contained binary that includes Salt |release|
+with pyeapi and other Naplam dependencies that internally use
+|native-minion-python-version|. All Python 3 utf-8 considerations are handled
+internally leveraging Python PEP 538 and 540 and hence can function in locales
+which only support ‘C’ and POSIX without issue.
 
 .. Note::
-    The 64-bit |arista-native-minion| uses Python |arista-python-version|.
+    The 64-bit Arista native minion uses Python |native-minion-python-version|.
 
-Since the |arista-native-minion| is a self contained binary, there are no
+Since the Arista native minion is a self contained binary, there are no
 external dependencies to be considered.
 
 .. Note::
@@ -673,7 +543,7 @@ external dependencies to be considered.
    Python 3.9. These deprecations do not affect current
    functionality and will be resolved in future versions of Salt.
 
-The issue with the napalm grains also occurs on standard |minions|. It will be
+The issue with the napalm grains also occurs on standard minions. It will be
 resolved in a future release of Salt.
 
 

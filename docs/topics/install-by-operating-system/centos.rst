@@ -10,7 +10,7 @@ These instructions explain how to install Salt on CentOS operating systems:
 * `Install Salt on CentOS 7`_
 
 
-.. card:: Browse the repo for packages
+.. card:: Browse the repo for CentOS packages
     :link: https://repo.saltproject.io/py3/redhat/
     :width: 50%
 

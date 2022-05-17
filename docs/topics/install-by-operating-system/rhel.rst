@@ -11,7 +11,7 @@ systems:
 * `Install Salt on RedHat (RHEL) 7`_
 
 
-.. card:: Browse the repo for packages
+.. card:: Browse the repo for RedHat (RHEL) packages
     :link: https://repo.saltproject.io/py3/redhat/
     :width: 50%
 
