@@ -56,6 +56,9 @@
 ..
    IMPORTANT: macOS URLs need to be edited directly on the macOS downloads include when releasing. topics > _includes > macos-downloads.rst
 
+.. |photonos3-tiamat-gpg| replace:: LINK UNAVAILABLE UNTIL SALT 3005 (PHOSOPHORUS) RELEASE
+.. |photonos3-tiamat-download| replace:: LINK UNAVAILABLE UNTIL SALT 3005 (PHOSOPHORUS) RELEASE
+
 .. |rhel8-tiamat-gpg| replace:: LINK UNAVAILABLE UNTIL SALT 3005 (PHOSOPHORUS) RELEASE
 .. |rhel8-tiamat-download| replace:: LINK UNAVAILABLE UNTIL SALT 3005 (PHOSOPHORUS) RELEASE
 .. |rhel8-latest-gpg| replace:: https://repo.saltproject.io/py3/redhat/8/x86_64/latest/SALTSTACK-GPG-KEY.pub
