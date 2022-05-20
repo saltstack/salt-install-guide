@@ -103,13 +103,18 @@ version = release
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+
+# HEY, SALT PROJECT MEMBERS! If you add a new extension, help us keep this list
+# alphabetized. Also, make sure you add the extension to all the docs repos
+# using this toolchain to keep us consistent. Thanks in advance!
+
 extensions = [
-    "sphinx-prompt", # Required by sphinx_substitution_extensions
     "sphinx_copybutton",
-    "sphinx_substitution_extensions",
-    "sphinx_inline_tabs",
     "sphinx_design",
-    "sphinx.ext.todo"
+    "sphinx.ext.todo",
+    "sphinx-prompt", # Required by sphinx_substitution_extensions
+    "sphinx_inline_tabs",
+    "sphinx_substitution_extensions"
 ]
 # Render TODO directives
 todo_include_todos = True
