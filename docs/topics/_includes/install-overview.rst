@@ -62,25 +62,48 @@ Standard installation overview
   * - 2
     - Install Salt's dependencies.
 
-      NOTE: You do not need to install Salt dependencies if you are using the
-      Tiamat packages of Salt.
+      **NOTE:** You do not need to install Salt dependencies if you are using
+      the Tiamat packages of Salt.
     -  * :ref:`install-salt-dependencies`
        * :ref:`upgrade-to-tiamat`
 
   * - 3
     - Install the ``salt-master`` service on the node that will manage your
       other nodes, meaning it will send commands to other nodes.
-    -  * :ref:`install-by-operating-system-index`
-       * :ref:`install-by-method-index`
+
+      For Linux-based operating systems, the recommended installation method is
+      to use the bootstrap script, but you can also manually install Salt using
+      the instructions for each operating system.
+
+      For Windows or macOS operating systems, you need to download and run the
+      installer file for that system.
+    - **For Linux-based systems:**
+       * :ref:`install-bootstrap`
+
+      **For macOS or Windows:**
+       * :ref:`install-macos`
+       * :ref:`install-windows`
+
+      **See also:**
+       * :ref:`install-by-operating-system-index`
 
   * - 4
     - Install the ``salt-minion`` service on the nodes that you want to manage,
       meaning it will receive commands from the Salt master.
-    - * :ref:`install-by-operating-system-index`
-      * :ref:`install-by-method-index`
+    - **For Linux-based systems:**
+       * :ref:`install-bootstrap`
+
+      **For macOS or Windows:**
+       * :ref:`install-macos`
+       * :ref:`install-windows`
+
+      **See also:**
+       * :ref:`install-by-operating-system-index`
 
   * - 5
-    - Configure the Salt master and minions.
+    - Configure the Salt minions to add the IP address of the Salt master they
+      will connect to. You can add additional configurations to the master and
+      minions as needed.
     - :ref:`configure-master-minion`
 
   * - 6
@@ -92,7 +115,7 @@ Standard installation overview
     - :ref:`accept-keys`
 
   * - 8
-    - Verify that the installation was successful.
+    - Verify that the installation was successful by sending a test ping.
     - :ref:`verify-install`
 
 

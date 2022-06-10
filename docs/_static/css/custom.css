@@ -16,6 +16,10 @@ table.docutils td {
   padding-right: 10px;
 }
 
+table.docutils td p:not(:first-child) {
+  padding-top: 25px;
+}
+
 table.slim td {
   padding: 0px;
 }
