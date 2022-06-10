@@ -1,6 +1,7 @@
 http://archive.repo.saltproject.io
 http://example.com
 http://example.org
+http://myproxy.example.com:3128
 http://repo.saltproject.io
 http://www.example.com
 http://www.example.org

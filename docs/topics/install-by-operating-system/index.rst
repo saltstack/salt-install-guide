@@ -1,8 +1,8 @@
 .. _install-by-operating-system-index:
 
-======================================
-Install directions by operating system
-======================================
+=============================================
+Manual install directions by operating system
+=============================================
 
 .. Warning::
     Pay close attention to package versions when navigating

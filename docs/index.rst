@@ -27,8 +27,15 @@ Install Salt
    :hidden:
    :caption: Install Salt
 
+   topics/bootstrap
    topics/install-by-operating-system/index
-   topics/install-by-method/index
+   topics/platform-agnostic
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Post-installation
+
    topics/configure-master-minion
    topics/start-salt-services
    topics/accept-keys

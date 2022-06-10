@@ -13,10 +13,8 @@ This page will explain other configuration options or considerations if needed.
 .. Note::
     Before you can configure the Salt master and minions, you must first install
     the ``salt-master`` and ``salt-minion`` services on your nodes. For
-    installation instructions, see:
+    installation instructions, see :ref:`overview`.
 
-    * :ref:`install-by-operating-system-index`
-    * :ref:`install-by-method-index`
 
 
 Basic master configuration

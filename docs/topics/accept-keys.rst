@@ -13,8 +13,7 @@ receive data from the Salt master until the key is accepted.
     Before you can accept the minion keys, you must first install, configure,
     and start the Salt services. For more information, see:
 
-    * :ref:`install-by-operating-system-index`
-    * :ref:`install-by-method-index`
+    * :ref:`overview`
     * :ref:`configure-master-minion`
     * :ref:`start-salt-services`
 
