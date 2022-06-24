@@ -98,13 +98,6 @@ Overview of supported operating systems
     -
     - Package only
 
-  * - `Debian`_ 9
-    - Yes
-    - Yes
-    - Yes
-    -
-    - Automated, manual
-
   * - `Debian`_ 10
     - Yes
     - Yes
@@ -246,6 +239,13 @@ Overview of supported operating systems
     - Automated, manual
 
   * - `RedHat`_ 8
+    - Yes
+    - Yes
+    - Yes
+    -
+    - Package only
+
+  * - `RedHat`_ 9
     - Yes
     - Yes
     - Yes
