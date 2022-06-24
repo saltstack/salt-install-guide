@@ -14,6 +14,8 @@ These instructions explain how to install Salt on Photon OS operating systems.
     :bdg-secondary:`Python3`
 
 
+.. include:: ../_includes/what-is-tiamat.rst
+
 .. include:: ../_includes/intro-install-by-os.rst
 
 
@@ -21,15 +23,49 @@ Install Salt on Photon OS 3
 ============================
 To install Salt on Photon OS 3:
 
-#. Run the following commands to install the Salt Project repository and pin
+#. Run the following commands to import the Salt Project repository key, and pin
    your Salt upgrades to the latest :ref:`tiamat` package of Salt for
    **Photon OS 3.0**:
 
-   .. parsed-literal::
+   **Click the tab for the Salt version you would like to pin for updates:**
 
-       sudo rpm --import \ |photonos3-tiamat-gpg|\
+   .. tab-set::
 
-       curl -fsSL \ |photonos3-tiamat-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+       .. tab-item:: Photon OS 3 (Latest Tiamat)
+
+           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           of Salt for **Photon OS 3**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |photonos3-tiamat-latest-gpg|\
+
+               curl -fsSL \ |photonos3-tiamat-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+
+       .. tab-item:: Photon OS 3 (Major Tiamat)
+
+           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           of Salt for **Photon OS 3**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |photonos3-tiamat-major-gpg|\
+
+               curl -fsSL \ |photonos3-tiamat-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+
+       .. tab-item:: Photon OS 3 (Minor Tiamat)
+
+           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           of Salt for **Photon OS 3**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |photonos3-tiamat-minor-gpg|\
+
+               curl -fsSL \ |photonos3-tiamat-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
