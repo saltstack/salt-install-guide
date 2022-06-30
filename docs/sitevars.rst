@@ -1,7 +1,7 @@
 .. |release| replace:: 3005
-.. |release-badge| replace:: :bdg-success:`3005`
-.. |supported-release-1-badge| replace:: :bdg-primary:`3004.2`
-.. |supported-release-2-badge| replace:: :bdg-warning:`3003.5`
+.. |release-badge| replace:: :bdg-link-success:`3005 <https://docs.saltproject.io/en/latest/topics/releases/index.html>`
+.. |supported-release-1-badge| replace:: :bdg-link-primary:`3004.2 <https://docs.saltproject.io/en/3004/topics/releases/3004.2.html>`
+.. |supported-release-2-badge| replace:: :bdg-link-info:`3003.5 <https://docs.saltproject.io/en/3003/topics/releases/3003.5.html>`
 .. |juniper-file-version| replace:: 20210827-213932
 .. |native-minion-python-version| replace:: Python 3.7.10
 
