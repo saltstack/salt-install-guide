@@ -21,7 +21,7 @@ placeholder text with your GitLab username:
 https://your-GitLab-username.gitlab.io/salt-install-guide/
 
 
-### Merge requirements satisfied? (FOR REVIEWER USE ONLY)
+## Merge requirements satisfied? (FOR REVIEWER USE ONLY)
 
 - [ ] Verify the pipeline is passing
 - [ ] Check rendered output to ensure formatting is correct for any special

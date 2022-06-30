@@ -14,7 +14,7 @@
 
     **See also**
 
-    * `Release notes <https://docs.saltproject.io/en/3004/topics/releases/>`_
+    * `Release notes <https://docs.saltproject.io/en/latest/topics/releases/index.html>`_
     * :ref:`announcements`
     * `RSS feeds <https://saltproject.io/rss-feeds/>`_
 
@@ -72,19 +72,20 @@ Standard installation overview
       other nodes, meaning it will send commands to other nodes.
 
       For Linux-based operating systems, the recommended installation method is
-      to use the bootstrap script, but you can also manually install Salt using
-      the instructions for each operating system.
+      to use the bootstrap script or you can manually install Salt using the
+      instructions for each operating system.
 
       For Windows or macOS operating systems, you need to download and run the
       installer file for that system.
     - **For Linux-based systems:**
        * :ref:`install-bootstrap`
+       * :ref:`install-by-operating-system-index`
 
       **For macOS or Windows:**
        * :ref:`install-macos`
        * :ref:`install-windows`
 
-      **See also:**
+      **For all operating systems:**
        * :ref:`install-by-operating-system-index`
 
   * - 4
@@ -92,12 +93,13 @@ Standard installation overview
       meaning it will receive commands from the Salt master.
     - **For Linux-based systems:**
        * :ref:`install-bootstrap`
+       * :ref:`install-by-operating-system-index`
 
       **For macOS or Windows:**
        * :ref:`install-macos`
        * :ref:`install-windows`
 
-      **See also:**
+      **For all operating systems:**
        * :ref:`install-by-operating-system-index`
 
   * - 5
