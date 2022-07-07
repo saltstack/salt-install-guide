@@ -29,7 +29,8 @@ Salt packages can be accessed from
     Beginning with the 3005 (Phosphorus) release of Salt, the Salt Project is
     changing its packaging system to Tiamat. Any new operating systems added in
     3005 will only have Tiamat packages. The Salt Project will phase out the old
-    Salt package builds for currently supported operating systems by 3007.
+    Salt package builds for currently supported operating systems by 3007. See
+    :ref:`what-is-tiamat` for more information.
 
     Begin planning your migration or consider updating your Salt infrastructure
     to the new Tiamat packages as soon as possible. See :ref:`upgrade-to-Tiamat`

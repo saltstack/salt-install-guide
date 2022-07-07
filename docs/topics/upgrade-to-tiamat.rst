@@ -9,6 +9,8 @@ Salt 3005 (Phosphorus), the Salt Project will begin replacing the old packaging
 system with the Tiamat packaging system.
 
 
+.. _what-is-tiamat:
+
 What is Tiamat?
 ===============
 The Tiamat packages simplify the installation process because they allow you to
