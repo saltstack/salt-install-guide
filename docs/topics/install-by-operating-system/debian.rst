@@ -7,7 +7,6 @@ Debian
 These instructions explain how to install Salt on Debian operating systems:
 
 * `Install Tiamat packages of Salt on Debian 11 (Bullseye)`_
-* `Install Tiamat packages of Salt on Debian 11 (Bullseye) ARM64`_
 * `Install classic packages of Salt on Debian 11 (Bullseye)`_
 * `Install classic packages of Salt on Debian 11 (Bullseye) ARM64`_
 * `Install classic packages of Salt on Debian 10 (Buster)`_
@@ -99,13 +98,12 @@ To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye):
 .. include:: ../_includes/post-install-by-os.rst
 
 
+.. Install Tiamat packages of Salt on Debian 11 (Bullseye) ARM64
+ =============================================================
+ To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye) ARM64:
 
-Install Tiamat packages of Salt on Debian 11 (Bullseye) ARM64
-=============================================================
-To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye) ARM64:
-
-#. Run the following commands to import the Salt Project repository key, and to
-   create the apt sources list file:
+ #. Run the following commands to import the Salt Project repository key, and to
+ create the apt sources list file:
 
    **Click the tab for the Salt version you would like to pin for updates:**
 
@@ -146,9 +144,9 @@ To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye) ARM64:
 
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-tiamat-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-#. Run ``sudo apt-get update`` to update your packages.
+ #. Run ``sudo apt-get update`` to update your packages.
 
-#. Install the salt-minion, salt-master, or other Salt components:
+ #. Install the salt-minion, salt-master, or other Salt components:
 
    .. code-block:: bash
 
@@ -159,7 +157,7 @@ To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye) ARM64:
        sudo apt-get install salt-cloud
        sudo apt-get install salt-api
 
-#. Enable and start the services for salt-minion, salt-master, or other Salt
+ #. Enable and start the services for salt-minion, salt-master, or other Salt
    components:
 
    .. code-block:: bash
@@ -170,7 +168,7 @@ To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye) ARM64:
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
 
-.. include:: ../_includes/post-install-by-os.rst
+ .. include:: ../_includes/post-install-by-os.rst
 
 
 Install classic packages of Salt on Debian 11 (Bullseye)

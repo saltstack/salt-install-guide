@@ -6,14 +6,11 @@ Ubuntu
 
 These instructions explain how to install Salt on Debian operating systems:
 
-* `Install Tiamat packages of Salt on Ubuntu 22 (Jammy)`_
-* `Install Tiamat packages of  Salt on Ubuntu 22 (Jammy) ARM64`_
-* `Install Tiamat packages of Salt on Ubuntu 20 (Focal)`_
-* `Install Tiamat packages of Salt on Ubuntu 20 (Focal) ARM64`_
-* `Install Tiamat packages of Salt on Ubuntu 18 (Bionic)`_
-* `Install classic packages of Salt on Ubuntu 20 (Focal)`_
-* `Install classic packages of Salt on Ubuntu 20 (Focal) ARM64`_
-* `Install classic packages of Salt on Ubuntu 18 (Bionic)`_
+* `Install Tiamat packages of Salt on Ubuntu 22.04 (Jammy)`_
+* `Install Tiamat packages of Salt on Ubuntu 20.04 (Focal)`_
+* `Install Tiamat packages of Salt on Ubuntu 18.04 (Bionic)`_
+* `Install classic packages of Salt on Ubuntu 20.04 (Focal)`_
+* `Install classic packages of Salt on Ubuntu 18.04 (Bionic)`_
 
 
 .. card:: Browse the repo for Ubuntu packages
@@ -28,9 +25,9 @@ These instructions explain how to install Salt on Debian operating systems:
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install Tiamat packages of Salt on Ubuntu 22 (Jammy)
-====================================================
-To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy):
+Install Tiamat packages of Salt on Ubuntu 22.04 (Jammy)
+=======================================================
+To install the :ref:`tiamat` packages of Salt on Ubuntu 22.04 (Jammy):
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -39,10 +36,10 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy):
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 22 (Jammy) (Latest Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) (Latest Tiamat)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
-           of Salt for **Ubuntu 22 (Jammy)**:
+           of Salt for **Ubuntu 22.04 (Jammy)**:
 
            .. parsed-literal::
 
@@ -50,10 +47,10 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy):
 
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 22 (Jammy) (Major Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) (Major Tiamat)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
-           of Salt for **Ubuntu 22 (Jammy)**:
+           of Salt for **Ubuntu 22.04 (Jammy)**:
 
            .. parsed-literal::
 
@@ -61,10 +58,10 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy):
 
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 22 (Jammy) (Minor Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) (Minor Tiamat)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
-           of Salt for **Ubuntu 22 (Jammy)**:
+           of Salt for **Ubuntu 22.04 (Jammy)**:
 
            .. parsed-literal::
 
@@ -100,21 +97,21 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy):
 .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Tiamat packages of Salt on Ubuntu 22 (Jammy) ARM64
-==========================================================
-To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy) ARM64:
+.. Install Tiamat packages of Salt on Ubuntu 22.04 (Jammy) ARM64
+ ==========================================================
+ To install the :ref:`tiamat` packages of Salt on Ubuntu 22.04 (Jammy) ARM64:
 
-#. Run the following commands to import the Salt Project repository key, and to
+ #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
 
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 22 (Jammy) ARM64 (Latest Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Latest Tiamat)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
-           of Salt for **Ubuntu 22 (Jammy) ARM64**:
+           of Salt for **Ubuntu 22.04 (Jammy) ARM64**:
 
            .. parsed-literal::
 
@@ -122,10 +119,10 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy) ARM64:
 
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 22 (Jammy) ARM64 (Major Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Major Tiamat)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
-           of Salt for **Ubuntu 22 (Jammy) ARM64**:
+           of Salt for **Ubuntu 22.04 (Jammy) ARM64**:
 
            .. parsed-literal::
 
@@ -133,7 +130,7 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy) ARM64:
 
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 22 (Jammy) ARM64 (Minor Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Minor Tiamat)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
            of Salt for **Ubuntu 22 (Jammy) ARM64**:
@@ -145,9 +142,9 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy) ARM64:
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-#. Run ``sudo apt-get update`` to update your packages.
+ #. Run ``sudo apt-get update`` to update your packages.
 
-#. Install the salt-minion, salt-master, or other Salt components:
+ #. Install the salt-minion, salt-master, or other Salt components:
 
    .. code-block:: bash
 
@@ -158,7 +155,7 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy) ARM64:
        sudo apt-get install salt-cloud
        sudo apt-get install salt-api
 
-#. Enable and start the services for salt-minion, salt-master, or other Salt
+ #. Enable and start the services for salt-minion, salt-master, or other Salt
    components:
 
    .. code-block:: bash
@@ -169,12 +166,12 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22 (Jammy) ARM64:
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
 
-.. include:: ../_includes/post-install-by-os.rst
+ .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Tiamat packages of Salt on Ubuntu 20 (Focal)
-====================================================
-To install the :ref:`tiamat` packages of Salt on Ubuntu 20 (Focal):
+Install Tiamat packages of Salt on Ubuntu 20.04 (Focal)
+=======================================================
+To install the :ref:`tiamat` packages of Salt on Ubuntu 20.04 (Focal):
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -183,21 +180,21 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20 (Focal):
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 20 (Focal) (Latest Tiamat)
+       .. tab-item:: Ubuntu 20.04 (Focal) (Latest Tiamat)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
-           of Salt for **Ubuntu 20 (Focal)**:
+           of Salt for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
                sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-tiamat-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 20 (Major Tiamat)
+       .. tab-item:: Ubuntu 20.04 (Major Tiamat)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
-           of Salt for **Ubuntu 20 (Focal)**:
+           of Salt for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
@@ -206,10 +203,10 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20 (Focal):
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 20 (Minor Tiamat)
+       .. tab-item:: Ubuntu 20.04 (Minor Tiamat)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
-           of Salt for **Ubuntu 20 (Focal)**:
+           of Salt for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
@@ -245,21 +242,21 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20 (Focal):
 
 
 
-Install Tiamat packages of Salt on Ubuntu 20 (Focal) ARM64
-==========================================================
-To install the :ref:`tiamat` packages of Salt on Ubuntu 20 (Focal) ARM64:
+.. Install Tiamat packages of Salt on Ubuntu 20.04 (Focal) ARM64
+ ==========================================================
+ To install the :ref:`tiamat` packages of Salt on Ubuntu 20.04 (Focal) ARM64:
 
-#. Run the following commands to import the Salt Project repository key, and to
+ #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
 
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 20 ARM64 (Tiamat Latest)
+       .. tab-item:: Ubuntu 20.04 ARM64 (Tiamat Latest)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
-           of Salt for **Ubuntu 20 (Focal) ARM64**:
+           of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
@@ -267,10 +264,10 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20 (Focal) ARM64:
 
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 20 ARM64 (Tiamat Major)
+       .. tab-item:: Ubuntu 20.04 ARM64 (Tiamat Major)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
-           of Salt for **Ubuntu 20 (Focal) ARM64**:
+           of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
@@ -279,10 +276,10 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20 (Focal) ARM64:
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 20 ARM64 (Tiamat Minor)
+       .. tab-item:: Ubuntu 20.04 ARM64 (Tiamat Minor)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
-           of Salt for **Ubuntu 20 (Focal) ARM64**:
+           of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
@@ -291,9 +288,9 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20 (Focal) ARM64:
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-tiamat-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-#. Run ``sudo apt-get update`` to update your packages.
+ #. Run ``sudo apt-get update`` to update your packages.
 
-#. Install the salt-minion, salt-master, or other Salt components:
+ #. Install the salt-minion, salt-master, or other Salt components:
 
    .. code-block:: bash
 
@@ -304,7 +301,7 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20 (Focal) ARM64:
        sudo apt-get install salt-cloud
        sudo apt-get install salt-api
 
-#. Enable and start the services for salt-minion, salt-master, or other Salt
+ #. Enable and start the services for salt-minion, salt-master, or other Salt
    components:
 
    .. code-block:: bash
@@ -315,12 +312,12 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20 (Focal) ARM64:
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
 
-.. include:: ../_includes/post-install-by-os.rst
+ .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Tiamat packages of Salt on Ubuntu 18 (Bionic)
-=====================================================
-To install the :ref:`tiamat` packages of Salt on Ubuntu 18 (Bionic):
+Install Tiamat packages of Salt on Ubuntu 18.04 (Bionic)
+========================================================
+To install the :ref:`tiamat` packages of Salt on Ubuntu 18.04 (Bionic):
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -329,21 +326,21 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 18 (Bionic):
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 18 (Tiamat Latest)
+       .. tab-item:: Ubuntu 18.04 (Tiamat Latest)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
-           of Salt for **Ubuntu 18 (Bionic)**:
+           of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
                sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-tiamat-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu18-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 18 (Tiamat Major)
+       .. tab-item:: Ubuntu 18.04 (Tiamat Major)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
-           of Salt for **Ubuntu 18 (Bionic)**:
+           of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
@@ -352,10 +349,10 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 18 (Bionic):
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 18 (Tiamat Minor)
+       .. tab-item:: Ubuntu 18.04 (Tiamat Minor)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
-           of Salt for **Ubuntu 18 (Bionic)**:
+           of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
@@ -391,12 +388,12 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 18 (Bionic):
 .. include:: ../_includes/post-install-by-os.rst
 
 
-Install classic packages of Salt on Ubuntu 20 (Focal)
-=====================================================
+Install classic packages of Salt on Ubuntu 20.04 (Focal)
+========================================================
 
 .. include:: ../_includes/warning-about-old-packages.rst
 
-To install Salt on Ubuntu 20 (Focal) using the old packaging system:
+To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -405,9 +402,10 @@ To install Salt on Ubuntu 20 (Focal) using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 20 (Latest)
+       .. tab-item:: Ubuntu 20.04 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for **Ubuntu 20 (Focal)**:
+           To pin your Salt upgrades to the :ref:`latest` package of Salt for
+           **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
@@ -416,9 +414,10 @@ To install Salt on Ubuntu 20 (Focal) using the old packaging system:
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 20 (Major)
+       .. tab-item:: Ubuntu 20.04 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt for **Ubuntu 20 (Focal)**:
+           To pin your Salt upgrades to the latest :ref:`major` package of Salt for
+           **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
@@ -427,9 +426,10 @@ To install Salt on Ubuntu 20 (Focal) using the old packaging system:
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 20 (Minor)
+       .. tab-item:: Ubuntu 20.04 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt for **Ubuntu 20 (Focal)**:
+           To pin your Salt upgrades to the latest :ref:`minor` package of Salt
+           for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
@@ -465,12 +465,12 @@ To install Salt on Ubuntu 20 (Focal) using the old packaging system:
 
 
 
-Install classic packages of Salt on Ubuntu 20 (Focal) ARM64
-===========================================================
+Install classic packages of Salt on Ubuntu 20.04 (Focal) ARM64
+==============================================================
 
 .. include:: ../_includes/warning-about-old-packages.rst
 
-To install Salt on Ubuntu 20 (Focal) using the old packaging system:
+To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -479,9 +479,10 @@ To install Salt on Ubuntu 20 (Focal) using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 20 ARM64 (Latest)
+       .. tab-item:: Ubuntu 20.04 ARM64 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for **Ubuntu 20 (Focal) ARM64**:
+           To pin your Salt upgrades to the :ref:`latest` package of Salt for
+           **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
@@ -490,9 +491,10 @@ To install Salt on Ubuntu 20 (Focal) using the old packaging system:
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 20 ARM64 (Major)
+       .. tab-item:: Ubuntu 20.04 ARM64 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt for **Ubuntu 20 (Focal) ARM64**:
+           To pin your Salt upgrades to the latest :ref:`major` package of Salt
+           for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
@@ -501,9 +503,10 @@ To install Salt on Ubuntu 20 (Focal) using the old packaging system:
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 20 ARM64 (Minor)
+       .. tab-item:: Ubuntu 20.04 ARM64 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt for **Ubuntu 20 (Focal) ARM64**:
+           To pin your Salt upgrades to the latest :ref:`minor` package of Salt
+           for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
@@ -539,12 +542,12 @@ To install Salt on Ubuntu 20 (Focal) using the old packaging system:
 .. include:: ../_includes/post-install-by-os.rst
 
 
-Install classic packages of Salt on Ubuntu 18 (Bionic)
-======================================================
+Install classic packages of Salt on Ubuntu 18.04 (Bionic)
+=========================================================
 
 .. include:: ../_includes/warning-about-old-packages.rst
 
-To install Salt on Ubuntu 18 (Bionic) using the old packaging system:
+To install Salt on Ubuntu 18.04 (Bionic) using the old packaging system:
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -553,9 +556,10 @@ To install Salt on Ubuntu 18 (Bionic) using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 18 (Latest)
+       .. tab-item:: Ubuntu 18.04 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for **Ubuntu 18 (Bionic)**:
+           To pin your Salt upgrades to the :ref:`latest` package of Salt for
+           **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
@@ -564,9 +568,10 @@ To install Salt on Ubuntu 18 (Bionic) using the old packaging system:
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 18 (Major)
+       .. tab-item:: Ubuntu 18.04 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt for **Ubuntu 18 (Bionic)**:
+           To pin your Salt upgrades to the latest :ref:`major` package of Salt
+           for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
@@ -575,9 +580,10 @@ To install Salt on Ubuntu 18 (Bionic) using the old packaging system:
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 18 (Minor)
+       .. tab-item:: Ubuntu 18.04 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt for **Ubuntu 18 (Bionic)**:
+           To pin your Salt upgrades to the latest :ref:`minor` package of Salt
+           for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
