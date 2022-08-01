@@ -19,16 +19,32 @@ for updates. The following sections explain the different options for
 repositories you can pin for updates:
 
 
-.. _tiamat:
+.. _onedir:
 
-Tiamat
+Onedir
 ------
-Tiamat is the Salt Project's new packaging system. Beginning with the release of
-Salt 3005 (Phosphorus), the Salt Project will begin replacing the old packaging
-system with the Tiamat packaging system.
+Onedir is Salt's new packaging system (as of 3005). Onedir stands for "one
+directory" because the goal is to provide a single directory containing all the
+executables that Salt needs. It includes the version of Python needed by Salt
+and its required dependencies. The onedir packages simplify the installation
+process because they allow you to use Salt out of the box without installing
+Python or other dependencies first. See :ref:`what-is-onedir` for more
+information.
 
-The Tiamat packages simplify the installation process because they allow you to
-use Salt out of the box without installing Python or other dependencies first.
+Beginning with the release of Salt 3005 (Phosphorus), the Salt Project will
+begin replacing the old packaging system with the Tiamat packaging system.
+The Salt Project **strongly** recommends upgrading to onedir to continue
+receiving Salt version updates. See :ref:`upgrade-to-onedir` for more
+information.
+
+
+.. _classic:
+
+Classic
+-------
+Classic packages refer to the old Salt packaging system. These packages will be
+provided for Salt for currently supported operating systems for the 3005 and
+3006 releases. After that, all Salt packages will be onedir packages.
 
 
 .. _latest:

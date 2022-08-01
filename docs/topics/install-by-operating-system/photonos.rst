@@ -14,7 +14,7 @@ These instructions explain how to install Salt on Photon OS operating systems.
     :bdg-secondary:`Python3`
 
 
-.. include:: ../_includes/what-is-tiamat.rst
+.. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
 
@@ -24,47 +24,47 @@ Install Salt on Photon OS 3
 To install Salt on Photon OS 3:
 
 #. Run the following commands to import the Salt Project repository key, and pin
-   your Salt upgrades to the latest :ref:`tiamat` package of Salt for
+   your Salt upgrades to the latest :ref:`onedir` package of Salt for
    **Photon OS 3.0**:
 
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
 
-       .. tab-item:: Photon OS 3 (Latest Tiamat)
+       .. tab-item:: Photon OS 3 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **Photon OS 3**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |photonos3-tiamat-latest-gpg|\
+               sudo rpm --import \ |photonos3-onedir-latest-gpg|\
 
-               curl -fsSL \ |photonos3-tiamat-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |photonos3-onedir-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 
-       .. tab-item:: Photon OS 3 (Major Tiamat)
+       .. tab-item:: Photon OS 3 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **Photon OS 3**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |photonos3-tiamat-major-gpg|\
+               sudo rpm --import \ |photonos3-onedir-major-gpg|\
 
-               curl -fsSL \ |photonos3-tiamat-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |photonos3-onedir-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 
-       .. tab-item:: Photon OS 3 (Minor Tiamat)
+       .. tab-item:: Photon OS 3 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **Photon OS 3**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |photonos3-tiamat-minor-gpg|\
+               sudo rpm --import \ |photonos3-onedir-minor-gpg|\
 
-               curl -fsSL \ |photonos3-tiamat-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |photonos3-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
