@@ -1,22 +1,26 @@
-.. _upgrade-to-tiamat:
+.. _upgrade-to-onedir:
 
 =================
-Upgrade to Tiamat
+Upgrade to onedir
 =================
 
-Tiamat is the Salt Project's new packaging system. Beginning with the release of
+Onedir is the Salt Project's new packaging system. Beginning with the release of
 Salt 3005 (Phosphorus), the Salt Project will begin replacing the old packaging
-system with the Tiamat packaging system.
+system with the onedir packaging system.
 
 
-.. _what-is-tiamat:
+.. _what-is-onedir:
 
-What is Tiamat?
+What is onedir?
 ===============
-The Tiamat packages simplify the installation process because they allow you to
+Onedir stands for "one directory" because the goal is to provide a single
+directory containing all the executables that Salt needs. It includes the
+version of Python needed by Salt and its required dependencies.
+
+Onedir packages simplify the installation process because they allow you to
 use Salt out of the box without installing Python or other dependencies first.
 
-Tiamat packages are self-contained binaries of Salt. Tiamat packages include:
+Onedir packages are self-contained binaries of Salt. Onedir packages include:
 
 .. list-table::
   :widths: 40 60
@@ -32,8 +36,8 @@ Tiamat packages are self-contained binaries of Salt. Tiamat packages include:
     - `Salt dependencies <https://github.com/saltstack/salt/blob/master/requirements/static/pkg/py3.9/linux.txt>`_
 
 
-.. Note::
-    The dependencies included with Tiamat are required for Salt's core
+.. Warning::
+    The dependencies included with onedir are required for Salt's core
     functionality only. If you are using a Salt module that has an additional
     dependency, you will need to additionally install any dependencies required
     by that specific module. See the
@@ -41,11 +45,11 @@ Tiamat packages are self-contained binaries of Salt. Tiamat packages include:
     for that specific module for a list of required dependencies.
 
 
-Timeline for upgrading to Tiamat packaging
+Timeline for upgrading to onedir packaging
 ==========================================
 In order to avoid disruption of services and continue getting upgraded versions
-of Salt, begin planning how you will update your Salt infrastructure to Tiamat
-before the 3007 release. See `How to upgrade to Tiamat`_ for more information.
+of Salt, begin planning how you will update your Salt infrastructure to onedir
+before the 3007 release. See `How to upgrade to onedir`_ for more information.
 
 .. list-table::
   :widths: 15 85
@@ -56,35 +60,36 @@ before the 3007 release. See `How to upgrade to Tiamat`_ for more information.
     - Packaging changes
 
   * - 3005
-    -  * The Salt Project will begin to phase out the old Salt package builds.
-       * Both Tiamat packages and old Salt package builds will be provided,
+    -  * The Salt Project will begin to phase out the old, "classic" Salt
+         package builds.
+       * Both onedir packages and classic Salt package builds will be provided,
          except for operating systems that are newly supported in 3005.
        * See `Platform package support for Salt 3005`_ for more information.
 
   * - 3006
-    -  * Both Tiamat packages and old Salt package builds will be provided,
+    -  * Both onedir packages and classic Salt package builds will be provided,
          except for operating systems that are newly supported in 3006.
-       * Only Tiamat packages will be provided for platforms that do not support
-         Python 3.7 or higher, including Debian 9, Ubuntu 18.04, RHEL 7, RHEL 8,
+       * Only classic packages will be provided for platforms that do not
+         support Python 3.7 or higher, including Ubuntu 18.04, RHEL 7, RHEL 8,
          Raspbian 9, and Raspbian 10.
 
   * - 3007
-    - The Salt Project will only support Tiamat packages going forward.
+    - The Salt Project will only support onedir packages going forward.
 
 
-How to upgrade to Tiamat
+How to upgrade to onedir
 ========================
-To upgrade to Tiamat:
+To upgrade to onedir:
 
-#. On your Salt infrastructure (masters, minions, etc.) update the repository
-   path to point to the new Tiamat repository paths for your operating system.
+#. On your Salt infrastructure (masters, minions, etc.), update the repository
+   path to point to the new onedir repository paths for your operating system.
    See `Repository paths`_ for more information.
 
    .. Tip::
        Rather than manually updating the configuration files with the correct
        repository link, you can re-run the installation commands for your
        operating system. When you re-run the commands, make sure you select the
-       instructions for the **Tiamat** version of the package. See
+       instructions for the **onedir** version of the package. See
        :ref:`install-by-operating-system-index` for the specific commands.
 
 #. After the repository file is updated, upgrade your Salt packages.
@@ -96,7 +101,7 @@ To upgrade to Tiamat:
        systemctl start salt-master
        systemctl start salt-minion
 
-#. Ensure any 3rd party pip packages are installed in the correct Tiamat path.
+#. Ensure any 3rd party pip packages are installed in the correct onedir path.
 
    You can use two possible methods:
 
@@ -106,8 +111,8 @@ To upgrade to Tiamat:
 
 Repository paths
 ----------------
-The following Tiamat paths will not be available until the day of the Salt 3005
-(Phosphorus) release. The non-Tiamat paths are available now.
+The following onedir paths will not be available until the day of the Salt 3005
+(Phosphorus) release. The classic (non-onedir) paths are available now.
 
 .. list-table::
   :widths: 10 50 40
@@ -115,8 +120,8 @@ The following Tiamat paths will not be available until the day of the Salt 3005
   :stub-columns: 1
 
   * -
-    - Tiamat path
-    - Non-Tiamat path
+    - Onedir path
+    - Classic path
 
   * - CentOS
     - https://repo.saltproject.io/salt/py3/redhat/
@@ -162,8 +167,8 @@ Platform package support for Salt 3005
   :class: checkmarks
 
   * -
-    - New Tiamat packages
-    - Non-Tiamat packages (old)
+    - New onedir packages
+    - Classic packages (non-onedir)
 
   * - CentOS 8 Streaming
     - Yes

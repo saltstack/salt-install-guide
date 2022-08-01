@@ -7,7 +7,7 @@ Amazon Linux 2
 These instructions explain how to install Salt on Amazon Linux 2 operating
 systems:
 
-* `Install Tiamat packages of Salt on Amazon Linux 2`_
+* `Install onedir packages of Salt on Amazon Linux 2`_
 * `Install classic packages of Salt on Amazon Linux 2`_
 
 
@@ -19,51 +19,51 @@ systems:
     :bdg-secondary:`Python3`
 
 
-.. include:: ../_includes/what-is-tiamat.rst
+.. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install Tiamat packages of Salt on Amazon Linux 2
+Install onedir packages of Salt on Amazon Linux 2
 =================================================
-To install the :ref:`tiamat` packages of Salt on Amazon Linux 2:
+To install the :ref:`onedir` packages of Salt on Amazon Linux 2:
 
 #. Run the following commands to install the Salt Project repository and key:
 
    .. tab-set::
 
-       .. tab-item:: Amazon Linux 2 (Latest Tiamat)
+       .. tab-item:: Amazon Linux 2 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **Amazon Linux 2**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |amazon-linux2-tiamat-latest-gpg|\
+               sudo rpm --import \ |amazon-linux2-onedir-latest-gpg|\
 
-               curl -fsSL \ |amazon-linux2-tiamat-latest-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
+               curl -fsSL \ |amazon-linux2-onedir-latest-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
-       .. tab-item:: Amazon Linux 2 (Major Tiamat)
+       .. tab-item:: Amazon Linux 2 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **Amazon Linux 2**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |amazon-linux2-tiamat-major-gpg|\
+               sudo rpm --import \ |amazon-linux2-onedir-major-gpg|\
 
-               curl -fsSL \ |amazon-linux2-tiamat-major-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
+               curl -fsSL \ |amazon-linux2-onedir-major-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
-       .. tab-item:: Amazon Linux 2 (Minor Tiamat)
+       .. tab-item:: Amazon Linux 2 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **Amazon Linux 2**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |amazon-linux2-tiamat-minor-gpg|\
+               sudo rpm --import \ |amazon-linux2-onedir-minor-gpg|\
 
-               curl -fsSL \ |amazon-linux2-tiamat-minor-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
+               curl -fsSL \ |amazon-linux2-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
@@ -105,7 +105,8 @@ To install Salt on Amazon Linux 2 using the old packaging system:
 
        .. tab-item:: Amazon Linux 2 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for **Amazon Linux 2**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
+           of Salt for **Amazon Linux 2**:
 
            .. parsed-literal::
 
@@ -115,7 +116,8 @@ To install Salt on Amazon Linux 2 using the old packaging system:
 
        .. tab-item:: Amazon Linux 2 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt for **Amazon Linux 2**:
+           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
+           package of Salt for **Amazon Linux 2**:
 
            .. parsed-literal::
 
@@ -125,7 +127,8 @@ To install Salt on Amazon Linux 2 using the old packaging system:
 
        .. tab-item:: Amazon Linux 2 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt for **Amazon Linux 2**:
+           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
+           package of Salt for **Amazon Linux 2**:
 
            .. parsed-literal::
 

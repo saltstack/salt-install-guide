@@ -7,9 +7,9 @@ RedHat (RHEL)
 These instructions explain how to install Salt on RedHat (RHEL) operating
 systems:
 
-* `Install Tiamat packages of Salt on RedHat (RHEL) 9`_
-* `Install Tiamat packages of Salt on RedHat (RHEL) 8`_
-* `Install Tiamat packages of Salt on RedHat (RHEL) 7`_
+* `Install onedir packages of Salt on RedHat (RHEL) 9`_
+* `Install onedir packages of Salt on RedHat (RHEL) 8`_
+* `Install onedir packages of Salt on RedHat (RHEL) 7`_
 * `Install classic packages of Salt on RedHat (RHEL) 8`_
 * `Install classic packages of Salt on RedHat (RHEL) 7`_
 
@@ -21,14 +21,14 @@ systems:
     :bdg-primary:`RedHat`
     :bdg-secondary:`Python3`
 
-.. include:: ../_includes/what-is-tiamat.rst
+.. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install Tiamat packages of Salt on RedHat (RHEL) 9
+Install onedir packages of Salt on RedHat (RHEL) 9
 ==================================================
-To install the :ref:`tiamat` packages of Salt on RedHat 9:
+To install the :ref:`onedir` packages of Salt on RedHat 9:
 
 #. Run the following commands to install the Salt Project repository and key:
 
@@ -36,38 +36,38 @@ To install the :ref:`tiamat` packages of Salt on RedHat 9:
 
    .. tab-set::
 
-       .. tab-item:: RHEL 9 (Latest Tiamat)
+       .. tab-item:: RHEL 9 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **RHEL 9**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel9-tiamat-latest-gpg|\
+               sudo rpm --import \ |rhel9-onedir-latest-gpg|\
 
-               curl -fsSL \ |rhel9-tiamat-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel9-onedir-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-       .. tab-item:: RHEL 9 (Major Tiamat)
+       .. tab-item:: RHEL 9 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **RHEL 9**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel9-tiamat-major-gpg|\
+               sudo rpm --import \ |rhel9-onedir-major-gpg|\
 
-               curl -fsSL \ |rhel9-tiamat-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel9-onedir-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-       .. tab-item:: RHEL 9 (Minor Tiamat)
+       .. tab-item:: RHEL 9 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **RHEL 9**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel9-tiamat-minor-gpg|\
+               sudo rpm --import \ |rhel9-onedir-minor-gpg|\
 
-               curl -fsSL \ |rhel9-tiamat-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel9-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
@@ -96,9 +96,9 @@ To install the :ref:`tiamat` packages of Salt on RedHat 9:
 .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Tiamat packages of Salt on RedHat (RHEL) 8
+Install onedir packages of Salt on RedHat (RHEL) 8
 ==================================================
-To install the :ref:`tiamat` packages of Salt on RedHat 8:
+To install the :ref:`onedir` packages of Salt on RedHat 8:
 
 #. Run the following commands to install the Salt Project repository and key:
 
@@ -106,38 +106,38 @@ To install the :ref:`tiamat` packages of Salt on RedHat 8:
 
    .. tab-set::
 
-       .. tab-item:: RHEL 8 (Latest Tiamat)
+       .. tab-item:: RHEL 8 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **RHEL 8**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel8-tiamat-latest-gpg|\
+               sudo rpm --import \ |rhel8-onedir-latest-gpg|\
 
-               curl -fsSL \ |rhel8-tiamat-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel8-onedir-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-       .. tab-item:: RHEL 8 (Major Tiamat)
+       .. tab-item:: RHEL 8 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **RHEL 8**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel8-tiamat-major-gpg|\
+               sudo rpm --import \ |rhel8-onedir-major-gpg|\
 
-               curl -fsSL \ |rhel8-tiamat-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel8-onedir-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-       .. tab-item:: RHEL 8 (Minor Tiamat)
+       .. tab-item:: RHEL 8 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **RHEL 8**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel8-tiamat-minor-gpg|\
+               sudo rpm --import \ |rhel8-onedir-minor-gpg|\
 
-               curl -fsSL \ |rhel8-tiamat-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel8-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
@@ -166,9 +166,9 @@ To install the :ref:`tiamat` packages of Salt on RedHat 8:
 .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Tiamat packages of Salt on RedHat (RHEL) 7
+Install onedir packages of Salt on RedHat (RHEL) 7
 ==================================================
-To install the :ref:`tiamat` packages of Salt on RedHat 7:
+To install the :ref:`onedir` packages of Salt on RedHat 7:
 
 #. Run the following commands to install the Salt Project repository and key:
 
@@ -176,38 +176,38 @@ To install the :ref:`tiamat` packages of Salt on RedHat 7:
 
    .. tab-set::
 
-       .. tab-item:: RHEL 7 (Latest Tiamat)
+       .. tab-item:: RHEL 7 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **RHEL 7**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel7-tiamat-latest-gpg|\
+               sudo rpm --import \ |rhel7-onedir-latest-gpg|\
 
-               curl -fsSL \ |rhel7-tiamat-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel7-onedir-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-       .. tab-item:: RHEL 7 (Major Tiamat)
+       .. tab-item:: RHEL 7 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **RHEL 7**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel7-tiamat-major-gpg|\
+               sudo rpm --import \ |rhel7-onedir-major-gpg|\
 
-               curl -fsSL \ |rhel7-tiamat-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel7-onedir-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-       .. tab-item:: RHEL 7 (Minor Tiamat)
+       .. tab-item:: RHEL 7 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **RHEL 7**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel7-tiamat-minor-gpg|\
+               sudo rpm --import \ |rhel7-onedir-minor-gpg|\
 
-               curl -fsSL \ |rhel7-tiamat-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel7-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
@@ -252,7 +252,8 @@ To install Salt on RedHat 8 using the old packaging system:
 
        .. tab-item:: RHEL 8 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for **RHEL 8**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
+           of Salt for **RHEL 8**:
 
            .. parsed-literal::
 
@@ -262,7 +263,8 @@ To install Salt on RedHat 8 using the old packaging system:
 
        .. tab-item:: RHEL 8 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt for **RHEL 8**:
+           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
+           package of Salt for **RHEL 8**:
 
            .. parsed-literal::
 
@@ -272,7 +274,8 @@ To install Salt on RedHat 8 using the old packaging system:
 
        .. tab-item:: RHEL 8 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt for **RHEL 8**:
+           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
+           package of Salt for **RHEL 8**:
 
            .. parsed-literal::
 
@@ -323,7 +326,8 @@ To install Salt on RedHat 7 using the old packaging system:
 
        .. tab-item:: RHEL 7 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for **RHEL 7**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
+           of Salt for **RHEL 7**:
 
            .. parsed-literal::
 
@@ -333,7 +337,8 @@ To install Salt on RedHat 7 using the old packaging system:
 
        .. tab-item:: RHEL 7 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt for **RHEL 7**:
+           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
+           package of Salt for **RHEL 7**:
 
            .. parsed-literal::
 
@@ -343,7 +348,8 @@ To install Salt on RedHat 7 using the old packaging system:
 
        .. tab-item:: RHEL 7 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt for **RHEL 7**:
+           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
+           package of Salt for **RHEL 7**:
 
            .. parsed-literal::
 

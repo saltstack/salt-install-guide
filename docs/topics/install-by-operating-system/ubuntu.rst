@@ -6,9 +6,9 @@ Ubuntu
 
 These instructions explain how to install Salt on Debian operating systems:
 
-* `Install Tiamat packages of Salt on Ubuntu 22.04 (Jammy)`_
-* `Install Tiamat packages of Salt on Ubuntu 20.04 (Focal)`_
-* `Install Tiamat packages of Salt on Ubuntu 18.04 (Bionic)`_
+* `Install onedir packages of Salt on Ubuntu 22.04 (Jammy)`_
+* `Install onedir packages of Salt on Ubuntu 20.04 (Focal)`_
+* `Install onedir packages of Salt on Ubuntu 18.04 (Bionic)`_
 * `Install classic packages of Salt on Ubuntu 20.04 (Focal)`_
 * `Install classic packages of Salt on Ubuntu 18.04 (Bionic)`_
 
@@ -20,14 +20,14 @@ These instructions explain how to install Salt on Debian operating systems:
     :bdg-primary:`Ubuntu`
     :bdg-secondary:`Python3`
 
-.. include:: ../_includes/what-is-tiamat.rst
+.. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install Tiamat packages of Salt on Ubuntu 22.04 (Jammy)
+Install onedir packages of Salt on Ubuntu 22.04 (Jammy)
 =======================================================
-To install the :ref:`tiamat` packages of Salt on Ubuntu 22.04 (Jammy):
+To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy):
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -36,38 +36,38 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22.04 (Jammy):
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 22.04 (Jammy) (Latest Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **Ubuntu 22.04 (Jammy)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 22.04 (Jammy) (Major Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **Ubuntu 22.04 (Jammy)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-tiamat-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 22.04 (Jammy) (Minor Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **Ubuntu 22.04 (Jammy)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-tiamat-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-tiamat-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
 #. Run ``sudo apt-get update`` to update your packages.
@@ -97,9 +97,9 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22.04 (Jammy):
 .. include:: ../_includes/post-install-by-os.rst
 
 
-.. Install Tiamat packages of Salt on Ubuntu 22.04 (Jammy) ARM64
+.. Install onedir packages of Salt on Ubuntu 22.04 (Jammy) ARM64
  ==========================================================
- To install the :ref:`tiamat` packages of Salt on Ubuntu 22.04 (Jammy) ARM64:
+ To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy) ARM64:
 
  #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -108,38 +108,38 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22.04 (Jammy):
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Latest Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **Ubuntu 22.04 (Jammy) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-arm64-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-arm64-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Major Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **Ubuntu 22.04 (Jammy) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-arm64-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-arm64-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Minor Tiamat)
+       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **Ubuntu 22 (Jammy) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-arm64-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu22-arm64-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
  #. Run ``sudo apt-get update`` to update your packages.
@@ -169,9 +169,9 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 22.04 (Jammy):
  .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Tiamat packages of Salt on Ubuntu 20.04 (Focal)
+Install onedir packages of Salt on Ubuntu 20.04 (Focal)
 =======================================================
-To install the :ref:`tiamat` packages of Salt on Ubuntu 20.04 (Focal):
+To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal):
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -180,39 +180,39 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20.04 (Focal):
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 20.04 (Focal) (Latest Tiamat)
+       .. tab-item:: Ubuntu 20.04 (Focal) (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 20.04 (Major Tiamat)
+       .. tab-item:: Ubuntu 20.04 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-tiamat-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-onedir-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 20.04 (Minor Tiamat)
+       .. tab-item:: Ubuntu 20.04 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-tiamat-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-onedir-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-tiamat-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 #. Run ``sudo apt-get update`` to update your packages.
 
@@ -242,9 +242,9 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20.04 (Focal):
 
 
 
-.. Install Tiamat packages of Salt on Ubuntu 20.04 (Focal) ARM64
+.. Install onedir packages of Salt on Ubuntu 20.04 (Focal) ARM64
  ==========================================================
- To install the :ref:`tiamat` packages of Salt on Ubuntu 20.04 (Focal) ARM64:
+ To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal) ARM64:
 
  #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -253,39 +253,39 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20.04 (Focal):
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 20.04 ARM64 (Tiamat Latest)
+       .. tab-item:: Ubuntu 20.04 ARM64 (onedir Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 20.04 ARM64 (Tiamat Major)
+       .. tab-item:: Ubuntu 20.04 ARM64 (onedir Major)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-tiamat-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-onedir-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 20.04 ARM64 (Tiamat Minor)
+       .. tab-item:: Ubuntu 20.04 ARM64 (onedir Minor)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-tiamat-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-onedir-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-tiamat-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
  #. Run ``sudo apt-get update`` to update your packages.
@@ -315,9 +315,9 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 20.04 (Focal):
  .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Tiamat packages of Salt on Ubuntu 18.04 (Bionic)
+Install onedir packages of Salt on Ubuntu 18.04 (Bionic)
 ========================================================
-To install the :ref:`tiamat` packages of Salt on Ubuntu 18.04 (Bionic):
+To install the :ref:`onedir` packages of Salt on Ubuntu 18.04 (Bionic):
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -326,39 +326,39 @@ To install the :ref:`tiamat` packages of Salt on Ubuntu 18.04 (Bionic):
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 18.04 (Tiamat Latest)
+       .. tab-item:: Ubuntu 18.04 (onedir Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-       .. tab-item:: Ubuntu 18.04 (Tiamat Major)
+       .. tab-item:: Ubuntu 18.04 (onedir Major)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-tiamat-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-onedir-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 18.04 (Tiamat Minor)
+       .. tab-item:: Ubuntu 18.04 (onedir Minor)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-tiamat-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-onedir-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-tiamat-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
 #. Run ``sudo apt-get update`` to update your packages.
@@ -404,8 +404,8 @@ To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
        .. tab-item:: Ubuntu 20.04 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for
-           **Ubuntu 20.04 (Focal)**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
+           of Salt for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
@@ -416,8 +416,8 @@ To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
        .. tab-item:: Ubuntu 20.04 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt for
-           **Ubuntu 20.04 (Focal)**:
+           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
+           package of Salt for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
@@ -428,8 +428,8 @@ To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
        .. tab-item:: Ubuntu 20.04 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt
-           for **Ubuntu 20.04 (Focal)**:
+           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
+           package of Salt for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
@@ -481,8 +481,8 @@ To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
        .. tab-item:: Ubuntu 20.04 ARM64 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for
-           **Ubuntu 20.04 (Focal) ARM64**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
+           of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
@@ -493,8 +493,8 @@ To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
        .. tab-item:: Ubuntu 20.04 ARM64 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt
-           for **Ubuntu 20.04 (Focal) ARM64**:
+           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
+           package of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
@@ -505,8 +505,8 @@ To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
        .. tab-item:: Ubuntu 20.04 ARM64 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt
-           for **Ubuntu 20.04 (Focal) ARM64**:
+           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
+           package of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
@@ -558,8 +558,8 @@ To install Salt on Ubuntu 18.04 (Bionic) using the old packaging system:
 
        .. tab-item:: Ubuntu 18.04 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for
-           **Ubuntu 18.04 (Bionic)**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
+           of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
@@ -570,8 +570,8 @@ To install Salt on Ubuntu 18.04 (Bionic) using the old packaging system:
 
        .. tab-item:: Ubuntu 18.04 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt
-           for **Ubuntu 18.04 (Bionic)**:
+           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
+           package of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
@@ -582,8 +582,8 @@ To install Salt on Ubuntu 18.04 (Bionic) using the old packaging system:
 
        .. tab-item:: Ubuntu 18.04 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt
-           for **Ubuntu 18.04 (Bionic)**:
+           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
+           package of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 

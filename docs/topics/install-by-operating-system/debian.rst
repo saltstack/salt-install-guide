@@ -6,7 +6,7 @@ Debian
 
 These instructions explain how to install Salt on Debian operating systems:
 
-* `Install Tiamat packages of Salt on Debian 11 (Bullseye)`_
+* `Install onedir packages of Salt on Debian 11 (Bullseye)`_
 * `Install classic packages of Salt on Debian 11 (Bullseye)`_
 * `Install classic packages of Salt on Debian 11 (Bullseye) ARM64`_
 * `Install classic packages of Salt on Debian 10 (Buster)`_
@@ -20,14 +20,14 @@ These instructions explain how to install Salt on Debian operating systems:
     :bdg-secondary:`Python3`
 
 
-.. include:: ../_includes/what-is-tiamat.rst
+.. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install Tiamat packages of Salt on Debian 11 (Bullseye)
+Install onedir packages of Salt on Debian 11 (Bullseye)
 =======================================================
-To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye):
+To install the :ref:`onedir` packages of Salt on Debian 11 (Bullseye):
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -36,40 +36,40 @@ To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye):
 
    .. tab-set::
 
-       .. tab-item:: Debian 11 (Latest Tiamat)
+       .. tab-item:: Debian 11 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **Debian 11 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Debian 11 (Major Tiamat)
+       .. tab-item:: Debian 11 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **Debian 11 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-tiamat-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-onedir-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Debian 11 (Minor Tiamat)
+       .. tab-item:: Debian 11 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **Debian 11 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-tiamat-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-onedir-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-tiamat-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 #. Run ``sudo apt-get update`` to update your packages.
 
@@ -98,9 +98,9 @@ To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye):
 .. include:: ../_includes/post-install-by-os.rst
 
 
-.. Install Tiamat packages of Salt on Debian 11 (Bullseye) ARM64
+.. Install onedir packages of Salt on Debian 11 (Bullseye) ARM64
  =============================================================
- To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye) ARM64:
+ To install the :ref:`onedir` packages of Salt on Debian 11 (Bullseye) ARM64:
 
  #. Run the following commands to import the Salt Project repository key, and to
  create the apt sources list file:
@@ -109,40 +109,40 @@ To install the :ref:`tiamat` packages of Salt on Debian 11 (Bullseye):
 
    .. tab-set::
 
-       .. tab-item:: Debian 11 ARM64 (Latest Tiamat)
+       .. tab-item:: Debian 11 ARM64 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
            of Salt for **Debian 11 (Bullseye) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Debian 11 ARM64 (Major Tiamat)
+       .. tab-item:: Debian 11 ARM64 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
            of Salt for **Debian 11 (Bullseye) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-tiamat-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-onedir-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Debian 11 ARM64 (Minor Tiamat)
+       .. tab-item:: Debian 11 ARM64 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
            of Salt for **Debian 11 ARM64 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-tiamat-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-onedir-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-tiamat-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
  #. Run ``sudo apt-get update`` to update your packages.
 
@@ -185,40 +185,40 @@ To install Salt on Debian 11 (Bullseye) using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: Debian 11 (Latest Tiamat)
+       .. tab-item:: Debian 11 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **Debian 11 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Debian 11 (Major Tiamat)
+       .. tab-item:: Debian 11 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`classic` package
            of Salt for **Debian 11 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-tiamat-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-onedir-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Debian 11 (Minor Tiamat)
+       .. tab-item:: Debian 11 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`classic` package
            of Salt for **Debian 11 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-tiamat-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-onedir-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-tiamat-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 #. Run ``sudo apt-get update`` to update your packages.
 
@@ -261,40 +261,40 @@ To install Salt on Debian 11 (Bullseye) ARM64 using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: Debian 11 ARM64 (Latest Tiamat)
+       .. tab-item:: Debian 11 ARM64 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **Debian 11 (Bullseye) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-tiamat-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-tiamat-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Debian 11 ARM64 (Major Tiamat)
+       .. tab-item:: Debian 11 ARM64 (Major onedir)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`classic` package
            of Salt for **Debian 11 (Bullseye) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-tiamat-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-onedir-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-tiamat-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Debian 11 ARM64 (Minor Tiamat)
+       .. tab-item:: Debian 11 ARM64 (Minor onedir)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`classic` package
            of Salt for **Debian 11 ARM64 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-tiamat-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-onedir-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-tiamat-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 #. Run ``sudo apt-get update`` to update your packages.
 
@@ -340,7 +340,8 @@ To install Salt on Debian 10 (Buster):
 
        .. tab-item:: Debian 10 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for **Debian 10 (Buster)**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
+           of Salt for **Debian 10 (Buster)**:
 
            .. parsed-literal::
 
@@ -351,7 +352,8 @@ To install Salt on Debian 10 (Buster):
 
        .. tab-item:: Debian 10 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt for **Debian 10 (Buster)**:
+           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
+           package of Salt for **Debian 10 (Buster)**:
 
            .. parsed-literal::
 
@@ -361,7 +363,8 @@ To install Salt on Debian 10 (Buster):
 
        .. tab-item:: Debian 10 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt for **Debian 10 (Buster)**:
+           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
+           package of Salt for **Debian 10 (Buster)**:
 
            .. parsed-literal::
 

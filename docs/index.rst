@@ -47,7 +47,7 @@ Install Salt
    :caption: Upgrade Salt
 
    topics/upgrade
-   topics/upgrade-to-tiamat
+   topics/upgrade-to-onedir
 
 .. toctree::
    :maxdepth: 2

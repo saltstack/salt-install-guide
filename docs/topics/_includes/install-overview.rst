@@ -27,13 +27,13 @@ Salt packages can be accessed from
 
 .. Warning::
     Beginning with the 3005 (Phosphorus) release of Salt, the Salt Project is
-    changing its packaging system to Tiamat. Any new operating systems added in
-    3005 will only have Tiamat packages. The Salt Project will phase out the old
-    Salt package builds for currently supported operating systems by 3007. See
-    :ref:`what-is-tiamat` for more information.
+    changing its packaging system to **onedir**. Any new operating systems added
+    in 3005 will only have onedir packages. The Salt Project will phase out the
+    old Salt package builds for currently supported operating systems by 3007.
+    See :ref:`what-is-onedir` for more information.
 
     Begin planning your migration or consider updating your Salt infrastructure
-    to the new Tiamat packages as soon as possible. See :ref:`upgrade-to-Tiamat`
+    to the new onedir packages as soon as possible. See :ref:`upgrade-to-onedir`
     for instructions.
 
 
@@ -64,9 +64,9 @@ Standard installation overview
     - Install Salt's dependencies.
 
       **NOTE:** You do not need to install Salt dependencies if you are using
-      the Tiamat packages of Salt.
+      the onedir packages of Salt.
     -  * :ref:`install-salt-dependencies`
-       * :ref:`upgrade-to-tiamat`
+       * :ref:`upgrade-to-onedir`
 
   * - 3
     - Install the ``salt-master`` service on the node that will manage your

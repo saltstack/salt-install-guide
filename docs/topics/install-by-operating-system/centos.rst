@@ -6,9 +6,9 @@ CentOS
 
 These instructions explain how to install Salt on CentOS operating systems:
 
-* `Install Tiamat packages of Salt on CentOS 9`_
-* `Install Tiamat packages of Salt on CentOS 8`_
-* `Install Tiamat packages of Salt on CentOS 7`_
+* `Install onedir packages of Salt on CentOS 9`_
+* `Install onedir packages of Salt on CentOS 8`_
+* `Install onedir packages of Salt on CentOS 7`_
 * `Install classic packages of Salt on CentOS 7`_
 
 
@@ -20,15 +20,15 @@ These instructions explain how to install Salt on CentOS operating systems:
     :bdg-secondary:`Python3`
 
 
-.. include:: ../_includes/what-is-tiamat.rst
+.. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install Tiamat packages of Salt on CentOS 9
+Install onedir packages of Salt on CentOS 9
 ===========================================
-Only Tiamat packages of Salt are available for CentOS 9. To install the
-:ref:`tiamat` packages of Salt on Centos 9:
+Only onedir packages of Salt are available for CentOS 9. To install the
+:ref:`onedir` packages of Salt on Centos 9:
 
 #. Run the following commands to install the Salt Project repository and key:
 
@@ -36,36 +36,36 @@ Only Tiamat packages of Salt are available for CentOS 9. To install the
 
    .. tab-set::
 
-       .. tab-item:: CentOS 9 (Latest Tiamat)
+       .. tab-item:: CentOS 9 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package of Salt for **CentOS 9**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |centos9-tiamat-latest-gpg|\
-
-               curl -fsSL \ |centos9-tiamat-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-       .. tab-item:: CentOS 9 (Major Tiamat)
-
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package of Salt for **CentOS 9**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package of Salt for **CentOS 9**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |centos9-tiamat-major-gpg|\
+               sudo rpm --import \ |centos9-onedir-latest-gpg|\
 
-               curl -fsSL \ |centos9-tiamat-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |centos9-onedir-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+       .. tab-item:: CentOS 9 (Major onedir)
 
-       .. tab-item:: CentOS 9 (Minor Tiamat)
-
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package of Salt for **CentOS 9**:
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package of Salt for **CentOS 9**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |centos9-tiamat-minor-gpg|\
+               sudo rpm --import \ |centos9-onedir-major-gpg|\
 
-               curl -fsSL \ |centos9-tiamat-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |centos9-onedir-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+
+       .. tab-item:: CentOS 9 (Minor onedir)
+
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package of Salt for **CentOS 9**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |centos9-onedir-minor-gpg|\
+
+               curl -fsSL \ |centos9-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
@@ -94,10 +94,10 @@ Only Tiamat packages of Salt are available for CentOS 9. To install the
 .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Tiamat packages of Salt on CentOS 8
+Install onedir packages of Salt on CentOS 8
 ===========================================
-Only Tiamat packages of Salt are available for CentOS 8. To install the
-:ref:`tiamat` packages of Salt on Centos 8:
+Only onedir packages of Salt are available for CentOS 8. To install the
+:ref:`onedir` packages of Salt on Centos 8:
 
 #. Run the following commands to install the Salt Project repository and key:
 
@@ -105,36 +105,36 @@ Only Tiamat packages of Salt are available for CentOS 8. To install the
 
    .. tab-set::
 
-       .. tab-item:: CentOS 8 (Latest Tiamat)
+       .. tab-item:: CentOS 8 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package of Salt for **CentOS 8**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |centos8-tiamat-latest-gpg|\
-
-               curl -fsSL \ |centos8-tiamat-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-       .. tab-item:: CentOS 8 (Major Tiamat)
-
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package of Salt for **CentOS 8**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package of Salt for **CentOS 8**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |centos8-tiamat-major-gpg|\
+               sudo rpm --import \ |centos8-onedir-latest-gpg|\
 
-               curl -fsSL \ |centos8-tiamat-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |centos8-onedir-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+       .. tab-item:: CentOS 8 (Major onedir)
 
-       .. tab-item:: CentOS 8 (Minor Tiamat)
-
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package of Salt for **CentOS 8**:
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package of Salt for **CentOS 8**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |centos8-tiamat-minor-gpg|\
+               sudo rpm --import \ |centos8-onedir-major-gpg|\
 
-               curl -fsSL \ |centos8-tiamat-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |centos8-onedir-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+
+       .. tab-item:: CentOS 8 (Minor onedir)
+
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package of Salt for **CentOS 8**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |centos8-onedir-minor-gpg|\
+
+               curl -fsSL \ |centos8-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
@@ -164,7 +164,7 @@ Only Tiamat packages of Salt are available for CentOS 8. To install the
 .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Tiamat packages of Salt on CentOS 7
+Install onedir packages of Salt on CentOS 7
 ===========================================
 
 To install Salt on CentOS 7:
@@ -175,36 +175,36 @@ To install Salt on CentOS 7:
 
    .. tab-set::
 
-       .. tab-item:: CentOS 7 (Latest Tiamat)
+       .. tab-item:: CentOS 7 (Latest onedir)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`tiamat` package of Salt for **CentOS 7**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |centos7-tiamat-latest-gpg|\
-
-               curl -fsSL \ |centos7-tiamat-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-       .. tab-item:: CentOS 7 (Major Tiamat)
-
-           To pin your Salt upgrades to the :ref:`major` :ref:`tiamat` package of Salt for **CentOS 7**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package of Salt for **CentOS 7**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |centos7-tiamat-major-gpg|\
+               sudo rpm --import \ |centos7-onedir-latest-gpg|\
 
-               curl -fsSL \ |centos7-tiamat-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |centos7-onedir-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+       .. tab-item:: CentOS 7 (Major onedir)
 
-       .. tab-item:: CentOS 7 (Minor Tiamat)
-
-           To pin your Salt upgrades to the :ref:`minor` :ref:`tiamat` package of Salt for **CentOS 7**:
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package of Salt for **CentOS 7**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |centos7-tiamat-minor-gpg|\
+               sudo rpm --import \ |centos7-onedir-major-gpg|\
 
-               curl -fsSL \ |centos7-tiamat-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |centos7-onedir-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+
+       .. tab-item:: CentOS 7 (Minor onedir)
+
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package of Salt for **CentOS 7**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |centos7-onedir-minor-gpg|\
+
+               curl -fsSL \ |centos7-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
@@ -248,7 +248,8 @@ To install Salt on CentOS 7 using the old packaging system:
 
        .. tab-item:: CentOS 7 (Latest)
 
-           To pin your Salt upgrades to the :ref:`latest` package of Salt for **CentOS 7**:
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
+           of Salt for **CentOS 7**:
 
            .. parsed-literal::
 
@@ -258,7 +259,8 @@ To install Salt on CentOS 7 using the old packaging system:
 
        .. tab-item:: CentOS 7 (Major)
 
-           To pin your Salt upgrades to the latest :ref:`major` package of Salt for **CentOS 7**:
+           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
+           package of Salt for **CentOS 7**:
 
            .. parsed-literal::
 
@@ -268,7 +270,8 @@ To install Salt on CentOS 7 using the old packaging system:
 
        .. tab-item:: CentOS 7 (Minor)
 
-           To pin your Salt upgrades to the latest :ref:`minor` package of Salt for **CentOS 7**:
+           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
+           package of Salt for **CentOS 7**:
 
            .. parsed-literal::
 

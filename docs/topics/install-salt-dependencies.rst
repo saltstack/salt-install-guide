@@ -14,9 +14,9 @@ Before you install Salt on your infrastructure, you must first install:
 
 .. Note::
     Installing Salt dependencies is optional if you have upgraded your system to
-    use the Salt Tiamat packages (available in Salt version 3005 and later). The
-    Salt Project **strongly** recommends upgrading to Tiamat to continue
-    receiving Salt version updates. See :ref:`upgrade-to-tiamat` for more
+    use the Salt onedir packages (available in Salt version 3005 and later). The
+    Salt Project **strongly** recommends upgrading to onedir to continue
+    receiving Salt version updates. See :ref:`upgrade-to-onedir` for more
     information.
 
 
