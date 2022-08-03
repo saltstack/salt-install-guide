@@ -7,5 +7,5 @@
    Onedir packages of Salt include the version of Python needed to run Salt and
    Salt's required dependencies.
 
-   The Salt Project will support the old packaging system until the 3007
+   The Salt Project will support the old packaging system until the 3006
    release. See :ref:`upgrade-to-onedir` for more information.

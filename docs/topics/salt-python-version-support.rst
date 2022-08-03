@@ -1,8 +1,8 @@
 .. _salt-python-version-support:
 
-================================
-Salt support for Python versions
-================================
+===========================
+Support for Python versions
+===========================
 
 Starting with Salt version 3006, the Salt Project aligns with the
 `Python support lifecycle <https://devguide.python.org/#status-of-python-branches>`_,
