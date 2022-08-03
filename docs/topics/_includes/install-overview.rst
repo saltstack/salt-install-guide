@@ -29,7 +29,7 @@ Salt packages can be accessed from
     Beginning with the 3005 (Phosphorus) release of Salt, the Salt Project is
     changing its packaging system to **onedir**. Any new operating systems added
     in 3005 will only have onedir packages. The Salt Project will phase out the
-    old Salt package builds for currently supported operating systems by 3007.
+    old Salt package builds for currently supported operating systems by 3006.
     See :ref:`what-is-onedir` for more information.
 
     Begin planning your migration or consider updating your Salt infrastructure

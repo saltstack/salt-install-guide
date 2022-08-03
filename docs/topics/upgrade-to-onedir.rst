@@ -49,7 +49,7 @@ Timeline for upgrading to onedir packaging
 ==========================================
 In order to avoid disruption of services and continue getting upgraded versions
 of Salt, begin planning how you will update your Salt infrastructure to onedir
-before the 3007 release. See `How to upgrade to onedir`_ for more information.
+before the 3006 release. See `How to upgrade to onedir`_ for more information.
 
 .. list-table::
   :widths: 15 85
@@ -67,13 +67,6 @@ before the 3007 release. See `How to upgrade to onedir`_ for more information.
        * See `Platform package support for Salt 3005`_ for more information.
 
   * - 3006
-    -  * Both onedir packages and classic Salt package builds will be provided,
-         except for operating systems that are newly supported in 3006.
-       * Only classic packages will be provided for platforms that do not
-         support Python 3.7 or higher, including Ubuntu 18.04, RHEL 7, RHEL 8,
-         Raspbian 9, and Raspbian 10.
-
-  * - 3007
     - The Salt Project will only support onedir packages going forward.
 
 
@@ -132,8 +125,8 @@ To upgrade to onedir:
    After installing Salt using the onedir packages, do not add Salt to any
    library search paths, such as ``LD_LIBRARY_PATH`` on Linux. Onedir has
    already been built in a way that allows it to find the executables it needs.
-   Adding Salt to the the library search path could cause errors due to
-   incompatible versions of system packages.
+   Adding Salt to the library search path could cause errors due to incompatible
+   versions of system packages.
 
 
 Repository paths
