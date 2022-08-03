@@ -108,6 +108,33 @@ To upgrade to onedir:
    * ``salt pip install <package name>``
    * Using the ``pip.installed`` Salt state.
 
+#. After upgrading, you might need to update any state files that use
+   ``pip.installed`` if you need to install Python packages into the system
+   Python environment. In the state file, provide the ``pip_bin`` or ``bin_env``
+   to the pip state module.
+
+   For example:
+
+   .. code-block:: yaml
+
+       lib-foo:
+         pip.installed:
+           - pip_bin: /usr/bin/pip3
+       lib-bar:
+         pip.installed:
+           - bin_env: /usr/bin/python3
+
+#. After upgrading, you might also need to update any salt ``gitfs`` formula
+   branches if the formula has changed because of onedir-specific fixes.
+
+
+.. Warning::
+   After installing Salt using the onedir packages, do not add Salt to any
+   library search paths, such as ``LD_LIBRARY_PATH`` on Linux. Onedir has
+   already been built in a way that allows it to find the executables it needs.
+   Adding Salt to the the library search path could cause errors due to
+   incompatible versions of system packages.
+
 
 Repository paths
 ----------------
@@ -177,10 +204,6 @@ Platform package support for Salt 3005
   * - CentOS 9 Streaming
     - Yes
     -
-
-  * - Debian 9
-    - Yes
-    - Yes
 
   * - Debian 10
     - Yes

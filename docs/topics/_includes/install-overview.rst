@@ -39,6 +39,10 @@ Salt packages can be accessed from
 
 Standard installation overview
 ==============================
+Using the standard installation method is recommended for most organizations,
+especially if you are just starting out with Salt. The standard installation
+will make using Salt easier and provides functionality that isn't available in
+masterless/agentless Salt configurations.
 
 .. list-table::
   :widths: 5 50 45
@@ -61,16 +65,10 @@ Standard installation overview
        * :ref:`salt-python-version-support`
 
   * - 2
-    - Install Salt's dependencies.
-
-      **NOTE:** You do not need to install Salt dependencies if you are using
-      the onedir packages of Salt.
-    -  * :ref:`install-salt-dependencies`
-       * :ref:`upgrade-to-onedir`
-
-  * - 3
     - Install the ``salt-master`` service on the node that will manage your
-      other nodes, meaning it will send commands to other nodes.
+      other nodes, meaning it will send commands to other nodes. Then, install
+      the ``salt-minion`` service on the nodes that will be managed by the Salt
+      master.
 
       For Linux-based operating systems, the recommended installation method is
       to use the bootstrap script or you can manually install Salt using the
@@ -89,41 +87,31 @@ Standard installation overview
       **For all operating systems:**
        * :ref:`install-by-operating-system-index`
 
+  * - 3
+    - Configure the Salt minions to add the DNS/hostname or IP address of the
+      Salt master they will connect to. You can add additional configurations to
+      the master and minions as needed.
+    -  * :ref:`configure-master-minion`
+       * `Configuring the minion <https://docs.saltproject.io/en/latest/ref/configuration/minion.html>`_
+
   * - 4
-    - Install the ``salt-minion`` service on the nodes that you want to manage,
-      meaning it will receive commands from the Salt master.
-    - **For Linux-based systems:**
-       * :ref:`install-bootstrap`
-       * :ref:`install-by-operating-system-index`
-
-      **For macOS or Windows:**
-       * :ref:`install-macos`
-       * :ref:`install-windows`
-
-      **For all operating systems:**
-       * :ref:`install-by-operating-system-index`
-
-  * - 5
-    - Configure the Salt minions to add the IP address of the Salt master they
-      will connect to. You can add additional configurations to the master and
-      minions as needed.
-    - :ref:`configure-master-minion`
-
-  * - 6
-    - Start the service on the minions, then the master.
+    - Start the service on the master, then the minions.
     - :ref:`start-salt-services`
 
-  * - 7
+  * - 5
     - Accept the minion keys after the minion connects.
     - :ref:`accept-keys`
 
-  * - 8
+  * - 6
     - Verify that the installation was successful by sending a test ping.
     - :ref:`verify-install`
 
 
 Alternative installations and configurations
 ============================================
+In general, you should only use alternative installation and configuration
+options if you are an intermediate or advanced Salt user.
+
 Although the standard Salt configuration model is the master/minion
 (master/client) model, minions do not necessarily have to have a master to be
 managed. Salt also gives additional options for managing minions:
@@ -137,9 +125,11 @@ managed. Salt also gives additional options for managing minions:
     - Description
     - For more information
 
-  * - Masterless (agentless)
-    - Uses Salt SSH to manage minions.
-    - `Salt SSH <https://docs.saltproject.io/en/latest/topics/ssh/index.html>`_
+  * - Masterless
+    - Running a masterless salt-minion lets you use Salt's configuration
+      management for a single machine without calling out to a Salt master on
+      another machine.
+    - `Salt masterless quickstart <https://docs.saltproject.io/en/latest/topics/tutorials/quickstart.html>`_
 
   * - Salt cloud
     - Provisions and manages systems on cloud hosts or hypervisors. It uses the
@@ -153,22 +143,11 @@ managed. Salt also gives additional options for managing minions:
       run the standard ``salt-minion`` service.
     - `Proxy minions <https://docs.saltproject.io/en/latest/topics/proxyminion/index.html>`_
 
-  * - Run commands locally
-    - You can also allow a minion to execute commands locally with ``salt-call``.
-      For example: ``salt-call --local [module.function]``.
-    - `Salt-call <https://docs.saltproject.io/en/latest/ref/cli/salt-call.html>`_
+  * - Agentless
+    - Use SSH to run Salt commands on a minion without installing an agent.
+    -  `Salt SSH <https://docs.saltproject.io/en/latest/topics/ssh/index.html>`_
 
   * - Install Salt for development
     - If you plan to contribute to the Salt codebase, use this installation
       method.
     - `Installing Salt for development <https://docs.saltproject.io/en/latest/topics/development/hacking.html>`_
-
-
-
-Using the standard installation method is recommended for most organizations,
-especially if you are just starting out with Salt. The standard installation
-will make using Salt easier and provides functionality that isn't available in
-masterless/agentless Salt configurations.
-
-In general, you should only use alternative installation and configuration
-options if you are an intermediate or advanced Salt user.

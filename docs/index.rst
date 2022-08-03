@@ -40,6 +40,7 @@ Install Salt
    topics/start-salt-services
    topics/accept-keys
    topics/verify-install
+   topics/uninstall
 
 .. toctree::
    :maxdepth: 2
