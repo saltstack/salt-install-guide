@@ -15,7 +15,7 @@ To check if your operating system is supported, see:
    :align: right
    :alt: Salt uses a master-client model.
 
-.. Tip::
-    If you are first starting out with Salt, don't worry too much about the need
-    to plan your system architecture. You can add Salt components and modify
-    your configuration later without reinstalling anything.
+
+If you are first starting out with Salt, don't worry too much about the need
+to plan your system architecture. You can add Salt components and modify
+your configuration later without reinstalling anything.

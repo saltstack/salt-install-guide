@@ -128,7 +128,7 @@ Connecting to the Salt master
 By default, the minions assume that the Salt master can be resolved in DNS
 using the hostname ``salt``.
 
-An example that overrides the hostname default setting:
+An example that overrides the master default setting:
 
 .. code-block:: yaml
     :caption: /etc/salt/minion.d/master.config
@@ -253,6 +253,11 @@ Common configuration options
       them to update the AES Key. Enabling ping on rotate can avoid the
       situation where minions don’t respond on the first command after a couple
       of days of inactivity.
+
+For more information
+====================
+See `Configuring the minion <https://docs.saltproject.io/en/latest/ref/configuration/minion.html>`_
+in the core Salt docs for a more detailed list of configuration options.
 
 
 Next steps

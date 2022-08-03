@@ -4,7 +4,7 @@
    of Salt 3005 (Phosphorus), the Salt Project will begin replacing the old
    packaging system with the onedir packaging system.
 
-   onedir packages of Salt include the version of Python needed to run Salt and
+   Onedir packages of Salt include the version of Python needed to run Salt and
    Salt's required dependencies.
 
    The Salt Project will support the old packaging system until the 3007

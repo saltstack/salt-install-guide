@@ -1,12 +1,13 @@
 .. _salt-supported-operating-systems:
 
-================================
-Salt supported operating systems
-================================
+===========================
+Supported operating systems
+===========================
 
 Together with the :ref:`salt-version-support-lifecycle` guidelines, this
 document is intended to clearly define how long a particular version of Salt
-will receive official packages, testing, and technical support.
+will receive official packages, testing, and technical support from the Salt
+Project.
 
 .. include:: _includes/supported-os-concepts.rst
 

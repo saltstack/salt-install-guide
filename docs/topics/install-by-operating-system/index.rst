@@ -4,6 +4,10 @@
 Manual install directions by operating system
 =============================================
 
+These instructions explain how to manually install Salt on various operating
+systems. See :ref:`overview` for an overview of the steps involved in installing
+Salt.
+
 .. Warning::
     Pay close attention to package versions when navigating
     `repo.saltproject.io <https://repo.saltproject.io/>`_. For example,
