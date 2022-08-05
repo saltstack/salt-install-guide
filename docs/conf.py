@@ -114,7 +114,8 @@ extensions = [
     "sphinx.ext.todo",
     "sphinx-prompt", # Required by sphinx_substitution_extensions
     "sphinx_inline_tabs",
-    "sphinx_substitution_extensions"
+    "sphinx_multiversion", # To ensure publishing of mulitple, versioned sites
+    "sphinx_substitution_extensions",
 ]
 # Render TODO directives
 todo_include_todos = True
@@ -157,9 +158,12 @@ html_static_path = ["_static"]
 # or fully qualified paths (eg. https://example.com)
 html_css_files = [
     'css/import-all-salt-docs.css',
-    'css/local-testing.css'
+    'css/local-testing.css',
 ]
 
+# Sphinx Multiversion options
+smv_branch_whitelist = r'^30.*$'
+smv_latest_version = "3005"
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
