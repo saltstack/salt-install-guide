@@ -1,18 +1,39 @@
 .. list-table::
-  :widths: 10 10 10 40 10 10
+  :widths: 10 10 10 70
   :header-rows: 1
-  :class: checkmarks
+  :class: windows-mac-download
 
-  * - OS
+  * - Package
     - Arch
-    - File Type
+    - File type
     - Download
-    - MD5
-    - SHA256
 
-  * - macOS
+  * - onedir
     - x86_64
     - pkg
-    - `salt-3004.1-1-py3-x86_64.pkg <https://repo.saltproject.io/osx/salt-3004.1-1-py3-x86_64.pkg>`_
-    - `MD5 <https://repo.saltproject.io/osx/salt-3004.1-1-py3-x86_64.pkg.md5>`_
-    - `SHA265 <https://repo.saltproject.io/osx/salt-3004.1-1-py3-x86_64.pkg.sha256>`_
+    -  **Download the install file**
+
+       * |macos-onedir-amd64-msi-download|
+
+       **MD5**
+
+       * |macos-onedir-amd64-msi-md5|
+
+       **SHA256**
+
+       * |macos-onedir-amd64-msi-sha256|
+
+  * - classic
+    - x86_64
+    - pkg
+    -  **Download the install file**
+
+       * |macos-classic-amd64-msi-download|
+
+       **MD5**
+
+       * |macos-classic-amd64-msi-md5|
+
+       **SHA256**
+
+       * |macos-classic-amd64-msi-sha256|
