@@ -27,6 +27,12 @@ Product support lifecycle
     - `Phase 3 support`_ ends
     - `Extended life support`_ ends
 
+  * - 3005
+    - Feb 16, 2023
+    - Aug 16, 2023
+    - Feb 16, 2024
+    - Aug 16, 2024
+
   * - 3004
     - Apr 18, 2022
     - Oct 18, 2022
