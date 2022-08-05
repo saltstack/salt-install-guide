@@ -5,6 +5,11 @@ stages:
   - publish
   - trigger-upload
 
+variables:
+  LATEST_DOCS_VERSION: '3005'
+  GIT_STRATEGY: clone
+  GIT_DEPTH: 0
+
 url-tester:
   stage: test
   image: debian:buster-slim
@@ -18,6 +23,10 @@ pre-commit:
   stage: test
   image: python:3.8-buster
   script:
+    - git checkout 3005
+    - git checkout 3004
+    - git checkout 3003
+    - git checkout $CI_COMMIT_BRANCH
     - pip install -U pip setuptools wheel
     - pip install -r requirements-dev.txt
     - pre-commit install
@@ -27,11 +36,16 @@ build-site:
   stage: build
   image: python:3.8
   script:
+    - git checkout 3005
+    - git checkout 3004
+    - git checkout 3003
+    - git checkout $CI_COMMIT_BRANCH
     - pip install -U pip setuptools wheel
     - pip install -r requirements-dev.txt
     - wget -O docs/_static/img/SaltProject_altlogo_teal.png https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_altlogo_teal.png?inline=false
     - wget -O docs/_static/img/SaltProject_Logomark_teal.png https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_Logomark_teal.png?inline=false
     - nox -e 'docs-html(clean=False)'
+    - cp -r docs/_build/html/$LATEST_DOCS_VERSION docs/_build/html/latest
     - mv docs/_build/html html
   artifacts:
     paths:
@@ -43,6 +57,7 @@ pages:
   image: alpine:3.12
   script:
     - mv html public
+    - cp redirector.html public/index.html
     - 'echo "Gitlab Pages available at: ${CI_PAGES_URL}"'
   artifacts:
     paths:
@@ -52,11 +67,11 @@ pages:
 trigger-upload:
   stage: trigger-upload
   rules:
-    - if: '$CI_COMMIT_REF_PROTECTED == "true" && $CI_PROJECT_PATH == $CICD_UPSTREAM_PATH'
+    - if: '$CI_COMMIT_BRANCH == "main" && $CI_PROJECT_PATH == $CICD_UPSTREAM_PATH'
   variables:
     ARTIFACT_PIPELINE_ID: $CI_PIPELINE_ID
     GITLAB_PROJECT_PATH: "saltstack%2Fopen%2Fdocs%2Fsalt-install-guide"
-    DOCS_PATH: "docs.saltproject.io/salt/install-guide/en/latest"
+    DOCS_PATH: "docs.saltproject.io/salt/install-guide/en"
     RCLONE_OPTIONS: "sync -c -v"
   trigger:
     project: saltstack/open/docs/docs-upload
