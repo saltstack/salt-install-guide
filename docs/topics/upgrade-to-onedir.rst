@@ -101,6 +101,12 @@ To upgrade to onedir:
    * ``salt pip install <package name>``
    * Using the ``pip.installed`` Salt state.
 
+   .. Note::
+       In order to install software such as Python libraries and Salt
+       extensions, you'll need to use ``salt-pip`` to install packages into the
+       onedir directory. For more information, see the
+       `pip.state module documentation <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pip_state.html#module-salt.states.pip_state>`_.
+
 #. After upgrading, you might need to update any state files that use
    ``pip.installed`` if you need to install Python packages into the system
    Python environment. In the state file, provide the ``pip_bin`` or ``bin_env``
