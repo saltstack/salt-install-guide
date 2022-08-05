@@ -20,7 +20,6 @@ Install Salt
 
    topics/check-system-requirements
    topics/check-network-ports
-   topics/install-salt-dependencies
 
 .. toctree::
    :maxdepth: 2

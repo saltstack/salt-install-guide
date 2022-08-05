@@ -1,39 +1,130 @@
 .. list-table::
-  :widths: 10 10 10 40 10 10
+  :widths: 10 10 10 70
   :header-rows: 1
-  :class: checkmarks
+  :class: windows-mac-download
 
-  * - OS
+  * - Package
     - Arch
-    - File Type
+    - File type
     - Download
-    - MD5
-    - SHA256
 
-  * - Windows
+  * - onedir
     - AMD64
     - msi
-    - `Salt-Minion-3004.1-1-Py3-AMD64.msi <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-AMD64.msi>`_
-    - `MD5 <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-AMD64.msi.md5>`__
-    - `SHA256 <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-AMD64.msi.sha256>`__
+    -  **Download the install file**
 
-  * - Windows
+       * |windows-onedir-amd64-msi-download|
+
+       **MD5**
+
+       * |windows-onedir-amd64-msi-md5|
+
+       **SHA256**
+
+       * |windows-onedir-amd64-msi-sha256|
+
+  * - onedir
     - AMD64
     - exe
-    - `Salt-Minion-3004.1-1-Py3-AMD64-Setup.exe <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-AMD64-Setup.exe>`_
-    - `MD5 <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-AMD64-Setup.exe.md5>`__
-    - `SHA256 <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-AMD64-Setup.exe.sha256>`__
+    -  **Download the install file**
 
-  * - Windows
+       * |windows-onedir-amd64-exe-download|
+
+       **MD5**
+
+       * |windows-onedir-amd64-exe-md5|
+
+       **SHA256**
+
+       * |windows-onedir-amd64-exe-sha256|
+
+  * - onedir
     - x86
     - msi
-    - `Salt-Minion-3004.1-1-Py3-x86.msi <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-x86.msi>`_
-    - `MD5 <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-x86.msi.md5>`__
-    - `SHA256 <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-x86.msi.sha256>`__
+    -  **Download the install file**
 
-  * - Windows
+       * |windows-onedir-x86-msi-download|
+
+       **MD5**
+
+       * |windows-onedir-x86-msi-md5|
+
+       **SHA256**
+
+       * |windows-onedir-x86-msi-sha256|
+
+  * - onedir
     - x86
     - exe
-    - `Salt-Minion-3004.1-1-Py3-x86-Setup.exe <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-x86-Setup.exe>`_
-    - `MD5 <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-x86-Setup.exe.md5>`__
-    - `SHA256 <https://repo.saltproject.io/windows/Salt-Minion-3004.1-1-Py3-x86-Setup.exe.sha256>`__
+    -  **Download the install file**
+
+       * |windows-onedir-x86-exe-download|
+
+       **MD5**
+
+       * |windows-onedir-x86-exe-md5|
+
+       **SHA256**
+
+       * |windows-onedir-x86-exe-sha256|
+
+
+  * - classic
+    - AMD64
+    - msi
+    -  **Download the install file**
+
+       * |windows-classic-amd64-msi-download|
+
+       **MD5**
+
+       * |windows-classic-amd64-msi-md5|
+
+       **SHA256**
+
+       * |windows-classic-amd64-msi-sha256|
+
+  * - classic
+    - AMD64
+    - exe
+    -  **Download the install file**
+
+       * |windows-classic-amd64-exe-download|
+
+       **MD5**
+
+       * |windows-classic-amd64-exe-md5|
+
+       **SHA256**
+
+       * |windows-classic-amd64-exe-sha256|
+
+  * - classic
+    - x86
+    - msi
+    -  **Download the install file**
+
+       * |windows-classic-x86-msi-download|
+
+       **MD5**
+
+       * |windows-classic-x86-msi-md5|
+
+       **SHA256**
+
+       * |windows-classic-x86-msi-sha256|
+
+  * - classic
+    - x86
+    - exe
+    -  **Download the install file**
+
+       * |windows-classic-x86-exe-download|
+
+       **MD5**
+
+       * |windows-classic-x86-exe-md5|
+
+       **SHA256**
+
+       * |windows-classic-x86-exe-sha256|

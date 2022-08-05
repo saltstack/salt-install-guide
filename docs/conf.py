@@ -157,6 +157,7 @@ html_static_path = ["_static"]
 # or fully qualified paths (eg. https://example.com)
 html_css_files = [
     'css/import-all-salt-docs.css',
+    'css/local-testing.css'
 ]
 
 

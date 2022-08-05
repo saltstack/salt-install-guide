@@ -22,6 +22,7 @@ can't find a package for a needed file, ``-P`` then installs it through pip.
 
 For example:
 
+
 .. parsed-literal::
 
     bootstrap-salt.sh -P stable |release|
