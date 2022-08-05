@@ -31,7 +31,7 @@ Product support lifecycle
     - Feb 16, 2023
     - Aug 16, 2023
     - Feb 16, 2024
-    - Aug 16, 2024
+    - Feb 16, 2025
 
   * - 3004
     - Apr 18, 2022
