@@ -73,10 +73,10 @@ def setup(app):
 
 
 this_year = datetime.datetime.today().year
-if this_year == 2021:
-    copyright_year = 2021
+if this_year == 2022:
+    copyright_year = 2022
 else:
-    copyright_year = f"2021 - {this_year}"
+    copyright_year = f"2022 - {this_year}"
 
 # -- Project information -----------------------------------------------------
 
@@ -114,7 +114,7 @@ extensions = [
     "sphinx.ext.todo",
     "sphinx-prompt", # Required by sphinx_substitution_extensions
     "sphinx_inline_tabs",
-    "sphinx_multiversion", # To ensure publishing of mulitple, versioned sites
+    # "sphinx_multiversion", # To ensure publishing of mulitple, versioned sites
     "sphinx_substitution_extensions",
 ]
 # Render TODO directives
@@ -162,8 +162,8 @@ html_css_files = [
 ]
 
 # Sphinx Multiversion options
-smv_branch_whitelist = r'^30.*$'
-smv_latest_version = "3005"
+# smv_branch_whitelist = r'^30.*$'
+# smv_latest_version = "3005"
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.

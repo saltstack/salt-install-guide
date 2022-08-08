@@ -117,8 +117,8 @@ def docs_html(session, clean):
     if clean:
         sphinxopts += "E"
     args = [sphinxopts, "--keep-going", "docs", str(build_dir)]
-    session.run("sphinx-multiversion", *args, external=True)
-    # session.run("sphinx-build", *args, external=True)
+    # session.run("sphinx-multiversion", *args, external=True)
+    session.run("sphinx-build", *args, external=True)
 
 
 @nox.session(python="3")
