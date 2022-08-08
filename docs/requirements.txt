@@ -1,11 +1,11 @@
+# If using version selector, use
 # Temporary Furo theme target for versioning
-# furo
-Sphinx-Substitution-Extensions>=2022.02.16
-git+https://github.com/waynew/furo.git@2022.8rc1
+# git+https://github.com/waynew/furo.git@2022.8rc1
+Sphinx-Substitution-Extensions>=2022.2.16
+furo>=2022.6.21
 sphinx-copybutton>=0.5.0
 sphinx-design
 sphinx-inline-tabs>=2022.1.2b11
-sphinx-multiversion>=0.2.4
 sphinx-prompt
-sphinx-tabs>=3.3.1
+sphinx-tabs>=3.4.1
 sphinx>=5.1.1
