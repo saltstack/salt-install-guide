@@ -47,11 +47,9 @@ pages:
   stage: publish
   image: alpine:3.12
   script:
-    - mkdir -p public/en
-    - mv html public/en/latest
-    - cp redirector.html public/en/index.html
+    - mkdir public
+    - mv html public/latest
     - cp redirector.html public/index.html
-    - sed -i 's:\./latest/index.html:\./en/latest/index.html:' public/index.html
     - 'echo "Gitlab Pages available at: ${CI_PAGES_URL}"'
   artifacts:
     paths:
@@ -65,7 +63,7 @@ trigger-upload:
   variables:
     ARTIFACT_PIPELINE_ID: $CI_PIPELINE_ID
     GITLAB_PROJECT_PATH: "saltstack%2Fopen%2Fdocs%2Fsalt-install-guide"
-    DOCS_PATH: "docs.saltproject.io/salt/install-guide"
+    DOCS_PATH: "docs.saltproject.io/salt/install-guide/en"
     RCLONE_OPTIONS: "sync -c -v"
   trigger:
     project: saltstack/open/docs/docs-upload
