@@ -173,7 +173,7 @@ html_css_files = [
 # Example for >=4.0.0 of Sphinx (support for favicon via URL)
 # html_logo = "https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_altlogo_teal.png"
 # Example for <4.0.0 of Sphinx, if added into _static/img/ and html_static_path is valid
-html_logo = "_static/img/SaltProject_altlogo_teal.png"
+html_logo = "_static/img/SaltProject_altlogo_blue.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
