@@ -1,11 +1,30 @@
-.. _install-overview:
+.. div:: landing-title-bottom-margin
 
-.. admonition:: The Salt install guide is in a draft state
+    .. grid::
+        :reverse:
+        :gutter: 2 3 3 3
+        :margin: 4 4 1 2
 
-   This install guide is currently in a draft state, intended for the Salt 3005
-   Phosphorus release. All documentation is written as though 3005 is the
-   current version. Your feedback on this draft is welcome! Leave feedback
-   on this issue: `Community feedback needed on new Salt Install Guide <https://gitlab.com/saltstack/open/docs/salt-install-guide/-/issues/33>`_.
+        .. grid-item::
+            :columns: 12 3 3 3
+            :class: sd-m-auto sd-animate-grow50-rot20
+
+            .. image:: /_static/img/salt-install-guide-small.png
+              :width: 125
+              :alt: Salt install guide logo
+
+        .. grid-item::
+            :columns: 12 9 9 9
+            :class: sd-text-white sd-fs-2 sd-text-center
+
+            The Salt install guide
+
+            .. button-link:: https://repo.saltproject.io/
+               :color: light
+               :align: center
+               :outline:
+
+                Browse the repository of package files
 
 
 .. sidebar:: **Supported Salt releases**
@@ -22,19 +41,14 @@ Welcome to the Salt install guide! This guide provides instructions for
 installing Salt on :ref:`salt-supported-operating-systems`. It also explains
 how to configure Salt, start Salt services, and verify your installation.
 
-Salt packages can be accessed from
-`repo.saltproject.io <https://repo.saltproject.io/>`_.
+.. Danger::
+    Beginning with the 3005 release of Salt, the Salt Project is changing its
+    packaging system to **onedir**. See :ref:`what-is-onedir` for more
+    information.
 
-.. Warning::
-    Beginning with the 3005 (Phosphorus) release of Salt, the Salt Project is
-    changing its packaging system to **onedir**. Any new operating systems added
-    in 3005 will only have onedir packages. The Salt Project will phase out the
-    old Salt package builds for currently supported operating systems by 3006.
-    See :ref:`what-is-onedir` for more information.
-
-    Begin planning your migration or consider updating your Salt infrastructure
-    to the new onedir packages as soon as possible. See :ref:`upgrade-to-onedir`
-    for instructions.
+    The Salt Project will phase out the old package builds for supported
+    operating systems by 3006. Update your Salt infrastructure to the new onedir
+    packages as soon as possible. See :ref:`upgrade-to-onedir` for instructions.
 
 
 Standard installation overview

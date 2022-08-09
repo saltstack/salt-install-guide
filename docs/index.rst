@@ -1,3 +1,5 @@
+:sd_hide_title:
+
 ============
 Install Salt
 ============
