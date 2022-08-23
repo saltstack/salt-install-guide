@@ -41,7 +41,7 @@ Welcome to the Salt install guide! This guide provides instructions for
 installing Salt on :ref:`salt-supported-operating-systems`. It also explains
 how to configure Salt, start Salt services, and verify your installation.
 
-.. Danger::
+.. Warning::
     Beginning with the 3005 release of Salt, the Salt Project is changing its
     packaging system to **onedir**. See :ref:`what-is-onedir` for more
     information.
