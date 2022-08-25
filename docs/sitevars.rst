@@ -96,6 +96,20 @@
 .. |photonos3-onedir-minor-gpg| replace:: LINK UNAVAILABLE UNTIL AFTER SALT 3005 (PHOSOPHORUS) RELEASE
 .. |photonos3-onedir-minor-download| replace:: LINK UNAVAILABLE UNTIL AFTER SALT 3005 (PHOSOPHORUS) RELEASE
 
+.. |raspbian11-classic-latest-gpg| replace:: https://repo.saltproject.io/py3/debian/11/armhf/latest/salt-archive-keyring.gpg
+.. |raspbian11-classic-latest-download| replace:: https://repo.saltproject.io/py3/debian/11/armhf/latest bullseye main
+.. |raspbian11-classic-major-gpg| replace:: https://repo.saltproject.io/py3/debian/11/armhf/3005/salt-archive-keyring.gpg
+.. |raspbian11-classic-major-download| replace:: https://repo.saltproject.io/py3/debian/11/armhf/3005 bullseye main
+.. |raspbian11-classic-minor-gpg| replace:: https://repo.saltproject.io/py3/debian/11/armhf/archive/3005/salt-archive-keyring.gpg
+.. |raspbian11-classic-minor-download| replace:: https://repo.saltproject.io/py3/debian/11/armhf/archive/3005 bullseye main
+
+.. |raspbian10-classic-latest-gpg| replace:: https://repo.saltproject.io/py3/debian/10/armhf/latest/salt-archive-keyring.gpg
+.. |raspbian10-classic-latest-download| replace:: https://repo.saltproject.io/py3/debian/10/armhf/latest buster main
+.. |raspbian10-classic-major-gpg| replace:: https://repo.saltproject.io/py3/debian/10/armhf/3005/salt-archive-keyring.gpg
+.. |raspbian10-classic-major-download| replace:: https://repo.saltproject.io/py3/debian/10/armhf/3005 buster main
+.. |raspbian10-classic-minor-gpg| replace:: https://repo.saltproject.io/py3/debian/10/armhf/archive/3005/salt-archive-keyring.gpg
+.. |raspbian10-classic-minor-download| replace:: https://repo.saltproject.io/py3/debian/10/armhf/archive/3005 buster main
+
 .. |rhel9-onedir-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest/SALTSTACK-GPG-KEY2.pub
 .. |rhel9-onedir-latest-download| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest.repo
 .. |rhel9-onedir-major-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/3005/SALTSTACK-GPG-KEY2.pub
@@ -136,7 +150,7 @@
 .. |ubuntu22-onedir-major-gpg| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/3005/salt-archive-keyring.gpg
 .. |ubuntu22-onedir-major-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/3005 jammy main
 .. |ubuntu22-onedir-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/minor/3005-1/salt-archive-keyring.gpg
-.. |ubuntu22-onedir-minor-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/minor/3005-1 bullseye main
+.. |ubuntu22-onedir-minor-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/minor/3005-1 jammy main
 
 .. |ubuntu22-arm64-onedir-latest-gpg| replace:: LINK UNAVAILABLE UNTIL AFTER SALT 3005 (PHOSOPHORUS) RELEASE
 .. |ubuntu22-arm64-onedir-latest-download| replace:: LINK UNAVAILABLE AFTER UNTIL SALT 3005 (PHOSOPHORUS) RELEASE

@@ -193,11 +193,11 @@ Download the macOS package and run the file to install Salt. See the
         :bdg-info:`Install Salt on macOS`
 
 
-Photon OS
-=========
-Install the Photon OS package using a yum package manager.
+.. Photon OS
+  =========
+  Install the Photon OS package using a yum package manager.
 
-.. grid:: 2
+  .. grid:: 2
 
     .. grid-item-card:: Browse the repo for Photon OS packages
         :link: https://repo.saltproject.io/py3/

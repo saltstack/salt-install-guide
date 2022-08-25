@@ -9,6 +9,7 @@ These instructions explain how to install Salt on Debian operating systems:
 * `Install onedir packages of Salt on Debian 11 (Bullseye)`_
 * `Install onedir packages of Salt on Debian 10 (Buster)`_
 * `Install classic packages of Salt on Debian 11 (Bullseye)`_
+* `Install classic packages of Salt on Debian 11 (Bullseye) ARM64`_
 * `Install classic packages of Salt on Debian 10 (Buster)`_
 
 
@@ -321,14 +322,14 @@ To install Salt on Debian 11 (Bullseye) using the old packaging system:
 .. include:: ../_includes/post-install-by-os.rst
 
 
-.. Install classic packages of Salt on Debian 11 (Bullseye) ARM64
-  ==============================================================
+Install classic packages of Salt on Debian 11 (Bullseye) ARM64
+==============================================================
 
-  .. include:: ../_includes/warning-about-old-packages.rst
+.. include:: ../_includes/warning-about-old-packages.rst
 
-  To install Salt on Debian 11 (Bullseye) ARM64 using the old packaging system:
+To install Salt on Debian 11 (Bullseye) ARM64 using the old packaging system:
 
-  #. Run the following commands to import the Salt Project repository key, and to
+#. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
 
    **Click the tab for the Salt version you would like to pin for updates:**
@@ -370,9 +371,9 @@ To install Salt on Debian 11 (Bullseye) using the old packaging system:
 
                echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |debian11-arm64-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
-  #. Run ``sudo apt-get update`` to update your packages.
+#. Run ``sudo apt-get update`` to update your packages.
 
-  #. Install the salt-minion, salt-master, or other Salt components:
+#. Install the salt-minion, salt-master, or other Salt components:
 
    .. code-block:: bash
 
@@ -383,7 +384,7 @@ To install Salt on Debian 11 (Bullseye) using the old packaging system:
        sudo apt-get install salt-cloud
        sudo apt-get install salt-api
 
-  #. Enable and start the services for salt-minion, salt-master, or other Salt
+#. Enable and start the services for salt-minion, salt-master, or other Salt
    components:
 
    .. code-block:: bash
@@ -394,7 +395,7 @@ To install Salt on Debian 11 (Bullseye) using the old packaging system:
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
 
-  .. include:: ../_includes/post-install-by-os.rst
+.. include:: ../_includes/post-install-by-os.rst
 
 
 

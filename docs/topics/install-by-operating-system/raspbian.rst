@@ -7,8 +7,8 @@ Raspbian
 Raspbian uses the same packages as Debian systems. These instructions explain
 how to install Salt on Raspbian operating systems:
 
-* `Install onedir packages of Salt on Raspbian 11 (Bullseye)`_
-* `Install onedir packages of Salt on Raspbian 10 (Buster)`_
+* `Install classic packages of Salt on Raspbian 11 (Bullseye)`_
+* `Install classic packages of Salt on Raspbian 10 (Buster)`_
 
 
 .. card:: Browse the repo for Raspbian (Debian) packages
@@ -24,9 +24,9 @@ how to install Salt on Raspbian operating systems:
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install onedir packages of Salt on Raspbian 11 (Bullseye)
-=========================================================
-To install the :ref:`onedir` packages of Salt on Raspbian 11 (Bullseye):
+Install classic packages of Salt on Raspbian 11 (Bullseye)
+==========================================================
+To install the :ref:`classic` packages of Salt on Raspbian 11 (Bullseye):
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -35,40 +35,40 @@ To install the :ref:`onedir` packages of Salt on Raspbian 11 (Bullseye):
 
    .. tab-set::
 
-       .. tab-item:: Raspbian 11 (Latest onedir)
+       .. tab-item:: Raspbian 11 (Latest classic)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **Raspbian 11 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-onedir-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian11-classic-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |debian11-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian11-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Raspbian 11 (Major onedir)
+       .. tab-item:: Raspbian 11 (Major classic)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`classic` package
            of Salt for **Raspbian 11 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-onedir-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian11-classic-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |debian11-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian11-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Raspbian 11 (Minor onedir)
+       .. tab-item:: Raspbian 11 (Minor classic)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`classic` package
            of Salt for **Raspbian 11 (Bullseye)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-onedir-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian11-classic-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |debian11-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian11-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 #. Run ``sudo apt-get update`` to update your packages.
 
@@ -97,9 +97,9 @@ To install the :ref:`onedir` packages of Salt on Raspbian 11 (Bullseye):
 .. include:: ../_includes/post-install-by-os.rst
 
 
-Install onedir packages of Salt on Raspbian 10 (Buster)
-=======================================================
-To install the :ref:`onedir` packages of Salt on Raspbian 10 (Buster):
+Install classic packages of Salt on Raspbian 10 (Buster)
+========================================================
+To install the :ref:`classic` packages of Salt on Raspbian 10 (Buster):
 
 #. Run the following commands to import the Salt Project repository key, and to
    create the apt sources list file:
@@ -108,40 +108,40 @@ To install the :ref:`onedir` packages of Salt on Raspbian 10 (Buster):
 
    .. tab-set::
 
-       .. tab-item:: Raspbian 10 (Latest onedir)
+       .. tab-item:: Raspbian 10 (Latest classic)
 
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **Raspbian 10 (Buster)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian10-onedir-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian10-classic-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |debian10-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian10-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Raspbian 10 (Major onedir)
+       .. tab-item:: Raspbian 10 (Major classic)
 
-           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
+           To pin your Salt upgrades to the :ref:`major` :ref:`classic` package
            of Salt for **Raspbian 10 (Buster)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian10-onedir-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian10-classic-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |debian10-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian10-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Raspbian 10 (Minor onedir)
+       .. tab-item:: Raspbian 10 (Minor classic)
 
-           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
+           To pin your Salt upgrades to the :ref:`minor` :ref:`classic` package
            of Salt for **Raspbian 10 (Buster)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian10-onedir-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian10-classic-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |debian10-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian10-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 #. Run ``sudo apt-get update`` to update your packages.
 
