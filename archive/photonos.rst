@@ -20,7 +20,7 @@ These instructions explain how to install Salt on Photon OS operating systems.
 
 
 Install Salt on Photon OS 3
-============================
+===========================
 To install Salt on Photon OS 3:
 
 #. Run the following commands to import the Salt Project repository key, and pin
