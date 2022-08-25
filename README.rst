@@ -52,10 +52,10 @@ Check out the following links also related to the Salt Install Guide:
   For information about contributing to the Salt Install Guide and other Salt
   documentation projects, including how to set up your environment and other
   policies around submitting merge requests or issues.
-* `Salt Style Guide <https://saltstack.gitlab.io/open/docs/salt-user-guide/topics/style-guide.html>`__ -
+* `Salt Style Guide <https://saltstack.gitlab.io/open/docs/docs-hub/topics/style-guide.html>`__ -
   For general guidance about using Salt Project terms and other style or
   formatting conventions.
-* `Writing Salt documentation (rST guide) <https://saltstack.gitlab.io/open/docs/salt-user-guide/topics/writing-salt-docs.html>`_ -
+* `rST guide <https://saltstack.gitlab.io/open/docs/docs-hub/topics/rst-guide.html>`_ -
   For conventions and guidelines about formatting reStructured Text (rST) in
   Salt documentation.
 

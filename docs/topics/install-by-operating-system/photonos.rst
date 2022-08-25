@@ -6,7 +6,7 @@ Photon OS
 
 These instructions explain how to install Salt on Photon OS operating systems.
 
-.. card:: Browse the repo for Photon OS packages
+..  .. card:: Browse the repo for Photon OS packages
     :link: https://repo.saltproject.io/py3/
     :width: 50%
 
