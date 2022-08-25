@@ -28,10 +28,10 @@ Product support lifecycle
     - `Extended life support`_ ends
 
   * - 3005
-    - Feb 16, 2023
-    - Aug 16, 2023
-    - Feb 16, 2024
-    - Feb 16, 2025
+    - Feb 25, 2023
+    - Aug 25, 2023
+    - Feb 25, 2024
+    - Feb 25, 2025
 
   * - 3004
     - Apr 18, 2022

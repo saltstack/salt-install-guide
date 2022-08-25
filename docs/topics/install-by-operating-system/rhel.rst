@@ -250,38 +250,38 @@ To install Salt on RedHat 8 using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: RHEL 8 (Latest)
+       .. tab-item:: RHEL 8 (Latest classic)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **RHEL 8**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel8-latest-gpg|\
+               sudo rpm --import \ |rhel8-classic-latest-gpg|\
 
-               curl -fsSL \ |rhel8-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel8-classic-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-       .. tab-item:: RHEL 8 (Major)
+       .. tab-item:: RHEL 8 (Major classic)
 
            To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
            package of Salt for **RHEL 8**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel8-major-gpg|\
+               sudo rpm --import \ |rhel8-classic-major-gpg|\
 
-               curl -fsSL \ |rhel8-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel8-classic-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-       .. tab-item:: RHEL 8 (Minor)
+       .. tab-item:: RHEL 8 (Minor classic)
 
            To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
            package of Salt for **RHEL 8**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel8-minor-gpg|\
+               sudo rpm --import \ |rhel8-classic-minor-gpg|\
 
-               curl -fsSL \ |rhel8-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel8-classic-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
@@ -324,16 +324,16 @@ To install Salt on RedHat 7 using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: RHEL 7 (Latest)
+       .. tab-item:: RHEL 7 (Latest classic)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **RHEL 7**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel7-latest-gpg|\
+               sudo rpm --import \ |rhel7-classic-latest-gpg|\
 
-               curl -fsSL \ |rhel7-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel7-classic-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
        .. tab-item:: RHEL 7 (Major)
 
@@ -342,9 +342,9 @@ To install Salt on RedHat 7 using the old packaging system:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel7-major-gpg|\
+               sudo rpm --import \ |rhel7-classic-major-gpg|\
 
-               curl -fsSL \ |rhel7-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel7-classic-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
        .. tab-item:: RHEL 7 (Minor)
 
@@ -353,9 +353,9 @@ To install Salt on RedHat 7 using the old packaging system:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel7-minor-gpg|\
+               sudo rpm --import \ |rhel7-classic-minor-gpg|\
 
-               curl -fsSL \ |rhel7-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel7-classic-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 

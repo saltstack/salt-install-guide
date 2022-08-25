@@ -162,7 +162,7 @@ The following onedir paths will not be available until the day of the Salt 3005
     - Hosted on Fedora repos
 
   * - MacOS
-    - https://repo.saltproject.io/salt/py3/osx/
+    - https://repo.saltproject.io/salt/py3/macos/
     - https://repo.saltproject.io/osx/
 
   * - Raspbian

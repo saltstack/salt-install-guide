@@ -103,38 +103,38 @@ To install Salt on Amazon Linux 2 using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: Amazon Linux 2 (Latest)
+       .. tab-item:: Amazon Linux 2 (Latest classic)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **Amazon Linux 2**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |amazon-linux2-latest-gpg|\
+               sudo rpm --import \ |amazon-linux2-classic-latest-gpg|\
 
-               curl -fsSL \ |amazon-linux2-latest-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
+               curl -fsSL \ |amazon-linux2-classic-latest-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
-       .. tab-item:: Amazon Linux 2 (Major)
+       .. tab-item:: Amazon Linux 2 (Major classic)
 
            To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
            package of Salt for **Amazon Linux 2**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |amazon-linux2-major-gpg|\
+               sudo rpm --import \ |amazon-linux2-classic-major-gpg|\
 
-               curl -fsSL \ |amazon-linux2-major-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
+               curl -fsSL \ |amazon-linux2-classic-major-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
-       .. tab-item:: Amazon Linux 2 (Minor)
+       .. tab-item:: Amazon Linux 2 (Minor classic)
 
            To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
            package of Salt for **Amazon Linux 2**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |amazon-linux2-minor-gpg|\
+               sudo rpm --import \ |amazon-linux2-classic-minor-gpg|\
 
-               curl -fsSL \ |amazon-linux2-minor-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
+               curl -fsSL \ |amazon-linux2-classic-minor-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 

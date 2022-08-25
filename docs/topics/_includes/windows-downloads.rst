@@ -10,64 +10,14 @@
 
   * - onedir
     - AMD64
-    - msi
-    -  **Download the install file**
-
-       * |windows-onedir-amd64-msi-download|
-
-       **MD5**
-
-       * |windows-onedir-amd64-msi-md5|
-
-       **SHA256**
-
-       * |windows-onedir-amd64-msi-sha256|
-
-  * - onedir
-    - AMD64
     - exe
     -  **Download the install file**
 
        * |windows-onedir-amd64-exe-download|
 
-       **MD5**
+       **GPG**
 
-       * |windows-onedir-amd64-exe-md5|
-
-       **SHA256**
-
-       * |windows-onedir-amd64-exe-sha256|
-
-  * - onedir
-    - x86
-    - msi
-    -  **Download the install file**
-
-       * |windows-onedir-x86-msi-download|
-
-       **MD5**
-
-       * |windows-onedir-x86-msi-md5|
-
-       **SHA256**
-
-       * |windows-onedir-x86-msi-sha256|
-
-  * - onedir
-    - x86
-    - exe
-    -  **Download the install file**
-
-       * |windows-onedir-x86-exe-download|
-
-       **MD5**
-
-       * |windows-onedir-x86-exe-md5|
-
-       **SHA256**
-
-       * |windows-onedir-x86-exe-sha256|
-
+       * |windows-onedir-amd64-exe-gpg|
 
   * - classic
     - AMD64

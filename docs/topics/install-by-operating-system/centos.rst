@@ -246,38 +246,38 @@ To install Salt on CentOS 7 using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: CentOS 7 (Latest)
+       .. tab-item:: CentOS 7 (Latest classic)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **CentOS 7**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel7-latest-gpg|\
+               sudo rpm --import \ |rhel7-classic-latest-gpg|\
 
-               curl -fsSL \ |rhel7-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel7-classic-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-       .. tab-item:: CentOS 7 (Major)
+       .. tab-item:: CentOS 7 (Major classic)
 
            To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
            package of Salt for **CentOS 7**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel7-major-gpg|\
+               sudo rpm --import \ |rhel7-classic-major-gpg|\
 
-               curl -fsSL \ |rhel7-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel7-classic-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-       .. tab-item:: CentOS 7 (Minor)
+       .. tab-item:: CentOS 7 (Minor classic)
 
            To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
            package of Salt for **CentOS 7**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel7-minor-gpg|\
+               sudo rpm --import \ |rhel7-classic-minor-gpg|\
 
-               curl -fsSL \ |rhel7-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |rhel7-classic-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
