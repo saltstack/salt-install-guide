@@ -48,11 +48,11 @@
 .. |debian11-onedir-minor-download| replace:: https://repo.saltproject.io/salt/py3/debian/11/amd64/minor/3005-1 bullseye main
 
 .. |debian10-onedir-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/latest/salt-archive-keyring.gpg
-.. |debian10-onedir-latest-download| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/latest bullseye main
+.. |debian10-onedir-latest-download| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/latest buster main
 .. |debian10-onedir-major-gpg| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/3005/salt-archive-keyring.gpg
-.. |debian10-onedir-major-download| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/3005 bullseye main
+.. |debian10-onedir-major-download| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/3005 buster main
 .. |debian10-onedir-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/minor/3005-1/salt-archive-keyring.gpg
-.. |debian10-onedir-minor-download| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/minor/3005-1 bullseye main
+.. |debian10-onedir-minor-download| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/minor/3005-1 buster main
 
 .. |debian11-arm64-onedir-latest-gpg| replace:: LINK UNAVAILABLE UNTIL AFTER SALT 3005 (PHOSOPHORUS) RELEASE
 .. |debian11-arm64-onedir-latest-download| replace:: LINK UNAVAILABLE UNTIL AFTER SALT 3005 (PHOSOPHORUS) RELEASE
