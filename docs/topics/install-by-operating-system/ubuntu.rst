@@ -402,16 +402,16 @@ To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 20.04 (Latest)
+       .. tab-item:: Ubuntu 20.04 (Latest classic)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **Ubuntu 20.04 (Focal)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-classic-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
        .. tab-item:: Ubuntu 20.04 (Major)
@@ -421,9 +421,9 @@ To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-classic-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
        .. tab-item:: Ubuntu 20.04 (Minor)
@@ -433,9 +433,9 @@ To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-classic-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 #. Run ``sudo apt-get update`` to update your packages.
 
@@ -479,40 +479,40 @@ To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 20.04 ARM64 (Latest)
+       .. tab-item:: Ubuntu 20.04 ARM64 (Latest classic)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-classic-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 20.04 ARM64 (Major)
+       .. tab-item:: Ubuntu 20.04 ARM64 (Major classic)
 
            To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
            package of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-classic-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 20.04 ARM64 (Minor)
+       .. tab-item:: Ubuntu 20.04 ARM64 (Minor classic)
 
            To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
            package of Salt for **Ubuntu 20.04 (Focal) ARM64**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-classic-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
 #. Run ``sudo apt-get update`` to update your packages.
@@ -556,40 +556,40 @@ To install Salt on Ubuntu 18.04 (Bionic) using the old packaging system:
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 18.04 (Latest)
+       .. tab-item:: Ubuntu 18.04 (Latest classic)
 
            To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
            of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-latest-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-classic-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 18.04 (Major)
+       .. tab-item:: Ubuntu 18.04 (Major classic)
 
            To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
            package of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-major-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-classic-major-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
-       .. tab-item:: Ubuntu 18.04 (Minor)
+       .. tab-item:: Ubuntu 18.04 (Minor classic)
 
            To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
            package of Salt for **Ubuntu 18.04 (Bionic)**:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-minor-gpg|\
+               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |ubuntu18-classic-minor-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
 #. Run ``sudo apt-get update`` to update your packages.
