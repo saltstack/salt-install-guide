@@ -87,12 +87,17 @@ To upgrade to onedir:
 
 #. After the repository file is updated, upgrade your Salt packages.
 
-#. Restart the Salt services.
+   After upgrading your Salt packages, your Salt services should automatically
+   restart. If you need to restart them manually for any reason, you can use
+   these commands:
 
    .. code-block:: bash
 
        systemctl start salt-master
        systemctl start salt-minion
+
+   See :ref:`restart-upgrade-minions-used-in-state-runs` for additional
+   considerations.
 
 #. Ensure any 3rd party pip packages are installed in the correct onedir path.
 
