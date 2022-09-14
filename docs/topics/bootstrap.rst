@@ -48,40 +48,59 @@ Install using the bootstrap script
 ==================================
 The bootstrap script can be used to install specific services:
 
-.. code-block:: bash
+#. Download the install script using the following command:
 
-    # Download the install script
-    curl -o bootstrap-salt.sh -L https://bootstrap.saltproject.io
+   .. code-block:: bash
 
-    # Install minion service (default)
-    ./bootstrap-salt.sh
+       curl -o bootstrap-salt.sh -L https://bootstrap.saltproject.io
 
-    # Install both the Salt master and minion
-    ./bootstrap-salt.sh -M
+   .. Note::
+       Alternatively, to download the bash script and run it immediately, use:
 
-    # Install just the Salt master service
-    ./bootstrap-salt.sh -M -N
+       .. code-block:: bash
 
-    # Perform a pip-based installation
-    ./bootstrap-salt.sh -P
+           curl -L https://bootstrap.saltproject.io | sudo sh -s --
 
-    # Combine options that don't take arguments together, if desired
-    ./bootstrap-salt.sh -MNP
 
-    # Download and run
-    curl -L https://bootstrap.saltproject.io | sudo sh -s --
+#. Optional: Use the following command to make the bootstrap script executable:
 
-    # Download and install a specific git branch/version
-    curl -L https://bootstrap.saltproject.io | sudo sh -s -- git develop
+   .. code-block:: bash
 
-    # Make the install script executable
-    chmod +x bootstrap-salt.sh
+       chmod +x bootstrap-salt.sh
+
+#. Run the bash script to install Salt services. Add option flags as needed to
+   customize the installation. See `Commonly used bootstrap script options`_
+   and `Additional bootstrap script options`_ for more information.
+
+   For example, to run the default, which only installs the minion service:
+
+   .. code-block:: bash
+
+       ./bootstrap-salt.sh
+
+   To install both the Salt master and minion services:
+
+   .. code-block:: bash
+
+       ./bootstrap-salt.sh -M
+
+   To install just the Salt master service:
+
+   .. code-block:: bash
+
+       ./bootstrap-salt.sh -M -N
+
+   To perform a pip-based installation:
+
+   .. code-block:: bash
+
+       ./bootstrap-salt.sh -P
 
 
 .. Tip::
     The `Salt bootstrap README <https://github.com/saltstack/salt-bootstrap>`_
     provides additional examples for a variety of installation scenarios.
-    Consider reading it!
+    Consider reading it for more information.
 
 
 Installation types
@@ -141,6 +160,7 @@ Installation types
       .. code-block:: bash
 
           bootstrap-salt.sh git
+          bootstrap-salt.sh git develop
 
 
   * - ``git [ref]``
@@ -158,6 +178,14 @@ Installation types
 
 Commonly used bootstrap script options
 ======================================
+You can combine options that don't take arguments together, if needed. For
+example:
+
+.. code-block:: bash
+
+    ./bootstrap-salt.sh -MNP
+
+The following are the most commonly used bootstrap options:
 
 .. list-table::
   :widths: 20 40 40

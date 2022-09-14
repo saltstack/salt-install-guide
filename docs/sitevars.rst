@@ -201,6 +201,9 @@
 .. |ubuntu18-classic-minor-gpg| replace:: https://repo.saltproject.io/py3/ubuntu/18.04/amd64/archive/3005/salt-archive-keyring.gpg
 .. |ubuntu18-classic-minor-download| replace:: https://repo.saltproject.io/py3/ubuntu/18.04/amd64/archive/3005 bionic main
 
+.. |windows-install-exe-example| replace:: salt-3005-1-windows-amd64.exe
+.. |windows-install-msi-example| replace:: Salt-Minion-3005-1-Py3-AMD64.msi.md5
+
 .. |windows-onedir-amd64-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/3005-1/salt-3005-1-windows-amd64.exe
 .. |windows-onedir-amd64-exe-gpg| replace:: https://repo.saltproject.io/salt/py3/windows/3005-1/salt-archive-keyring.gpg
 
