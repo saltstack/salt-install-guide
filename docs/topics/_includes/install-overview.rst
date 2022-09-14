@@ -71,9 +71,11 @@ masterless/agentless Salt configurations.
   * - 1
     - Before you start the installation, check the system requirements to ensure
       your platform is supported in the latest version of Salt and open the
-      required network ports.
+      required network ports. Ensure you also have the correct permissions to
+      install packages on the targeted nodes.
     -  * :ref:`check-system-requirements`
        * :ref:`check-network-ports`
+       * :ref:`check-your-permissions`
        * :ref:`salt-supported-operating-systems`
        * :ref:`salt-version-support-lifecycle`
        * :ref:`salt-python-version-support`
