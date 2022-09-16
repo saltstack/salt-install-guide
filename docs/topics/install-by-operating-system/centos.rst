@@ -9,10 +9,12 @@ These instructions explain how to install Salt on CentOS operating systems:
 * `Install onedir packages of Salt on CentOS 9`_
 * `Install onedir packages of Salt on CentOS 8`_
 * `Install onedir packages of Salt on CentOS 7`_
+* `Install classic packages of Salt on CentOS 8`_
 * `Install classic packages of Salt on CentOS 7`_
 
 
 .. card:: Browse the repo for CentOS packages
+    :class-card: sd-border-1
     :link: https://repo.saltproject.io/py3/redhat/
     :width: 50%
 
@@ -231,6 +233,80 @@ To install Salt on CentOS 7:
 
 
 .. include:: ../_includes/post-install-by-os.rst
+
+
+Install classic packages of Salt on CentOS 8
+============================================
+
+.. include:: ../_includes/warning-about-old-packages.rst
+
+To install Salt on CentOS 8 using the old packaging system:
+
+#. Run the following commands to install the Salt Project repository and key:
+
+   **Click the tab for the Salt version you would like to pin for updates:**
+
+   .. tab-set::
+
+       .. tab-item:: CentOS 8 (Latest classic)
+
+           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
+           of Salt for **CentOS 8**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |rhel8-classic-latest-gpg|\
+
+               curl -fsSL \ |rhel8-classic-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+       .. tab-item:: CentOS 8 (Major classic)
+
+           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
+           package of Salt for **CentOS 8**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |rhel8-classic-major-gpg|\
+
+               curl -fsSL \ |rhel8-classic-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+       .. tab-item:: CentOS 8 (Minor classic)
+
+           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
+           package of Salt for **CentOS 8**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |rhel8-classic-minor-gpg|\
+
+               curl -fsSL \ |rhel8-classic-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+#. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
+
+#. Install the salt-minion, salt-master, or other Salt components:
+
+   .. code-block:: bash
+
+       sudo yum install salt-master
+       sudo yum install salt-minion
+       sudo yum install salt-ssh
+       sudo yum install salt-syndic
+       sudo yum install salt-cloud
+       sudo yum install salt-api
+
+#. Enable and start service for salt-minion, salt-master, or other Salt
+   components:
+
+   .. code-block:: bash
+
+       sudo systemctl enable salt-master && sudo systemctl start salt-master
+       sudo systemctl enable salt-minion && sudo systemctl start salt-minion
+       sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
+       sudo systemctl enable salt-api && sudo systemctl start salt-api
+
+
+.. include:: ../_includes/post-install-by-os.rst
+
 
 
 Install classic packages of Salt on CentOS 7

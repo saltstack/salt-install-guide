@@ -14,6 +14,7 @@ These instructions explain how to install Salt on Debian operating systems:
 
 
 .. card:: Browse the repo for Debian packages
+    :class-card: sd-border-1
     :link: https://repo.saltproject.io/py3/debian/
     :width: 50%
 

@@ -12,6 +12,7 @@ network devices running `Junos OS
 <https://www.juniper.net/documentation/product/en_US/junos-os/>`__.
 
 .. card:: Browse the repo for Juniper packages
+    :class-card: sd-border-1
     :link: https://repo.saltproject.io/salt/py3/juniper/
     :width: 50%
 

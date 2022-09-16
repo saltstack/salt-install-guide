@@ -12,6 +12,7 @@ systems:
 
 
 .. card:: Browse the repo for Amazon Linux 2 packages
+    :class-card: sd-border-1
     :link: https://repo.saltproject.io/py3/amazon/
     :width: 50%
 
