@@ -10,6 +10,7 @@ systems. This guide is intended for system administrators with the general
 knowledge and experience required in the field.
 
 .. card:: Browse the repo for AIX packages
+    :class-card: sd-border-1
     :link: https://repo.saltproject.io/salt/py3/aix/
     :width: 50%
 

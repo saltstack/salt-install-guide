@@ -15,6 +15,7 @@ systems:
 
 
 .. card:: Browse the repo for RedHat (RHEL) packages
+    :class-card: sd-border-1
     :link: https://repo.saltproject.io/py3/redhat/
     :width: 50%
 

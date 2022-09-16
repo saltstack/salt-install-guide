@@ -39,6 +39,7 @@ removal script and an AIX bff package.
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for AIX packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/salt/py3/aix/
 
         :bdg-danger:`AIX`
@@ -46,6 +47,7 @@ removal script and an AIX bff package.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: AIX install guide
+        :class-card: sd-border-1
         :link: install-aix
         :link-type: ref
 
@@ -64,6 +66,7 @@ Install the Amazon Linux 2 package using a Linux package manager.
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for Amazon Linux 2 packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/py3/amazon/
 
         :bdg-danger:`Amazon Linux 2`
@@ -71,6 +74,7 @@ Install the Amazon Linux 2 package using a Linux package manager.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Amazon Linux 2 install guide
+        :class-card: sd-border-1
         :link: install-amazon
         :link-type: ref
 
@@ -84,6 +88,7 @@ The Arista native minion package is a SWIX file.
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for Arista packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/salt/py3/arista/
 
         :bdg-danger:`Arista`
@@ -91,6 +96,7 @@ The Arista native minion package is a SWIX file.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Arista install guide
+        :class-card: sd-border-1
         :link: install-arista
         :link-type: ref
 
@@ -104,6 +110,7 @@ Install the CentOS package using a yum package manager.
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for CentOS packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/py3/redhat/
 
         :bdg-danger:`CentOS`
@@ -111,6 +118,7 @@ Install the CentOS package using a yum package manager.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: CentOS install guide
+        :class-card: sd-border-1
         :link: install-centos
         :link-type: ref
 
@@ -124,6 +132,7 @@ Install the Debian package using an apt package manager.
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for Debian packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/py3/debian/
 
         :bdg-danger:`Debian`
@@ -131,6 +140,7 @@ Install the Debian package using an apt package manager.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Debian install guide
+        :class-card: sd-border-1
         :link: install-debian
         :link-type: ref
 
@@ -143,6 +153,7 @@ Fedora
 Install the Fedora package from the Fedora package manager.
 
 .. card:: Fedora install guide
+    :class-card: sd-border-1
     :link: install-fedora
     :link-type: ref
     :width: 50%
@@ -157,6 +168,7 @@ The Juniper native minion| package is a tarball (.tgz) file.
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for Juniper packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/salt/py3/juniper/
 
         :bdg-danger:`Juniper`
@@ -164,6 +176,7 @@ The Juniper native minion| package is a tarball (.tgz) file.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Juniper install guide
+        :class-card: sd-border-1
         :link: install-juniper
         :link-type: ref
 
@@ -180,6 +193,7 @@ Download the macOS package and run the file to install Salt. See the
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for macOS packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/osx/
 
         :bdg-danger:`macOS`
@@ -187,6 +201,7 @@ Download the macOS package and run the file to install Salt. See the
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: macOS install guide
+        :class-card: sd-border-1
         :link: install-macos
         :link-type: ref
 
@@ -200,6 +215,7 @@ Download the macOS package and run the file to install Salt. See the
   .. grid:: 2
 
     .. grid-item-card:: Browse the repo for Photon OS packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/py3/
 
         :bdg-danger:`Photon OS`
@@ -207,6 +223,7 @@ Download the macOS package and run the file to install Salt. See the
         |release-badge|
 
     .. grid-item-card:: Photon OS install guide
+        :class-card: sd-border-1
         :link: install-photonos
         :link-type: ref
 
@@ -225,6 +242,7 @@ Install the RedHat package using a yum package manager.
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for RedHat (RHEL) packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/py3/redhat/
 
         :bdg-danger:`RedHat`
@@ -232,10 +250,27 @@ Install the RedHat package using a yum package manager.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: RedHat install guide
+        :class-card: sd-border-1
         :link: install-rhel
         :link-type: ref
 
         :bdg-info:`Install Salt on RedHat`
+
+
+SUSE (SLES)
+===========
+Install the SUSE (SLES) package from the SUSE package repository. SUSE creates
+its own Salt packages and the Salt Project does not publish separate Salt
+packages for download.
+
+.. grid:: 2
+
+    .. grid-item-card:: SUSE (SLES) install guide
+        :class-card: sd-border-1
+        :link: install-sles
+        :link-type: ref
+
+        :bdg-info:`Install Salt on SUSE (SLES)`
 
 
 Solaris
@@ -247,6 +282,7 @@ tarball (.tgz) file.
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for Solaris packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/salt/py3/solaris/
 
         :bdg-danger:`Solaris`
@@ -254,6 +290,7 @@ tarball (.tgz) file.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Solaris install guide
+        :class-card: sd-border-1
         :link: install-solaris
         :link-type: ref
 
@@ -267,6 +304,7 @@ Install the Ubuntu package using an apt package manager.
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for Ubuntu packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/py3/ubuntu/
 
         :bdg-danger:`Ubuntu`
@@ -274,6 +312,7 @@ Install the Ubuntu package using an apt package manager.
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Ubuntu install guide
+        :class-card: sd-border-1
         :link: install-ubuntu
         :link-type: ref
 
@@ -290,6 +329,7 @@ Download the Windows package and run the file to install Salt. See the
 .. grid:: 2
 
     .. grid-item-card:: Browse the repo for Windows packages
+        :class-card: sd-border-1
         :link: https://repo.saltproject.io/windows/
 
         :bdg-danger:`Windows`
@@ -297,6 +337,7 @@ Download the Windows package and run the file to install Salt. See the
         |release-badge| |supported-release-1-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Windows install guide
+        :class-card: sd-border-1
         :link: install-windows
         :link-type: ref
 
