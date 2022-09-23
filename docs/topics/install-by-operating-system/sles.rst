@@ -4,12 +4,14 @@
 SUSE (SLES)
 ===========
 
-Salt (stable) is currently available through the SUSE repositories.
-
 These instructions explain how to install Salt on AR operating
 systems:
 
-* `Install the stable release of Salt on SUSE`_
+.. Note::
+    Salt packages for SUSE are hosted on the SUSE package repository. SUSE
+    creates its own Salt packages and the Salt Project does not publish separate
+    Salt packages for download.
+
 
 .. include:: ../_includes/intro-install-by-os.rst
 

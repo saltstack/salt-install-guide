@@ -150,7 +150,8 @@ Install the Debian package using an apt package manager.
 
 Fedora
 ======
-Install the Fedora package from the Fedora package manager.
+Salt packages for Fedora are hosted on the Fedora package repository. Install
+the Fedora packages from the Fedora package manager.
 
 .. card:: Fedora install guide
     :class-card: sd-border-1
@@ -208,26 +209,18 @@ Download the macOS package and run the file to install Salt. See the
         :bdg-info:`Install Salt on macOS`
 
 
-.. Photon OS
-  =========
-  Install the Photon OS package using a yum package manager.
+Photon OS
+=========
+Salt packages for Photon OS are hosted on the Photon OS package repository.
+Install the Photon OS packages from the Photon OS package manager.
 
-  .. grid:: 2
+.. card:: Photon OS install guide
+    :class-card: sd-border-1
+    :link: install-photonos
+    :link-type: ref
+    :width: 50%
 
-    .. grid-item-card:: Browse the repo for Photon OS packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/py3/
-
-        :bdg-danger:`Photon OS`
-        :bdg-secondary:`Python3`
-        |release-badge|
-
-    .. grid-item-card:: Photon OS install guide
-        :class-card: sd-border-1
-        :link: install-photonos
-        :link-type: ref
-
-        :bdg-info:`Install Salt on Photon OS`
+    :bdg-info:`Install Salt on Photon OS`
 
 
 Raspbian

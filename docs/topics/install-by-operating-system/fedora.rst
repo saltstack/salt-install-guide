@@ -7,9 +7,13 @@ Fedora
 These instructions explain how to install Salt on Fedora operating systems.
 
 .. Note::
-    Fedora packages are available in the standard Fedora repositories. When you
-    install on Fedora, it always installs the latest release. Updating
-    installs the latest release even if it is a new major version.
+    Salt packages for Fedora are hosted on the Fedora package repository.
+    Fedora creates its own Salt packages and the Salt Project does not
+    publish separate Salt packages for download.
+
+    When you install on Fedora, it always installs the latest release of Salt.
+    Updating the package will install the latest release, even if it is a new
+    major version.
 
 
 .. include:: ../_includes/intro-install-by-os.rst
