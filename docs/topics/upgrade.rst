@@ -20,6 +20,7 @@ PyPI if you have installed Salt with pip, the package installer for Python.
     more information, see
     `How to Upgrade Salt Crystal <https://kb.vmware.com/s/article/50122482?lang=en_US&queryTerm=upgrade%20salt>`_.
 
+
 Upgrade your Salt infrastructure
 ================================
 To upgrade Salt:
@@ -94,8 +95,33 @@ To upgrade Salt:
         - To update Windows or macO, download the latest installers and run them.
           See :ref:`install-macos` or :ref:`install-windows` for these downloads.
 
-#. With Salt now updated, you will want to verify your configuration is intact
-   and restore it if necessary.
+#. If you are upgrading from classic Salt packages to onedir packages, use Salt
+   to reinstall any existing third party Python packages. Reinstalling the
+   packages ensures they are installed in the correct onedir path.
+
+   .. Admonition:: How do I know which packages need to be reinstalled?
+
+      You can use ``salt-call pip.list`` to view existing modules that may need
+      to be installed.
+
+      See also `Salt dependencies <https://github.com/saltstack/salt/blob/master/requirements/static/pkg/py3.9/linux.txt>`_
+      for a list of the packages that are installed with onedir. Any package
+      that is not on this list needs to be reinstalled.
+
+   You can use two possible methods to reinstall packages:
+
+   * ``salt pip install <package name>``
+   * Use the ``pip.installed`` Salt state.
+
+   .. Note::
+       In order to install software such as Python libraries and Salt
+       extensions, you'll need to use ``salt-pip`` to install packages into the
+       onedir directory. For more information, see the
+       `pip.state module documentation <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pip_state.html#module-salt.states.pip_state>`_.
+
+
+#. With Salt now updated, verify your configuration is correct and restore it
+   if necessary.
 
 If you stopped the daemon(s) prior to upgrading, you will need to restart the
 daemons. See `Restart and upgrade minions used in state runs`_ for more information.

@@ -99,12 +99,22 @@ To upgrade to onedir:
    See :ref:`restart-upgrade-minions-used-in-state-runs` for additional
    considerations.
 
-#. Ensure any 3rd party pip packages are installed in the correct onedir path.
+#. Use Salt to reinstall any existing third party Python packages. Reinstalling
+   the packages ensures they are installed in the correct onedir path.
 
-   You can use two possible methods:
+   .. Admonition:: How do I know which packages need to be reinstalled?
+
+      You can use ``salt-call pip.list`` to view existing modules that may need
+      to be installed.
+
+      See also `Salt dependencies <https://github.com/saltstack/salt/blob/master/requirements/static/pkg/py3.9/linux.txt>`_
+      for a list of the packages that are installed with onedir. Any package
+      that is not on this list needs to be reinstalled.
+
+   You can use two possible methods to reinstall packages:
 
    * ``salt pip install <package name>``
-   * Using the ``pip.installed`` Salt state.
+   * Use the ``pip.installed`` Salt state.
 
    .. Note::
        In order to install software such as Python libraries and Salt
