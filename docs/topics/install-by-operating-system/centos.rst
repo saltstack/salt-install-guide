@@ -138,7 +138,6 @@ Only onedir packages of Salt are available for CentOS 8. To install the
 
                curl -fsSL \ |centos8-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
-
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
 #. Install the salt-minion, salt-master, or other Salt components:

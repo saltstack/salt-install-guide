@@ -131,14 +131,14 @@ using the hostname ``salt``.
 An example that overrides the master default setting:
 
 .. code-block:: yaml
-    :caption: /etc/salt/minion.d/master.config
+    :caption: /etc/salt/minion.d/master.conf
 
     master: 192.0.2.20
 
 
 Declaring the minion ID
 -----------------------
-The ``salt-minion`` will identify itself to the master by the system’s hostname
+The ``salt-minion`` will identify itself to the master by the system's hostname
 unless explicitly set:
 
 .. code-block:: yaml
