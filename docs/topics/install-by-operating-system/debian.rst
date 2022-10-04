@@ -270,7 +270,7 @@ To install Salt on Debian 11 (Bullseye) using the old packaging system:
 
                sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-classic-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |debian11-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
        .. tab-item:: Debian 11 (Major classic)
@@ -346,7 +346,7 @@ To install Salt on Debian 11 (Bullseye) ARM64 using the old packaging system:
 
                sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |debian11-arm64-classic-latest-gpg|\
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-arm64-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=arm64] \ |debian11-arm64-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
        .. tab-item:: Debian 11 ARM64 (Major classic)
