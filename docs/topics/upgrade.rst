@@ -91,8 +91,8 @@ To upgrade Salt:
           source to the latest source listed on :ref:`install-debian` or
           :ref:`install-ubuntu`.
 
-      * - Update macOs or Windows
-        - To update Windows or macO, download the latest installers and run them.
+      * - Update macOS or Windows
+        - To update Windows or macOS, download the latest installers and run them.
           See :ref:`install-macos` or :ref:`install-windows` for these downloads.
 
 #. If you are upgrading from classic Salt packages to onedir packages, use Salt

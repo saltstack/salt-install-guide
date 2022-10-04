@@ -29,7 +29,7 @@
 
 .. sidebar:: **Supported Salt releases**
 
-    |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+    |release-badge| |supported-release-1-badge|
 
     **See also**
 
