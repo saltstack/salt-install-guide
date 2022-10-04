@@ -6,14 +6,19 @@ Announcements
 
 .. |date| date::
 
-.. epigraph::
-
-    Last updated on |date|
+.. article-info::
+    :avatar: ../_static/img/SaltProject_Logomark_teal.png
+    :avatar-link: https://saltproject.io/
+    :avatar-outline: muted
+    :date: Last updated on |date|
+    :author: **The Salt Project**
+    :class-container: sd-p-2 sd-outline-muted sd-rounded-1
 
 
 Release announcements
 =====================
 
+* **October 4:** `3005.1 <https://docs.saltproject.io/en/latest/topics/releases/3005.1.html>`_ is now available.
 * **August 25:** `3005 <https://docs.saltproject.io/en/3005/topics/releases/3005.html>`_ is now available.
 * **June 21:** `3004.2 <https://docs.saltproject.io/en/3004/topics/releases/3004.2.html>`_ is now available.
 * **June 21:** `3003.5 <https://docs.saltproject.io/en/3003/topics/releases/3003.5.html>`_ is now available.
