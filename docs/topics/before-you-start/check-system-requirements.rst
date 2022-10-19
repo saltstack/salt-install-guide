@@ -9,9 +9,9 @@ To check if your operating system is supported, see:
 * :ref:`salt-supported-operating-systems`
 * :ref:`salt-version-support-lifecycle`
 
-.. include:: _includes/supported-os-concepts.rst
+.. include:: ../_includes/supported-os-concepts.rst
 
-.. image:: ../_static/img/master-to-minion-cloud.png
+.. image:: ../../_static/img/master-to-minion-cloud.png
    :align: right
    :alt: Salt uses a master-client model.
 

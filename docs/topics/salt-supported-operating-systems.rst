@@ -323,7 +323,7 @@ Overview of supported operating systems
     -
     - Package only
 
-  * - `Windows`_ Desktop 10 
+  * - `Windows`_ Desktop 10
     -
     - Yes
     - Yes
@@ -358,7 +358,7 @@ Overview of supported operating systems
     -
     - Package only
 
-  * - `Windows`_ 2019 
+  * - `Windows`_ 2019
     -
     - Yes
     - Yes
@@ -398,10 +398,10 @@ Full support
 ------------
 Full support is defined as:
 
-* Packages and all required dependencies created by Salt Project or official upstream packager.
+* Packages and all required dependencies created by Salt Project or official upstream packager.
 * Packages hosted by the Salt Project.
 * Tested by the Salt Project.
-* The Salt Project provides full technical support for VMware customers.
+* The Salt Project provides full technical support for VMware customers.
 * The Salt Project will fix bugs for VMware customers.
 
 
@@ -411,15 +411,15 @@ Reasonable-effort support is defined as:
 
 * Packages created and hosted by the Salt Project community.
 * Some testing done by the Salt Project.
-* The Salt Project provides best-effort technical support for VMware customers.
+* The Salt Project provides best-effort technical support for VMware customers.
 * The Salt Project may fix bugs for VMware customers.
 
 
 Full support policy by operating system
 =======================================
 This section outlines the general support and package creation policy for each
-operating system that is listed as having full support by the Salt Project.
-These guidelines are intended to help you understand how long a particular
+operating system that is listed as having full support by the Salt Project.
+These guidelines are intended to help you understand how long a particular
 operating system will receive official packages, testing, and technical support.
 
 
@@ -429,9 +429,9 @@ AIX
 ---
 The Salt Project supports:
 
-  * AIX version 7.1 as of May 2017.
-  * AIX version 7.2 as of November 2021.
-  * AIX version 7.3 as of May 2022.
+* AIX version 7.1 as of May 2017.
+* AIX version 7.2 as of November 2021.
+* AIX version 7.3 as of May 2022.
 
 The following systems are supported:
 
@@ -487,7 +487,7 @@ The following Arista systems are supported:
    * - Arista 64-bit EOS
      - Versions 4.23 and greater
 
-The Arista native minion already contains Arista’s `pyeapi
+The Arista native minion already contains Arista's `pyeapi
 <https://github.com/arista-eosplus/pyeapi>`_ software, as well as `Napalm
 <https://github.com/napalm-automation/napalm>`_ and all of its dependencies.
 
@@ -495,7 +495,7 @@ The Arista native minion already contains Arista’s `pyeapi
 CentOS
 ------
 CentOS versions through Production Phase 3 Support. Versions in ELS are not
-supported by the Salt Project.
+supported by the Salt Project.
 
 
 Debian
@@ -513,9 +513,9 @@ Fedora version support mirrors that of the upstream maintainer.
 RedHat
 ------
 RedHat versions through Production Phase 3 Support. Versions in ELS are not
-supported by the Salt Project.
+supported by the Salt Project.
 
-https://access.redhat.com/support/policy/updates/errata 
+https://access.redhat.com/support/policy/updates/errata
 
 
 .. _juniper-supported:

@@ -39,6 +39,6 @@ from the master.
     - Connects only to deliver data
 
 
-.. image:: ../_static/img/minion-subcription-publication-model.jpg
+.. image:: ../../_static/img/minion-subcription-publication-model.jpg
    :align: left
    :alt: Minion subscription publication
