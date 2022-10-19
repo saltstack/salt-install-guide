@@ -18,19 +18,11 @@ Install Salt
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Before you start
-
-   topics/check-system-requirements
-   topics/check-network-ports
-   topics/check-your-permissions
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
    :caption: Install Salt
 
-   topics/bootstrap
+   topics/before-you-start/index
    topics/install-by-operating-system/index
+   topics/bootstrap
    topics/platform-agnostic
 
 .. toctree::
@@ -60,6 +52,7 @@ Install Salt
    topics/salt-supported-operating-systems
    topics/salt-version-support-lifecycle
    topics/salt-python-version-support
+   topics/access-old-packages
 
 .. toctree::
    :maxdepth: 2

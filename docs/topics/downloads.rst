@@ -6,7 +6,7 @@ Downloads
 
 .. sidebar:: **Supported Salt releases**
 
-    |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+    |release-badge| |supported-release-2-badge|
 
     **See also**
 
@@ -44,7 +44,7 @@ removal script and an AIX bff package.
 
         :bdg-danger:`AIX`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: AIX install guide
         :class-card: sd-border-1
@@ -71,7 +71,7 @@ Install the Amazon Linux 2 package using a Linux package manager.
 
         :bdg-danger:`Amazon Linux 2`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Amazon Linux 2 install guide
         :class-card: sd-border-1
@@ -93,7 +93,7 @@ The Arista native minion package is a SWIX file.
 
         :bdg-danger:`Arista`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Arista install guide
         :class-card: sd-border-1
@@ -115,7 +115,7 @@ Install the CentOS package using a yum package manager.
 
         :bdg-danger:`CentOS`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: CentOS install guide
         :class-card: sd-border-1
@@ -137,7 +137,7 @@ Install the Debian package using an apt package manager.
 
         :bdg-danger:`Debian`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Debian install guide
         :class-card: sd-border-1
@@ -174,7 +174,7 @@ The Juniper native minion| package is a tarball (.tgz) file.
 
         :bdg-danger:`Juniper`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Juniper install guide
         :class-card: sd-border-1
@@ -199,7 +199,7 @@ Download the macOS package and run the file to install Salt. See the
 
         :bdg-danger:`macOS`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: macOS install guide
         :class-card: sd-border-1
@@ -240,7 +240,7 @@ Install the RedHat package using a yum package manager.
 
         :bdg-danger:`RedHat`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: RedHat install guide
         :class-card: sd-border-1
@@ -280,7 +280,7 @@ tarball (.tgz) file.
 
         :bdg-danger:`Solaris`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Solaris install guide
         :class-card: sd-border-1
@@ -302,7 +302,7 @@ Install the Ubuntu package using an apt package manager.
 
         :bdg-danger:`Ubuntu`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Ubuntu install guide
         :class-card: sd-border-1
@@ -327,7 +327,7 @@ Download the Windows package and run the file to install Salt. See the
 
         :bdg-danger:`Windows`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-1-badge| |supported-release-2-badge|
+        |release-badge| |supported-release-2-badge|
 
     .. grid-item-card:: Windows install guide
         :class-card: sd-border-1
