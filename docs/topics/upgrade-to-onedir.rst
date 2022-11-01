@@ -261,7 +261,7 @@ Platform package support for Salt 3005
 
   * - RedHat 9
     - Yes
-    - Yes
+    -
 
   * - Ubuntu 18.04
     - Yes

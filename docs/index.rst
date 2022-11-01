@@ -59,6 +59,7 @@ Install Salt
    :hidden:
    :caption: Contribute
 
-   See a problem? Open an issue! <https://gitlab.com/saltstack/open/docs/salt-install-guide/-/issues>
+   Open a Salt issue to report install bugs <https://github.com/saltstack/salt/issues/new/choose>
+   Open a docs issue <https://gitlab.com/saltstack/open/docs/salt-install-guide/-/issues>
    Salt docs contributing guide <https://saltstack.gitlab.io/open/docs/docs-hub/topics/contributing.html>
    GitLab repository <https://gitlab.com/saltstack/open/docs/salt-install-guide>

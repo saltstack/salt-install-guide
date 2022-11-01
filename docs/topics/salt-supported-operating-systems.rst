@@ -43,13 +43,6 @@ Overview of supported operating systems
     -
     - Package only
 
-  * - `AIX`_ 7.3
-    -
-    - Yes
-    - Yes
-    -
-    - Package only
-
   * - `Amazon Linux`_ 2
     -
     - Yes
@@ -431,7 +424,10 @@ The Salt Project supports:
 
 * AIX version 7.1 as of May 2017.
 * AIX version 7.2 as of November 2021.
-* AIX version 7.3 as of May 2022.
+
+.. Note::
+    The Salt Project had to drop support for AIX 7.3 for the 3005 release due to
+    build failures caused by a bug in AIX.
 
 The following systems are supported:
 

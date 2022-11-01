@@ -9,6 +9,10 @@ guide explains the process for installing a Salt native minion on AIX UNIX
 systems. This guide is intended for system administrators with the general
 knowledge and experience required in the field.
 
+.. Note::
+    The Salt Project had to drop support for AIX 7.3 for the 3005 release due to
+    build failures caused by a bug in AIX.
+
 .. card:: Browse the repo for AIX packages
     :class-card: sd-border-1
     :link: https://repo.saltproject.io/salt/py3/aix/
@@ -57,7 +61,7 @@ To install the package:
    native minion package is a tarball containing an installation and removal
    script and an AIX bff package.
 
-#. In the terminal on the AIX device, navigate to the ``salt_|aix-version|``
+#. In the terminal on the AIX device, navigate to the ``salt_3005.1``
    directory.
 
    .. Note::
