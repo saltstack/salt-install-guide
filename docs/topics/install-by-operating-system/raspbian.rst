@@ -43,9 +43,11 @@ To install the :ref:`classic` packages of Salt on Raspbian 11 (Bullseye):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian11-classic-latest-gpg|\
+               mkdir /etc/apt/keyrings
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian11-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |raspbian11-classic-latest-gpg|\
+
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian11-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
        .. tab-item:: Raspbian 11 (Major classic)
@@ -55,9 +57,11 @@ To install the :ref:`classic` packages of Salt on Raspbian 11 (Bullseye):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian11-classic-major-gpg|\
+               mkdir /etc/apt/keyrings
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian11-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |raspbian11-classic-major-gpg|\
+
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian11-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
        .. tab-item:: Raspbian 11 (Minor classic)
@@ -67,9 +71,11 @@ To install the :ref:`classic` packages of Salt on Raspbian 11 (Bullseye):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian11-classic-minor-gpg|\
+               mkdir /etc/apt/keyrings
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian11-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |raspbian11-classic-minor-gpg|\
+
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian11-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 #. Run ``sudo apt-get update`` to update your packages.
 
@@ -116,9 +122,11 @@ To install the :ref:`classic` packages of Salt on Raspbian 10 (Buster):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian10-classic-latest-gpg|\
+               mkdir /etc/apt/keyrings
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian10-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |raspbian10-classic-latest-gpg|\
+
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian10-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
        .. tab-item:: Raspbian 10 (Major classic)
@@ -128,9 +136,11 @@ To install the :ref:`classic` packages of Salt on Raspbian 10 (Buster):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian10-classic-major-gpg|\
+               mkdir /etc/apt/keyrings
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian10-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |raspbian10-classic-major-gpg|\
+
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian10-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
        .. tab-item:: Raspbian 10 (Minor classic)
@@ -140,9 +150,11 @@ To install the :ref:`classic` packages of Salt on Raspbian 10 (Buster):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /usr/share/keyrings/salt-archive-keyring.gpg \ |raspbian10-classic-minor-gpg|\
+               mkdir /etc/apt/keyrings
 
-               echo "deb [signed-by=/usr/share/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian10-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |raspbian10-classic-minor-gpg|\
+
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=armhf] \ |raspbian10-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 #. Run ``sudo apt-get update`` to update your packages.
 
