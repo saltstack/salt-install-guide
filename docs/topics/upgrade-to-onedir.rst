@@ -8,6 +8,10 @@ Onedir is the Salt Project's new packaging system. Beginning with the release of
 Salt 3005 (Phosphorus), the Salt Project will begin replacing the old packaging
 system with the onedir packaging system.
 
+.. Note::
+    The current onedir packages for |release| do not support ARM64, but ARM64
+    will be supported in the next major release.
+
 
 .. _what-is-onedir:
 

@@ -61,8 +61,6 @@ hypervisor as the commands might differ slightly.
 
     To install the package on Solaris 10:
 
-
-
     #. Ensure that you have sufficient privileges to install packages on the
        Solaris system.
 
@@ -102,8 +100,8 @@ Configure and test the Solaris native minion
 --------------------------------------------
 To configure the Solaris native minion to connect with its Salt master:
 
-#. Edit the ``/etc/salt/minion`` file to update the minion configuration with
-   your environment's specific details, such as the master’s IP address, the
+#. Edit the ``/opt/local/etc/salt/minion`` file to update the minion configuration with
+   your environment's specific details, such as the master's IP address, the
    minion ID, etc. For example, to set the minion name:
 
    .. code-block:: bash
@@ -142,7 +140,7 @@ To configure the Solaris native minion to connect with its Salt master:
 
         salt your-minion-name test.versions
         salt your-minion-name grains.items
-        salt your-minion-name cmd.run ‘ls -alrt /’
+        salt your-minion-name cmd.run 'ls -alrt /'
         salt-call --local test.versions
 
 
@@ -175,9 +173,8 @@ Using the Solaris native minion
 ===============================
 You can access the Salt command line interface on the Solaris native minion
 using executable Python scripts. These scripts execute with environmental
-variable overrides for library and Python paths. The scripts are located in the
-``/opt/salt folder`` and are named ``/opt/salt/salt-minion`` and
-``/opt/salt/salt-call`` respectively.
+variable overrides for library and Python paths. The wrapper scripts are located
+in the ``/usr/bin/salt-call`` and ``/usr/bin/salt-minion`` respectively.
 
 .. Note::
 
@@ -187,12 +184,6 @@ variable overrides for library and Python paths. The scripts are located in the
     * ``salt-call``
 
 Salt command line functionality is available through the use of these scripts.
-For example, to start the minion as a daemon:
-
-.. code-block:: bash
-
-    [/usr/bin/]salt-minion -d
-
 
 To start the minion:
 
@@ -212,4 +203,4 @@ You can also start the minion as a daemon using the following command:
 
 .. code-block:: bash
 
-    /opt/salt/salt-minion -d
+    [/usr/bin/]salt-minion -d
