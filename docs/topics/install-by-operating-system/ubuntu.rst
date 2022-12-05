@@ -46,7 +46,7 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy):
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-latest-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-onedir-latest-download|\ | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
        .. tab-item:: Ubuntu 22.04 (Jammy) (Major onedir)
 

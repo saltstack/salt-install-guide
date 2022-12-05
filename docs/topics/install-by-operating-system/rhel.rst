@@ -70,6 +70,22 @@ To install the :ref:`onedir` packages of Salt on RedHat 9:
 
                curl -fsSL \ |rhel9-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+
+   .. Note::
+       Because of the presence of classic packages of Salt in EPEL, it's
+       possible that when you download the package from EPEL, it instead
+       downloads classic packages of older versions of Salt instead of the
+       onedir packages.
+
+       During depsolving, when choosing the best provider among several, `yum`
+       respects the priority of each provider's repository. The value is an
+       integer from 1 to 99, with 1 being the most preferred repository and 99
+       the least preferred. By default all repositories have the priority of 80.
+
+       EPEL was treating the Salt repository as 99. To resolve this issue, Salt
+       has changed its priority level to 10 for RHEL 7, 8, and 9.
+
+
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
 #. Install the salt-minion, salt-master, or other Salt components:
