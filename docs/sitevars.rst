@@ -201,24 +201,24 @@
 .. |ubuntu18-classic-minor-gpg| replace:: https://repo.saltproject.io/py3/ubuntu/18.04/amd64/archive/3005.1/salt-archive-keyring.gpg
 .. |ubuntu18-classic-minor-download| replace:: https://repo.saltproject.io/py3/ubuntu/18.04/amd64/archive/3005.1 bionic main
 
-.. |windows-install-exe-example| replace:: salt-3005.1-1-windows-amd64.exe
-.. |windows-install-msi-example| replace:: Salt-Minion-3005.1-1-Py3-AMD64.msi.md5
+.. |windows-install-exe-example| replace:: Salt-Minion-3005.1-3-Py3-AMD64-Setup.exe
+.. |windows-install-msi-example| replace:: Salt-Minion-3005.1-3-Py3-AMD64.msi
 
-.. |windows-onedir-amd64-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/3005.1-1/salt-3005.1-1-windows-amd64.exe
-.. |windows-onedir-amd64-exe-gpg| replace:: https://repo.saltproject.io/salt/py3/windows/3005.1-1/salt-archive-keyring.gpg
+.. |windows-onedir-amd64-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/3005.1-2/salt-3005.1-2-windows-amd64.exe
+.. |windows-onedir-amd64-exe-gpg| replace:: https://repo.saltproject.io/salt/py3/windows/3005.1-2/salt-archive-keyring.gpg
 
-.. |windows-classic-amd64-msi-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-AMD64.msi
-.. |windows-classic-amd64-msi-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-AMD64.msi.md5
-.. |windows-classic-amd64-msi-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-AMD64.msi.sha256
+.. |windows-classic-amd64-msi-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64.msi
+.. |windows-classic-amd64-msi-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64.msi.md5
+.. |windows-classic-amd64-msi-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64.msi.sha256
 
-.. |windows-classic-amd64-exe-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-AMD64-Setup.exe
-.. |windows-classic-amd64-exe-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-AMD64-Setup.exe.md5
-.. |windows-classic-amd64-exe-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-AMD64-Setup.exe.sha256
+.. |windows-classic-amd64-exe-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64-Setup.exe
+.. |windows-classic-amd64-exe-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64-Setup.exe.md5
+.. |windows-classic-amd64-exe-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64-Setup.exe.sha256
 
-.. |windows-classic-x86-msi-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-x86.msi
-.. |windows-classic-x86-msi-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-x86.msi.md5
-.. |windows-classic-x86-msi-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-x86.msi.sha256
+.. |windows-classic-x86-msi-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86.msi
+.. |windows-classic-x86-msi-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86.msi.md5
+.. |windows-classic-x86-msi-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86.msi.sha256
 
-.. |windows-classic-x86-exe-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-x86-Setup.exe
-.. |windows-classic-x86-exe-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-x86-Setup.exe.md5
-.. |windows-classic-x86-exe-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-1-Py3-x86-Setup.exe.sha256
+.. |windows-classic-x86-exe-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86-Setup.exe
+.. |windows-classic-x86-exe-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86-Setup.exe.md5
+.. |windows-classic-x86-exe-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86-Setup.exe.sha256
