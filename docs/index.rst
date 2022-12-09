@@ -24,6 +24,7 @@ Install Salt
    topics/install-by-operating-system/index
    topics/bootstrap
    topics/platform-agnostic
+   topics/release-candidate
 
 .. toctree::
    :maxdepth: 2
