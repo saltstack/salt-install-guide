@@ -59,6 +59,8 @@ publish-docs:
   stage: trigger-upload
   variables:
     CICD_S3_DEST_PATH: "docs.saltproject.io/salt/install-guide/"
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main" && $CI_PROJECT_PATH == $CICD_UPSTREAM_PATH'
 
 #trigger-upload:
 #  stage: trigger-upload
