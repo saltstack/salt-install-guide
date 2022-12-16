@@ -27,6 +27,6 @@ https://your-GitLab-username.gitlab.io/salt-install-guide/
 - [ ] Check rendered output to ensure formatting is correct for any special
       directives such as notes, tables, lists, and images
 - [ ] Review new or modified topics to ensure they follow the [style
-      guide](https://saltstack.gitlab.io/open/docs/salt-user-guide/topics/style-guide.html)
+      guide](https://saltstack.gitlab.io/open/docs/docs-hub/topics/style-guide.html)
 - [ ] Review new or modified topics to ensure they follow the [Writing Salt
-      documentation (rST guide)](https://saltstack.gitlab.io/open/docs/salt-user-guide/topics/writing-salt-docs.html)
+      documentation (rST guide)](https://saltstack.gitlab.io/open/docs/docs-hub/topics/rst-guide.html)
