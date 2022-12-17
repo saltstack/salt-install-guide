@@ -54,6 +54,8 @@ build-site:
 
 pages:
   stage: publish
+  variables:
+    CICD_DOCS_VERSION_LATEST: latest
 
 publish-docs:
   stage: trigger-upload
