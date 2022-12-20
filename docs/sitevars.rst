@@ -85,9 +85,9 @@
 .. |macos-onedir-amd64-download| replace:: https://repo.saltproject.io/salt/py3/macos/3005.1-1/salt-3005.1-1-macos-x86_64.pkg
 .. |macos-onedir-amd64-gpg| replace:: https://repo.saltproject.io/salt/py3/macos/3005.1-1/salt-archive-keyring.gpg
 
-.. |macos-classic-amd64-download| replace:: https://repo.saltproject.io/osx/salt-3005.1-1-py3-x86_64.pkg
-.. |macos-classic-amd64-md5| replace:: https://repo.saltproject.io/osx/salt-3005.1-1-py3-x86_64.pkg.md5
-.. |macos-classic-amd64-sha256| replace:: https://repo.saltproject.io/osx/salt-3005.1-1-py3-x86_64.pkg.sha256
+.. |macos-classic-amd64-download| replace:: https://repo.saltproject.io/osx/salt-3005.1-py3-x86_64.pkg
+.. |macos-classic-amd64-md5| replace:: https://repo.saltproject.io/osx/salt-3005.1-py3-x86_64.pkg.md5
+.. |macos-classic-amd64-sha256| replace:: https://repo.saltproject.io/osx/salt-3005.1-py3-x86_64.pkg.sha256
 
 .. |photonos3-onedir-latest-gpg| replace:: LINK UNAVAILABLE UNTIL AFTER SALT 3005 (PHOSOPHORUS) RELEASE
 .. |photonos3-onedir-latest-download| replace:: LINK UNAVAILABLE UNTIL AFTER SALT 3005 (PHOSOPHORUS) RELEASE
@@ -207,18 +207,18 @@
 .. |windows-onedir-amd64-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/3005.1-2/salt-3005.1-2-windows-amd64.exe
 .. |windows-onedir-amd64-exe-gpg| replace:: https://repo.saltproject.io/salt/py3/windows/3005.1-2/salt-archive-keyring.gpg
 
-.. |windows-classic-amd64-msi-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64.msi
-.. |windows-classic-amd64-msi-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64.msi.md5
-.. |windows-classic-amd64-msi-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64.msi.sha256
+.. |windows-classic-amd64-msi-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-AMD64.msi
+.. |windows-classic-amd64-msi-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-AMD64.msi.md5
+.. |windows-classic-amd64-msi-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-AMD64.msi.sha256
 
-.. |windows-classic-amd64-exe-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64-Setup.exe
-.. |windows-classic-amd64-exe-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64-Setup.exe.md5
-.. |windows-classic-amd64-exe-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-AMD64-Setup.exe.sha256
+.. |windows-classic-amd64-exe-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-AMD64-Setup.exe
+.. |windows-classic-amd64-exe-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-AMD64-Setup.exe.md5
+.. |windows-classic-amd64-exe-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-AMD64-Setup.exe.sha256
 
-.. |windows-classic-x86-msi-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86.msi
-.. |windows-classic-x86-msi-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86.msi.md5
-.. |windows-classic-x86-msi-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86.msi.sha256
+.. |windows-classic-x86-msi-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-x86.msi
+.. |windows-classic-x86-msi-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-x86.msi.md5
+.. |windows-classic-x86-msi-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-x86.msi.sha256
 
-.. |windows-classic-x86-exe-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86-Setup.exe
-.. |windows-classic-x86-exe-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86-Setup.exe.md5
-.. |windows-classic-x86-exe-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-3-Py3-x86-Setup.exe.sha256
+.. |windows-classic-x86-exe-download| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-x86-Setup.exe
+.. |windows-classic-x86-exe-md5| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-x86-Setup.exe.md5
+.. |windows-classic-x86-exe-sha256| replace:: https://repo.saltproject.io/windows/Salt-Minion-3005.1-Py3-x86-Setup.exe.sha256
