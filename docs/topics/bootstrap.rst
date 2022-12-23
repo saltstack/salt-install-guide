@@ -62,6 +62,12 @@ The bootstrap script can be used to install specific services:
            curl -L https://bootstrap.saltproject.io | sudo sh -s --
 
 
+   .. Warning::
+       By default, the bootstrap script installs classic packages of Salt 3005
+       unless you use the ``onedir`` option. See `Installation types`_ for
+       more information.
+
+
 #. Optional: Use the following command to make the bootstrap script executable:
 
    .. code-block:: bash
@@ -138,6 +144,18 @@ Installation types
 
           bootstrap-salt.sh -P stable |release|
           bootstrap-salt.sh stable v3004.2
+
+  * - ``onedir``
+    - Install the onedir version of the Salt 3005 release. By default, the
+      bootstrap script installs classic packages of Salt 3005. See
+      :ref:`upgrade-to-onedir` for more information about onedir.
+    - Pass the onedir option to install onedir packages.
+
+      Example:
+
+      .. parsed-literal::
+
+          bootstrap-salt.sh -P onedir
 
   * - ``testing``
     - This installation type is specific to the RHEL-family of operating
