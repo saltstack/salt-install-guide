@@ -45,7 +45,7 @@ build-site-3005:
   stage: build
   image: python:3.11
   script:
-    - git checkout 3005
+    - git checkout v3005
     - pip install -U pip setuptools wheel nox
     - nox -e 'docs-html(clean=True)'
     - mkdir -p html/en/
@@ -74,7 +74,7 @@ build-site-3004:
   stage: build
   image: python:3.11
   script:
-    - git checkout 3004
+    - git checkout v3004
     - pip install -U pip setuptools wheel nox
     - nox -e 'docs-html(clean=True)'
     - mkdir -p html/en/
