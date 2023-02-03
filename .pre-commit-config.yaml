@@ -29,7 +29,7 @@ repos:
           You must provide list of target files as input in your .pre-commit-config.yaml file.
         files: ^(.*requirements.*\.txt|\.brokignore)$
   - repo: https://github.com/timothycrosley/isort
-    rev: "5.8.0"
+    rev: "5.12.0"
     hooks:
       - id: isort
         description: isort is a Python utility / library to sort imports automatically.

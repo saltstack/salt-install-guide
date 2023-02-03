@@ -10,14 +10,15 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+#import os
+#import sys
+#sys.path.insert(0, os.path.abspath('.'))
 import datetime
 import os
 
 from docutils import nodes
 from docutils.nodes import Element
+from salt_furo_versioner import make_html_context
 from sphinx.writers.html import HTMLTranslator
 
 
@@ -97,6 +98,34 @@ rst_prolog = """
 # Pull release from "release" in sitevars.rst
 release = [s for s in site_vars if "|release|" in s][0].split(":: ")[1]
 version = release
+
+# Grab major version for URL version selector generation
+current_version = version.split('.')[0]
+
+##
+# Furo theme version selector setup
+##
+# Pull from env variables, or otherwise default
+# latest_version = os.getenv('LATEST_DOCS_VERSION', '3005')
+latest_version = '3005'
+current_version = '3005'
+# url_prefix = os.getenv('DOCS_URL_PREFIX', 'https://docs.saltproject.io/salt/install-guide/en')
+url_prefix = 'https://docs.saltproject.io/salt/install-guide/en/'
+html_context = make_html_context(
+    url_prefix=url_prefix,
+    current_version=current_version,
+    latest_version=latest_version,
+    # versions=['3004', '3005', ('3006 LTS', 'lts')]
+    versions=['3004', '3005']
+)
+
+'''
+en/lts # Default LTS docs path, where LTS goes
+en/latest # Default landing page, is a duplicate of latest version docs
+en/3005 # Major, don't include minor version
+en/3006 #
+en/3004
+'''
 
 # -- General configuration ---------------------------------------------------
 
