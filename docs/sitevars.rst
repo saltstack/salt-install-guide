@@ -41,6 +41,7 @@
 .. |centos7-onedir-minor-download| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/minor/3005.1-1.repo
 
 .. |debian11-onedir-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/debian/11/amd64/latest/salt-archive-keyring.gpg
+.. |debian11-onedir-relenv-gpg| replace:: https://staging.repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006.0rc1/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |debian11-onedir-latest-download| replace:: https://repo.saltproject.io/salt/py3/debian/11/amd64/latest bullseye main
 .. |debian11-onedir-major-gpg| replace:: https://repo.saltproject.io/salt/py3/debian/11/amd64/3005/salt-archive-keyring.gpg
 .. |debian11-onedir-major-download| replace:: https://repo.saltproject.io/salt/py3/debian/11/amd64/3005 bullseye main
@@ -111,6 +112,7 @@
 .. |raspbian10-classic-minor-download| replace:: https://repo.saltproject.io/py3/debian/10/armhf/archive/3005.1 buster main
 
 .. |rhel9-onedir-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest/SALTSTACK-GPG-KEY2.pub
+.. |rhel9-onedir-relenv-gpg| replace:: https://staging.repo.saltproject.io/salt_rc/salt/py3/redhat/9/x86_64/minor/3006.0rc1/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |rhel9-onedir-latest-download| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest.repo
 .. |rhel9-onedir-major-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/3005/SALTSTACK-GPG-KEY2.pub
 .. |rhel9-onedir-major-download| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/3005.repo
@@ -146,6 +148,7 @@
 .. |rhel7-classic-minor-download| replace:: https://repo.saltproject.io/py3/redhat/7/x86_64/archive/3005.1.repo
 
 .. |ubuntu22-onedir-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest/salt-archive-keyring.gpg
+.. |ubuntu22-onedir-relenv-gpg| replace:: https://staging.repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/minor/3006.0rc1/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |ubuntu22-onedir-latest-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest jammy main
 .. |ubuntu22-onedir-major-gpg| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/3005/salt-archive-keyring.gpg
 .. |ubuntu22-onedir-major-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/3005 jammy main
