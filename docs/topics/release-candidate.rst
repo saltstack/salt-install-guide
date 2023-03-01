@@ -29,7 +29,7 @@ and write ``[RC]`` in the issue title. For example:
 Install using packages
 ======================
 RC builds for a few major platforms are available at the Salt repository:
-https://repo.saltproject.io/salt_rc/
+https://staging.repo.saltproject.io/salt_rc/
 
 RC builds are typically only available for the latest version of the operating
 system at the time the RC is available. Older versions of operating systems
@@ -54,7 +54,7 @@ To install release candidate packages:
 
                sudo rpm --import \ |rhel9-onedir-latest-gpg|\
 
-               baseurl=https://repo.saltproject.io/salt_rc/salt/py3/redhat/$releasever/$basearch/minor/3006rc1
+               baseurl=https://staging.repo.saltproject.io/salt_rc/salt/py3/redhat/$releasever/$basearch/minor/3006.0rc1
 
        .. tab-item:: Ubuntu 22.04 (Jammy)
 
@@ -62,7 +62,7 @@ To install release candidate packages:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-latest-gpg|\
 
-               echo "deb https://repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/minor/3006rc1 jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb https://staging.repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/minor/3006.0rc1 jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
 
        .. tab-item:: Debian 11 (Bullseye)
 
@@ -70,7 +70,7 @@ To install release candidate packages:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg |debian11-onedir-latest-gpg|\
 
-               echo "deb https://repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006rc1 bullseye main" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb https://staging.repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006.0rc1 bullseye main" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
 Install using bootstrap
