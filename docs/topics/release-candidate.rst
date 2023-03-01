@@ -37,14 +37,18 @@ might not get an RC release.
 
 To install release candidate packages:
 
-#. Use the standard install instructions for your operating system. See
+#. Use the standard minor install instructions for your operating system. See
    :ref:`install-by-operating-system-index`.
 
 #. On the step where you normally import the Salt Project repository key and pin
-   the package to a specific version of Salt, insert `salt_rc/` into the URL
-   between the hostname and the remainder of the file path.
+   the package to a specific version of Salt, insert ``staging`` before ``repo.saltproject.io``
+   and ``salt_rc/`` into the URL between the hostname and the remainder of the file path.
 
-   For example, for the Salt 3006 RC 1, run the following commands:
+   .. Note::
+       The gpg key for the 3006.0 release is now named: SALT-PROJECT-GPG-PUBKEY-2023
+
+
+   For example, for the Salt 3006.0 RC 1, run the following commands:
 
    .. tab-set::
 
@@ -52,7 +56,7 @@ To install release candidate packages:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel9-onedir-latest-gpg|\
+               sudo rpm --import \ |rhel9-onedir-relenv-gpg|\
 
                baseurl=https://staging.repo.saltproject.io/salt_rc/salt/py3/redhat/$releasever/$basearch/minor/3006.0rc1
 
@@ -60,7 +64,7 @@ To install release candidate packages:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-latest-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-relenv-gpg|\
 
                echo "deb https://staging.repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/minor/3006.0rc1 jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
 
@@ -68,7 +72,7 @@ To install release candidate packages:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg |debian11-onedir-latest-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg |debian11-onedir-relenv-gpg|\
 
                echo "deb https://staging.repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006.0rc1 bullseye main" | sudo tee /etc/apt/sources.list.d/salt.list
 
@@ -78,19 +82,19 @@ Install using bootstrap
 You can install a release candidate of Salt using the
 `Salt bootstrap <https://github.com/saltstack/salt-bootstrap/>`_ script.
 
-For example for the 3006 RC1 release:
+For example for the 3006.0 RC1 release:
 
 .. code-block:: bash
 
     curl -o install_salt.sh -L https://bootstrap.saltproject.io
-    sudo sh install_salt.sh -P -x python3 git v3006rc1
+    sudo sh install_salt.sh -P -x python3 git v3006.0rc1
 
 To install a master using Salt bootstrap, use the `-M` flag:
 
 .. code-block:: bash
 
     curl -o install_salt.sh -L https://bootstrap.saltproject.io
-    sudo sh install_salt.sh -P -M -x python3 git v3006rc1
+    sudo sh install_salt.sh -P -M -x python3 git v3006.0rc1
 
 If you want to install only a master and not a minion using Salt bootstrap, use
 the `-M`` and `-N` flags:
@@ -98,7 +102,7 @@ the `-M`` and `-N` flags:
 .. code-block:: bash
 
     curl -o install_salt.sh -L https://bootstrap.saltproject.io
-    sudo sh install_salt.sh -P -M -N -x python3 git v3006rc1
+    sudo sh install_salt.sh -P -M -N -x python3 git v3006.0rc1
 
 
 Install using pip
@@ -107,7 +111,7 @@ To install the release candidate using pip from `PyPi <https://pypi.org/>`_:
 
 #. Install the build dependencies:
 
-   For example, for the Salt 3006 RC 1:
+   For example, for the Salt 3006.0 RC 1:
 
    .. tab-set::
 
@@ -142,8 +146,8 @@ To install the release candidate using pip from `PyPi <https://pypi.org/>`_:
 
        sudo pip install salt==$rc_tag_version
 
-   For example, to install the 3006 RC1 release:
+   For example, to install the 3006.0 RC1 release:
 
    .. code-block:: bash
 
-       sudo pip install salt==3006rc1
+       sudo pip install salt==3006.0rc1
