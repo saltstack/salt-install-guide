@@ -58,7 +58,9 @@ To install release candidate packages:
 
                sudo rpm --import \ |rhel9-onedir-relenv-gpg|\
 
-               baseurl=https://staging.repo.saltproject.io/salt_rc/salt/py3/redhat/$releasever/$basearch/minor/3006.0rc1
+               curl -fsSL https://staging.repo.saltproject.io/salt_rc/salt/py3/redhat/9/x86_64/minor/3006.0rc1.repo | sudo tee /etc/yum.repos.d/salt.repo
+
+               echo 'baseurl=https://staging.repo.saltproject.io/salt_rc/salt/py3/redhat/$releasever/$basearch/minor/3006.0rc1' | sudo tee /etc/yum.repos.d/salt.repo
 
        .. tab-item:: Ubuntu 22.04 (Jammy)
 
@@ -66,15 +68,17 @@ To install release candidate packages:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-relenv-gpg|\
 
-               echo "deb https://staging.repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/minor/3006.0rc1 jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg] https://staging.repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/minor/3006.0rc1 jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
 
        .. tab-item:: Debian 11 (Bullseye)
 
            .. parsed-literal::
 
+               sudo mkdir /etc/apt/keyrings
+
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg |debian11-onedir-relenv-gpg|\
 
-               echo "deb https://staging.repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006.0rc1 bullseye main" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg] https://staging.repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006.0rc1 bullseye main" | sudo tee --append /etc/apt/sources.list.d/salt.list
 
 
 Install using bootstrap
