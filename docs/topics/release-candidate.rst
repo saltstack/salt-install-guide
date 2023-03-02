@@ -60,7 +60,7 @@ To install release candidate packages:
 
                curl -fsSL https://staging.repo.saltproject.io/salt_rc/salt/py3/redhat/9/x86_64/minor/3006.0rc1.repo | sudo tee /etc/yum.repos.d/salt.repo
 
-               echo 'baseurl=https://staging.repo.saltproject.io/salt_rc/salt/py3/redhat/$releasever/$basearch/minor/3006.0rc1' | sudo tee /etc/yum.repos.d/salt.repo
+               echo 'baseurl=https://staging.repo.saltproject.io/salt_rc/salt/py3/redhat/$releasever/$basearch/minor/3006.0rc1' | sudo tee --append /etc/yum.repos.d/salt.repo
 
        .. tab-item:: Ubuntu 22.04 (Jammy)
 
