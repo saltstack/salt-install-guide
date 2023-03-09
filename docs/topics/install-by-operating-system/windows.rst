@@ -45,27 +45,32 @@ Onedir packages are currently only available for the Nullsoft (EXE) installer.
 Install directory locations
 ---------------------------
 In versions of Salt prior to Salt 3004, Nullsoft (EXE) Windows installer only
-installed Salt in the root C drive directory: ``C:\Salt\``.
+installed Salt in the root C drive directory: ``C:\Salt``.
 
 In versions 3004 and later, the Nullsoft (EXE) installer defaults to installing
 Salt in the ``C:\Program Files\Salt Project\Salt`` directory path. The install
 directory stores Salt binary data. If you choose a custom install directory
-path, Salt registers that directory as the ``root_dir``.
+path, Salt registers that directory as the ``install_dir``.
 
 .. Note::
-    You can choose a custom install directory path using the ``install-dir``
-    option. See `Windows Nullsoft EXE install options`_ for more information.
+    You can choose a custom install directory path from the command line using
+    the ``/install-dir`` option. See `Windows Nullsoft EXE install options`_
+    for more information.
 
 
 Also in versions 3004 and later, the Nullsoft (EXE) installer creates a second
 directory in ``C:\ProgramData\Salt Project\Salt`` called the config directory.
 The config directory is where Salt stores non-binary data such as configuration
-files, logs, and the cache. This path cannot be customized.
+files, logs, and the cache. This path cannot be customized. Salt registers that
+directory as the ``root_dir``.
 
-The installer will not move configuration data that is stored in the old
-``C:\Salt`` directory for older installations. You can move an older, existing
-Salt configuration directory from the old location to the ``ProgramData``
-using the ``/move-config`` option during an upgrade.
+By default, the installer will not move configuration data that is stored in
+the old ``C:\Salt`` directory for older installations. However, the installer
+can move an older, existing Salt configuration directory from the old location
+to ``ProgramData`` by passing the ``/move-config`` option on the command line.
+Additionally, if the installer detects an existing config in the old location,
+the user interface displays a checkbox with the option to move the ``root_dir``
+to ``ProgramData``.
 
 .. include:: ../_includes/intro-install-by-os.rst
 
@@ -159,9 +164,9 @@ The most commonly used install options are:
       ``/master`` and/or ``/minion-name`` is also passed, those values will be
       used to update the new default configuration file.
 
-      Any existing configuration files will be backed up by appending a timestamp
-      and a ``.bak`` extension, including the minion file and the ``minion.d``
-      directory.
+      Any existing configuration files will be backed up by appending a
+      timestamp and a ``.bak`` extension, including the minion file and the
+      ``minion.d`` directory.
     -
 
   * - ``/install-dir=``
@@ -193,6 +198,8 @@ The most commonly used install options are:
 
       * ``/master=master.mydomain.com``
 
+      * ``/master=192.0.2.1,192.0.2.2,192.0.2.3``
+
   * - ``/minion-name=``
     - Sets the minion name. If no minion ID is specified, the default will be
       ``hostname``. Setting the minion name causes the installer to use the
@@ -216,7 +223,7 @@ The most commonly used install options are:
   * - ``/start-minion-delayed``
     - Use this option to set the minion service to start after installation, but
       to delay for 30-60 seconds, depending on the operating system settings. If
-      you use this option, set the minion start type to
+      you use this option, the minion start type will be set to
       ``Automatic (Delayed Start)``.
     - ``Salt-Minion-3005-1-Py3-AMD64-Setup.exe /start-minion-delayed``
 
@@ -297,6 +304,8 @@ The following table describes all available options, listed alphabetically:
 
       * ``MASTER=master.mydomain.com``
 
+      * ``MASTER=192.0.2.1,192.0.2.2,192.0.2.3``
+
   * - ``MASTER_KEY``
     - Sets the master public key. To use this option, first convert the public
       key converted into one line by removing the first and last line:
@@ -334,19 +343,22 @@ The following table describes all available options, listed alphabetically:
       * ``MINION_ID=salt-windows-minion-1``
 
   * - ``MOVE_CONF``
-    - Changes the directory where the configuration file is stored for Salt. By
-      default, the MSI installer places the configuration file in the
-      ``C:\salt`` directory. Change the value to ``1`` to move configuration
-      from ``C:\salt`` to ``%ProgramData%``.
+    - If a configuration file is found at ``C:\Salt`` it will be moved to
+      ``%ProgramData%``.
     - ``MOVE_CONF=1``
 
   * - ``/norestart``
     - Runs the installer silently. Usually used along with ``/quiet``.
     - ``msiexec /i |windows-install-msi-example| /quiet /norestart``
 
-  * - ``/quiet``
+  * - ``/quiet`` or ``/qn``
     - Runs the installer silently. Usually used along with ``/norestart``.
     - ``msiexec /i |windows-install-msi-example| /quiet /norestart``
+
+  * - ``/passive`` or ``/qb``
+    - Runs the installer silently, but displays a progress bar. Usually used
+      along with ``/norestart``.
+    - ``msiexec /i |windows-install-msi-example| /passive /norestart``
 
   * - ``REMOVE_CONFIG``
     - Set to ``1`` if you want to remove configuration files on uninstall. When
@@ -411,3 +423,16 @@ up first, including:
 * The minion configuration file
 * The ``minion_id`` file
 * The ``minion.d`` directory
+
+.. Warning::
+    The MSI installer has a known issue that impacts installers with the ``-X``
+    in the file name, such as 3005.1-4. When upgrading these builds, the
+    installer creates duplicate entries in Add/Remove Programs. For example, if
+    you have 3005.1-1 installed and you use the MSI to upgrade to 3005.1-4, the
+    upgrade will complete successfully, but both versions appear in Add/Remove
+    Programs.
+
+    The workaround when upgrading between these types of builds using the MSI
+    is to uninstall the old version prior to installing the new version.
+
+    Upgrades to and from versions without the ``-X`` will work as expected.
