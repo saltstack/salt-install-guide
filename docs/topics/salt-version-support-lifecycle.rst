@@ -8,11 +8,124 @@ Together with the :ref:`salt-supported-operating-systems` guidelines, this
 document is intended to clearly define how long a particular version of Salt
 will receive official packages, testing, and technical support.
 
-.. include:: _includes/supported-os-concepts.rst
-
-
-Product support lifecycle
+Version support lifecycle
 =========================
+
+.. list-table::
+  :widths: 20 25 25 30
+  :align: center
+  :header-rows: 1
+  :stub-columns: 1
+  :class: slim
+
+  * - Salt version
+    - Release date
+    - `Active support`_ ends
+    - `CVE and critical support`_ ends
+
+  * - 3006 LTS
+    - TBD
+    - TBD
+    - TBD
+
+See `Older version support lifecycle`_ for versions of Salt older than 3006.
+
+
+LTS/STS release and support policy
+==================================
+Beginning with the 3006 release of Salt, the Salt Project will follow an LTS/STS
+release strategy. Under this strategy, the Salt Project will release one LTS
+(long-term support) release of Salt per year and one STS (short-term support)
+release each year. The LTS release will receive bug fix releases for a longer
+period of time than STS releases.
+
+The purpose of the LTS release is to provide users with a stable version of Salt
+for a longer period (2 years). The purpose of the STS release is to provide a
+feature release to users who need or prefer access to the latest features in
+between LTS releases.
+
+.. list-table::
+  :widths: 30 35 35
+  :header-rows: 1
+  :stub-columns: 1
+
+  * -
+    - LTS release
+    - STS release
+
+  * - Release schedule
+    -  * Released once a year, usually in the first 4 months of the calendar
+         year
+       * 1-2 release candidates in the months leading up to the release
+       * Point releases every 3 months after the GA release
+    -  * Released once a year around the midpoint the year
+
+  * - Support schedule
+    -  * Active support for 1 full year, including rolling updates of bug fixes
+         every quarter
+       * CVE and critical fixes support for an additional year
+    -  * Active support for 3 months
+       * CVE and critical fixes support for an additional 3 months
+
+  * - Development schedule
+    - Features developed in the 6 months prior to release
+    - Features developed in the 6 months prior to release
+
+  * - Use case
+    - Best for users who:
+
+      * Need or prefer a stable, thoroughly tested and well-supported release
+      * Prefer stable releases over access to the latest features
+      * Require longer time periods to plan and implement Salt infrastructure
+        upgrades
+    - Best for users who:
+
+      * Need or prefer access to new features in between LTS releases
+      * Are comfortable assuming a small amount of risk as a trade-off for
+        access to the latest features
+
+
+The following graphic shows an example of the LTS/STS release strategy timeline
+for two years of the development and release cycle:
+
+.. image:: ../_static/img/salt-release-timeline.png
+   :alt: Graphic showing an LTS release that occurs between January and March
+         that is actively supported for a full year and then has CVE and
+         Critical support for an additional year. The graphic also shows an STS
+         release that occurs between July and September that is actively
+         supported for 3 months and then has CVE/Critical support for 3
+         additional months.
+
+
+
+Support level definitions
+=========================
+
+Active support
+--------------
+**Active support** is defined as:
+
+* The Salt Project will issue regular point releases with critical bug fixes.
+* Improved software functionality may be provided at the discretion of the
+  project.
+* Point releases will include the content of previously released updates.
+* The focus of point releases will be high and critical bugs.
+
+
+CVE and critical support
+------------------------
+**CVE and critical support** is defined as:
+
+* The Salt Project may release point releases with fixes for selected CVEs.
+* Fixes in newer branches will not be back ported.
+* The focus of point releases will be critical CVEs and breaking fixes that
+  are caused by CVE fixes.
+
+
+Older version support lifecycle
+===============================
+The following table lists the support lifecycle for versions of Salt prior to
+the 3006 version:
 
 .. list-table::
   :widths: 15 20 20 20 25
@@ -106,10 +219,13 @@ Product support lifecycle
     - May 31, 2017
 
 
+Older version support level definitions
+=======================================
+
 Phase 1 support
-===============
+---------------
 Regular point release support
------------------------------
+
 
 During phase 1:
 
@@ -121,9 +237,9 @@ During phase 1:
 
 
 Phase 2 support
-===============
+---------------
 On-demand support
------------------
+
 
 During phase 2:
 
@@ -134,9 +250,9 @@ During phase 2:
 
 
 Phase 3 support
-===============
+---------------
 CVE support
------------
+
 During phase 3:
 
 * The Salt Project will release point releases with fixes for selected, critical
@@ -145,12 +261,12 @@ During phase 3:
 
 
 Extended life support
-=====================
+---------------------
 
 During extended life support:
 
 * The Salt Project will not release any point releases.
-* Users will still have access to any documentation.
+* Users will still have access to archived documentation.
 * The Salt Project will provide ongoing best-effort technical support for
   customers on existing installations.
 * No bug fixes, security fixes, improved functionality, or root-cause analysis
@@ -158,7 +274,7 @@ During extended life support:
 
 
 Phase details
-=============
+-------------
 
 .. list-table::
   :widths: 35 15 15 15 20
