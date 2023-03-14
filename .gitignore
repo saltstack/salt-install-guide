@@ -144,3 +144,4 @@ cython_debug/
 .vscode
 _build
 *.un~
+.idea
