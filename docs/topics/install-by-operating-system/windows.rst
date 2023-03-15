@@ -375,12 +375,13 @@ The following table describes all available options, listed alphabetically:
   * - ``START_MINION``
     - Starts the minion service after installation. Set this value to ``""`` to
       prevent the start of the ``salt-minion`` service. The default value is
-      ``1``, which starts the service.
-    - * ``START_MINION``
+      ``1``, which starts the service. So, you only need to pass this if you
+      don't want to start the service.
 
-      * ``START_MINION=1``
+      In PowerShell, you must escape the quotes (\`"\`")
+    - * ``START_MINION=""``
 
-      * ``START_MINION=""``
+      * ``START_MINION=`"`"``
 
 
 MSI installation scenarios
