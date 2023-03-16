@@ -6,7 +6,7 @@ Downloads
 
 .. sidebar:: **Supported Salt releases**
 
-    |release-badge| |supported-release-2-badge|
+    |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
 
     **See also**
 
@@ -31,34 +31,6 @@ system.
     verifying the package URL is an official Salt repository.
 
 
-AIX
-===
-The AIX native minion package is a tarball containing an installation and
-removal script and an AIX bff package.
-
-.. grid:: 2
-
-    .. grid-item-card:: Browse the repo for AIX packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/aix/
-
-        :bdg-danger:`AIX`
-        :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
-
-    .. grid-item-card:: AIX install guide
-        :class-card: sd-border-1
-        :link: install-aix
-        :link-type: ref
-
-        :bdg-info:`Install Salt on AIX`
-
-
-.. warning::
-
-    There are separate builds for AIX v7.1 and AIX v7.2.
-
-
 Amazon Linux 2
 ==============
 Install the Amazon Linux 2 package using a Linux package manager.
@@ -71,7 +43,7 @@ Install the Amazon Linux 2 package using a Linux package manager.
 
         :bdg-danger:`Amazon Linux 2`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
+        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
 
     .. grid-item-card:: Amazon Linux 2 install guide
         :class-card: sd-border-1
@@ -79,28 +51,6 @@ Install the Amazon Linux 2 package using a Linux package manager.
         :link-type: ref
 
         :bdg-info:`Install Salt on Amazon Linux 2`
-
-
-Arista
-======
-The Arista native minion package is a SWIX file.
-
-.. grid:: 2
-
-    .. grid-item-card:: Browse the repo for Arista packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/arista/
-
-        :bdg-danger:`Arista`
-        :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
-
-    .. grid-item-card:: Arista install guide
-        :class-card: sd-border-1
-        :link: install-arista
-        :link-type: ref
-
-        :bdg-info:`Install Salt on Arista`
 
 
 CentOS
@@ -115,7 +65,7 @@ Install the CentOS package using a yum package manager.
 
         :bdg-danger:`CentOS`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
+        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
 
     .. grid-item-card:: CentOS install guide
         :class-card: sd-border-1
@@ -137,7 +87,7 @@ Install the Debian package using an apt package manager.
 
         :bdg-danger:`Debian`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
+        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
 
     .. grid-item-card:: Debian install guide
         :class-card: sd-border-1
@@ -145,7 +95,6 @@ Install the Debian package using an apt package manager.
         :link-type: ref
 
         :bdg-info:`Install Salt on Debian`
-
 
 
 Fedora
@@ -160,28 +109,6 @@ the Fedora packages from the Fedora package manager.
     :width: 50%
 
     :bdg-info:`Install Salt on Fedora`
-
-
-Juniper
-=======
-The Juniper native minion| package is a tarball (.tgz) file.
-
-.. grid:: 2
-
-    .. grid-item-card:: Browse the repo for Juniper packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/juniper/
-
-        :bdg-danger:`Juniper`
-        :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
-
-    .. grid-item-card:: Juniper install guide
-        :class-card: sd-border-1
-        :link: install-juniper
-        :link-type: ref
-
-        :bdg-info:`Install Salt on Juniper`
 
 
 macOS
@@ -199,7 +126,7 @@ Download the macOS package and run the file to install Salt. See the
 
         :bdg-danger:`macOS`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
+        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
 
     .. grid-item-card:: macOS install guide
         :class-card: sd-border-1
@@ -240,7 +167,7 @@ Install the RedHat package using a yum package manager.
 
         :bdg-danger:`RedHat`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
+        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
 
     .. grid-item-card:: RedHat install guide
         :class-card: sd-border-1
@@ -266,30 +193,6 @@ packages for download.
         :bdg-info:`Install Salt on SUSE (SLES)`
 
 
-Solaris
-=======
-The Solaris native minion package is available in the ``p5p`` format or as a
-tarball (.tgz) file.
-
-
-.. grid:: 2
-
-    .. grid-item-card:: Browse the repo for Solaris packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/solaris/
-
-        :bdg-danger:`Solaris`
-        :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
-
-    .. grid-item-card:: Solaris install guide
-        :class-card: sd-border-1
-        :link: install-solaris
-        :link-type: ref
-
-        :bdg-info:`Install Salt on Solaris`
-
-
 Ubuntu
 ======
 Install the Ubuntu package using an apt package manager.
@@ -302,7 +205,7 @@ Install the Ubuntu package using an apt package manager.
 
         :bdg-danger:`Ubuntu`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
+        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
 
     .. grid-item-card:: Ubuntu install guide
         :class-card: sd-border-1
@@ -327,7 +230,7 @@ Download the Windows package and run the file to install Salt. See the
 
         :bdg-danger:`Windows`
         :bdg-secondary:`Python3`
-        |release-badge| |supported-release-2-badge|
+        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
 
     .. grid-item-card:: Windows install guide
         :class-card: sd-border-1

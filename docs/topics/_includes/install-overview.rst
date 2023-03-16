@@ -29,7 +29,7 @@
 
 .. sidebar:: **Supported Salt releases**
 
-    |release-badge| |supported-release-2-badge|
+    |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
 
     **See also**
 
@@ -42,13 +42,10 @@ installing Salt on :ref:`salt-supported-operating-systems`. It also explains
 how to configure Salt, start Salt services, and verify your installation.
 
 .. Warning::
-    Beginning with the 3005 release of Salt, the Salt Project is changing its
-    packaging system to **onedir**. See :ref:`what-is-onedir` for more
-    information.
-
-    The Salt Project will phase out the old package builds for supported
-    operating systems by 3006. Update your Salt infrastructure to the new onedir
-    packages as soon as possible. See :ref:`upgrade-to-onedir` for instructions.
+    The Salt Project has phased out classic package builds for supported
+    operating systems for 3006 and later. Update your Salt infrastructure to the
+    new onedir packages as soon as possible. See :ref:`upgrade-to-onedir` for
+    instructions.
 
 
 Standard installation overview

@@ -9,13 +9,13 @@ also get ``-git`` packages in the Arch User repositories (AUR) as well.
 
 These instructions explain how to install Salt on Arch operating systems:
 
-* `Install the stable release of Salt on Arch Linux`_
+* `Install Salt on Arch Linux`_
 
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install the stable release of Salt on Arch Linux
-================================================
+Install Salt on Arch Linux
+==========================
 To install the stable release of Salt on Arch Linux:
 
 #. Run the following command:

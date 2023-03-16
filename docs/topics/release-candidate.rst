@@ -56,7 +56,7 @@ To install release candidate packages:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |rhel9-onedir-relenv-gpg|\
+               sudo rpm --import \ |rhel-future-release-gpg|\
 
                curl -fsSL https://staging.repo.saltproject.io/salt_rc/salt/py3/redhat/9/x86_64/minor/3006.0rc1.repo | sudo tee /etc/yum.repos.d/salt.repo
 
@@ -66,7 +66,7 @@ To install release candidate packages:
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-relenv-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu-future-release-gpg|\
 
                echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg] https://staging.repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/minor/3006.0rc1 jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
 
@@ -76,7 +76,7 @@ To install release candidate packages:
 
                sudo mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg |debian11-onedir-relenv-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg |debian-future-release-gpg|\
 
                echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg] https://staging.repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006.0rc1 bullseye main" | sudo tee --append /etc/apt/sources.list.d/salt.list
 
