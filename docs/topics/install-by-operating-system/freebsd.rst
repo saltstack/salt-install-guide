@@ -10,14 +10,14 @@ Salt is available in the FreeBSD ports tree at
 These instructions explain how to install Salt on AR operating
 systems:
 
-* `Install the stable release of Salt on FreeBSD`_
+* `Install Salt on FreeBSD`_
 * `Install Salt from FreeBSD ports`_
 
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install the stable release of Salt on FreeBSD
-=============================================
+Install Salt on FreeBSD
+=======================
 To install the stable release of Salt from the official package repository:
 
 #. Check which version is the default version of Python for Salt on

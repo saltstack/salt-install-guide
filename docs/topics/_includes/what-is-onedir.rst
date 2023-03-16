@@ -1,11 +1,10 @@
 .. admonition:: **What is onedir?**
 
-   Onedir is the Salt Project’s new packaging system. Beginning with the release
-   of Salt 3005 (Phosphorus), the Salt Project will begin replacing the old
-   packaging system with the onedir packaging system.
+   Onedir is the Salt Project's new packaging system. Onedir packages of Salt
+   include the version of Python needed to run Salt and Salt's required
+   dependencies.
 
-   Onedir packages of Salt include the version of Python needed to run Salt and
-   Salt's required dependencies.
-
-   The Salt Project will support the old packaging system until the 3006
-   release. See :ref:`upgrade-to-onedir` for more information.
+   Beginning with the release of Salt 3006 (Sulfur), the Salt Project has phased
+   out classic package builds for supported operating systems. Update your Salt
+   infrastructure to the onedir packages as soon as possible. See
+   :ref:`upgrade-to-onedir` for more information.

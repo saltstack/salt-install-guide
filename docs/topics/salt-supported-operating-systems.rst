@@ -29,20 +29,6 @@ Overview of supported operating systems
     - `Reasonable-effort support`_
     - Testing support
 
-  * - `AIX`_ 7.1
-    -
-    - Yes
-    - Yes
-    -
-    - Package only
-
-  * - `AIX`_ 7.2
-    -
-    - Yes
-    - Yes
-    -
-    - Package only
-
   * - `Amazon Linux`_ 2
     -
     - Yes
@@ -56,20 +42,6 @@ Overview of supported operating systems
     -
     - Yes
     - Automated only
-
-  * - `Arista`_ 4.18
-    -
-    - Yes
-    - Yes
-    -
-    - Package only
-
-  * - `Arista`_ 4.23
-    -
-    - Yes
-    - Yes
-    -
-    - Package only
 
   * - `CentOS`_ 7
     - Yes
@@ -148,13 +120,6 @@ Overview of supported operating systems
     - Yes
     - Package only
 
-  * - `Juniper`_ (JunOS)
-    -
-    - Yes
-    - Yes
-    -
-    - Package only
-
   * - `macOS`_ 10.15
     -
     - Yes
@@ -198,27 +163,6 @@ Overview of supported operating systems
     - NONE [#f1]_
 
   * - `Photon OS`_ 3
-    - Yes
-    - Yes
-    - Yes
-    -
-    - Package only
-
-  * - `Raspberry Pi OS`_ 9 (Stretch)
-    - Yes
-    - Yes
-    - Yes
-    -
-    - Package only
-
-  * - `Raspberry Pi OS`_ 10 (Buster)
-    - Yes
-    - Yes
-    - Yes
-    -
-    - Package only
-
-  * - `Raspberry Pi OS`_ 11 (Bullseye)
     - Yes
     - Yes
     - Yes
@@ -272,20 +216,6 @@ Overview of supported operating systems
     - Yes
     -
     - Yes
-    - Package only
-
-  * - `Solaris`_ 10
-    -
-    - Yes
-    - Yes
-    -
-    - Package only
-
-  * - `Solaris`_ 11.4 and greater
-    -
-    - Yes
-    - Yes
-    -
     - Package only
 
   * - `Ubuntu`_ 18.04
@@ -416,47 +346,6 @@ These guidelines are intended to help you understand how long a particular
 operating system will receive official packages, testing, and technical support.
 
 
-.. _aix-supported:
-
-AIX
----
-The Salt Project supports:
-
-* AIX version 7.1 as of May 2017.
-* AIX version 7.2 as of November 2021.
-
-.. Note::
-    The Salt Project had to drop support for AIX 7.3 for the 3005 release due to
-    build failures caused by a bug in AIX.
-
-The following systems are supported:
-
-.. list-table::
-   :header-rows: 1
-
-   * - Device
-     - Supported Firmware
-     - Supported Salt versions
-   * - AIX 7.1 and greater
-     - Power 7 and greater
-     - Salt v3002.1 and greater (Python 2)
-   * - AIX 7.1 and greater
-     - Power 8 and greater
-     - Salt v3003.1 and greater
-   * - AIX 7.2 and greater
-     - Power 8 and greater
-     - Salt v3004 and greater
-
-
-.. Warning::
-    Be aware that AIX utilities may not be the same as a standard Linux
-    environment. For example, the version of ``tar`` does not support ``-z`` in
-    AIX.
-
-    Salt ``3003.1`` releases, and newer, will only work on **Power 8 or greater
-    processors.**
-
-
 Amazon Linux
 ------------
 Amazon Linux 2 is supported.
@@ -466,26 +355,6 @@ Arch
 ----
 Latest version of Arch.
 
-
-.. _arista-supported:
-
-Arista
-------
-The following Arista systems are supported:
-
-.. list-table::
-   :header-rows: 1
-
-   * - Device
-     - Supported Firmware
-   * - Arista 32-bit EOS
-     - Versions 4.18 and greater
-   * - Arista 64-bit EOS
-     - Versions 4.23 and greater
-
-The Arista native minion already contains Arista's `pyeapi
-<https://github.com/arista-eosplus/pyeapi>`_ software, as well as `Napalm
-<https://github.com/napalm-automation/napalm>`_ and all of its dependencies.
 
 
 CentOS
@@ -514,30 +383,6 @@ supported by the Salt Project.
 https://access.redhat.com/support/policy/updates/errata
 
 
-.. _juniper-supported:
-
-Juniper
--------
-The following systems are supported:
-
-.. list-table::
-   :header-rows: 1
-
-   * - Device
-     - Supported Firmware
-   * - QFX Series Switches
-     - **17.3R2-S6** and greater
-   * - MX Series Routers
-     - **17.4R2-S6** and greater
-
-
-.. Note::
-    During development of the native minion for Juniper, an issue was found
-    on Juniper software which required a fix: Juniper PR 1515432 : REST-API
-    PUT POST RPC call failing, which has been fixed in 17.4R2-S12 and 17.3R3-S9.
-    Use these versions or higher for use with the native minion.
-
-
 macOS
 -----
 The latest three versions of macOS.
@@ -555,41 +400,11 @@ Photon OS
 Photon OS 3.0 as of the 3005 (Phosphorus) release.
 
 
-Raspberry Pi OS
----------------
-Raspberry Pi OS stable, oldstable, and oldoldstable versions.
-
-
 SLES
 ----
 SLES versions through General Support. Versions in LTSS are not supported.
 
 https://www.suse.com/lifecycle/
-
-
-.. _solaris-supported:
-
-Solaris
--------
-Solaris version 10 as of August 2021. Solaris version 11 as of September 2021.
-
-
-.. Note::
-	  Python 3 support only. Python 2 unsupported may be found on `archive.repo.saltproject.io <https://archive.repo.saltproject.io/>`_.
-
-
-The following systems are supported:
-
-.. list-table::
-   :widths: 50 50
-   :header-rows: 1
-
-   * - Device
-     - Supported Firmware
-   * - Solaris 10 update 8 and greater
-     - Intel and SPARC processors
-   * - Solaris 11.2 and greater
-     - Intel and SPARC processors
 
 
 

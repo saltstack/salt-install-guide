@@ -16,8 +16,8 @@ systems:
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install the stable release of Salt on SUSE
-==========================================
+Install Salt on SUSE
+====================
 Salt is packaged separately for the minion and the master. You only need to
 install the appropriate package for the machine's role. Typically, there will be
 one master and multiple minions.

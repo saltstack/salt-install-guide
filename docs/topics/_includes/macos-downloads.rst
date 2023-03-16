@@ -1,35 +1,14 @@
 .. list-table::
-  :widths: 10 10 10 70
+  :widths: 10 10 40 40
   :header-rows: 1
   :class: windows-mac-download
 
-  * - Package
-    - Arch
+  * - Arch
     - File type
-    - Download
+    - Download install file
+    - GPG
 
-  * - onedir
-    - x86_64
+  * - x86_64
     - pkg
-    -  **Download the install file**
-
-       * |macos-onedir-amd64-download|
-
-       **GPG**
-
-       * |macos-onedir-amd64-gpg|
-
-  * - classic
-    - x86_64
-    - pkg
-    -  **Download the install file**
-
-       * |macos-classic-amd64-download|
-
-       **MD5**
-
-       * |macos-classic-amd64-md5|
-
-       **SHA256**
-
-       * |macos-classic-amd64-sha256|
+    - |macos-amd64-download|
+    - |macos-amd64-gpg|

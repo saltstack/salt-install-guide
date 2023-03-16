@@ -6,11 +6,9 @@ Ubuntu
 
 These instructions explain how to install Salt on Debian operating systems:
 
-* `Install onedir packages of Salt on Ubuntu 22.04 (Jammy)`_
-* `Install onedir packages of Salt on Ubuntu 20.04 (Focal)`_
-* `Install onedir packages of Salt on Ubuntu 18.04 (Bionic)`_
-* `Install classic packages of Salt on Ubuntu 20.04 (Focal)`_
-* `Install classic packages of Salt on Ubuntu 18.04 (Bionic)`_
+* `Install Salt on Ubuntu 22.04 (Jammy)`_
+* `Install Salt on Ubuntu 20.04 (Focal)`_
+* `Install Salt on Ubuntu 18.04 (Bionic)`_
 
 
 .. card:: Browse the repo for Ubuntu packages
@@ -26,8 +24,8 @@ These instructions explain how to install Salt on Debian operating systems:
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install onedir packages of Salt on Ubuntu 22.04 (Jammy)
-=======================================================
+Install Salt on Ubuntu 22.04 (Jammy)
+====================================
 To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy):
 
 #. Run the following commands to import the Salt Project repository key, and to
@@ -44,9 +42,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-latest-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-latest-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
        .. tab-item:: Ubuntu 22.04 (Jammy) (Major onedir)
 
@@ -55,9 +53,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-major-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-major-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
        .. tab-item:: Ubuntu 22.04 (Jammy) (Minor onedir)
 
@@ -66,9 +64,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-onedir-minor-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-minor-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
 #. Run ``sudo apt-get update`` to update your packages.
@@ -98,86 +96,8 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy):
 .. include:: ../_includes/post-install-by-os.rst
 
 
-.. Install onedir packages of Salt on Ubuntu 22.04 (Jammy) ARM64
- ==========================================================
- To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy) ARM64:
-
- #. Run the following commands to import the Salt Project repository key, and to
-   create the apt sources list file:
-
-   **Click the tab for the Salt version you would like to pin for updates:**
-
-   .. tab-set::
-
-       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Ubuntu 22.04 (Jammy) ARM64**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-arm64-onedir-latest-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Major onedir)
-
-           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
-           of Salt for **Ubuntu 22.04 (Jammy) ARM64**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-arm64-onedir-latest-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-       .. tab-item:: Ubuntu 22.04 (Jammy) ARM64 (Minor onedir)
-
-           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
-           of Salt for **Ubuntu 22 (Jammy) ARM64**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-arm64-onedir-latest-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu22-arm64-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
- #. Run ``sudo apt-get update`` to update your packages.
-
- #. Install the salt-minion, salt-master, or other Salt components:
-
-   .. code-block:: bash
-
-       sudo apt-get install salt-master
-       sudo apt-get install salt-minion
-       sudo apt-get install salt-ssh
-       sudo apt-get install salt-syndic
-       sudo apt-get install salt-cloud
-       sudo apt-get install salt-api
-
- #. Enable and start the services for salt-minion, salt-master, or other Salt
-   components:
-
-   .. code-block:: bash
-
-       sudo systemctl enable salt-master && sudo systemctl start salt-master
-       sudo systemctl enable salt-minion && sudo systemctl start salt-minion
-       sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
-       sudo systemctl enable salt-api && sudo systemctl start salt-api
-
-
- .. include:: ../_includes/post-install-by-os.rst
-
-
-Install onedir packages of Salt on Ubuntu 20.04 (Focal)
-=======================================================
+Install Salt on Ubuntu 20.04 (Focal)
+====================================
 To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal):
 
 #. Run the following commands to import the Salt Project repository key, and to
@@ -196,9 +116,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-onedir-latest-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-latest-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
        .. tab-item:: Ubuntu 20.04 (Major onedir)
 
@@ -209,9 +129,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-onedir-major-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-major-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
        .. tab-item:: Ubuntu 20.04 (Minor onedir)
@@ -223,9 +143,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-onedir-minor-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-minor-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 #. Run ``sudo apt-get update`` to update your packages.
 
@@ -254,88 +174,8 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal):
 .. include:: ../_includes/post-install-by-os.rst
 
 
-
-.. Install onedir packages of Salt on Ubuntu 20.04 (Focal) ARM64
- ==========================================================
- To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal) ARM64:
-
- #. Run the following commands to import the Salt Project repository key, and to
-   create the apt sources list file:
-
-   **Click the tab for the Salt version you would like to pin for updates:**
-
-   .. tab-set::
-
-       .. tab-item:: Ubuntu 20.04 ARM64 (onedir Latest)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Ubuntu 20.04 (Focal) ARM64**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-onedir-latest-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-       .. tab-item:: Ubuntu 20.04 ARM64 (onedir Major)
-
-           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
-           of Salt for **Ubuntu 20.04 (Focal) ARM64**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-onedir-major-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-       .. tab-item:: Ubuntu 20.04 ARM64 (onedir Minor)
-
-           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
-           of Salt for **Ubuntu 20.04 (Focal) ARM64**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-onedir-minor-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
- #. Run ``sudo apt-get update`` to update your packages.
-
- #. Install the salt-minion, salt-master, or other Salt components:
-
-   .. code-block:: bash
-
-       sudo apt-get install salt-master
-       sudo apt-get install salt-minion
-       sudo apt-get install salt-ssh
-       sudo apt-get install salt-syndic
-       sudo apt-get install salt-cloud
-       sudo apt-get install salt-api
-
- #. Enable and start the services for salt-minion, salt-master, or other Salt
-   components:
-
-   .. code-block:: bash
-
-       sudo systemctl enable salt-master && sudo systemctl start salt-master
-       sudo systemctl enable salt-minion && sudo systemctl start salt-minion
-       sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
-       sudo systemctl enable salt-api && sudo systemctl start salt-api
-
-
- .. include:: ../_includes/post-install-by-os.rst
-
-
-Install onedir packages of Salt on Ubuntu 18.04 (Bionic)
-========================================================
+Install Salt on Ubuntu 18.04 (Bionic)
+=====================================
 To install the :ref:`onedir` packages of Salt on Ubuntu 18.04 (Bionic):
 
 #. Run the following commands to import the Salt Project repository key, and to
@@ -354,9 +194,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 18.04 (Bionic):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu18-onedir-latest-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu18-latest-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-onedir-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
        .. tab-item:: Ubuntu 18.04 (onedir Major)
 
@@ -367,9 +207,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 18.04 (Bionic):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu18-onedir-major-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu18-major-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-onedir-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
        .. tab-item:: Ubuntu 18.04 (onedir Minor)
@@ -381,258 +221,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 18.04 (Bionic):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu18-onedir-minor-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu18-minor-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-onedir-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-#. Run ``sudo apt-get update`` to update your packages.
-
-#. Install the salt-minion, salt-master, or other Salt components:
-
-   .. code-block:: bash
-
-       sudo apt-get install salt-master
-       sudo apt-get install salt-minion
-       sudo apt-get install salt-ssh
-       sudo apt-get install salt-syndic
-       sudo apt-get install salt-cloud
-       sudo apt-get install salt-api
-
-#. Enable and start the services for salt-minion, salt-master, or other Salt
-   components:
-
-   .. code-block:: bash
-
-       sudo systemctl enable salt-master && sudo systemctl start salt-master
-       sudo systemctl enable salt-minion && sudo systemctl start salt-minion
-       sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
-       sudo systemctl enable salt-api && sudo systemctl start salt-api
-
-
-.. include:: ../_includes/post-install-by-os.rst
-
-
-Install classic packages of Salt on Ubuntu 20.04 (Focal)
-========================================================
-
-.. include:: ../_includes/warning-about-old-packages.rst
-
-To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
-
-#. Run the following commands to import the Salt Project repository key, and to
-   create the apt sources list file:
-
-   **Click the tab for the Salt version you would like to pin for updates:**
-
-   .. tab-set::
-
-       .. tab-item:: Ubuntu 20.04 (Latest classic)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
-           of Salt for **Ubuntu 20.04 (Focal)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-classic-latest-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-       .. tab-item:: Ubuntu 20.04 (Major)
-
-           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
-           package of Salt for **Ubuntu 20.04 (Focal)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-classic-major-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-       .. tab-item:: Ubuntu 20.04 (Minor)
-
-           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
-           package of Salt for **Ubuntu 20.04 (Focal)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-classic-minor-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-#. Run ``sudo apt-get update`` to update your packages.
-
-#. Install the salt-minion, salt-master, or other Salt components:
-
-   .. code-block:: bash
-
-       sudo apt-get install salt-master
-       sudo apt-get install salt-minion
-       sudo apt-get install salt-ssh
-       sudo apt-get install salt-syndic
-       sudo apt-get install salt-cloud
-       sudo apt-get install salt-api
-
-#. Enable and start the services for salt-minion, salt-master, or other Salt
-   components:
-
-   .. code-block:: bash
-
-       sudo systemctl enable salt-master && sudo systemctl start salt-master
-       sudo systemctl enable salt-minion && sudo systemctl start salt-minion
-       sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
-       sudo systemctl enable salt-api && sudo systemctl start salt-api
-
-
-.. include:: ../_includes/post-install-by-os.rst
-
-
-
-Install classic packages of Salt on Ubuntu 20.04 (Focal) ARM64
-==============================================================
-
-.. include:: ../_includes/warning-about-old-packages.rst
-
-To install Salt on Ubuntu 20.04 (Focal) using the old packaging system:
-
-#. Run the following commands to import the Salt Project repository key, and to
-   create the apt sources list file:
-
-   **Click the tab for the Salt version you would like to pin for updates:**
-
-   .. tab-set::
-
-       .. tab-item:: Ubuntu 20.04 ARM64 (Latest classic)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
-           of Salt for **Ubuntu 20.04 (Focal) ARM64**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-classic-latest-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-       .. tab-item:: Ubuntu 20.04 ARM64 (Major classic)
-
-           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
-           package of Salt for **Ubuntu 20.04 (Focal) ARM64**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-classic-major-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-       .. tab-item:: Ubuntu 20.04 ARM64 (Minor classic)
-
-           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
-           package of Salt for **Ubuntu 20.04 (Focal) ARM64**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-arm64-classic-minor-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=arm64] \ |ubuntu20-arm64-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-#. Run ``sudo apt-get update`` to update your packages.
-
-#. Install the salt-minion, salt-master, or other Salt components:
-
-   .. code-block:: bash
-
-       sudo apt-get install salt-master
-       sudo apt-get install salt-minion
-       sudo apt-get install salt-ssh
-       sudo apt-get install salt-syndic
-       sudo apt-get install salt-cloud
-       sudo apt-get install salt-api
-
-#. Enable and start the services for salt-minion, salt-master, or other Salt
-   components:
-
-   .. code-block:: bash
-
-       sudo systemctl enable salt-master && sudo systemctl start salt-master
-       sudo systemctl enable salt-minion && sudo systemctl start salt-minion
-       sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
-       sudo systemctl enable salt-api && sudo systemctl start salt-api
-
-
-.. include:: ../_includes/post-install-by-os.rst
-
-
-Install classic packages of Salt on Ubuntu 18.04 (Bionic)
-=========================================================
-
-.. include:: ../_includes/warning-about-old-packages.rst
-
-To install Salt on Ubuntu 18.04 (Bionic) using the old packaging system:
-
-#. Run the following commands to import the Salt Project repository key, and to
-   create the apt sources list file:
-
-   **Click the tab for the Salt version you would like to pin for updates:**
-
-   .. tab-set::
-
-       .. tab-item:: Ubuntu 18.04 (Latest classic)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
-           of Salt for **Ubuntu 18.04 (Bionic)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu18-classic-latest-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-classic-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-       .. tab-item:: Ubuntu 18.04 (Major classic)
-
-           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
-           package of Salt for **Ubuntu 18.04 (Bionic)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu18-classic-major-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-classic-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-       .. tab-item:: Ubuntu 18.04 (Minor classic)
-
-           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
-           package of Salt for **Ubuntu 18.04 (Bionic)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu18-classic-minor-gpg|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-classic-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu18-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
 
 #. Run ``sudo apt-get update`` to update your packages.

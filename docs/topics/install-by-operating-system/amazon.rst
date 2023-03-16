@@ -7,9 +7,7 @@ Amazon Linux 2
 These instructions explain how to install Salt on Amazon Linux 2 operating
 systems:
 
-* `Install onedir packages of Salt on Amazon Linux 2`_
-* `Install classic packages of Salt on Amazon Linux 2`_
-
+* `Install Salt on Amazon Linux 2`_
 
 .. card:: Browse the repo for Amazon Linux 2 packages
     :class-card: sd-border-1
@@ -25,8 +23,8 @@ systems:
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install onedir packages of Salt on Amazon Linux 2
-=================================================
+Install Salt on Amazon Linux 2
+==============================
 To install the :ref:`onedir` packages of Salt on Amazon Linux 2:
 
 #. Run the following commands to install the Salt Project repository and key:
@@ -40,9 +38,9 @@ To install the :ref:`onedir` packages of Salt on Amazon Linux 2:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |amazon-linux2-onedir-latest-gpg|\
+               sudo rpm --import \ |amazon-linux2-latest-gpg|\
 
-               curl -fsSL \ |amazon-linux2-onedir-latest-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
+               curl -fsSL \ |amazon-linux2-latest-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
        .. tab-item:: Amazon Linux 2 (Major onedir)
 
@@ -51,9 +49,9 @@ To install the :ref:`onedir` packages of Salt on Amazon Linux 2:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |amazon-linux2-onedir-major-gpg|\
+               sudo rpm --import \ |amazon-linux2-major-gpg|\
 
-               curl -fsSL \ |amazon-linux2-onedir-major-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
+               curl -fsSL \ |amazon-linux2-major-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
        .. tab-item:: Amazon Linux 2 (Minor onedir)
 
@@ -62,80 +60,9 @@ To install the :ref:`onedir` packages of Salt on Amazon Linux 2:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |amazon-linux2-onedir-minor-gpg|\
+               sudo rpm --import \ |amazon-linux2-minor-gpg|\
 
-               curl -fsSL \ |amazon-linux2-onedir-minor-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
-
-#. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
-
-#. Install the salt-minion, salt-master, or other Salt components:
-
-   .. code-block:: bash
-
-       sudo yum install salt-master
-       sudo yum install salt-minion
-       sudo yum install salt-ssh
-       sudo yum install salt-syndic
-       sudo yum install salt-cloud
-       sudo yum install salt-api
-
-#. Enable and start service for salt-minion, salt-master, or other Salt
-   components:
-
-   .. code-block:: bash
-
-       sudo systemctl enable salt-master && sudo systemctl start salt-master
-       sudo systemctl enable salt-minion && sudo systemctl start salt-minion
-       sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
-       sudo systemctl enable salt-api && sudo systemctl start salt-api
-
-
-.. include:: ../_includes/post-install-by-os.rst
-
-
-Install classic packages of Salt on Amazon Linux 2
-==================================================
-
-.. include:: ../_includes/warning-about-old-packages.rst
-
-To install Salt on Amazon Linux 2 using the old packaging system:
-
-#. Run the following commands to install the Salt Project repository and key:
-
-   .. tab-set::
-
-       .. tab-item:: Amazon Linux 2 (Latest classic)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`classic` package
-           of Salt for **Amazon Linux 2**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |amazon-linux2-classic-latest-gpg|\
-
-               curl -fsSL \ |amazon-linux2-classic-latest-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
-
-       .. tab-item:: Amazon Linux 2 (Major classic)
-
-           To pin your Salt upgrades to the latest :ref:`major` :ref:`classic`
-           package of Salt for **Amazon Linux 2**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |amazon-linux2-classic-major-gpg|\
-
-               curl -fsSL \ |amazon-linux2-classic-major-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
-
-       .. tab-item:: Amazon Linux 2 (Minor classic)
-
-           To pin your Salt upgrades to the latest :ref:`minor` :ref:`classic`
-           package of Salt for **Amazon Linux 2**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |amazon-linux2-classic-minor-gpg|\
-
-               curl -fsSL \ |amazon-linux2-classic-minor-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
+               curl -fsSL \ |amazon-linux2-minor-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
