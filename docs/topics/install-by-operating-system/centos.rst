@@ -6,8 +6,8 @@ CentOS
 
 These instructions explain how to install Salt on CentOS operating systems:
 
-* `Install Salt on CentOS 9`_
-* `Install Salt on CentOS 8`_
+* `Install Salt on CentOS Stream 9`_
+* `Install Salt on CentOS Stream 8`_
 * `Install Salt on CentOS 7`_
 
 
@@ -25,8 +25,8 @@ These instructions explain how to install Salt on CentOS operating systems:
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install Salt on CentOS 9
-========================
+Install Salt on CentOS Stream 9
+===============================
 To install the :ref:`onedir` packages of Salt on Centos 9:
 
 #. Run the following commands to install the Salt Project repository and key:
@@ -93,8 +93,8 @@ To install the :ref:`onedir` packages of Salt on Centos 9:
 .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Salt on CentOS 8
-========================
+Install Salt on CentOS Stream 8
+===============================
 To install the :ref:`onedir` packages of Salt on Centos 8:
 
 #. Run the following commands to install the Salt Project repository and key:
