@@ -1,8 +1,8 @@
 .. _supported-os-concepts:
 
-Salt runs on and manages many versions of Linux, Windows, Mac OS X and UNIX.
-However, Salt's ability to run on a specific operating system depends on whether
-that operating system will run the `salt-master` service or the `salt-minion`
+Salt runs on and manages many versions of Linux, Windows, and Mac OS X. However,
+Salt's ability to run on a specific operating system depends on whether that
+operating system will run the `salt-master` service or the `salt-minion`
 service.
 
 Salt uses the master-client model in which a master node issues commands to a

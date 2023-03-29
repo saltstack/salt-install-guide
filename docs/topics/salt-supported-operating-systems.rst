@@ -1,8 +1,8 @@
 .. _salt-supported-operating-systems:
 
-===========================
-Supported operating systems
-===========================
+================================
+Salt supported operating systems
+================================
 
 Together with the :ref:`salt-version-support-lifecycle` guidelines, this
 document is intended to clearly define how long a particular version of Salt
@@ -16,300 +16,311 @@ Overview of supported operating systems
 =======================================
 
 .. list-table::
-  :widths: 30 10 10 10 15 25
+  :widths: 30 20 10 10 20 10
   :align: center
   :header-rows: 1
   :stub-columns: 1
   :class: slim
 
   * -
-    - `Master supported`_
-    - `Minion supported`_
-    - `Full support`_
-    - `Reasonable-effort support`_
-    - Testing support
+    - `Arch`_
+    - `Master`_
+    - `Minion`_
+    - `Full`_ or `Reasonable-effort`_
+    - `Tested`_
+
+  * - `AlmaLinux`_ 8
+    - x86_64, aarch64
+    - Yes
+    - Yes
+    - Full
+    - Yes
+
+  * - `AlmaLinux`_ 9
+    - x86_64, aarch64
+    - Yes
+    - Yes
+    - Full
+    - Yes
 
   * - `Amazon Linux`_ 2
+    - x86_64, aarch64
     -
     - Yes
+    - Full
     - Yes
-    -
-    - Package only
 
-  * - `Arch`_ (latest)
+  * - `Arch Linux`_ (latest)
+    - x86_64, aarch64
     - Yes
     - Yes
-    -
+    - Reasonable
     - Yes
-    - Automated only
 
   * - `CentOS`_ 7
+    - x86_64, aarch64
     - Yes
     - Yes
+    - Full
     - Yes
-    -
-    - Automated, manual
 
-  * - `CentOS`_ 8 Streaming
+  * - `CentOS`_ Stream 8
+    - x86_64, aarch64
     - Yes
     - Yes
-    - Yes
+    - Full
     -
-    - Package only
 
-  * - `CentOS`_ 9 Streaming
+  * - `CentOS`_ Stream 9
+    - x86_64, aarch64
     - Yes
     - Yes
-    - Yes
+    - Full
     -
-    - Package only
 
   * - `Debian`_ 10
+    - x86_64, aarch64
     - Yes
     - Yes
+    - Full
     - Yes
-    -
-    - Automated, manual
 
   * - `Debian`_ 11
+    - x86_64, aarch64
     - Yes
     - Yes
+    - Full
     - Yes
-    -
-    - Automated, manual
-
-  * - `Fedora`_ 35
-    - Yes
-    - Yes
-    - Yes
-    -
-    - Automated, manual
 
   * - `Fedora`_ 36
+    - x86_64, aarch64
     - Yes
     - Yes
+    - Full
     - Yes
-    -
-    - Automated, manual
 
   * - `Fedora`_ 37
+    - x86_64, aarch64
     - Yes
     - Yes
+    - Full
     - Yes
-    -
-    - Automated, manual
 
-  * - `FreeBSD`_ 11
+  * - `Fedora`_ 38
+    - x86_64, aarch64
     - Yes
     - Yes
-    -
+    - Full
     - Yes
-    - Package only
 
-  * - `FreeBSD`_ 12.2
-    - Yes
-    - Yes
+  * - `FreeBSD`_ 12.4
     -
     - Yes
-    - Package only
+    - Yes
+    - Reasonable
+    -
 
-  * - `FreeBSD`_ 13
-    - Yes
-    - Yes
-    -
-    - Yes
-    - Package only
-
-  * - `macOS`_ 10.15
+  * - `FreeBSD`_ 13.1
     -
     - Yes
     - Yes
-    -
+    - Reasonable
     -
 
   * - `macOS`_ 11
+    - x86_64
     -
     - Yes
-    - Yes
-    -
+    - Full
     -
 
   * - `macOS`_ 12
+    - x86_64
     -
     - Yes
-    - Yes
-    -
-    -
-
-  * - `openSUSE`_ Leap 42.3
-    - Yes
-    - Yes
-    -
-    - Yes
-    - Automated only
-
-  * - `openSUSE`_ 15
-    - Yes
-    - Yes
-    -
-    - Yes
+    - Full
     -
 
-  * - `Oracle Linux`_ 7, 8
-    - Yes
-    - Yes
-    - Yes
+  * - `openSUSE`_ Leap 15.4
     -
-    - NONE [#f1]_
+    - Yes
+    - Yes
+    - Reasonable
+    -
+
+  * - `Oracle Linux`_ 7, 8, 9
+    -
+    - Yes
+    - Yes
+    - Full
+    - [#f1]_
 
   * - `Photon OS`_ 3
-    - Yes
-    - Yes
-    - Yes
     -
-    - Package only
+    - Yes
+    - Yes
+    - Full
+    -
+
+  * - `Photon OS`_ 4
+    -
+    - Yes
+    - Yes
+    - Full
+    -
+
 
   * - `RedHat`_ 7
+    - x86_64, aarch64
     - Yes
     - Yes
+    - Full
     - Yes
-    -
-    - Automated, manual
 
   * - `RedHat`_ 8
+    - x86_64, aarch64
     - Yes
     - Yes
+    - Full
     - Yes
-    -
-    - Package only
 
   * - `RedHat`_ 9
+    - x86_64, aarch64
     - Yes
     - Yes
+    - Full
     - Yes
-    -
-    - Package only
 
-  * - `SLES`_ 12
-    - Yes
-    - Yes
-    - Yes
+  * - `SLES`_ 12 SP5
     -
+    - Yes
+    - Yes
+    - Full
     -
 
-  * - `SLES`_ 12 SP4
-    - Yes
-    - Yes
-    - Yes
-    -
-    - Package only
-
-  * - `SLES`_ 15
-    - Yes
-    - Yes
-    - Yes
-    -
-    - Package only
-
-  * - `SmartOS`_ (latest)
-    - Yes
-    - Yes
+  * - `SLES`_ 15 SP4
     -
     - Yes
-    - Package only
-
-  * - `Ubuntu`_ 18.04
     - Yes
-    - Yes
-    - Yes
-    -
+    - Full
     -
 
   * - `Ubuntu`_ 20.04
+    - x86_64, aarch64
     - Yes
     - Yes
+    - Full
     - Yes
-    -
-    - Automated, manual
 
   * - `Ubuntu`_ 22.04
+    - x86_64, aarch64
     - Yes
     - Yes
+    - Full
     - Yes
-    -
-    - Automated, manual
-
-  * - `Windows`_ Desktop 8.1
-    -
-    - Yes
-    - Yes
-    -
-    - Package only
 
   * - `Windows`_ Desktop 10
+    - x86, AMD64
     -
     - Yes
+    - Full
     - Yes
-    -
-    - Package only
 
   * - `Windows`_ Desktop 11
+    - x86, AMD64
     -
     - Yes
+    - Full
     - Yes
-    -
-    - Package only
 
   * - `Windows`_ 2012
+    - x86, AMD64
     -
     - Yes
-    - Yes
-    -
+    - Full
     -
 
   * - `Windows`_ 2012 R2
+    - x86, AMD64
     -
     - Yes
-    - Yes
-    -
+    - Full
     -
 
   * - `Windows`_ 2016
+    - x86, AMD64
     -
     - Yes
-    - Yes
+    - Full
     -
-    - Package only
 
   * - `Windows`_ 2019
+    - x86, AMD64
     -
     - Yes
-    - Yes
-    -
+    - Full
     -
 
   * - `Windows`_ 2022
+    - x86, AMD64
     -
     - Yes
-    - Yes
-    -
+    - Full
     -
 
 
 .. [#f1] Use RedHat or CentOS packages instead.
 
 
-Master supported
-----------------
-Master supported is defined as:
+Support definitions
+===================
+
+Arch
+----
+Arch is short for *architecture.* The Salt Project supports the following
+architectures:
+
+.. list-table::
+  :widths: 30 30 40
+  :header-rows: 1
+  :stub-columns: 1
+  :class: no-bullets
+
+  * - Operating system family
+    - Architecture support
+    - Example systems
+
+  * - Debian
+    -  * x86_64
+       * aarch64
+    - Debian, Ubuntu
+
+  * - MacOS
+    -  * x86_64
+    - MacOS
+
+  * - RedHat
+    -  * x86_64
+       * aarch64
+    - RedHat, CentOS, Fedora
+
+  * - Windows
+    -  * x86
+       * AMD64
+    - Windows desktop, Windows server
+
+
+Master
+------
+Master support is defined as:
 
 * The `salt-master` service can run on this operating system.
 * A node running this operating system can act as the Salt master, which means
   it can send commands and communicate with connected Salt minions.
 
 
-Minion supported
-----------------
+Minion
+------
 Minion supported is defined as:
 
 * The `salt-minion` service can run on this operating system.
@@ -317,25 +328,31 @@ Minion supported is defined as:
   system or device can be managed by a Salt master.
 
 
-Full support
-------------
+Full
+----
 Full support is defined as:
 
-* Packages and all required dependencies created by Salt Project or official upstream packager.
+* Packages and all required dependencies created by Salt Project or official
+  upstream packager.
 * Packages hosted by the Salt Project.
 * Tested by the Salt Project.
 * The Salt Project provides full technical support for VMware customers.
 * The Salt Project will fix bugs for VMware customers.
 
 
-Reasonable-effort support
--------------------------
+Reasonable-effort
+-----------------
 Reasonable-effort support is defined as:
 
 * Packages created and hosted by the Salt Project community.
 * Some testing done by the Salt Project.
 * The Salt Project provides best-effort technical support for VMware customers.
 * The Salt Project may fix bugs for VMware customers.
+
+
+Tested
+------
+The full automated test suite is run for the operating system packages.
 
 
 Full support policy by operating system
@@ -346,15 +363,14 @@ These guidelines are intended to help you understand how long a particular
 operating system will receive official packages, testing, and technical support.
 
 
+AlmaLinux
+---------
+Actively supported versions of AlmaLinux.
+
+
 Amazon Linux
 ------------
 Amazon Linux 2 is supported.
-
-
-Arch
-----
-Latest version of Arch.
-
 
 
 CentOS
@@ -390,7 +406,7 @@ The latest three versions of macOS.
 
 Oracle Linux
 ------------
-Oracle Linux versions 7 and 8 as of July 2016.
+Oracle Linux versions 7, 8, and 9.
 
 https://www.oracle.com/technetwork/server-storage/linux/overview/index.html
 
@@ -420,7 +436,7 @@ Windows
 -------
 Windows versions through Extended Support.
 
-http://windows.microsoft.com/en-us/windows/lifecycle 
+http://windows.microsoft.com/en-us/windows/lifecycle
 
 
 
@@ -437,6 +453,10 @@ operating systems, no guarantee is made as to availability of packages. These
 guidelines are for reasonable-effort support only.
 
 
+Arch Linux
+----------
+Latest version of Arch Linux.
+
 
 FreeBSD
 -------
@@ -448,8 +468,3 @@ https://www.freebsd.org/security/
 openSUSE
 --------
 openSUSE version support mirrors that of the upstream maintainer.
-
-
-SmartOS
--------
-Latest version of SmartOS.
