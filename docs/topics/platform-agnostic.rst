@@ -19,6 +19,13 @@ code.
 A benefit of using ``pip`` is the ability to install Salt in Python virtual
 environments and Conda environments.
 
+.. Warning::
+    If you pip install a library using the salt-pip install method, the Python
+    package installs into the onedir file location. Any scripts installed by the
+    Python library will not be accessible from the usual system Python paths.
+    Scripts installed by the Python library need to be called directly using the
+    full path to the command.
+
 
 Install Salt using `pip`
 ========================
