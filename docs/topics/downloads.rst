@@ -138,21 +138,24 @@ Download the macOS package and run the file to install Salt. See the
 
 Photon OS
 =========
-Salt packages for Photon OS are hosted on the Photon OS package repository.
-Install the Photon OS packages from the Photon OS package manager.
+Install the Photon OS package using a tdnf package manager.
 
-.. card:: Photon OS install guide
-    :class-card: sd-border-1
-    :link: install-photonos
-    :link-type: ref
-    :width: 50%
+.. grid:: 2
 
-    :bdg-info:`Install Salt on Photon OS`
+    .. grid-item-card:: Browse the repo for Photon OS packages
+        :class-card: sd-border-1
+        :link: https://repo.saltproject.io/py3/
 
+        :bdg-danger:`Photon OS`
+        :bdg-secondary:`Python3`
+        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
 
-Raspbian
-========
-Use the same download and installation instructions as `Debian`_.
+    .. grid-item-card:: Photon OS install guide
+        :class-card: sd-border-1
+        :link: install-photonos
+        :link-type: ref
+
+        :bdg-info:`Install Salt on Photon OS`
 
 
 RedHat

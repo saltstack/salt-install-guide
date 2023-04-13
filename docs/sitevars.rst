@@ -52,6 +52,20 @@
 .. |macos-amd64-download| replace:: https://repo.saltproject.io/salt/py3/macos/3005.1-1/salt-3005.1-1-macos-x86_64.pkg
 .. |macos-amd64-gpg| replace:: https://repo.saltproject.io/salt/py3/macos/3005.1-1/salt-archive-keyring.gpg
 
+.. |photonos4-latest-gpg| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+.. |photonos4-latest-download| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+.. |photonos4-major-gpg| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+.. |photonos4-major-download| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+.. |photonos4-minor-gpg| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+.. |photonos4-minor-download| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+
+.. |photonos3-latest-gpg| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+.. |photonos3-latest-download| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+.. |photonos3-major-gpg| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+.. |photonos3-major-download| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+.. |photonos3-minor-gpg| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+.. |photonos3-minor-download| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
+
 .. |rhel-future-release-gpg| replace:: https://staging.repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006.0rc1/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 
 .. |rhel9-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest/SALTSTACK-GPG-KEY2.pub
@@ -76,7 +90,6 @@
 .. |rhel7-minor-download| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/minor/3005.1-1.repo
 
 .. |ubuntu-future-release-gpg| replace:: https://staging.repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/minor/3006.0rc1/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-
 
 .. |ubuntu22-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest/salt-archive-keyring.gpg
 .. |ubuntu22-latest-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest jammy main
