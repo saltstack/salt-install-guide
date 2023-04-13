@@ -6,32 +6,68 @@ Photon OS
 
 These instructions explain how to install Salt on Photon OS operating systems.
 
-.. Note::
-    Salt packages for Photon OS are hosted on the Photon OS package repository.
-    Photon OS creates its own Salt packages and the Salt Project does not
-    publish separate Salt packages for download.
+* `Install Salt on Photon OS 4`_
+* `Install Salt on Photon OS 3`_
 
+.. card:: Browse the repo for Photon OS packages
+    :class-card: sd-border-1
+    :link: https://repo.saltproject.io/py3/
+    :width: 50%
+
+    :bdg-primary:`Photon OS`
+    :bdg-secondary:`Python3`
 
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install Salt on Photon OS 3
+Install Salt on Photon OS 4
 ===========================
-To install Salt on Photon OS 3:
+To install Salt on Photon OS 4:
 
-#. Create the Photon environment and run this command to update the system:
+#. Run the following commands to install the Salt Project repository and key:
 
-   .. code-block:: bash
+   **Click the tab for the Salt version you would like to pin for updates:**
 
-       sudo tdnf update
+   .. tab-set::
 
-#. Run this command to check whether the latest Salt release is available:
+       .. tab-item:: Photon OS 4 (Latest onedir)
 
-   .. code-block:: bash
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
+           of Salt for **Photon OS 4**:
 
-       sudo tdnf list salt3
+           .. parsed-literal::
 
-   This command returns a list of available Salt versions for Photon OS.
+               sudo rpm --import \ |photonos4-latest-gpg|\
+
+               curl -fsSL \ |photonos4-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+               tdnf clean all
+
+       .. tab-item:: Photon OS 4 (Major onedir)
+
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
+           of Salt for **Photon OS 4**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |photonos4-major-gpg|\
+
+               curl -fsSL \ |photonos4-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+               tdnf clean all
+
+       .. tab-item:: Photon OS 4 (Minor onedir)
+
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
+           of Salt for **Photon OS 4**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |photonos4-minor-gpg|\
+
+               curl -fsSL \ |photonos4-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+               tdnf clean all
 
 #. Install packages from the Photon OS repository, such as the salt-minion,
    salt-master, or other Salt components:
@@ -40,19 +76,19 @@ To install Salt on Photon OS 3:
 
    .. tab-set::
 
-       .. tab-item:: Photon OS 3 (Latest)
+       .. tab-item:: Photon OS 4 (Latest)
 
            To install the latest release of Salt packages that are available in
            the Photon OS repository, run these commands:
 
            .. code-block:: bash
 
-               sudo tdnf install salt3-master
-               sudo tdnf install salt3-minion
-               sudo tdnf install salt3-ssh
-               sudo tdnf install salt3-syndic
-               sudo tdnf install salt3-cloud
-               sudo tdnf install salt3-api
+               sudo tdnf install salt-master
+               sudo tdnf install salt-minion
+               sudo tdnf install salt-ssh
+               sudo tdnf install salt-syndic
+               sudo tdnf install salt-cloud
+               sudo tdnf install salt-api
 
 
        .. tab-item:: Photon OS 3 (Specific releases)
@@ -84,6 +120,116 @@ To install Salt on Photon OS 3:
 
        sudo systemctl enable salt-master && sudo systemctl start salt-master
        sudo systemctl enable salt-minion && sudo systemctl start salt-minion
+       sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
+       sudo systemctl enable salt-api && sudo systemctl start salt-api
+
+
+.. include:: ../_includes/post-install-by-os.rst
+
+
+
+Install Salt on Photon OS 3
+===========================
+To install Salt on Photon OS 3:
+
+#. Run the following commands to install the Salt Project repository and key:
+
+   **Click the tab for the Salt version you would like to pin for updates:**
+
+   .. tab-set::
+
+       .. tab-item:: Photon OS 3 (Latest onedir)
+
+           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
+           of Salt for **Photon OS 3**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |photonos3-latest-gpg|\
+
+               curl -fsSL \ |photonos3-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+               tdnf clean all
+
+       .. tab-item:: Photon OS 3 (Major onedir)
+
+           To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
+           of Salt for **Photon OS 3**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |photonos3-major-gpg|\
+
+               curl -fsSL \ |photonos3-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+               tdnf clean all
+
+       .. tab-item:: Photon OS 3 (Minor onedir)
+
+           To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
+           of Salt for **Photon OS 3**:
+
+           .. parsed-literal::
+
+               sudo rpm --import \ |photonos3-minor-gpg|\
+
+               curl -fsSL \ |photonos3-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+               tdnf clean all
+
+#. Install packages from the Photon OS repository, such as the salt-minion,
+   salt-master, or other Salt components:
+
+   **Click the tab for the Salt version you would like to pin for updates:**
+
+   .. tab-set::
+
+       .. tab-item:: Photon OS 3 (Latest)
+
+           To install the latest release of Salt packages that are available in
+           the Photon OS repository, run these commands:
+
+           .. code-block:: bash
+
+               sudo tdnf install salt-master
+               sudo tdnf install salt-minion
+               sudo tdnf install salt-ssh
+               sudo tdnf install salt-syndic
+               sudo tdnf install salt-cloud
+               sudo tdnf install salt-api
+
+
+       .. tab-item:: Photon OS 3 (Specific releases)
+
+           The following is an example of how to install a specific release of
+           Salt based on the list of packages available in the Photon OS
+           repository:
+
+           .. code-block:: bash
+
+               sudo tdnf install salt3-master-3005-1.ph3
+               sudo tdnf install salt3-minion-3005-1.ph3
+               sudo tdnf install salt3-ssh-3005-1.ph3
+               sudo tdnf install salt3-syndic-3005-1.ph3
+               sudo tdnf install salt3-cloud-3005-1.ph3
+               sudo tdnf install salt3-api-3005-1.ph3
+
+           .. Note::
+               The file extensions are based on which version of Photon OS you
+               are installing Salt services on. For example, the extension for
+               Photon OS 3 is ``.ph3`` and the extension for Photon OS 4 is
+               ``.ph4``.
+
+
+#. Enable and start the services for salt-minion, salt-master, or other Salt
+   components:
+
+   .. code-block:: bash
+
+       sudo systemctl enable salt-master && sudo systemctl start salt-master
+       sudo systemctl enable salt-minion && sudo systemctl start salt-minion
+       sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
+       sudo systemctl enable salt-api && sudo systemctl start salt-api
 
 
 .. include:: ../_includes/post-install-by-os.rst
