@@ -44,8 +44,7 @@ To install release candidate packages:
    the package to a specific version of Salt, after ``https://repo.saltproject.io``
    insert ``salt_rc/`` before the remainder of the file path.
 
-   .. Note::
-       The gpg key for the 3006.0 release is now named: SALT-PROJECT-GPG-PUBKEY-2023
+   .. include:: _includes/gpg-keys.rst
 
 
    To install the latest RC, run the following commands:
@@ -63,8 +62,6 @@ To install release candidate packages:
        .. tab-item:: Ubuntu 22.04 (Jammy)
 
            .. parsed-literal::
-
-               sudo mkdir -p /etc/apt/keyrings
 
                sudo curl -fsSL -o |ubuntu-release-candidate-gpg|\
 

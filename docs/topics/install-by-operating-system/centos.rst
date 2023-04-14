@@ -45,6 +45,8 @@ To install the :ref:`onedir` packages of Salt on Centos 9:
 
                curl -fsSL \ |centos9-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: CentOS 9 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package of Salt for **CentOS 9**:
@@ -55,6 +57,7 @@ To install the :ref:`onedir` packages of Salt on Centos 9:
 
                curl -fsSL \ |centos9-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: CentOS 9 (Minor onedir)
 
@@ -65,6 +68,8 @@ To install the :ref:`onedir` packages of Salt on Centos 9:
                sudo rpm --import \ |centos9-minor-gpg|\
 
                curl -fsSL \ |centos9-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+           .. include:: ../_includes/gpg-keys.rst
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
@@ -113,6 +118,8 @@ To install the :ref:`onedir` packages of Salt on Centos 8:
 
                curl -fsSL \ |centos8-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: CentOS 8 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package of Salt for **CentOS 8**:
@@ -123,6 +130,7 @@ To install the :ref:`onedir` packages of Salt on Centos 8:
 
                curl -fsSL \ |centos8-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: CentOS 8 (Minor onedir)
 
@@ -133,6 +141,8 @@ To install the :ref:`onedir` packages of Salt on Centos 8:
                sudo rpm --import \ |centos8-minor-gpg|\
 
                curl -fsSL \ |centos8-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+           .. include:: ../_includes/gpg-keys.rst
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
@@ -181,6 +191,8 @@ To install Salt on CentOS 7:
 
                curl -fsSL \ |centos7-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: CentOS 7 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package of Salt for **CentOS 7**:
@@ -191,6 +203,7 @@ To install Salt on CentOS 7:
 
                curl -fsSL \ |centos7-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: CentOS 7 (Minor onedir)
 
@@ -201,6 +214,8 @@ To install Salt on CentOS 7:
                sudo rpm --import \ |centos7-minor-gpg|\
 
                curl -fsSL \ |centos7-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+           .. include:: ../_includes/gpg-keys.rst
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 

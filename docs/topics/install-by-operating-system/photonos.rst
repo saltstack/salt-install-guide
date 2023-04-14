@@ -43,6 +43,8 @@ To install Salt on Photon OS 4:
 
                tdnf clean all
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: Photon OS 4 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -56,6 +58,8 @@ To install Salt on Photon OS 4:
 
                tdnf clean all
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: Photon OS 4 (Minor onedir)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
@@ -68,6 +72,8 @@ To install Salt on Photon OS 4:
                curl -fsSL \ |photonos4-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
                tdnf clean all
+
+           .. include:: ../_includes/gpg-keys.rst
 
 #. Install packages from the Photon OS repository, such as the salt-minion,
    salt-master, or other Salt components:
@@ -151,6 +157,8 @@ To install Salt on Photon OS 3:
 
                tdnf clean all
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: Photon OS 3 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -164,6 +172,8 @@ To install Salt on Photon OS 3:
 
                tdnf clean all
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: Photon OS 3 (Minor onedir)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
@@ -176,6 +186,8 @@ To install Salt on Photon OS 3:
                curl -fsSL \ |photonos3-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
                tdnf clean all
+
+           .. include:: ../_includes/gpg-keys.rst
 
 #. Install packages from the Photon OS repository, such as the salt-minion,
    salt-master, or other Salt components:

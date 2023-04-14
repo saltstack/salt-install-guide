@@ -83,7 +83,11 @@ To upgrade to onedir:
        instructions for the **onedir** version of the package. See
        :ref:`install-by-operating-system-index` for the specific commands.
 
-#. After the repository file is updated, upgrade your Salt packages.
+#. After the repository file is updated, import the |release| GPG key.
+
+   .. include:: _includes/gpg-keys.rst
+
+#. Upgrade your Salt packages.
 
    After upgrading your Salt packages, your Salt services should automatically
    restart. If you need to restart them manually for any reason, you can use

@@ -46,6 +46,8 @@ To install Salt on RedHat 9:
 
                curl -fsSL \ |rhel9-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: RHEL 9 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -57,6 +59,8 @@ To install Salt on RedHat 9:
 
                curl -fsSL \ |rhel9-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: RHEL 9 (Minor onedir)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
@@ -67,6 +71,8 @@ To install Salt on RedHat 9:
                sudo rpm --import \ |rhel9-minor-gpg|\
 
                curl -fsSL \ |rhel9-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+           .. include:: ../_includes/gpg-keys.rst
 
 
    .. Note::
@@ -132,6 +138,8 @@ To install the :ref:`onedir` packages of Salt on RedHat 8:
 
                curl -fsSL \ |rhel8-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: RHEL 8 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -143,6 +151,8 @@ To install the :ref:`onedir` packages of Salt on RedHat 8:
 
                curl -fsSL \ |rhel8-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: RHEL 8 (Minor onedir)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
@@ -153,6 +163,8 @@ To install the :ref:`onedir` packages of Salt on RedHat 8:
                sudo rpm --import \ |rhel8-minor-gpg|\
 
                curl -fsSL \ |rhel8-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+           .. include:: ../_includes/gpg-keys.rst
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 
@@ -202,6 +214,8 @@ To install the :ref:`onedir` packages of Salt on RedHat 7:
 
                curl -fsSL \ |rhel7-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: RHEL 7 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -213,6 +227,8 @@ To install the :ref:`onedir` packages of Salt on RedHat 7:
 
                curl -fsSL \ |rhel7-major-download|\  | sudo tee /etc/yum.repos.d/salt.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: RHEL 7 (Minor onedir)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
@@ -223,6 +239,8 @@ To install the :ref:`onedir` packages of Salt on RedHat 7:
                sudo rpm --import \ |rhel7-minor-gpg|\
 
                curl -fsSL \ |rhel7-minor-download|\  | sudo tee /etc/yum.repos.d/salt.repo
+
+           .. include:: ../_includes/gpg-keys.rst
 
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
