@@ -1,9 +1,21 @@
 .. |release| replace:: 3006
 .. |supported-release-2| replace:: 3005.1
 .. |supported-release-3| replace:: 3004.2
-.. |supported-release-1-badge| replace:: :bdg-link-success:`3006 <https://docs.saltproject.io/en/latest/topics/releases/index.html>`
+.. |supported-release-1-badge| replace:: :bdg-link-success:`3006 <https://docs.saltproject.io/en/latest/topics/releases/3006.html>`
 .. |supported-release-2-badge| replace:: :bdg-link-primary:`3005.1 <https://docs.saltproject.io/en/3005/topics/releases/3005.html>`
 .. |supported-release-3-badge| replace:: :bdg-link-dark:`3004.2 <https://docs.saltproject.io/en/3004/topics/releases/3004.2.html>`
+
+.. |release-candidate-version| replace:: 3006.0rc3
+.. |debian-release-candidate-gpg| replace:: /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/latest/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+.. |debian-release-candidate| replace:: [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg] https://repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/latest/ bullseye main"
+.. |rhel-release-candidate-gpg| replace:: https://repo.saltproject.io/salt_rc/salt/py3/redhat/9/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rhel-release-candidate| replace:: https://repo.saltproject.io/salt_rc/salt/py3/redhat/9/x86_64/latest.repo
+.. |rhel-release-candidate-echo| replace:: 'baseurl=https://repo.saltproject.io/salt_rc/salt/py3/redhat/$releasever/$basearch/latest'
+.. |ubuntu-release-candidate-gpg| replace:: /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/latest/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+.. |ubuntu-release-candidate| replace:: [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg] https://repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/latest/ jammy main"
+.. |bootstrap-release-candidate| replace:: python3 git v3006.0rc3
+.. |pip-install-release-candidate| replace:: sudo pip install salt==3006.0rc3
+
 
 .. |amazon-linux2-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/amazon/2/x86_64/latest/SALTSTACK-GPG-KEY.pub
 .. |amazon-linux2-latest-download| replace:: https://repo.saltproject.io/salt/py3/amazon/2/x86_64/latest.repo
@@ -32,8 +44,6 @@
 .. |centos7-major-download| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/3005.repo
 .. |centos7-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/minor/3005.1-1/SALTSTACK-GPG-KEY.pub
 .. |centos7-minor-download| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/minor/3005.1-1.repo
-
-.. |debian-future-release-gpg| replace:: https://staging.repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006.0rc1/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 
 .. |debian11-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/debian/11/amd64/latest/salt-archive-keyring.gpg
 .. |debian11-latest-download| replace:: https://repo.saltproject.io/salt/py3/debian/11/amd64/latest bullseye main
@@ -66,8 +76,6 @@
 .. |photonos3-minor-gpg| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
 .. |photonos3-minor-download| replace:: LINK UNAVAILABLE UNTIL SULFUR RELEASE
 
-.. |rhel-future-release-gpg| replace:: https://staging.repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006.0rc1/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-
 .. |rhel9-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest/SALTSTACK-GPG-KEY2.pub
 .. |rhel9-latest-download| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest.repo
 .. |rhel9-major-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/3005/SALTSTACK-GPG-KEY2.pub
@@ -88,8 +96,6 @@
 .. |rhel7-major-download| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/3005.repo
 .. |rhel7-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/minor/3005.1-1/SALTSTACK-GPG-KEY.pub
 .. |rhel7-minor-download| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/minor/3005.1-1.repo
-
-.. |ubuntu-future-release-gpg| replace:: https://staging.repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/minor/3006.0rc1/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 
 .. |ubuntu22-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest/salt-archive-keyring.gpg
 .. |ubuntu22-latest-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest jammy main
