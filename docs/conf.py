@@ -107,8 +107,8 @@ current_version = version.split('.')[0]
 ##
 # Pull from env variables, or otherwise default
 # latest_version = os.getenv('LATEST_DOCS_VERSION', '3005')
-latest_version = '3005'
-current_version = '3005'
+latest_version = '3006'
+# current_version = '3006'
 # url_prefix = os.getenv('DOCS_URL_PREFIX', 'https://docs.saltproject.io/salt/install-guide/en')
 url_prefix = 'https://docs.saltproject.io/salt/install-guide/en/'
 html_context = make_html_context(
@@ -116,7 +116,7 @@ html_context = make_html_context(
     current_version=current_version,
     latest_version=latest_version,
     # versions=['3004', '3005', ('3006 LTS', 'lts')]
-    versions=['3004', '3005']
+    versions=['3004', '3005', '3006']
 )
 
 '''
