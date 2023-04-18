@@ -58,21 +58,21 @@
 .. |debian10-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |debian10-minor-download| replace:: https://repo.saltproject.io/salt/py3/debian/10/amd64/minor/3006.0 buster main
 
-.. |macos-amd64-download| replace:: https://repo.saltproject.io/salt/py3/macos/latest/salt-3006.0-py3-macos-x86_64.pkg
+.. |macos-amd64-download| replace:: https://repo.saltproject.io/salt/py3/macos/latest/salt-3006.0-py3-x86_64.pkg
 .. |macos-amd64-gpg| replace:: https://repo.saltproject.io/salt/py3/macos/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 
-.. |photonos4-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/latest/SALTSTACK-GPG-PUBKEY-2023.pub
+.. |photonos4-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos4-latest-download| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/latest.repo
-.. |photonos4-major-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/latest/SALTSTACK-GPG-PUBKEY-2023.pub
+.. |photonos4-major-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos4-major-download| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/3006.repo
-.. |photonos4-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/latest/SALTSTACK-GPG-PUBKEY-2023.pub
+.. |photonos4-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos4-minor-download| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/minor/3006.0.repo
 
-.. |photonos3-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest/SALTSTACK-GPG-PUBKEY-2023.pub
+.. |photonos3-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos3-latest-download| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest.repo
-.. |photonos3-major-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest/SALTSTACK-GPG-PUBKEY-2023.pub
+.. |photonos3-major-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos3-major-download| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/3006.repo
-.. |photonos3-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest/SALTSTACK-GPG-PUBKEY-2023.pub
+.. |photonos3-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos3-minor-download| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/minor/3006.0.repo
 
 .. |rhel9-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
@@ -110,15 +110,8 @@
 .. |ubuntu20-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/ubuntu/20.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |ubuntu20-minor-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/20.04/amd64/minor/3006.0 focal main
 
-.. |ubuntu18-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/ubuntu/18.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |ubuntu18-latest-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/18.04/amd64/latest bionic main
-.. |ubuntu18-major-gpg| replace:: https://repo.saltproject.io/salt/py3/ubuntu/18.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |ubuntu18-major-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/18.04/amd64/3006 bionic main
-.. |ubuntu18-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/ubuntu/18.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |ubuntu18-minor-download| replace:: https://repo.saltproject.io/salt/py3/ubuntu/18.04/amd64/minor/3006.0 bionic main
-
 .. |windows-install-exe-example| replace:: Salt-Minion-3006.0-Py3-AMD64-Setup.exe
 .. |windows-install-msi-example| replace:: Salt-Minion-3006.0-Py3-AMD64.msi
 
-.. |windows-amd64-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/latest/salt-minion-3006.0-py3-amd64-setup.exe
+.. |windows-amd64-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/latest/Salt-Minion-3006.0-Py3-AMD64-Setup.exe
 .. |windows-amd64-exe-gpg| replace:: https://repo.saltproject.io/salt/py3/windows/SALT-PROJECT-GPG-PUBKEY-2023.gpg
