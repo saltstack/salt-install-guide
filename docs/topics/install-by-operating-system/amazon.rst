@@ -42,6 +42,8 @@ To install the :ref:`onedir` packages of Salt on Amazon Linux 2:
 
                curl -fsSL \ |amazon-linux2-latest-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: Amazon Linux 2 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -53,6 +55,8 @@ To install the :ref:`onedir` packages of Salt on Amazon Linux 2:
 
                curl -fsSL \ |amazon-linux2-major-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
 
+           .. include:: ../_includes/gpg-keys.rst
+
        .. tab-item:: Amazon Linux 2 (Minor onedir)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
@@ -63,6 +67,8 @@ To install the :ref:`onedir` packages of Salt on Amazon Linux 2:
                sudo rpm --import \ |amazon-linux2-minor-gpg|\
 
                curl -fsSL \ |amazon-linux2-minor-download|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
+
+           .. include:: ../_includes/gpg-keys.rst
 
 #. Run ``sudo yum clean expire-cache`` to clear the repository metadata.
 

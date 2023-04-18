@@ -48,6 +48,7 @@ To install the :ref:`onedir` packages of Salt on Debian 11 (Bullseye):
 
                echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
+           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Debian 11 (Major onedir)
 
@@ -62,6 +63,7 @@ To install the :ref:`onedir` packages of Salt on Debian 11 (Bullseye):
 
                echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
+           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Debian 11 (Minor onedir)
 
@@ -75,6 +77,8 @@ To install the :ref:`onedir` packages of Salt on Debian 11 (Bullseye):
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |debian11-minor-gpg|\
 
                echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+
+           .. include:: ../_includes/gpg-keys.rst
 
 #. Run ``sudo apt-get update`` to update your packages.
 
@@ -127,6 +131,7 @@ To install the :ref:`onedir` packages of Salt on Debian 10 (Buster):
 
                echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian10-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
+           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Debian 10 (Major onedir)
 
@@ -141,6 +146,7 @@ To install the :ref:`onedir` packages of Salt on Debian 10 (Buster):
 
                echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian10-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
+           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Debian 10 (Minor onedir)
 
@@ -154,6 +160,8 @@ To install the :ref:`onedir` packages of Salt on Debian 10 (Buster):
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |debian10-minor-gpg|\
 
                echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian10-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+
+           .. include:: ../_includes/gpg-keys.rst
 
 #. Run ``sudo apt-get update`` to update your packages.
 

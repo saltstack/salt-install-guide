@@ -24,9 +24,9 @@ Version support lifecycle
     - `CVE and critical support`_ ends
 
   * - 3006 LTS
-    - TBD
-    - TBD
-    - TBD
+    - April 18, 2023
+    - April 18, 2024
+    - April 18, 2025
 
 See `Older version support lifecycle`_ for versions of Salt older than 3006.
 

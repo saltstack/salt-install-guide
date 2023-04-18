@@ -95,6 +95,10 @@ To upgrade Salt:
         - To update Windows or macOS, download the latest installers and run them.
           See :ref:`install-macos` or :ref:`install-windows` for these downloads.
 
+#. After the repository file is updated, import the |release| GPG key.
+
+   .. include:: _includes/gpg-keys.rst
+
 #. If you are upgrading from classic Salt packages to onedir packages, use Salt
    to reinstall any existing third party Python packages. Reinstalling the
    packages ensures they are installed in the correct onedir path.
