@@ -40,9 +40,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-latest-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu22-latest-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu22-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -53,9 +53,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-major-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu22-major-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu22-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -66,9 +66,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 22.04 (Jammy):
 
            .. parsed-literal::
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu22-minor-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu22-minor-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu22-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu22-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -120,9 +120,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-latest-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu20-latest-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu20-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
           .. include:: ../_includes/gpg-keys.rst
 
@@ -135,9 +135,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-major-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu20-major-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu20-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -150,9 +150,9 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |ubuntu20-minor-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu20-minor-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |ubuntu20-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu20-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
