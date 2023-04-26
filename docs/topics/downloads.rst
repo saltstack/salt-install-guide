@@ -18,8 +18,15 @@ Downloads
 Welcome to the Salt download page!
 
 * Salt packages are hosted on `repo.saltproject.io <https://repo.saltproject.io/>`_.
-* Unsupported versions can be found in the `PY2 archive repository <https://archive.repo.saltproject.io/salt/py2/>`__
-  and the `PY3 archive repository <https://archive.repo.saltproject.io/salt/py3/>`_.
+* For unsupported versions:
+
+  * PY3 packages are in the `archive repository <https://archive.repo.saltproject.io/>`_
+    under the ``py3`` and ``salt/py3`` directories.
+  * PY2 packages are in the `archive repository <https://archive.repo.saltproject.io/>`__
+    under the ``yum`` and ``apt`` directories. Other PY2 packages may be found
+    under their respective directories, such as ``osx``, ``windows``,
+    ``freebsd``, and so forth.
+
 
 The following sections provide links to the repository for each operating
 system as well as links to the installation instructions for each operating
