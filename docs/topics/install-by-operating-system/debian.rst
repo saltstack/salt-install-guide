@@ -44,9 +44,9 @@ To install the :ref:`onedir` packages of Salt on Debian 11 (Bullseye):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg |debian11-latest-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg |debian11-latest-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian11-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -59,9 +59,9 @@ To install the :ref:`onedir` packages of Salt on Debian 11 (Bullseye):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |debian11-major-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |debian11-major-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian11-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -74,9 +74,9 @@ To install the :ref:`onedir` packages of Salt on Debian 11 (Bullseye):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |debian11-minor-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |debian11-minor-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian11-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian11-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -127,9 +127,9 @@ To install the :ref:`onedir` packages of Salt on Debian 10 (Buster):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |debian10-latest-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |debian10-latest-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian10-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian10-latest-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -142,9 +142,9 @@ To install the :ref:`onedir` packages of Salt on Debian 10 (Buster):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |debian10-major-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |debian10-major-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian10-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian10-major-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -157,9 +157,9 @@ To install the :ref:`onedir` packages of Salt on Debian 10 (Buster):
 
                mkdir /etc/apt/keyrings
 
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring.gpg \ |debian10-minor-gpg|\
+               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |debian10-minor-gpg|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring.gpg arch=amd64] \ |debian10-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian10-minor-download|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
