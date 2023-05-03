@@ -11,11 +11,11 @@ These instructions explain how to install Salt on Debian operating systems:
 
 .. card:: Browse the repo for Ubuntu packages
     :class-card: sd-border-1
-    :link: https://repo.saltproject.io/py3/ubuntu/
+    :link: https://repo.saltproject.io/salt/py3/ubuntu/
     :width: 50%
 
     :bdg-primary:`Ubuntu`
-    :bdg-secondary:`Python3`
+    |supported-release-1-badge|
 
 .. include:: ../_includes/what-is-onedir.rst
 

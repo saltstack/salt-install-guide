@@ -14,11 +14,11 @@ macOS downloads
 
 
 .. card:: Browse the repo for macOS packages
-    :link: https://repo.saltproject.io/osx/
+    :link: https://repo.saltproject.io/salt/py3/macos
     :width: 50%
 
     :bdg-primary:`macOS`
-    :bdg-secondary:`Python3`
+    |supported-release-1-badge|
 
 
 .. include:: ../_includes/intro-install-by-os.rst

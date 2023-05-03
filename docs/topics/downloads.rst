@@ -46,11 +46,10 @@ Install the Amazon Linux 2 package using a Linux package manager.
 
     .. grid-item-card:: Browse the repo for Amazon Linux 2 packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/py3/amazon/
+        :link: https://repo.saltproject.io/salt/py3/amazon/
 
         :bdg-danger:`Amazon Linux 2`
-        :bdg-secondary:`Python3`
-        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
+        |supported-release-1-badge|
 
     .. grid-item-card:: Amazon Linux 2 install guide
         :class-card: sd-border-1
@@ -68,11 +67,10 @@ Install the CentOS package using a yum package manager.
 
     .. grid-item-card:: Browse the repo for CentOS packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/py3/redhat/
+        :link: https://repo.saltproject.io/salt/py3/redhat/
 
         :bdg-danger:`CentOS`
-        :bdg-secondary:`Python3`
-        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
+        |supported-release-1-badge|
 
     .. grid-item-card:: CentOS install guide
         :class-card: sd-border-1
@@ -90,11 +88,10 @@ Install the Debian package using an apt package manager.
 
     .. grid-item-card:: Browse the repo for Debian packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/py3/debian/
+        :link: https://repo.saltproject.io/salt/py3/debian/
 
         :bdg-danger:`Debian`
-        :bdg-secondary:`Python3`
-        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
+        |supported-release-1-badge|
 
     .. grid-item-card:: Debian install guide
         :class-card: sd-border-1
@@ -129,11 +126,10 @@ Download the macOS package and run the file to install Salt. See the
 
     .. grid-item-card:: Browse the repo for macOS packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/osx/
+        :link: https://repo.saltproject.io/salt/py3/macos
 
         :bdg-danger:`macOS`
-        :bdg-secondary:`Python3`
-        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
+        |supported-release-1-badge|
 
     .. grid-item-card:: macOS install guide
         :class-card: sd-border-1
@@ -151,11 +147,10 @@ Install the Photon OS package using a tdnf package manager.
 
     .. grid-item-card:: Browse the repo for Photon OS packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/py3/
+        :link: https://repo.saltproject.io/salt/py3/photon/
 
         :bdg-danger:`Photon OS`
-        :bdg-secondary:`Python3`
-        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
+        |supported-release-1-badge|
 
     .. grid-item-card:: Photon OS install guide
         :class-card: sd-border-1
@@ -173,11 +168,10 @@ Install the RedHat package using a yum package manager.
 
     .. grid-item-card:: Browse the repo for RedHat (RHEL) packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/py3/redhat/
+        :link: https://repo.saltproject.io/salt/py3/redhat/
 
         :bdg-danger:`RedHat`
-        :bdg-secondary:`Python3`
-        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
+        |supported-release-1-badge|
 
     .. grid-item-card:: RedHat install guide
         :class-card: sd-border-1
@@ -211,11 +205,10 @@ Install the Ubuntu package using an apt package manager.
 
     .. grid-item-card:: Browse the repo for Ubuntu packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/py3/ubuntu/
+        :link: https://repo.saltproject.io/salt/py3/ubuntu/
 
         :bdg-danger:`Ubuntu`
-        :bdg-secondary:`Python3`
-        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
+        |supported-release-1-badge|
 
     .. grid-item-card:: Ubuntu install guide
         :class-card: sd-border-1
@@ -236,11 +229,10 @@ Download the Windows package and run the file to install Salt. See the
 
     .. grid-item-card:: Browse the repo for Windows packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/windows/
+        :link: https://repo.saltproject.io/salt/py3/windows/
 
         :bdg-danger:`Windows`
-        :bdg-secondary:`Python3`
-        |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
+        |supported-release-1-badge|
 
     .. grid-item-card:: Windows install guide
         :class-card: sd-border-1
