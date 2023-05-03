@@ -11,11 +11,11 @@ systems:
 
 .. card:: Browse the repo for Amazon Linux 2 packages
     :class-card: sd-border-1
-    :link: https://repo.saltproject.io/py3/amazon/
+    :link: https://repo.saltproject.io/salt/py3/amazon/
     :width: 50%
 
     :bdg-primary:`Amazon Linux 2`
-    :bdg-secondary:`Python3`
+    |supported-release-1-badge|
 
 
 .. include:: ../_includes/what-is-onedir.rst

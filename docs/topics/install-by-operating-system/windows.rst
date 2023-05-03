@@ -20,11 +20,11 @@ Windows downloads
 .. include:: ../_includes/windows-downloads.rst
 
 .. card:: Browse the repo for Windows packages
-    :link: https://repo.saltproject.io/windows/
+    :link: https://repo.saltproject.io/salt/py3/windows/
     :width: 50%
 
     :bdg-primary:`Windows`
-    :bdg-secondary:`Python3`
+    |supported-release-1-badge|
 
 
 

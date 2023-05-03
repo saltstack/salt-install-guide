@@ -65,14 +65,14 @@
 .. |photonos4-latest-download| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/latest.repo
 .. |photonos4-major-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos4-major-download| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/3006.repo
-.. |photonos4-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |photonos4-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos4-minor-download| replace:: https://repo.saltproject.io/salt/py3/photon/4/x86_64/minor/3006.0.repo
 
 .. |photonos3-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos3-latest-download| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest.repo
 .. |photonos3-major-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos3-major-download| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/3006.repo
-.. |photonos3-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |photonos3-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos3-minor-download| replace:: https://repo.saltproject.io/salt/py3/photon/3/x86_64/minor/3006.0.repo
 
 .. |rhel9-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
