@@ -8,6 +8,7 @@ Together with the :ref:`salt-supported-operating-systems` guidelines, this
 document is intended to clearly define how long a particular version of Salt
 will receive official packages, testing, and technical support.
 
+
 Version support lifecycle
 =========================
 
@@ -110,6 +111,19 @@ Active support
   project.
 * Point releases will include the content of previously released updates.
 * The focus of point releases will be high and critical bugs.
+
+.. Admonition:: Support for new operating system versions
+
+   Sometimes a new version of a supported operating system, is released during
+   the active support window for a specific version of Salt, such as a new
+   release of RedHat or Debian. Salt Project support for new versions of
+   operating systems will vary for LTS vs. STS releases:
+
+   * **LTS releases** - Support for new operating systems will not be added in
+     future point releases. Instead, the new operating system will be supported
+     in the next major LTS release.
+   * **STS releases** - Support for new operating systems will be added for
+     point releases if possible.
 
 
 CVE and critical support
