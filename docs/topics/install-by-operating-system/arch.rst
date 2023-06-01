@@ -37,5 +37,7 @@ To install the stable release of Salt on Arch Linux:
 
        systemctl start salt-master
 
+   .. include:: ../_includes/install-dependencies-onedir.rst
+
 
 .. include:: ../_includes/post-install-by-os.rst

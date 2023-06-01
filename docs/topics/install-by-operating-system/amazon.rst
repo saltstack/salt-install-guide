@@ -94,4 +94,7 @@ To install the :ref:`onedir` packages of Salt on Amazon Linux 2:
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
 
+   .. include:: ../_includes/install-dependencies-onedir.rst
+
+
 .. include:: ../_includes/post-install-by-os.rst

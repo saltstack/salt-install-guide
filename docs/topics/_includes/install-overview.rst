@@ -119,6 +119,10 @@ masterless/agentless Salt configurations.
     - Verify that the installation was successful by sending a test ping.
     - :ref:`verify-install`
 
+  * - 7
+    - Install third-party Python dependencies needed for specific modules.
+    - :ref:`install-dependencies`
+
 
 Alternative installations and configurations
 ============================================

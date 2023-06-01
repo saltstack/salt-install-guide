@@ -5,3 +5,4 @@ following post-installation steps:
 * :ref:`start-salt-services`
 * :ref:`accept-keys`
 * :ref:`verify-install`
+* :ref:`install-dependencies`
