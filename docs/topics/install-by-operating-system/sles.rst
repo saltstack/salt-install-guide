@@ -4,8 +4,7 @@
 SUSE (SLES)
 ===========
 
-These instructions explain how to install Salt on AR operating
-systems:
+These instructions explain how to install Salt on AR operating systems:
 
 .. Note::
     Salt packages for SUSE are hosted on the SUSE package repository. SUSE
@@ -86,5 +85,6 @@ one master and multiple minions.
 
                rcsalt-minion start
 
+   .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst

@@ -36,6 +36,7 @@ Install Salt
    topics/start-salt-services
    topics/accept-keys
    topics/verify-install
+   topics/install-dependencies
    topics/uninstall
 
 .. toctree::

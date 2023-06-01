@@ -113,6 +113,7 @@ To install Salt on RedHat 9:
        sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
+   .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst
 
@@ -189,6 +190,7 @@ To install the :ref:`onedir` packages of Salt on RedHat 8:
        sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
+   .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst
 
@@ -266,5 +268,6 @@ To install the :ref:`onedir` packages of Salt on RedHat 7:
        sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
+   .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst

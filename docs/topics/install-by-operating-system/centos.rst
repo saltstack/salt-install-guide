@@ -94,6 +94,7 @@ To install the :ref:`onedir` packages of Salt on Centos 9:
        sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
+   .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst
 
@@ -167,6 +168,7 @@ To install the :ref:`onedir` packages of Salt on Centos 8:
        sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
+   .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst
 
@@ -239,6 +241,8 @@ To install Salt on CentOS 7:
        sudo systemctl enable salt-minion && sudo systemctl start salt-minion
        sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
        sudo systemctl enable salt-api && sudo systemctl start salt-api
+
+   .. include:: ../_includes/install-dependencies-onedir.rst
 
 
 .. include:: ../_includes/post-install-by-os.rst

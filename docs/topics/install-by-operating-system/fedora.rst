@@ -46,6 +46,8 @@ To install Salt on Fedora:
        sudo systemctl enable salt-syndic && sudo systemctl start salt-syndic
        sudo systemctl enable salt-api && sudo systemctl start salt-api
 
+   .. include:: ../_includes/install-dependencies-onedir.rst
+
 
 After installing Salt on Fedora, you need to complete the following
 post-installation steps:

@@ -54,6 +54,7 @@ To install the stable release of Salt from the official package repository:
 
        service salt_minion start
 
+   .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst
 
@@ -73,5 +74,7 @@ To install from FreeBSD ports:
 
        Python 3.7 can be used by setting default Python version to 3.7:
        ``echo "DEFAULT_VERSIONS+= python=3.7" >> /etc/make.conf``
+
+   .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst
