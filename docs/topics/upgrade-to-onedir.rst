@@ -115,7 +115,7 @@ To upgrade to onedir:
 
    You can use two possible methods to reinstall packages:
 
-   * ``salt pip install <package name>``
+   * ``salt-pip install <package name>``
    * Use the ``pip.installed`` Salt state.
 
    .. Note::
