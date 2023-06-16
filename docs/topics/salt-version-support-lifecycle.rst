@@ -112,12 +112,12 @@ Active support
 * Point releases will include the content of previously released updates.
 * The focus of point releases will be high and critical bugs.
 
-.. Admonition:: Support for new operating system versions
+.. Admonition:: Support for new releases of operating systems
 
-   Sometimes a new version of a supported operating system, is released during
+   Sometimes a new version of a supported operating system is released during
    the active support window for a specific version of Salt, such as a new
    release of RedHat or Debian. Salt Project support for new versions of
-   operating systems will vary for LTS vs. STS releases:
+   operating systems varies for LTS and STS releases:
 
    * **LTS releases** - Support for new operating systems will not be added in
      future point releases. Instead, the new operating system will be supported
