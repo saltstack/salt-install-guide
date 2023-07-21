@@ -9,15 +9,6 @@ systems:
 
 * `Install Salt on Amazon Linux 2`_
 
-.. card:: Browse the repo for Amazon Linux 2 packages
-    :class-card: sd-border-1
-    :link: https://repo.saltproject.io/salt/py3/amazon/
-    :width: 50%
-
-    :bdg-primary:`Amazon Linux 2`
-    |supported-release-1-badge|
-
-
 .. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
@@ -98,3 +89,15 @@ To install the :ref:`onedir` packages of Salt on Amazon Linux 2:
 
 
 .. include:: ../_includes/post-install-by-os.rst
+
+
+Browse the repo
+===============
+
+.. card:: Browse the repo for Amazon Linux 2 packages
+    :class-card: sd-border-1
+    :link: https://repo.saltproject.io/salt/py3/amazon/
+    :width: 50%
+
+    :bdg-primary:`Amazon Linux 2`
+    |supported-release-1-badge|

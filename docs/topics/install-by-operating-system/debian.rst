@@ -9,16 +9,6 @@ These instructions explain how to install Salt on Debian operating systems:
 * `Install Salt on Debian 11 (Bullseye)`_
 * `Install Salt on Debian 10 (Buster)`_
 
-
-.. card:: Browse the repo for Debian packages
-    :class-card: sd-border-1
-    :link: https://repo.saltproject.io/salt/py3/debian/
-    :width: 50%
-
-    :bdg-primary:`Debian`
-    |supported-release-1-badge|
-
-
 .. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
@@ -190,3 +180,15 @@ To install the :ref:`onedir` packages of Salt on Debian 10 (Buster):
    .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst
+
+
+Browse the repo
+===============
+
+.. card:: Browse the repo for Debian packages
+    :class-card: sd-border-1
+    :link: https://repo.saltproject.io/salt/py3/debian/
+    :width: 50%
+
+    :bdg-primary:`Debian`
+    |supported-release-1-badge|
