@@ -19,14 +19,6 @@ Windows downloads
 
 .. include:: ../_includes/windows-downloads.rst
 
-.. card:: Browse the repo for Windows packages
-    :link: https://repo.saltproject.io/windows/
-    :width: 50%
-
-    :bdg-primary:`Windows`
-    :bdg-secondary:`Python3`
-
-
 
 Important information about installing on Windows
 =================================================
@@ -437,3 +429,15 @@ up first, including:
     is to uninstall the old version prior to installing the new version.
 
     Upgrades to and from versions without the ``-X`` will work as expected.
+
+
+Browse the repo
+===============
+
+.. card:: Browse the repo for Windows packages
+    :class-card: sd-border-1
+    :link: https://repo.saltproject.io/windows/
+    :width: 50%
+
+    :bdg-primary:`Windows`
+    :bdg-secondary:`Python3`

@@ -9,14 +9,6 @@ These instructions explain how to install Salt on Debian operating systems:
 * `Install Salt on Ubuntu 22.04 (Jammy)`_
 * `Install Salt on Ubuntu 20.04 (Focal)`_
 
-.. card:: Browse the repo for Ubuntu packages
-    :class-card: sd-border-1
-    :link: https://repo.saltproject.io/salt/py3/ubuntu/
-    :width: 50%
-
-    :bdg-primary:`Ubuntu`
-    |supported-release-1-badge|
-
 .. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
@@ -183,3 +175,15 @@ To install the :ref:`onedir` packages of Salt on Ubuntu 20.04 (Focal):
    .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst
+
+
+Browse the repo
+===============
+
+.. card:: Browse the repo for Ubuntu packages
+    :class-card: sd-border-1
+    :link: https://repo.saltproject.io/salt/py3/ubuntu/
+    :width: 50%
+
+    :bdg-primary:`Ubuntu`
+    |supported-release-1-badge|

@@ -2,8 +2,8 @@
 
 .. _overview:
 
-============
-Install Salt
-============
+================
+Install overview
+================
 
 .. include:: _includes/install-overview.rst

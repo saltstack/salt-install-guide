@@ -9,14 +9,6 @@ These instructions explain how to install Salt on Photon OS operating systems.
 * `Install Salt on Photon OS 4`_
 * `Install Salt on Photon OS 3`_
 
-.. card:: Browse the repo for Photon OS packages
-    :class-card: sd-border-1
-    :link: https://repo.saltproject.io/salt/py3/photon/
-    :width: 50%
-
-    :bdg-primary:`Photon OS`
-    |supported-release-1-badge|
-
 .. include:: ../_includes/intro-install-by-os.rst
 
 
@@ -247,3 +239,15 @@ To install Salt on Photon OS 3:
    .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst
+
+
+Browse the repo
+===============
+
+.. card:: Browse the repo for Photon OS packages
+    :class-card: sd-border-1
+    :link: https://repo.saltproject.io/salt/py3/photon/
+    :width: 50%
+
+    :bdg-primary:`Photon OS`
+    |supported-release-1-badge|

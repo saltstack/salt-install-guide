@@ -11,15 +11,6 @@ These instructions explain how to install Salt on CentOS operating systems:
 * `Install Salt on CentOS 7`_
 
 
-.. card:: Browse the repo for CentOS packages
-    :class-card: sd-border-1
-    :link: https://repo.saltproject.io/salt/py3/redhat/
-    :width: 50%
-
-    :bdg-primary:`CentOS`
-    |supported-release-1-badge|
-
-
 .. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
@@ -246,3 +237,15 @@ To install Salt on CentOS 7:
 
 
 .. include:: ../_includes/post-install-by-os.rst
+
+
+Browse the repo
+===============
+
+.. card:: Browse the repo for CentOS packages
+    :class-card: sd-border-1
+    :link: https://repo.saltproject.io/salt/py3/redhat/
+    :width: 50%
+
+    :bdg-primary:`CentOS`
+    |supported-release-1-badge|

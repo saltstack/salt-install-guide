@@ -12,15 +12,6 @@ macOS downloads
 
 .. include:: ../_includes/macos-downloads.rst
 
-
-.. card:: Browse the repo for macOS packages
-    :link: https://repo.saltproject.io/salt/py3/macos
-    :width: 50%
-
-    :bdg-primary:`macOS`
-    |supported-release-1-badge|
-
-
 .. include:: ../_includes/intro-install-by-os.rst
 
 
@@ -69,3 +60,14 @@ post-installation steps:
 
 * :ref:`accept-keys`
 * :ref:`verify-install`
+
+
+Browse the repo
+===============
+
+.. card:: Browse the repo for macOS packages
+    :link: https://repo.saltproject.io/salt/py3/macos
+    :width: 50%
+
+    :bdg-primary:`macOS`
+    |supported-release-1-badge|

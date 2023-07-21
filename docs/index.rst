@@ -12,8 +12,6 @@ Install Salt
    :hidden:
 
    topics/overview
-   topics/announcements
-   topics/downloads
 
 .. toctree::
    :maxdepth: 2
@@ -56,6 +54,8 @@ Install Salt
    topics/salt-version-support-lifecycle
    topics/salt-python-version-support
    topics/access-old-packages
+   topics/announcements
+   topics/downloads
 
 .. toctree::
    :maxdepth: 2

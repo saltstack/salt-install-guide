@@ -12,6 +12,7 @@
             .. image:: /_static/img/salt-install-guide-small.png
               :width: 125
               :alt: Salt install guide logo
+              :class: no-pointer
 
         .. grid-item::
             :columns: 12 9 9 9
@@ -19,12 +20,12 @@
 
             The Salt install guide
 
-            .. button-link:: https://repo.saltproject.io/
+            .. button-link:: https://docs.saltproject.io/en/master/topics/tutorials/walkthrough.html
                :color: light
                :align: center
                :outline:
 
-                Browse the repository of package files
+                New to Salt? Try this tutorial
 
 
 .. sidebar:: **Supported Salt releases**
@@ -41,11 +42,10 @@ Welcome to the Salt install guide! This guide provides instructions for
 installing Salt on :ref:`salt-supported-operating-systems`. It also explains
 how to configure Salt, start Salt services, and verify your installation.
 
-.. Warning::
-    The Salt Project has phased out classic package builds for supported
-    operating systems for 3006 and later. Update your Salt infrastructure to the
-    new onedir packages as soon as possible. See :ref:`upgrade-to-onedir` for
-    instructions.
+Note that the Salt Project has phased out classic package builds for supported
+operating systems for 3006 and later. Update your Salt infrastructure to the new
+onedir packages as soon as possible. See :ref:`upgrade-to-onedir` for
+instructions.
 
 
 Standard installation overview

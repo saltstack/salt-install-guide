@@ -11,15 +11,6 @@ systems:
 * `Install Salt on RedHat (RHEL) 8`_
 * `Install Salt on RedHat (RHEL) 7`_
 
-
-.. card:: Browse the repo for RedHat (RHEL) packages
-    :class-card: sd-border-1
-    :link: https://repo.saltproject.io/salt/py3/redhat/
-    :width: 50%
-
-    :bdg-primary:`RedHat`
-    |supported-release-1-badge|
-
 .. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
@@ -271,3 +262,15 @@ To install the :ref:`onedir` packages of Salt on RedHat 7:
    .. include:: ../_includes/install-dependencies-onedir.rst
 
 .. include:: ../_includes/post-install-by-os.rst
+
+
+Browse the repo
+===============
+
+.. card:: Browse the repo for RedHat (RHEL) packages
+    :class-card: sd-border-1
+    :link: https://repo.saltproject.io/salt/py3/redhat/
+    :width: 50%
+
+    :bdg-primary:`RedHat`
+    |supported-release-1-badge|
