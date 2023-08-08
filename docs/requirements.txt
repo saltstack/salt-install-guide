@@ -2,6 +2,7 @@
 # Temporary Furo theme target for versioning
 # furo>=2022.6.21
 Sphinx-Substitution-Extensions>=2022.2.16
+requests>=2.31.0
 salt-furo-versioner @ git+https://github.com/ScriptAutomate/salt-furo-versioner@excelsior
 sphinx-copybutton>=0.5.0
 sphinx-design

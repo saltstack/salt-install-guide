@@ -86,22 +86,6 @@ build-site-3005:
   rules:
     - if: '$CI_PROJECT_PATH == $CICD_UPSTREAM_PATH'
 
-build-site-3004:
-  stage: build
-  image: python:3.11
-  script:
-    - git checkout v3004
-    - pip install -U pip setuptools wheel nox
-    - nox -e 'docs-html(clean=True)'
-    - mkdir -p html/en/
-    - mv docs/_build/html html/en/3004
-  artifacts:
-    paths:
-      - html
-    expire_in: 1 days
-  rules:
-    - if: '$CI_PROJECT_PATH == $CICD_UPSTREAM_PATH'
-
 build-site-main:
   stage: build
   image: python:3.11
@@ -145,7 +129,7 @@ build-site-fork:
       - html
     expire_in: 1 days
   rules:
-    - if: '$CI_COMMIT_BRANCH != "main" && $CI_COMMIT_BRANCH != "v3006.0" && $CI_COMMIT_BRANCH != "v3005" && $CI_COMMIT_BRANCH != "v3004" && $CI_PROJECT_PATH != $CICD_UPSTREAM_PATH'
+    - if: '$CI_COMMIT_BRANCH != "main" && $CI_COMMIT_BRANCH != "v3006.0" && $CI_COMMIT_BRANCH != "v3005" && $CI_PROJECT_PATH != $CICD_UPSTREAM_PATH'
 
 pages:
   stage: publish
