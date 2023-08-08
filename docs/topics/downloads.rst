@@ -6,7 +6,7 @@ Downloads
 
 .. sidebar:: **Supported Salt releases**
 
-    |supported-release-1-badge| |supported-release-2-badge| |supported-release-3-badge|
+    |supported-release-1-badge| |supported-release-2-badge|
 
     **See also**
 

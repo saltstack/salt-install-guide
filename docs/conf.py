@@ -16,6 +16,7 @@
 import datetime
 import os
 
+import requests
 from docutils import nodes
 from docutils.nodes import Element
 from salt_furo_versioner import make_html_context
@@ -74,10 +75,7 @@ def setup(app):
 
 
 this_year = datetime.datetime.today().year
-if this_year == 2022:
-    copyright_year = 2022
-else:
-    copyright_year = f"2022 - {this_year}"
+copyright_year = f"2022 - {this_year}"
 
 # -- Project information -----------------------------------------------------
 
@@ -105,27 +103,22 @@ current_version = version.split('.')[0]
 ##
 # Furo theme version selector setup
 ##
-# Pull from env variables, or otherwise default
-# latest_version = os.getenv('LATEST_DOCS_VERSION', '3005')
-latest_version = '3006'
-# current_version = '3006'
-# url_prefix = os.getenv('DOCS_URL_PREFIX', 'https://docs.saltproject.io/salt/install-guide/en')
+# Pull from JSON in GitLab Snippet
+supported_versions_json = requests.get('https://gitlab.com/saltstack/open/docs/salt-install-guide/-/snippets/2580440/raw/main/supported-versions.json')
+supported_versions = supported_versions_json.json()
+supported_major_versions = [full_version.split('.')[0] for full_version in supported_versions['supported_versions']]
+supported_major_versions.sort()
+
+# Build out version menu
+latest_version = supported_versions['latest_version'].split('.')[0]
+versions = supported_major_versions
 url_prefix = 'https://docs.saltproject.io/salt/install-guide/en/'
 html_context = make_html_context(
-    url_prefix=url_prefix,
-    current_version=current_version,
-    latest_version=latest_version,
-    # versions=['3004', '3005', ('3006 LTS', 'lts')]
-    versions=['3004', '3005', '3006']
+    url_prefix = url_prefix,
+    current_version = current_version,
+    latest_version = latest_version,
+    versions = versions
 )
-
-'''
-en/lts # Default LTS docs path, where LTS goes
-en/latest # Default landing page, is a duplicate of latest version docs
-en/3005 # Major, don't include minor version
-en/3006 #
-en/3004
-'''
 
 # -- General configuration ---------------------------------------------------
 
