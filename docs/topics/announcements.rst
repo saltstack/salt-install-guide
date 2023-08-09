@@ -29,7 +29,7 @@ Release announcements
 Security announcements
 ======================
 
-See `Security announcements <https://saltproject.io/security_announcements/>`_
+See `Security announcements <https://saltproject.io/security-announcements/>`_
 for the latest announcements.
 
 .. Important::
