@@ -18,6 +18,7 @@ Announcements
 Release announcements
 =====================
 
+* **September 7, 2023:** `3006.3 <https://docs.saltproject.io/en/latest/topics/releases/3006.3.html>`_ is now available.
 * **August 10, 2023:** `3006.2 <https://docs.saltproject.io/en/latest/topics/releases/3006.2.html>`_ is now available.
 * **August 10, 2023:** `3005.2 <https://docs.saltproject.io/en/3005/topics/releases/3005.2.html>`_ is now available.
 * **May 5, 2023:** `3006.1 <https://docs.saltproject.io/en/latest/topics/releases/3006.1.html>`_ is now available.
