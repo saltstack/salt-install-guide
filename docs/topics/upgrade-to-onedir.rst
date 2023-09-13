@@ -7,6 +7,8 @@ Upgrade to onedir
 Onedir is the Salt Project's new packaging system. Beginning with the release of
 Salt 3006 (Sulfur), the Salt Project will only offer onedir packages.
 
+.. include:: _includes/fips-photon-os.rst
+
 
 .. _what-is-onedir:
 
@@ -179,10 +181,6 @@ Repository paths
   * - MacOS
     - https://repo.saltproject.io/salt/py3/macos/
     - https://repo.saltproject.io/osx/
-
-  * - Raspbian
-    - https://repo.saltproject.io/salt/py3/debian/
-    - https://repo.saltproject.io/py3/debian/
 
   * - Redhat
     - https://repo.saltproject.io/salt/py3/redhat/
