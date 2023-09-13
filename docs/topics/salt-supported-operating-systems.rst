@@ -30,21 +30,21 @@ Overview of supported operating systems
     - `Tested`_
 
   * - `AlmaLinux`_ 8
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     - Yes
 
   * - `AlmaLinux`_ 9
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     - Yes
 
   * - `Amazon Linux`_ 2
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     -
     - Yes
     - Full
@@ -58,56 +58,49 @@ Overview of supported operating systems
     - Yes
 
   * - `CentOS`_ 7
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     - Yes
 
   * - `CentOS`_ Stream 8
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     -
 
   * - `CentOS`_ Stream 9
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     -
 
   * - `Debian`_ 10
-    - x86_64, aarch64
+    - amd64, arm64
     - Yes
     - Yes
     - Full
     - Yes
 
   * - `Debian`_ 11
-    - x86_64, aarch64
-    - Yes
-    - Yes
-    - Full
-    - Yes
-
-  * - `Fedora`_ 36
-    - x86_64, aarch64
+    - amd64, arm64
     - Yes
     - Yes
     - Full
     - Yes
 
   * - `Fedora`_ 37
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     - Yes
 
   * - `Fedora`_ 38
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
@@ -149,21 +142,21 @@ Overview of supported operating systems
     -
 
   * - `Oracle Linux`_ 7, 8, 9
-    -
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     - [#f1]_
 
   * - `Photon OS`_ 3
-    -
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     -
 
   * - `Photon OS`_ 4
-    -
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
@@ -171,21 +164,21 @@ Overview of supported operating systems
 
 
   * - `RedHat`_ 7
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     - Yes
 
   * - `RedHat`_ 8
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     - Yes
 
   * - `RedHat`_ 9
-    - x86_64, aarch64
+    - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
@@ -206,14 +199,14 @@ Overview of supported operating systems
     -
 
   * - `Ubuntu`_ 20.04
-    - x86_64, aarch64
+    - amd64, arm64
     - Yes
     - Yes
     - Full
     - Yes
 
   * - `Ubuntu`_ 22.04
-    - x86_64, aarch64
+    - amd64, arm64
     - Yes
     - Yes
     - Full
@@ -284,15 +277,19 @@ architectures:
   :widths: 30 30 40
   :header-rows: 1
   :stub-columns: 1
-  :class: no-bullets
 
   * - Operating system family
     - Architecture support
     - Example systems
 
-  * - Debian
+  * - Amazon Linux 2
     -  * x86_64
-       * aarch64
+       * aarch64 / arm64
+    - Amazon Linux 2
+
+  * - Debian
+    -  * amd64
+       * arm64
     - Debian, Ubuntu
 
   * - MacOS
@@ -301,12 +298,12 @@ architectures:
 
   * - RedHat
     -  * x86_64
-       * aarch64
+       * aarch64 / amd64
     - RedHat, CentOS, Fedora
 
   * - Windows
     -  * x86
-       * AMD64
+       * amd64
     - Windows desktop, Windows server
 
 

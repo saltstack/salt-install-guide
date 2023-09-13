@@ -20,6 +20,8 @@ PyPI if you have installed Salt with pip, the package installer for Python.
     more information, see
     `How to Upgrade Salt Crystal <https://kb.vmware.com/s/article/50122482?lang=en_US&queryTerm=upgrade%20salt>`_.
 
+.. include:: _includes/fips-photon-os.rst
+
 
 Upgrade your Salt infrastructure
 ================================

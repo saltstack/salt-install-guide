@@ -103,16 +103,23 @@ Install the Debian package using an apt package manager.
 
 Fedora
 ======
-Salt packages for Fedora are hosted on the Fedora package repository. Install
-the Fedora packages from the Fedora package manager.
+Install the Fedora package using a yum package manager.
 
-.. card:: Fedora install guide
-    :class-card: sd-border-1
-    :link: install-fedora
-    :link-type: ref
-    :width: 50%
+.. grid:: 2
 
-    :bdg-info:`Install Salt on Fedora`
+    .. grid-item-card:: Browse the repo for Fedora packages
+        :class-card: sd-border-1
+        :link: https://repo.saltproject.io/salt/py3/fedora/
+
+        :bdg-danger:`Fedora`
+        |supported-release-1-badge|
+
+    .. grid-item-card:: Fedora install guide
+        :class-card: sd-border-1
+        :link: install-fedora
+        :link-type: ref
+
+        :bdg-info:`Install Salt on Fedora`
 
 
 macOS
