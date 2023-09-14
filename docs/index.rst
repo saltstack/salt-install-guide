@@ -12,6 +12,7 @@ Install Salt
    :hidden:
 
    topics/overview
+   topics/quickstart
 
 .. toctree::
    :maxdepth: 2

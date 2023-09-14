@@ -3,6 +3,9 @@
 .. |supported-release-1-badge| replace:: :bdg-link-success:`3006.3 <https://docs.saltproject.io/en/latest/topics/releases/3006.3.html>`
 .. |supported-release-2-badge| replace:: :bdg-link-primary:`3005.2 <https://docs.saltproject.io/en/3005/topics/releases/3005.2.html>`
 
+.. |quickstart-script-path| replace:: https://github.com/saltstack/salt-bootstrap/blob/develop/salt-quick-start.sh
+.. |quickstart-script-path-windows| replace:: https://github.com/saltstack/salt-bootstrap/blob/develop/salt-quick-start.ps1
+
 .. |release-candidate-version| replace:: 3006.0rc3
 .. |debian-release-candidate-gpg| replace:: /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/latest/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |debian-release-candidate| replace:: [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg] https://repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/latest/ bullseye main"
