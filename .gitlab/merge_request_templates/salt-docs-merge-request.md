@@ -4,7 +4,7 @@
 Describe the purpose of the merge request here.
 
 
-## What issues does this PR fix or reference?
+## What issues does this MR fix or reference?
 
 - Resolves:
 OR
