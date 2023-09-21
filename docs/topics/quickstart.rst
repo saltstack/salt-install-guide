@@ -107,7 +107,7 @@ how Salt can quickly retrieve helpful information about your system.
           .. parsed-literal::
 
               curl -o quick.sh -L |quickstart-script-path|
-              quick.sh
+              bash ./quick.sh
 
        .. tab-item:: Windows
 
@@ -128,20 +128,22 @@ how Salt can quickly retrieve helpful information about your system.
 
        .. tab-item:: Linux and MacOS
 
-          .. code-block:: bash
+          .. parsed-literal::
+             :class: no-copybutton
 
               *  INFO: Downloading Salt
               *  INFO: Extracting Salt
               *  INFO: Get started with Salt by running the following commands
               *  INFO: Add Salt to current path
-              *  INFO:   export PATH=/home/user/salt:$PATH
+              *  INFO:   export PATH=/home/$[USER]/salt:$PATH
               *  INFO: Use the provided Saltfile
-              *  INFO:   export SALT_SALTFILE=/home/user/salt/Saltfile
-              *  INFO: Create Salt states in /home/user/salt/srv/salt
+              *  INFO:   export SALT_SALTFILE=/home/$[USER]/salt/Saltfile
+              *  INFO: Create Salt states in /home/$[USER]/salt/srv/salt
 
        .. tab-item:: Windows
 
-          .. code-block:: bash
+          .. parsed-literal::
+             :class: no-copybutton
 
               Download Salt
               Extracting Salt
@@ -159,8 +161,8 @@ how Salt can quickly retrieve helpful information about your system.
 
    .. code-block:: bash
 
-       export PATH=/home/user/salt:$PATH
-       export SALT_SALTFILE=/home/user/salt/Saltfile
+       export PATH=/home/$[USER]/salt:$PATH
+       export SALT_SALTFILE=/home/$[USER]/salt/Saltfile
 
    These commands allow Salt to run from those directories.
 
@@ -185,6 +187,7 @@ how Salt can quickly retrieve helpful information about your system.
    The following is an example of some of the grain output:
 
    .. parsed-literal::
+      :class: no-copybutton
 
        local:
        ----------
@@ -288,15 +291,16 @@ few commands to see how the master and minions interact.
    This script downloads and extracts Salt. You'll see output similar to the
    following:
 
-   .. code-block:: bash
+   .. parsed-literal::
+      :class: no-copybutton
 
          *  INFO: A salt directory already exists here, not extracting.
          *  INFO: Get started with Salt by running the following commands
          *  INFO: Add Salt to current path
-         *  INFO:   export PATH=/home/user/salt:$PATH
+         *  INFO:   export PATH=/home/$[USER]/salt:$PATH
          *  INFO: Use the provided Saltfile
-         *  INFO:   export SALT_SALTFILE=/home/user/salt/Saltfile
-         *  INFO: Create Salt states in /home/user/salt/srv/salt
+         *  INFO:   export SALT_SALTFILE=/home/$[USER]/salt/Saltfile
+         *  INFO: Create Salt states in /home/$[USER]/salt/srv/salt
          *  INFO: Starting salt-master
          *  INFO: Starting salt-minion
          *  INFO: Run salt-key -L to see pending minion keys
@@ -317,6 +321,7 @@ few commands to see how the master and minions interact.
    After running this command, you'll see output similar to the following:
 
    .. code-block:: bash
+      :class: no-copybutton
 
        Accepted Keys:
        minion
@@ -332,7 +337,7 @@ few commands to see how the master and minions interact.
 
 #. When prompted, type ``y`` to accept the key and continue.
 
-   .. code-block:: bash
+   .. parsed-literal::
 
        The following keys are going to be accepted:
        Unaccepted Keys:
