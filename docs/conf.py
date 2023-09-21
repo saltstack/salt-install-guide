@@ -190,6 +190,8 @@ html_css_files = [
     'css/local-testing.css',
 ]
 
+copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
+
 # Sphinx Multiversion options
 # smv_branch_whitelist = r'^30.*$'
 # smv_latest_version = "3005"
