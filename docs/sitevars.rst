@@ -1,7 +1,7 @@
 .. |release| replace:: 3006.3
-.. |supported-release-2| replace:: 3005.2
+.. |supported-release-2| replace:: 3005.3
 .. |supported-release-1-badge| replace:: :bdg-link-success:`3006.3 <https://docs.saltproject.io/en/latest/topics/releases/3006.3.html>`
-.. |supported-release-2-badge| replace:: :bdg-link-primary:`3005.2 <https://docs.saltproject.io/en/3005/topics/releases/3005.2.html>`
+.. |supported-release-2-badge| replace:: :bdg-link-primary:`3005.3 <https://docs.saltproject.io/en/3005/topics/releases/3005.3.html>`
 
 .. |quickstart-script-path| replace:: https://github.com/saltstack/salt-bootstrap/blob/develop/salt-quick-start.sh
 .. |quickstart-script-path-windows| replace:: https://github.com/saltstack/salt-bootstrap/blob/develop/salt-quick-start.ps1
