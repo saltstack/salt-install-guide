@@ -114,6 +114,7 @@ how Salt can quickly retrieve helpful information about your system.
           .. parsed-literal::
 
               Set-ExecutionPolicy RemoteSigned -Scope Process -Force
+              [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]'Tls12'
               Invoke-WebRequest -Uri |quickstart-script-path-windows| -OutFile .\quick.ps1
               .\quick.ps1
 
