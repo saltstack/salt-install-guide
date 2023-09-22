@@ -2,13 +2,12 @@
 stages:
   - test
   - build
+  - url-test
   - publish
   - upload-prep
   - trigger-upload
 
 include:
-  - project: saltstack/pop/cicd/ci-templates
-    file: /docswork/url-tester-brok.yml
   - project: saltstack/pop/cicd/ci-templates
     file: /docswork/publish-docs-gitlab.yml
   - project: saltstack/pop/cicd/ci-templates
@@ -22,9 +21,6 @@ variables:
   CICD_UPSTREAM_PATH: "saltstack/open/docs/salt-install-guide"
   GIT_STRATEGY: clone
   GIT_DEPTH: 0
-
-url-tester-brok:
-  stage: test
 
 pre-commit:
   stage: test
@@ -47,7 +43,7 @@ build-site-3006:
   script:
     - git checkout v3006.0
     - pip install -U pip setuptools wheel nox
-    - nox -e 'docs-html(clean=True)'
+    - nox -e 'docs-html(download_versions=True, clean=True)'
     - mkdir -p html/en/
     - mv docs/_build/html html/en/3006
     # The following section should only exist on the build meant to be latest build
@@ -76,7 +72,7 @@ build-site-3005:
   script:
     - git checkout v3005
     - pip install -U pip setuptools wheel nox
-    - nox -e 'docs-html(clean=True)'
+    - nox -e 'docs-html(download_versions=True, clean=True)'
     - mkdir -p html/en/
     - mv docs/_build/html html/en/3005
   artifacts:
@@ -92,7 +88,7 @@ build-site-main:
   script:
     - git checkout main
     - pip install -U pip setuptools wheel nox
-    - nox -e 'docs-html(clean=True)'
+    - nox -e 'docs-html(download_versions=True, clean=True)'
     - mkdir -p html/en/
     - mv docs/_build/html html/en/main
   artifacts:
@@ -107,7 +103,7 @@ build-site-fork:
   image: python:3.11
   script:
     - pip install -U pip setuptools wheel nox
-    - nox -e 'docs-html(clean=True)'
+    - nox -e 'docs-html(download_versions=True, clean=True)'
     - mkdir -p html/en/
     - mv docs/_build/html html/en/fork
     # This section ensures that GitLab Pages builds for forks
@@ -130,6 +126,16 @@ build-site-fork:
     expire_in: 1 days
   rules:
     - if: '$CI_COMMIT_BRANCH != "main" && $CI_COMMIT_BRANCH != "v3006.0" && $CI_COMMIT_BRANCH != "v3005" && $CI_PROJECT_PATH != $CICD_UPSTREAM_PATH'
+
+url-tester-brok:
+  stage: url-test
+  image: debian:bullseye-slim
+  script:
+    - apt-get update && apt-get install wget libtinfo5 -y
+    - wget https://github.com/smallhadroncollider/brok/releases/download/1.1.0/brok-1.1.0_x86-64-linux.deb
+    - dpkg -i brok-1.1.0_x86-64-linux.deb
+    - rm docs/_templates/sitevars.rst
+    - brok --ignore $(cat .brokignore) $(find . -type f -name "*.rst") $(find . -type f -name "*.md") $(find . -type f -name "*.toml") $(find . -type f -name "*.sls") $(find . -type f -name "*.py") $(find . -type f -name "*.y*ml") $(find . -type f -name "*.html") > /dev/null
 
 pages:
   stage: publish

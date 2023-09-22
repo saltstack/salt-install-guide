@@ -73,6 +73,8 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+## Generated stuff from Sphinx templates
+docs/sitevars.rst
 
 # PyBuilder
 .pybuilder/

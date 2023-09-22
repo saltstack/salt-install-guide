@@ -28,15 +28,7 @@
                 New to Salt? Try this tutorial
 
 
-.. sidebar:: **Supported Salt releases**
-
-    |supported-release-1-badge| |supported-release-2-badge|
-
-    **See also**
-
-    * `Release notes <https://docs.saltproject.io/en/latest/topics/releases/index.html>`_
-    * :ref:`announcements`
-    * `RSS feeds <https://saltproject.io/rss-feeds/>`_
+.. include:: /topics/_includes/supported-salt-releases-sidebar.rst
 
 Welcome to the Salt install guide! This guide provides instructions for
 installing Salt on :ref:`salt-supported-operating-systems`. It also explains
