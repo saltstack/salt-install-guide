@@ -8,11 +8,8 @@ http://www.example.org
 https://archive.repo.saltproject.io
 https://example.com
 https://example.org
-https://github.com/saltstack/salt/issues/56642
 https://gitlab.com/saltstack/open/docs/salt-install-guide/-/forks/new
 https://repo.saltproject.io/py3/amazon/2/x86_64/3001.repo
-https://repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/minor/3006rc1
-https://repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/minor/3006rc1
 https://saltstack.gitlab.io/open/docs/salt-install-guide
 https://twitter.com/intent/follow?screen_name=Salt_Project_OS
 https://www.example.com

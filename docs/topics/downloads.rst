@@ -4,15 +4,7 @@
 Downloads
 =========
 
-.. sidebar:: **Supported Salt releases**
-
-    |supported-release-1-badge| |supported-release-2-badge|
-
-    **See also**
-
-    * :ref:`salt-supported-operating-systems`
-    * :ref:`salt-version-support-lifecycle`
-    * :ref:`salt-python-version-support`
+.. include:: _includes/supported-salt-releases-sidebar.rst
 
 
 Welcome to the Salt download page!

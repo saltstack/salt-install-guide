@@ -95,9 +95,32 @@ def _install_requirements(session, transport):
     session.install(*install_command, silent=True)
 
 
+@nox.session(name="docs-versions-update", python="3")
+def docs_versions_update(session):
+    """
+    Run tools/version-updater.py but don't build Sphinx HTML
+    """
+    pydir = _get_pydir(session)
+
+    # Latest pip, setuptools, and wheel
+    install_command = ["--progress-bar=off", "-U", "pip", "setuptools", "wheel"]
+    session.install(*install_command, silent=True)
+
+    # Install requirements
+    requirements_file = Path("docs", "requirements.txt")
+    install_command = ["--progress-bar=off", "-r", str(requirements_file)]
+    session.install(*install_command, silent=True)
+
+    # Pull down latest Salt version manifest and update sitevars, etc.
+    if download_versions:
+        version_updater_script = Path("tools", "version-updater.py")
+        session.run("python", str(version_updater_script), external=True)
+
+
 @nox.session(name="docs-html", python="3")
 @nox.parametrize("clean", [False, True])
-def docs_html(session, clean):
+@nox.parametrize("download_versions", [False, True])
+def docs_html(session, clean, download_versions):
     """
     Build Sphinx HTML Documentation
     """
@@ -112,12 +135,17 @@ def docs_html(session, clean):
     install_command = ["--progress-bar=off", "-r", str(requirements_file)]
     session.install(*install_command, silent=True)
 
+    # Pull down latest Salt version manifest and update sitevars, etc.
+    if download_versions:
+        version_updater_script = Path("tools", "version-updater.py")
+        session.run("python", str(version_updater_script), external=True)
+
+    # Run sphinx
     build_dir = Path("docs", "_build", "html")
     sphinxopts = "-Wn"
     if clean:
         sphinxopts += "E"
     args = [sphinxopts, "--keep-going", "docs", str(build_dir)]
-    # session.run("sphinx-multiversion", *args, external=True)
     session.run("sphinx-build", *args, external=True)
 
 

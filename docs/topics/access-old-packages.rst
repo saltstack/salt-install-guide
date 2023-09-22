@@ -6,7 +6,7 @@ Access old packages of Salt
 
 The current supported versions of Salt are:
 
-* |release|
+* |supported-release-1|
 * |supported-release-2|
 
 See :ref:`salt-version-support-lifecycle` for more information about the support

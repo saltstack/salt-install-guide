@@ -10,9 +10,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-#import os
-#import sys
-#sys.path.insert(0, os.path.abspath('.'))
+# import os
+# import sys
+# sys.path.insert(0, os.path.abspath('.'))
 import datetime
 import os
 
@@ -98,26 +98,31 @@ release = [s for s in site_vars if "|release|" in s][0].split(":: ")[1]
 version = release
 
 # Grab major version for URL version selector generation
-current_version = version.split('.')[0]
+current_version = version.split(".")[0]
 
 ##
 # Furo theme version selector setup
 ##
 # Pull from JSON in GitLab Snippet
-supported_versions_json = requests.get('https://gitlab.com/saltstack/open/docs/salt-install-guide/-/snippets/2580440/raw/main/supported-versions.json')
+supported_versions_json = requests.get(
+    "https://gitlab.com/saltstack/open/docs/salt-install-guide/-/snippets/2580440/raw/main/supported-versions.json"
+)
 supported_versions = supported_versions_json.json()
-supported_major_versions = [full_version.split('.')[0] for full_version in supported_versions['supported_versions']]
+supported_major_versions = [
+    full_version.split(".")[0]
+    for full_version in supported_versions["supported_versions"]
+]
 supported_major_versions.sort()
 
 # Build out version menu
-latest_version = supported_versions['latest_version'].split('.')[0]
+latest_version = supported_versions["latest_version"].split(".")[0]
 versions = supported_major_versions
-url_prefix = 'https://docs.saltproject.io/salt/install-guide/en/'
+url_prefix = "https://docs.saltproject.io/salt/install-guide/en/"
 html_context = make_html_context(
-    url_prefix = url_prefix,
-    current_version = current_version,
-    latest_version = latest_version,
-    versions = versions
+    url_prefix=url_prefix,
+    current_version=current_version,
+    latest_version=latest_version,
+    versions=versions,
 )
 
 # -- General configuration ---------------------------------------------------
@@ -134,7 +139,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_design",
     "sphinx.ext.todo",
-    "sphinx-prompt", # Required by sphinx_substitution_extensions
+    "sphinx-prompt",  # Required by sphinx_substitution_extensions
     "sphinx_inline_tabs",
     # "sphinx_multiversion", # To ensure publishing of mulitple, versioned sites
     "sphinx_substitution_extensions",
@@ -156,6 +161,7 @@ exclude_patterns = [
     ".DS_Store",
     "sitevars.rst",
     "topics/_includes/*.rst",
+    "_templates/*.rst",
 ]
 
 
@@ -186,8 +192,8 @@ html_static_path = ["_static"]
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://example.com)
 html_css_files = [
-    'css/import-all-salt-docs.css',
-    'css/local-testing.css',
+    "css/import-all-salt-docs.css",
+    "css/local-testing.css",
 ]
 
 copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
@@ -214,7 +220,7 @@ html_logo = "_static/img/SaltProject_altlogo_blue.png"
 # https://gitlab.com/saltstack/open/salt-branding-guide/
 #
 # Example for >=4.0.0 of Sphinx (support for favicon via URL)
-#html_favicon = "https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_Logomark_teal.png"
+# html_favicon = "https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_Logomark_teal.png"
 # Example for <4.0.0 of Sphinx, if added into _static/img/ and html_static_path is valid
 html_favicon = "_static/img/SaltProject_Logomark_teal.png"
 
@@ -223,7 +229,7 @@ html_favicon = "_static/img/SaltProject_Logomark_teal.png"
 ###
 # If generating PDFs in the future, should ensure external logo is copied local
 # https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_altlogo_teal.png?inline=true
-#latex_logo = "docs/_static/img/SaltProject_verticallogo_black.png"
+# latex_logo = "docs/_static/img/SaltProject_verticallogo_black.png"
 
 # Linux Biolinum, Linux Libertine: https://en.wikipedia.org/wiki/Linux_Libertine
 # Source Code Pro: https://github.com/adobe-fonts/source-code-pro/releases
@@ -238,4 +244,4 @@ latex_elements = {
 """,
 }
 
-suppress_warnings = ['autosectionlabel.*']
+suppress_warnings = ["autosectionlabel.*"]
