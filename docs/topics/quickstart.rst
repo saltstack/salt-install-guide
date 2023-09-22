@@ -136,10 +136,10 @@ how Salt can quickly retrieve helpful information about your system.
               *  INFO: Extracting Salt
               *  INFO: Get started with Salt by running the following commands
               *  INFO: Add Salt to current path
-              *  INFO:   export PATH=/home/$[USER]/salt:$PATH
+              *  INFO:   export PATH=/home/${USER}/salt:$PATH
               *  INFO: Use the provided Saltfile
-              *  INFO:   export SALT_SALTFILE=/home/$[USER]/salt/Saltfile
-              *  INFO: Create Salt states in /home/$[USER]/salt/srv/salt
+              *  INFO:   export SALT_SALTFILE=/home/${USER}/salt/Saltfile
+              *  INFO: Create Salt states in /home/${USER}/salt/srv/salt
 
        .. tab-item:: Windows
 
@@ -162,8 +162,8 @@ how Salt can quickly retrieve helpful information about your system.
 
    .. code-block:: bash
 
-       export PATH=/home/$[USER]/salt:$PATH
-       export SALT_SALTFILE=/home/$[USER]/salt/Saltfile
+       export PATH=/home/${USER}/salt:$PATH
+       export SALT_SALTFILE=/home/${USER}/salt/Saltfile
 
    These commands allow Salt to run from those directories.
 
@@ -276,7 +276,7 @@ it to many nodes.
 
 In the classic Salt infrastructure, a node running the ``salt-master`` agent can
 rapidly issue commands to many nodes at the same time as long as those nodes
-are running the `salt-minion` agent.
+are running the ``salt-minion`` agent.
 
 In this step, you will use the quickstart script again to install the Salt
 master and minion agents on your local machine. Then, you will experiment with a
@@ -298,10 +298,10 @@ few commands to see how the master and minions interact.
          *  INFO: A salt directory already exists here, not extracting.
          *  INFO: Get started with Salt by running the following commands
          *  INFO: Add Salt to current path
-         *  INFO:   export PATH=/home/$[USER]/salt:$PATH
+         *  INFO:   export PATH=/home/${USER}/salt:$PATH
          *  INFO: Use the provided Saltfile
-         *  INFO:   export SALT_SALTFILE=/home/$[USER]/salt/Saltfile
-         *  INFO: Create Salt states in /home/$[USER]/salt/srv/salt
+         *  INFO:   export SALT_SALTFILE=/home/${USER}/salt/Saltfile
+         *  INFO: Create Salt states in /home/${USER}/salt/srv/salt
          *  INFO: Starting salt-master
          *  INFO: Starting salt-minion
          *  INFO: Run salt-key -L to see pending minion keys
