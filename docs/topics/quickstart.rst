@@ -49,8 +49,8 @@ reference guide that explains some of these terms and concepts, see
 
 Install Salt with the quickstart script
 =======================================
-In this step, you will install Salt and try a few commands to demonstrate
-how Salt can quickly retrieve helpful information about your system.
+In this step, you will install Salt and try a few commands to demonstrate how
+Salt can quickly retrieve helpful information about your system.
 
 #. **For Linux and MacOS only:** Install the prerequisites, using these
    commands. Select the tab for your operating system:
@@ -115,8 +115,8 @@ how Salt can quickly retrieve helpful information about your system.
 
               Set-ExecutionPolicy RemoteSigned -Scope Process -Force
               [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]'Tls12'
-              Invoke-WebRequest -Uri |quickstart-script-path-windows| -OutFile .\quick.ps1
-              .\quick.ps1
+              Invoke-WebRequest -Uri |quickstart-script-path-windows| -OutFile .\\quick.ps1
+              .\\quick.ps1
 
           .. Note::
               Some commands can only run from an elevated prompted, meaning
@@ -146,18 +146,23 @@ how Salt can quickly retrieve helpful information about your system.
           .. parsed-literal::
              :class: no-copybutton
 
-              Download Salt
-              Extracting Salt
-              Unzipping '.\salt.zip' to '.'
-              Using Expand-Archive to unzip
-              Finished unzipping '.\salt.zip' to '.'
-              Adding C:\Temp\salt to PATH
+              *  INFO: Downloading Salt
+              *  INFO: Extracting Salt
+              *  INFO: Adding Salt to current path
+              *  INFO:   C:\\Users\\Administrator\\Desktop\\salt
+              *  INFO: Setting the SALT_SALTFILE environment variable
+              *  INFO:   C:\\Users\\Administrator\\Desktop\\salt\\Saltfile
+              *  INFO: Create Salt states in C:\\Users\\Administrator\\Desktop\\salt\\srv\\salt
 
-#. **For Linux and MacOS only:** You need the last two lines from the output
-   of the previous command. This output is specific to your operating system
-   and you will use it for the this step.
+   .. note::
+      Take note of the last line of the script output which tells you where to
+      create your state files. You will need this later.
 
-   Using that output, copy the last two lines from the script output to update
+#. **For Linux and MacOS only:** You need the two export lines from the output
+   of the previous command. This output is specific to your operating system and
+   you will use it for this step.
+
+   Using that output, copy the two export lines from the script output to update
    ``PATH`` and set the included ``SALT_SALTFILE`` for your system. For example:
 
    .. code-block:: bash
