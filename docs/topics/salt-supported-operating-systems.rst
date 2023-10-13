@@ -217,23 +217,9 @@ Overview of supported operating systems
     -
     - Yes
     - Full
-    - Yes
+    -
 
   * - `Windows`_ Desktop 11
-    - x86, AMD64
-    -
-    - Yes
-    - Full
-    - Yes
-
-  * - `Windows`_ 2012
-    - x86, AMD64
-    -
-    - Yes
-    - Full
-    -
-
-  * - `Windows`_ 2012 R2
     - x86, AMD64
     -
     - Yes
@@ -245,21 +231,21 @@ Overview of supported operating systems
     -
     - Yes
     - Full
-    -
+    - Yes
 
   * - `Windows`_ 2019
     - x86, AMD64
     -
     - Yes
     - Full
-    -
+    - Yes
 
   * - `Windows`_ 2022
     - x86, AMD64
     -
     - Yes
     - Full
-    -
+    - Yes
 
 
 .. [#f1] Use RedHat or CentOS packages instead.
