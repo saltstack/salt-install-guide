@@ -49,8 +49,14 @@ reference guide that explains some of these terms and concepts, see
 
 Install Salt with the quickstart script
 =======================================
-In this step, you will install Salt and try a few commands to demonstrate how
-Salt can quickly retrieve helpful information about your system.
+In this exercise:
+
+- You will install the quickstart version of Salt, which is a lightweight
+  version of Salt designed to show you it7s key features.
+- Then, you will try a few commands to demonstrate howSalt can quickly retrieve
+  helpful information about your system.
+
+To complete the exercise:
 
 #. **For Linux and MacOS only:** Install the prerequisites, using these
    commands. Select the tab for your operating system:
@@ -67,7 +73,7 @@ Salt can quickly retrieve helpful information about your system.
 
           .. code-block:: bash
 
-              sudo tdnf install curl xz jq tar
+              sudo tdnf install curl xz jq tar coreutils gawk
 
        .. tab-item:: RedHat systems
 
@@ -154,9 +160,10 @@ Salt can quickly retrieve helpful information about your system.
               *  INFO:   C:\\Users\\Administrator\\Desktop\\salt\\Saltfile
               *  INFO: Create Salt states in C:\\Users\\Administrator\\Desktop\\salt\\srv\\salt
 
-   .. note::
-      Take note of the last line of the script output which tells you where to
-      create your state files. You will need this later.
+   .. Note::
+      Copy the last line of the script output which tells you where to create
+      your state files. You will need this directory at various points in the
+      tutorial.
 
 #. **For Linux and MacOS only:** You need the two export lines from the output
    of the previous command. This output is specific to your operating system and
@@ -263,29 +270,37 @@ Salt can quickly retrieve helpful information about your system.
       * - ``salt-call grains.get num_gpus``
         - ``0``
 
-      * - ``salt-call grains.get oscodename``
-        - ``Photon``
-
-In this step you used Salt from the command line to get basic information about
-your system. As you can see, you can use Salt to monitor and quickly get system
-data. But that's only a tiny fraction of what Salt can do. In the next tutorial
-step, you'll see how Salt can connect nodes together to create a sophisticated
-job and communication system.
+In this exercise you used Salt from the command line to get basic information
+about your system. As you can see, you can use Salt to monitor and quickly get
+system data. But that's only a tiny fraction of what Salt can do. In the next
+tutorial exercise, you'll see how Salt can connect nodes together to create a
+sophisticated job and communication system.
 
 
-Install Salt on your infrastructure
-===================================
+Install Salt on your infrastructure (Linux only)
+================================================
 While it's definitely interesting to see how Salt can quickly get detailed
 information from one node, the real power of Salt comes from connecting
 it to many nodes.
 
+.. Note::
+    As of this writing, this tutorial exercise only works on Linux-based
+    operating systems. However, the other tutorial exercises work for all
+    supported operating systems. To continue the tutorial, skip to
+    `Write and test your first Salt state`_.
+
 In the classic Salt infrastructure, a node running the ``salt-master`` agent can
 rapidly issue commands to many nodes at the same time as long as those nodes
-are running the ``salt-minion`` agent.
+are running the `salt-minion` agent.
 
-In this step, you will use the quickstart script again to install the Salt
-master and minion agents on your local machine. Then, you will experiment with a
-few commands to see how the master and minions interact.
+In this exercise:
+
+- You will use the quickstart script again to install the Salt master and minion
+  agents on your local machine.
+- Then, you will experiment with a few commands to see how the master and
+  minions interact.
+
+To complete the exercise:
 
 #. Run the quickstart script again with an additional flag that installs the
    master and minion agents:
@@ -408,8 +423,400 @@ few commands to see how the master and minions interact.
       * - ``salt \* service.get_enabled``
         - List the installed and enabled services on all connected minions
 
+In this exercise, you saw how Salt could be used for *remote execution*, which is
+when you connect remotely to your nodes (minions) to execute commands and get
+data. In the next exercise, you will learn how to manage nodes at scale using
+the Salt state system.
 
-Congratulations! You've tried Salt and had a taste for some of its potential!
+
+Write and test your first Salt state
+====================================
+In the previous exercise, you learned about Salt's *remote execution* system,
+which can execute ad-hoc commands to multiple nodes (minions) from the command
+line. Salt has an additional method of managing nodes through the
+*state system.* States are files written in Jinja or YAML that contain a set of
+declarative statements that keep the targeted nodes (minions) into a desired
+"state."
+
+If it is helpful, you can think of states as a kind of a policy that can be
+applied to new or existing nodes. Salt checks to see if the targeted node is in
+the desired state, such as whether it has the right applications installed
+and/or whether it has the correct configuration settings. If the node is not in
+the desired *state*—if it is not in compliant with policy—Salt changes the node
+to put it into the desired state. For example, it installs the required
+application or it applies the correct configuration settings.
+
+In this exercise:
+
+- You will learn how to create a basic Salt state file and test that it is
+  working. This state file will create a small text file on your machine.
+- After ensuring it is working, you will edit the file to add additional content
+  to simulate an unauthorized change to the file.
+- Then, you will use Salt to restore the text file back to its desired,
+  compliant state with the original content of the text file.
+
+To complete the exercise:
+
+#. Begin the tutorial by confirming that your system currently does not have the
+   ``managed-file.txt`` in your salt directory path. Run this command:
+
+   .. tab-set::
+
+       .. tab-item:: Linux and MacOS
+
+          .. code-block:: bash
+
+              cat /tmp/managed-file.txt
+
+          If the file does not exist, you will see output similar to this:
+
+          .. code-block:: bash
+
+              cat: /tmp/managed-file.txt: No such file or directory
+
+       .. tab-item:: Windows (Powershell)
+
+          .. code-block:: powershell
+
+              Get-Content C:\Windows\temp\managed-file.txt
+
+          If the file does not exist, you will see output similar to this:
+
+          .. code-block:: powershell
+
+              Get-Content : Cannot find path 'C:\Windows\temp\managed-file.txt' because it does not exist.
+
+
+#. Create a new state file called ``example-state-file.sls`` in the state tree
+   directory that the Salt quickstart script created for state files.
+
+   .. Note::
+       In the second step of the first tutorial exercise,
+       `Install Salt with the quickstart script`_, the quickstart listed the
+       directory that you need to use for state files. If you didn't copy that
+       directory down at the time, scroll back in your history to get that
+       directory now. You need that directory path for this exercise.
+
+       The directory was listed in the output as:
+       ``Create Salt states in`` and then lists the directory path.
+
+#. Open the new ``example-state-file.sls`` file and copy this content to it:
+
+   .. tab-set::
+
+       .. tab-item:: Linux and MacOS
+
+          .. code-block:: yaml
+             :caption: example-state-file.sls
+
+             add_example_file:
+               file.managed:
+                 - name: /tmp/managed-file.txt
+                 - makedirs: True
+                 - contents: Yay!
+
+       .. tab-item:: Windows (Powershell)
+
+          .. code-block:: yaml
+             :caption: example-state-file.sls
+
+             add_example_file:
+               file.managed:
+                 - name: c:\Windows\temp\managed-file.txt
+                 - makedirs: True
+                 - contents: Yay!
+
+
+
+   .. Admonition:: What does this Salt state file mean?
+
+      By default, the `file.managed <https://docs.saltproject.io/en/latest/ref/states/all/salt.states.file.html#salt.states.file.managed>`_
+      function of the file state module stores a file on the Salt master. When
+      this state is applied to a minion, Salt checks to see if the file is
+      present and if the content matches the version of the file stored on the
+      Salt master. If the file is not present, Salt creates the file on the
+      minion. If the file is present but does not match, Salt updates the
+      contents of the file to match.
+
+      The ``file.managed`` function is a popular module with many Salt users
+      because it is a great way to quickly add and modify configuration files on
+      the nodes you manage with Salt.
+
+      In this state file:
+
+      - The part that says ``add_example_file`` is the identifier. The name of
+        the identifier is arbitrary (user-defined) and you can choose any name
+        for the identifier. As a best practice, give it an identifier name that
+        explains the task or goal this state declaration accomplishes.
+      - ``file.managed`` is the Salt state module and function you are invoking.
+        The rest of the indented sections are the arguments for the module.
+      - The ``name`` argument lists the directory path and name for the file.
+      - The ``makedirs`` argument creates the directory for the file if the
+        directory isn't present.
+      - The ``contents`` argument adds the text ``Yay!`` to the file.
+
+#. Run this command to execute the state file:
+
+   .. tab-set::
+
+       .. tab-item:: Linux and MacOS
+
+          .. code-block:: bash
+
+              sudo salt-call state.apply example-state-file
+
+          When you run this command, you should see output similar to this:
+
+          .. code-block:: bash
+
+               local:
+               ----------
+                        ID: add_example_file
+                  Function: file.managed
+                      Name: /tmp/managed-file.txt
+                    Result: True
+                   Comment: File /tmp/managed-file.txt updated
+                   Started: 02:09:01.040086
+                  Duration: 35.883 ms
+                   Changes:
+                   ----------
+                   diff:
+                       New file
+
+               Summary for local
+               ------------
+               Succeeded: 1 (changed=1)
+               Failed:    0
+               ------------
+               Total states run:     1
+               Total run time:  35.883 ms
+
+       .. tab-item:: Windows (Powershell)
+
+          .. code-block:: powershell
+
+              salt-call state.apply example-state-file
+
+          When you run this command, you should see output similar to this:
+
+          .. code-block:: powershell
+
+               local:
+               ----------
+                        ID: add_example_file
+                  Function: file.managed
+                      Name: C:\Windows\temp\managed-file.txt
+                    Result: True
+                   Comment: File C:\Windows\temp\managed-file.txt updated
+                   Started: 02:09:01.040086
+                  Duration: 35.883 ms
+                   Changes:
+                   ----------
+                   diff:
+                       New file
+
+               Summary for local
+               ------------
+               Succeeded: 1 (changed=1)
+               Failed:    0
+               ------------
+               Total states run:     1
+               Total run time:  35.883 ms
+
+#. Run this command to confirm that the new state file exists:
+
+   .. tab-set::
+
+       .. tab-item:: Linux and MacOS
+
+          .. code-block:: bash
+
+              cat /tmp/managed-file.txt
+
+          If the file exists, it will print the contents of the file:
+
+          .. code-block:: bash
+
+              Yay!
+
+       .. tab-item:: Windows (Powershell)
+
+          .. code-block:: powershell
+
+              Get-Content C:\Windows\temp\managed-file.txt
+
+          If the file exists, it will print the contents of the file:
+
+          .. code-block:: powershell
+
+              Yay!
+
+#. Now you will simulate an ad-hoc change to the file contents. Run this command
+   to add additional content to the file:
+
+   .. tab-set::
+
+       .. tab-item:: Linux and MacOS
+
+          .. code-block:: bash
+
+              echo "Extra content" >> /tmp/managed-file.txt
+
+       .. tab-item:: Windows (Powershell)
+
+          .. code-block:: powershell
+
+              Add-Content C:\Windows\temp\managed-file.txt -Value "Extra content"
+
+#. Run this command to confirm that the state file now contains extra content:
+
+   .. tab-set::
+
+       .. tab-item:: Linux and MacOS
+
+          .. code-block:: bash
+
+              cat /tmp/managed-file.txt
+
+          If the file exists, it will print the contents of the file:
+
+          .. code-block:: bash
+
+              Yay!
+              Extra content
+
+       .. tab-item:: Windows (Powershell)
+
+          .. code-block:: powershell
+
+              Get-Content C:\Windows\temp\managed-file.txt
+
+          If the file exists, it will print the contents of the file:
+
+          .. code-block:: powershell
+
+              Yay!
+              Extra content
+
+#. Re-apply the state file to restore the ``managed-file`` to its desired
+   state:
+
+   .. tab-set::
+
+       .. tab-item:: Linux and MacOS
+
+          .. code-block:: bash
+
+              sudo salt-call state.apply example-state-file
+
+          When you run this command, you should see output similar to this:
+
+          .. code-block:: bash
+
+               local:
+               ----------
+                        ID: add_example_file
+                  Function: file.managed
+                      Name: /tmp/managed-file.txt
+                    Result: True
+                   Comment: File /tmp/managed-file.txt updated
+                   Started: 02:09:01.040086
+                  Duration: 35.883 ms
+                   Changes:
+                   ----------
+                   diff:
+                       ---
+                       +++
+                       @@ -1,2 +1 @@
+                       yay!
+                       -Extra content
+
+               Summary for local
+               ------------
+               Succeeded: 1 (changed=1)
+               Failed:    0
+               ------------
+               Total states run:     1
+               Total run time:  35.883 ms
+
+       .. tab-item:: Windows (Powershell)
+
+          .. code-block:: powershell
+
+              salt-call state.apply example-state-file
+
+          When you run this command, you should see output similar to this:
+
+          .. code-block:: powershell
+
+               local:
+               ----------
+                        ID: add_example_file
+                  Function: file.managed
+                      Name: C:\Windows\temp\managed-file.txt
+                    Result: True
+                   Comment: File C:\Windows\temp\managed-file.txt updated
+                   Started: 02:09:01.040086
+                  Duration: 35.883 ms
+                   Changes:
+                   ----------
+                   diff:
+                       ---
+                       +++
+                       @@ -1,2 +1 @@
+                       yay!
+                       -Extra content
+
+               Summary for local
+               ------------
+               Succeeded: 1 (changed=1)
+               Failed:    0
+               ------------
+               Total states run:     1
+               Total run time:  35.883 ms
+
+#. Run this command to confirm that the state file has been restored to its
+   original content, its desired state:
+
+   .. tab-set::
+
+       .. tab-item:: Linux and MacOS
+
+          .. code-block:: bash
+
+              cat /salt/managed-file.txt
+
+          If the file has been restored, it will print the contents of the file:
+
+          .. code-block:: bash
+
+              Yay!
+
+       .. tab-item:: Windows (Powershell)
+
+          .. code-block:: powershell
+
+              Get-Content \salt\managed-file.txt
+
+          If the file has been restored, it will print the contents of the file:
+
+          .. code-block:: powershell
+
+              Yay!
+
+
+As this exercise demonstrates, you can use Salt's state system to ensure your
+nodes are always in a desired state. Using the ``file.managed`` state module,
+you can prevent configuration drift by ensuring your nodes only have the
+configurations content approved by your team.
+
+This exercise implies other powerful configuration management strategies. For
+example, rather than storing your state files on the master, you could connect
+it to an external Git repository to ensure your configuration files are
+accurately version-controlled in an infrastructure-as-code system.
+
+Congratulations! You have completed the tutorial. You tried Salt and now have a
+taste for some of its potential!
 
 
 Next steps
