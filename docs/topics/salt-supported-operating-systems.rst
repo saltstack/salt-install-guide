@@ -92,6 +92,13 @@ Overview of supported operating systems
     - Full
     - Yes
 
+  * - `Debian`_ 12
+    - amd64, arm64
+    - Yes
+    - Yes
+    - Full
+    - Yes
+
   * - `Fedora`_ 37
     - x86_64, aarch64 / arm64
     - Yes
