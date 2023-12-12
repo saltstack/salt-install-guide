@@ -35,6 +35,20 @@
 .. |amazon-linux2-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/amazon/2/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |amazon-linux2-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/amazon/2/arm64/minor/CURRENT_MINOR.repo
 
+.. |amazon-linux2023-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |amazon-linux2023-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/x86_64/latest.repo
+.. |amazon-linux2023-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |amazon-linux2023-major-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/x86_64/CURRENT_MAJOR.repo
+.. |amazon-linux2023-minor-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |amazon-linux2023-minor-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/x86_64/minor/CURRENT_MINOR.repo
+
+.. |amazon-linux2023-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |amazon-linux2023-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/arm64/latest.repo
+.. |amazon-linux2023-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |amazon-linux2023-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/arm64/CURRENT_MAJOR.repo
+.. |amazon-linux2023-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |amazon-linux2023-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/arm64/minor/CURRENT_MINOR.repo
+
 .. |centos9-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |centos9-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest.repo
 .. |centos9-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub

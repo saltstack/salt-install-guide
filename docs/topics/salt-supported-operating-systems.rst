@@ -50,6 +50,13 @@ Overview of supported operating systems
     - Full
     - Yes
 
+  * - `Amazon Linux`_ 2023
+    - x86_64, aarch64 / arm64
+    -
+    - Yes
+    - Full
+    - Yes
+
   * - `Arch Linux`_ (latest)
     - x86_64, aarch64
     - Yes
@@ -275,10 +282,10 @@ architectures:
     - Architecture support
     - Example systems
 
-  * - Amazon Linux 2
+  * - Amazon Linux
     -  * x86_64
        * aarch64 / arm64
-    - Amazon Linux 2
+    - Amazon Linux
 
   * - Debian
     -  * amd64
@@ -360,7 +367,7 @@ Actively supported versions of AlmaLinux.
 
 Amazon Linux
 ------------
-Amazon Linux 2 is supported.
+Amazon Linux 2 and 2023 are supported.
 
 
 CentOS
