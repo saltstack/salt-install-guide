@@ -77,6 +77,20 @@
 .. |centos7-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |centos7-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/minor/CURRENT_MINOR.repo
 
+.. |debian12-latest-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/12/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+.. |debian12-latest-download-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/12/amd64/latest bookworm main
+.. |debian12-major-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/12/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+.. |debian12-major-download-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/12/amd64/CURRENT_MAJOR bookworm main
+.. |debian12-minor-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/12/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+.. |debian12-minor-download-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/12/amd64/minor/CURRENT_MINOR bookworm main
+
+.. |debian12-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/debian/12/arm64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+.. |debian12-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/debian/12/arm64/latest bookworm main
+.. |debian12-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/debian/12/arm64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+.. |debian12-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/debian/12/arm64/CURRENT_MAJOR bookworm main
+.. |debian12-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/debian/12/arm64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
+.. |debian12-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/debian/12/arm64/minor/CURRENT_MINOR bookworm main
+
 .. |debian11-latest-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/11/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |debian11-latest-download-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/11/amd64/latest bullseye main
 .. |debian11-major-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/11/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
