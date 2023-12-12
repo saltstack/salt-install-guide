@@ -134,15 +134,22 @@ Overview of supported operating systems
     - Reasonable
     -
 
-  * - `macOS`_ 11
+  * - `macOS`_ 12
     - x86_64
     -
     - Yes
     - Full
     -
 
-  * - `macOS`_ 12
+  * - `macOS`_ 13
     - x86_64
+    -
+    - Yes
+    - Full
+    -
+
+  * - `macOS`_ 13
+    - arm64
     -
     - Yes
     - Full
@@ -176,6 +183,12 @@ Overview of supported operating systems
     - Full
     -
 
+  * - `Photon OS`_ 5
+    - x86_64, aarch64 / arm64
+    - Yes
+    - Yes
+    - Full
+    -
 
   * - `RedHat`_ 7
     - x86_64, aarch64 / arm64
@@ -294,6 +307,7 @@ architectures:
 
   * - MacOS
     -  * x86_64
+       * arm64
     - MacOS
 
   * - RedHat
@@ -398,7 +412,7 @@ https://access.redhat.com/support/policy/updates/errata
 
 macOS
 -----
-The latest three versions of macOS.
+The latest three versions of macOS, including arm64 (M Series).
 
 
 Oracle Linux
@@ -410,7 +424,7 @@ https://www.oracle.com/technetwork/server-storage/linux/overview/index.html
 
 Photon OS
 ---------
-Photon OS 3.0 as of the 3005 (Phosphorus) release.
+Photon OS 3.0, 4.0, and 5.0.
 
 
 SLES

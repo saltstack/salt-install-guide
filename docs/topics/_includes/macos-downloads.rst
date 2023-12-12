@@ -12,3 +12,8 @@
     - pkg
     - |macos-amd64-download|
     - |macos-amd64-gpg|
+
+  * - arm64
+    - pkg
+    - |macos-arm64-download|
+    - |macos-amd64-gpg|
