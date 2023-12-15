@@ -126,7 +126,7 @@ arm64 architecture:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg |debian12-latest-gpg-arm64|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian12-latest-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |debian12-latest-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -141,7 +141,7 @@ arm64 architecture:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |debian12-major-gpg-arm64|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian12-major-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |debian12-major-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -156,7 +156,7 @@ arm64 architecture:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |debian12-minor-gpg-arm64|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian12-minor-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |debian12-minor-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
