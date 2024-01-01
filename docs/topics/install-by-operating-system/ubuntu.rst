@@ -117,7 +117,7 @@ arm64 architecture:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu22-latest-gpg-arm64|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu22-latest-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |ubuntu22-latest-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -130,7 +130,7 @@ arm64 architecture:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu22-major-gpg-arm64|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu22-major-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |ubuntu22-major-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -143,7 +143,7 @@ arm64 architecture:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu22-minor-gpg-arm64|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu22-minor-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |ubuntu22-minor-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -285,7 +285,7 @@ arm64 architecture:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu20-latest-gpg-arm64|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu20-latest-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |ubuntu20-latest-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
           .. include:: ../_includes/gpg-keys.rst
 
@@ -300,7 +300,7 @@ arm64 architecture:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu20-major-gpg-arm64|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu20-major-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |ubuntu20-major-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -315,7 +315,7 @@ arm64 architecture:
 
                sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu20-minor-gpg-arm64|\
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu20-minor-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |ubuntu20-minor-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
 
            .. include:: ../_includes/gpg-keys.rst
 
