@@ -291,7 +291,7 @@ it to many nodes.
 
 In the classic Salt infrastructure, a node running the ``salt-master`` agent can
 rapidly issue commands to many nodes at the same time as long as those nodes
-are running the `salt-minion` agent.
+are running the ``salt-minion`` agent.
 
 In this exercise:
 
