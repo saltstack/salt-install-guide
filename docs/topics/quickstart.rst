@@ -563,7 +563,7 @@ To complete the exercise:
 
           .. code-block:: bash
 
-              sudo salt-call state.apply example-state-file
+              salt-call state.apply example-state-file
 
           When you run this command, you should see output similar to this:
 
@@ -707,7 +707,7 @@ To complete the exercise:
 
           .. code-block:: bash
 
-              sudo salt-call state.apply example-state-file
+              salt-call state.apply example-state-file
 
           When you run this command, you should see output similar to this:
 
