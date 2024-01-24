@@ -37,6 +37,7 @@ Install Salt
    topics/verify-install
    topics/install-dependencies
    topics/uninstall
+   topics/revert-to-previous-version
 
 .. toctree::
    :maxdepth: 2
