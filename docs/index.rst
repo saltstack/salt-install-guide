@@ -22,9 +22,7 @@ Install Salt
    topics/before-you-start/index
    topics/install-by-operating-system/index
    topics/bootstrap
-   topics/platform-agnostic
-   topics/air-gap-install
-   topics/release-candidate
+   topics/other-install-types/index
 
 .. toctree::
    :maxdepth: 2
