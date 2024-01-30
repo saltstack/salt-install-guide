@@ -44,7 +44,7 @@ To install release candidate packages:
    the package to a specific version of Salt, after ``https://repo.saltproject.io``
    insert ``salt_rc/`` before the remainder of the file path.
 
-   .. include:: _includes/gpg-keys.rst
+   .. include:: ../_includes/gpg-keys.rst
 
 
    To install the latest RC, run the following commands:

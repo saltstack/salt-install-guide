@@ -4,7 +4,7 @@
 Platform agnostic installation (pip)
 ====================================
 
-.. include:: _includes/install-method.rst
+.. include:: ../_includes/install-method.rst
 
 
 About platform agonistic installation
