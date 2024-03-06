@@ -6,6 +6,7 @@ http://saltproject.io
 http://www.example.com
 http://www.example.org
 https://archive.repo.saltproject.io
+https://docs.saltproject.io/salt/install-guide/en/3007
 https://example.com
 https://example.org
 https://gitlab.com/saltstack/open/docs/salt-install-guide/-/forks/new
