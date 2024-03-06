@@ -1,5 +1,5 @@
 .. |release| replace:: CURRENT_MINOR
-.. |current-major-version| replace:: 3006
+.. |current-major-version| replace:: 3007
 .. |supported-release-1| replace:: LATEST_MINOR
 .. |supported-release-2| replace:: OLD_MINOR
 .. |supported-release-3| replace:: OLDEST_MINOR
