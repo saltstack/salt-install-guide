@@ -1,5 +1,5 @@
 .. |release| replace:: CURRENT_MINOR
-.. |current-major-version| replace:: 3007
+.. |current-major-version| replace:: 3006
 .. |supported-release-1| replace:: LATEST_MINOR
 .. |supported-release-2| replace:: OLD_MINOR
 .. |supported-release-3| replace:: OLDEST_MINOR
@@ -161,9 +161,9 @@
 .. |fedora37-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |fedora37-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/arm64/minor/CURRENT_MINOR.repo
 
-.. |macos-amd64-download| replace:: https://repo.saltproject.io/salt/py3/macos/latest/salt-CURRENT_MINOR-py3-x86_64.pkg
+.. |macos-amd64-download| replace:: https://repo.saltproject.io/salt/py3/macos/CURRENT_MAJOR/salt-CURRENT_MINOR-py3-x86_64.pkg
 .. |macos-amd64-gpg| replace:: https://repo.saltproject.io/salt/py3/macos/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |macos-arm64-download| replace:: https://repo.saltproject.io/salt/py3/macos/latest/salt-CURRENT_MINOR-py3-arm64.pkg
+.. |macos-arm64-download| replace:: https://repo.saltproject.io/salt/py3/macos/CURRENT_MAJOR/salt-CURRENT_MINOR-py3-arm64.pkg
 
 .. |photonos5-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/5.0/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos5-latest-download| replace:: https://repo.saltproject.io/salt/py3/photon/5.0/x86_64/latest.repo
@@ -260,4 +260,4 @@
 .. |windows-install-msi-example| replace:: Salt-Minion-CURRENT_MINOR-Py3-AMD64.msi
 
 .. |windows-amd64-exe-gpg| replace:: https://repo.saltproject.io/salt/py3/windows/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |windows-amd64-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/latest/Salt-Minion-CURRENT_MINOR-Py3-AMD64-Setup.exe
+.. |windows-amd64-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/CURRENT_MAJOR/Salt-Minion-CURRENT_MINOR-Py3-AMD64-Setup.exe
