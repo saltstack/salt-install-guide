@@ -24,10 +24,25 @@ Version support lifecycle
     - `Active support`_ ends
     - `CVE and critical support`_ ends
 
+  * - 3007 STS
+    - March 6, 2024
+    - October 18, 2024
+    - October 18, 2024
+
   * - 3006 LTS
     - April 18, 2023
-    - April 18, 2024
-    - April 18, 2025
+    - October 18, 2024
+    - October 18, 2025
+
+.. Note::
+    Salt Project is committed to providing active support for the current LTS
+    release. There will always be at least one LTS release at a time. If
+    unforeseen circumstances cause delays in the timing of the next LTS
+    release, support for the current LTS release will be extended as needed.
+
+    STS versions of Salt are actively supported until the date of the next LTS
+    or STS release.
+
 
 See `Older version support lifecycle`_ for versions of Salt older than 3006.
 
@@ -36,14 +51,18 @@ LTS/STS release and support policy
 ==================================
 Beginning with the 3006 release of Salt, the Salt Project will follow an LTS/STS
 release strategy. Under this strategy, the Salt Project will release one LTS
-(long-term support) release of Salt per year and one STS (short-term support)
-release each year. The LTS release will receive bug fix releases for a longer
-period of time than STS releases.
+(long-term support) release of Salt per year and one or more STS (short-term
+support) release each year. The LTS release will receive bug fix releases for a
+longer period of time than STS releases.
 
 The purpose of the LTS release is to provide users with a stable version of Salt
 for a longer period (2 years). The purpose of the STS release is to provide a
 feature release to users who need or prefer access to the latest features in
 between LTS releases.
+
+.. Warning::
+    If you are unsure whether to use the LTS or STS release, you should use the
+    LTS release.
 
 .. list-table::
   :widths: 30 35 35
@@ -55,18 +74,24 @@ between LTS releases.
     - STS release
 
   * - Release schedule
-    -  * Released once a year, usually in the first 4 months of the calendar
-         year
+    -  * Released once a year
        * 1-2 release candidates in the months leading up to the release
-       * Point releases every 3 months after the GA release
-    -  * Released once a year around the midpoint the year
+       * Regular bug/fix point releases as needed after GA release
+    -  * Released in between LTS releases
+       * There may possibly be more than one at a time or no STS releases at a
+         given point in time
 
   * - Support schedule
-    -  * Active support for 1 full year, including rolling updates of bug fixes
-         every quarter
-       * CVE and critical fixes support for an additional year
-    -  * Active support for 3 months
-       * CVE and critical fixes support for an additional 3 months
+    -  * Active support for at least a full year, including regular bug/fix
+         releases
+       * CVE and critical fixes support for an additional year after active
+         support ends
+       * Salt Project will always actively support at least one LTS release at a
+         time
+       * If unforeseen circumstances cause delays in the timing of the next LTS
+         release, support for the current LTS release will be extended as needed
+    -  * Active support until the next LTS or STS release
+       * CVE and critical fixes support until the next LTS or STS release
 
   * - Development schedule
     - Features developed in the 6 months prior to release
@@ -84,18 +109,6 @@ between LTS releases.
       * Need or prefer access to new features in between LTS releases
       * Are comfortable assuming a small amount of risk as a trade-off for
         access to the latest features
-
-
-The following graphic shows an example of the LTS/STS release strategy timeline
-for two years of the development and release cycle:
-
-.. image:: ../_static/img/salt-release-timeline.png
-   :alt: Graphic showing an LTS release that occurs between January and March
-         that is actively supported for a full year and then has CVE and
-         Critical support for an additional year. The graphic also shows an STS
-         release that occurs between July and September that is actively
-         supported for 3 months and then has CVE/Critical support for 3
-         additional months.
 
 
 
