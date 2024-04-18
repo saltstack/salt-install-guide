@@ -230,10 +230,8 @@ The most commonly used install options are:
 * ``/norestart``
 
 .. Note::
-    For more information about the MSI installer, see the
-    `Windows MSI installer repository <https://github.com/saltstack/salt-windows-msi>`_
-    repository on GitHub.
-
+    For more information about options for the MSI installer, see the readme
+    `<https://github.com/saltstack/salt/blob/master/pkg/windows/readme.md>`_.
 
 The following table describes all available options, listed alphabetically:
 
@@ -436,7 +434,7 @@ Browse the repo
 
 .. card:: Browse the repo for Windows packages
     :class-card: sd-border-1
-    :link: https://repo.saltproject.io/windows/
+    :link: https://repo.saltproject.io/salt/py3/windows/
     :width: 50%
 
     :bdg-primary:`Windows`

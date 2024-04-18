@@ -77,34 +77,68 @@ To install release candidate packages:
 
                echo "deb |debian-release-candidate| | sudo tee  /etc/apt/sources.list.d/salt.list
 
+       .. tab-item:: Windows
+
+            The following are URLs for the latest release candidate:
+
+            .. include:: ../_includes/windows-downloads-rc.rst
+
+            Download the installer that matches your operating system.
+            Double-click the installer to install Salt. You can also install the
+            release candidate from the command line using various switches.
+            Those can be found by running the ``.exe`` installer with the ``/?``
+            option.
+
+            .. parsed-literal::
+
+                |windows-release-candidate-amd64-exe-file-name| /?
+
+            For options for the ``.msi`` installer, see the documentation
+            `here <https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html#windows-msi-install-options>`__.
+
 
 Install using bootstrap
 =======================
-You can install a release candidate of Salt using the
-`Salt bootstrap <https://github.com/saltstack/salt-bootstrap/>`_ script.
+You can install a release candidate of Salt using one of the scripts in the
+`Salt bootstrap <https://github.com/saltstack/salt-bootstrap/>`_ project.
 
-Run the following command for the latest RC release, using
-|release-candidate-version| as an example:
+.. tab-set::
 
-.. parsed-literal::
+    .. tab-item:: Linux/macOS
 
-    curl -o install_salt.sh -L https://bootstrap.saltproject.io
-    sudo sh install_salt.sh -P -x |bootstrap-release-candidate|
+        Run the following command for the latest RC release, using
+        |release-candidate-version| as an example:
 
-To install a master using Salt bootstrap, use the ``-M`` flag. For example:
+        .. parsed-literal::
 
-.. parsed-literal::
+            curl -o install_salt.sh -L https://bootstrap.saltproject.io
+            sudo sh install_salt.sh -P -x |bootstrap-release-candidate|
 
-    curl -o install_salt.sh -L https://bootstrap.saltproject.io
-    sudo sh install_salt.sh -P -M -x |bootstrap-release-candidate|
+        To install a master using Salt bootstrap, use the ``-M`` flag. For example:
 
-If you want to install only a master and not a minion using Salt bootstrap, use
-the ``-M`` and ``-N`` flags. For example:
+        .. parsed-literal::
 
-.. parsed-literal::
+            curl -o install_salt.sh -L https://bootstrap.saltproject.io
+            sudo sh install_salt.sh -P -M -x |bootstrap-release-candidate|
 
-    curl -o install_salt.sh -L https://bootstrap.saltproject.io
-    sudo sh install_salt.sh -P -M -N -x |bootstrap-release-candidate|
+        If you want to install only a master and not a minion using Salt bootstrap, use
+        the ``-M`` and ``-N`` flags. For example:
+
+        .. parsed-literal::
+
+            curl -o install_salt.sh -L https://bootstrap.saltproject.io
+            sudo sh install_salt.sh -P -M -N -x |bootstrap-release-candidate|
+
+    .. tab-item:: Windows
+
+        Run the following command to install the latest RC release:
+
+        .. parsed-literal::
+
+            Set-ExecutionPolicy RemoteSigned -Scope Process -Force
+            [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]'Tls12'
+            Invoke-WebRequest -Uri https://winbootstrap.saltproject.io -OutFile .\\bootstrap.ps1
+            .\\bootstrap.ps1 -RepoUrl |windows-release-candidate-url|
 
 
 Install using pip
@@ -141,16 +175,60 @@ To install the release candidate using pip from `PyPi <https://pypi.org/>`_:
            * Python header libraries
            * C and C++ compilers
 
+       .. tab-item:: Windows
+
+           There are 3 requirements for Salt on Windows:
+
+           * Python (3.10+)
+           * VC Redistributable
+             - 2013 for Salt 3006.x and below
+             - 2022 for Salt 3007.x and above
+           * Visual Studio Build Tools
+
+           Install a compatible version of Python and the corresponding version
+           of VC Redistributable for the version of Salt you want to install.
+
+           Salt dependencies require Visual Studio Build tools to compile
+           properly. The easiest way to install the build tools is with the
+           ``install_vs_buildtools.ps1`` powershell script in the Salt repo.
+           Run the following command to download and run this script:
+
+           .. parsed-literal::
+
+               Set-ExecutionPolicy RemoteSigned -Scope Process -Force
+               [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]'Tls12'
+               Invoke-WebRequest -Uri |windows-vs-buildtools-script| -OutFile .\\install_vs_buildtools.ps1
+               .\\install_vs_buildtools.ps1
 
 #. Install Salt using the following command:
 
-   .. code-block:: bash
+   .. tab-set::
 
-       sudo pip install salt==$rc_tag_version
+       .. tab-item:: Linux
+
+           .. code-block:: bash
+
+               sudo pip install salt==$rc_tag_version
+
+       .. tab-item:: Windows
+
+           .. code-block:: pwsh
+
+               pip install salt==$rc_tag_version
 
    To pip install the latest RC release, using |release-candidate-version| as an
    example:
 
-   .. parsed-literal::
+   .. tab-set::
 
-       |pip-install-release-candidate|
+       .. tab-item:: Linux/macOS
+
+           .. parsed-literal::
+
+               sudo |pip-install-release-candidate|
+
+       .. tab-item:: Windows
+
+           .. parsed-literal::
+
+               |pip-install-release-candidate|

@@ -9,16 +9,16 @@
 
   * - AMD64
     - exe
-    - |windows-amd64-exe-download|
+    - |windows-release-candidate-amd64-exe-url|
 
   * - AMD64
     - msi
-    - |windows-amd64-msi-download|
+    - |windows-release-candidate-amd64-msi-url|
 
   * - x86
     - exe
-    - |windows-x86-exe-download|
+    - |windows-release-candidate-x86-exe-url|
 
   * - x86
     - msi
-    - |windows-x86-msi-download|
+    - |windows-release-candidate-x86-msi-url|
