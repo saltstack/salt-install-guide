@@ -9,6 +9,7 @@
 
 .. |quickstart-script-path| replace:: https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/salt-quick-start.sh
 .. |quickstart-script-path-windows| replace:: https://raw.githubusercontent.com/saltstack/salt-bootstrap/develop/salt-quick-start.ps1
+.. |windows-vs-buildtools-script| replace:: https://raw.githubusercontent.com/saltstack/salt/master/pkg/windows/install_vs_buildtools.ps1
 
 .. |release-candidate-version| replace:: RC_RELEASE
 .. |debian-release-candidate-gpg| replace:: /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt_rc/salt/py3/debian/11/amd64/latest/SALT-PROJECT-GPG-PUBKEY-2023.gpg
@@ -18,8 +19,14 @@
 .. |rhel-release-candidate-echo| replace:: 'baseurl=https://repo.saltproject.io/salt_rc/salt/py3/redhat/$releasever/$basearch/latest'
 .. |ubuntu-release-candidate-gpg| replace:: /etc/apt/keyrings/salt-archive-keyring-2023.gpg https://repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/latest/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |ubuntu-release-candidate| replace:: [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg] https://repo.saltproject.io/salt_rc/salt/py3/ubuntu/22.04/amd64/latest/ jammy main"
+.. |windows-release-candidate-url| replace:: https://repo.saltproject.io/salt_rc/salt/py3/windows
+.. |windows-release-candidate-amd64-exe-url| replace:: https://repo.saltproject.io/salt_rc/salt/py3/windows/latest/Salt-Minion-RC_RELEASE-Py3-AMD64-Setup.exe
+.. |windows-release-candidate-amd64-exe-file-name| replace:: Salt-Minion-RC_RELEASE-Py3-AMD64-Setup.exe
+.. |windows-release-candidate-amd64-msi-url| replace:: https://repo.saltproject.io/salt_rc/salt/py3/windows/latest/Salt-Minion-RC_RELEASE-Py3-AMD64.msi
+.. |windows-release-candidate-x86-exe-url| replace:: https://repo.saltproject.io/salt_rc/salt/py3/windows/latest/Salt-Minion-RC_RELEASE-Py3-x86-Setup.exe
+.. |windows-release-candidate-x86-msi-url| replace:: https://repo.saltproject.io/salt_rc/salt/py3/windows/latest/Salt-Minion-RC_RELEASE-Py3-x86.msi
 .. |bootstrap-release-candidate| replace:: python3 git vRC_RELEASE
-.. |pip-install-release-candidate| replace:: sudo pip install salt==RC_RELEASE
+.. |pip-install-release-candidate| replace:: pip install salt==RC_RELEASE
 
 .. |amazon-linux2-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/amazon/2/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |amazon-linux2-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/amazon/2/x86_64/latest.repo
@@ -161,9 +168,9 @@
 .. |fedora37-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |fedora37-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/arm64/minor/CURRENT_MINOR.repo
 
-.. |macos-amd64-download| replace:: https://repo.saltproject.io/salt/py3/macos/latest/salt-CURRENT_MINOR-py3-x86_64.pkg
+.. |macos-amd64-download| replace:: https://repo.saltproject.io/salt/py3/macos/CURRENT_MAJOR/salt-CURRENT_MINOR-py3-x86_64.pkg
 .. |macos-amd64-gpg| replace:: https://repo.saltproject.io/salt/py3/macos/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |macos-arm64-download| replace:: https://repo.saltproject.io/salt/py3/macos/latest/salt-CURRENT_MINOR-py3-arm64.pkg
+.. |macos-arm64-download| replace:: https://repo.saltproject.io/salt/py3/macos/CURRENT_MAJOR/salt-CURRENT_MINOR-py3-arm64.pkg
 
 .. |photonos5-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/5.0/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos5-latest-download| replace:: https://repo.saltproject.io/salt/py3/photon/5.0/x86_64/latest.repo
@@ -260,4 +267,7 @@
 .. |windows-install-msi-example| replace:: Salt-Minion-CURRENT_MINOR-Py3-AMD64.msi
 
 .. |windows-amd64-exe-gpg| replace:: https://repo.saltproject.io/salt/py3/windows/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |windows-amd64-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/latest/Salt-Minion-CURRENT_MINOR-Py3-AMD64-Setup.exe
+.. |windows-amd64-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/CURRENT_MAJOR/Salt-Minion-CURRENT_MINOR-Py3-AMD64-Setup.exe
+.. |windows-amd64-msi-download| replace:: https://repo.saltproject.io/salt/py3/windows/CURRENT_MAJOR/Salt-Minion-CURRENT_MINOR-Py3-AMD64.msi
+.. |windows-x86-exe-download| replace:: https://repo.saltproject.io/salt/py3/windows/CURRENT_MAJOR/Salt-Minion-CURRENT_MINOR-Py3-x86-Setup.exe
+.. |windows-x86-msi-download| replace:: https://repo.saltproject.io/salt/py3/windows/CURRENT_MAJOR/Salt-Minion-CURRENT_MINOR-Py3-x86.msi
