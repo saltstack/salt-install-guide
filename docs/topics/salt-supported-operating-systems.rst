@@ -85,13 +85,6 @@ Overview of supported operating systems
     - Full
     -
 
-  * - `Debian`_ 10
-    - amd64, arm64
-    - Yes
-    - Yes
-    - Full
-    - Yes
-
   * - `Debian`_ 11
     - amd64, arm64
     - Yes
@@ -106,14 +99,7 @@ Overview of supported operating systems
     - Full
     - Yes
 
-  * - `Fedora`_ 37
-    - x86_64, aarch64 / arm64
-    - Yes
-    - Yes
-    - Full
-    - Yes
-
-  * - `Fedora`_ 38
+  * - `Fedora`_ 39
     - x86_64, aarch64 / arm64
     - Yes
     - Yes
@@ -168,13 +154,6 @@ Overview of supported operating systems
     - Yes
     - Full
     - [#f1]_
-
-  * - `Photon OS`_ 3
-    - x86_64, aarch64 / arm64
-    - Yes
-    - Yes
-    - Full
-    -
 
   * - `Photon OS`_ 4
     - x86_64, aarch64 / arm64
@@ -399,7 +378,7 @@ https://wiki.debian.org/DebianReleases
 
 Fedora
 ------
-Fedora version support mirrors that of the upstream maintainer.
+Support is for the latest version of Fedora.
 
 
 RedHat
@@ -424,7 +403,7 @@ https://www.oracle.com/technetwork/server-storage/linux/overview/index.html
 
 Photon OS
 ---------
-Photon OS 3.0, 4.0, and 5.0.
+Photon OS 4.0 and 5.0.
 
 
 SLES
@@ -440,7 +419,7 @@ Ubuntu
 Ubuntu LTS versions through end-of-life. Ubuntu optional Extended Security
 Maintenance (ESM) is not supported.
 
-http://www.ubuntu.com/info/release-end-of-life
+https://ubuntu.com/about/release-cycle
 
 
 Windows
