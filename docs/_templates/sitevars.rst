@@ -133,33 +133,19 @@
 .. |debian10-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/debian/10/arm64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |debian10-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/debian/10/arm64/minor/CURRENT_MINOR buster main
 
-.. |fedora38-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora38-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/x86_64/latest.repo
-.. |fedora38-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora38-major-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/x86_64/CURRENT_MAJOR.repo
-.. |fedora38-minor-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora38-minor-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/x86_64/minor/CURRENT_MINOR.repo
+.. |fedora39-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |fedora39-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/x86_64/latest.repo
+.. |fedora39-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |fedora39-major-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/x86_64/CURRENT_MAJOR.repo
+.. |fedora39-minor-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |fedora39-minor-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/x86_64/minor/CURRENT_MINOR.repo
 
-.. |fedora38-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora38-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/arm64/latest.repo
-.. |fedora38-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora38-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/arm64/CURRENT_MAJOR.repo
-.. |fedora38-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora38-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/38/arm64/minor/CURRENT_MINOR.repo
-
-.. |fedora37-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora37-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/x86_64/latest.repo
-.. |fedora37-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora37-major-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/x86_64/CURRENT_MAJOR.repo
-.. |fedora37-minor-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora37-minor-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/x86_64/minor/CURRENT_MINOR.repo
-
-.. |fedora37-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora37-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/arm64/latest.repo
-.. |fedora37-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora37-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/arm64/CURRENT_MAJOR.repo
-.. |fedora37-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |fedora37-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/37/arm64/minor/CURRENT_MINOR.repo
+.. |fedora39-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |fedora39-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/arm64/latest.repo
+.. |fedora39-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |fedora39-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/arm64/CURRENT_MAJOR.repo
+.. |fedora39-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |fedora39-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/fedora/39/arm64/minor/CURRENT_MINOR.repo
 
 .. |macos-amd64-download| replace:: https://repo.saltproject.io/salt/py3/macos/CURRENT_MAJOR/salt-CURRENT_MINOR-py3-x86_64.pkg
 .. |macos-amd64-gpg| replace:: https://repo.saltproject.io/salt/py3/macos/SALT-PROJECT-GPG-PUBKEY-2023.gpg
@@ -178,13 +164,6 @@
 .. |photonos4-major-download| replace:: https://repo.saltproject.io/salt/py3/photon/4.0/x86_64/CURRENT_MAJOR.repo
 .. |photonos4-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/4.0/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |photonos4-minor-download| replace:: https://repo.saltproject.io/salt/py3/photon/4.0/x86_64/minor/CURRENT_MINOR.repo
-
-.. |photonos3-latest-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3.0/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |photonos3-latest-download| replace:: https://repo.saltproject.io/salt/py3/photon/3.0/x86_64/latest.repo
-.. |photonos3-major-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3.0/x86_64/latest/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |photonos3-major-download| replace:: https://repo.saltproject.io/salt/py3/photon/3.0/x86_64/CURRENT_MAJOR.repo
-.. |photonos3-minor-gpg| replace:: https://repo.saltproject.io/salt/py3/photon/3.0/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |photonos3-minor-download| replace:: https://repo.saltproject.io/salt/py3/photon/3.0/x86_64/minor/CURRENT_MINOR.repo
 
 .. |rhel9-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |rhel9-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest.repo
