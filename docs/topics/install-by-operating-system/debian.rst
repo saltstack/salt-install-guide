@@ -28,21 +28,6 @@ amd64 architecture:
 
    .. tab-set::
 
-       .. tab-item:: Debian 12 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Debian 12 (Bookworm)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg |debian12-latest-gpg-amd64|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian12-latest-download-amd64|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: Debian 12 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -112,21 +97,6 @@ arm64 architecture:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: Debian 12 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Debian 12 (Bookworm)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg |debian12-latest-gpg-arm64|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |debian12-latest-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Debian 12 (Major onedir)
 
@@ -198,21 +168,6 @@ amd64 architecture:
 
    .. tab-set::
 
-       .. tab-item:: Debian 11 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Debian 11 (Bullseye)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg |debian11-latest-gpg-amd64|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian11-latest-download-amd64|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: Debian 11 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -282,21 +237,6 @@ arm64 architecture:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: Debian 11 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Debian 11 (Bullseye)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg |debian11-latest-gpg-arm64|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |debian11-latest-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Debian 11 (Major onedir)
 

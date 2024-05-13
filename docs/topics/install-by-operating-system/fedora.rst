@@ -24,19 +24,6 @@ To install Salt on Fedora 39 for x86_64 architecture:
 
    .. tab-set::
 
-       .. tab-item:: Fedora 39 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Fedora 39**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |fedora39-latest-gpg-x86_64|\
-
-               curl -fsSL \ |fedora39-latest-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: Fedora 39 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -116,19 +103,6 @@ To install Salt on Fedora 39 for aarch64 and arm64 architectures:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: Fedora 38 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Fedora 39**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |fedora39-latest-gpg-arm64|\
-
-               curl -fsSL \ |fedora39-latest-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Fedora 39 (Major onedir)
 

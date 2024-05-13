@@ -30,18 +30,6 @@ architecture:
 
    .. tab-set::
 
-       .. tab-item:: CentOS 9 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package of Salt for **CentOS 9**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |centos9-latest-gpg-x86_64|\
-
-               curl -fsSL \ |centos9-latest-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: CentOS 9 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package of Salt for **CentOS 9**:
@@ -104,18 +92,6 @@ arm64 architectures:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: CentOS 9 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package of Salt for **CentOS 9**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |centos9-latest-gpg-arm64|\
-
-               curl -fsSL \ |centos9-latest-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: CentOS 9 (Major onedir)
 
@@ -181,18 +157,6 @@ architecture:
 
    .. tab-set::
 
-       .. tab-item:: CentOS 8 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package of Salt for **CentOS 8**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |centos8-latest-gpg-x86_64|\
-
-               curl -fsSL \ |centos8-latest-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: CentOS 8 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package of Salt for **CentOS 8**:
@@ -257,18 +221,6 @@ arm64 architectures:
 
    .. tab-set::
 
-       .. tab-item:: CentOS 8 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package of Salt for **CentOS 8**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |centos8-latest-gpg-arm64|\
-
-               curl -fsSL \ |centos8-latest-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: CentOS 8 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package of Salt for **CentOS 8**:
@@ -332,18 +284,6 @@ To install Salt on CentOS 7 for x86_64 architecture:
 
    .. tab-set::
 
-       .. tab-item:: CentOS 7 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package of Salt for **CentOS 7**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |centos7-latest-gpg-x86_64|\
-
-               curl -fsSL \ |centos7-latest-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: CentOS 7 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package of Salt for **CentOS 7**:
@@ -406,18 +346,6 @@ To install Salt on CentOS 7 for aarch64 and arm64 architectures:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: CentOS 7 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package of Salt for **CentOS 7**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |centos7-latest-gpg-arm64|\
-
-               curl -fsSL \ |centos7-latest-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: CentOS 7 (Major onedir)
 

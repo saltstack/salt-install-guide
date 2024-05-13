@@ -29,19 +29,6 @@ To install Salt on RedHat 9 for x86_64 architecture:
 
    .. tab-set::
 
-       .. tab-item:: RHEL 9 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **RHEL 9**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |rhel9-latest-gpg-x86_64|\
-
-               curl -fsSL \ |rhel9-latest-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: RHEL 9 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -121,19 +108,6 @@ To install Salt on RedHat 9 for aarch64 and arm64 architectures:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: RHEL 9 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **RHEL 9**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |rhel9-latest-gpg-arm64|\
-
-               curl -fsSL \ |rhel9-latest-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: RHEL 9 (Major onedir)
 
@@ -216,19 +190,6 @@ architecture:
 
    .. tab-set::
 
-       .. tab-item:: RHEL 8 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **RHEL 8**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |rhel8-latest-gpg-x86_64|\
-
-               curl -fsSL \ |rhel8-latest-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: RHEL 8 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -293,19 +254,6 @@ arm64 architectures:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: RHEL 8 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **RHEL 8**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |rhel8-latest-gpg-arm64|\
-
-               curl -fsSL \ |rhel8-latest-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: RHEL 8 (Major onedir)
 
@@ -372,19 +320,6 @@ architecture:
 
    .. tab-set::
 
-       .. tab-item:: RHEL 7 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **RHEL 7**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |rhel7-latest-gpg-x86_64|\
-
-               curl -fsSL \ |rhel7-latest-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: RHEL 7 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -450,19 +385,6 @@ arm64 architectures:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: RHEL 7 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **RHEL 7**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |rhel7-latest-gpg-arm64|\
-
-               curl -fsSL \ |rhel7-latest-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: RHEL 7 (Major onedir)
 
