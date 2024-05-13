@@ -26,19 +26,6 @@ architecture:
 
    .. tab-set::
 
-       .. tab-item:: Amazon Linux 2 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Amazon Linux 2**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |amazon-linux2-latest-gpg-x86_64|\
-
-               curl -fsSL \ |amazon-linux2-latest-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: Amazon Linux 2 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -103,19 +90,6 @@ arm64 architectures:
 #. Run the following commands to install the Salt Project repository and key:
 
    .. tab-set::
-
-       .. tab-item:: Amazon Linux 2 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Amazon Linux 2**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |amazon-linux2-latest-gpg-arm64|\
-
-               curl -fsSL \ |amazon-linux2-latest-download-arm64|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Amazon Linux 2 (Major onedir)
 
@@ -182,19 +156,6 @@ architecture:
 
    .. tab-set::
 
-       .. tab-item:: Amazon Linux 2023 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Amazon Linux 2023**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |amazon-linux2023-latest-gpg-x86_64|\
-
-               curl -fsSL \ |amazon-linux2023-latest-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: Amazon Linux 2023 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -259,19 +220,6 @@ arm64 architectures:
 #. Run the following commands to install the Salt Project repository and key:
 
    .. tab-set::
-
-       .. tab-item:: Amazon Linux 2023 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Amazon Linux 2023**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |amazon-linux2023-latest-gpg-arm64|\
-
-               curl -fsSL \ |amazon-linux2023-latest-download-arm64|\  | sudo tee /etc/yum.repos.d/salt-amzn.repo
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Amazon Linux 2023 (Major onedir)
 

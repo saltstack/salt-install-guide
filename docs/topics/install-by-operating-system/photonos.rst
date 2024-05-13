@@ -21,21 +21,6 @@ To install Salt on Photon OS 5:
 
    .. tab-set::
 
-       .. tab-item:: Photon OS 5 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Photon OS 5**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |photonos5-latest-gpg|\
-
-               curl -fsSL \ |photonos5-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-               tdnf clean all
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: Photon OS 5 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -135,21 +120,6 @@ To install Salt on Photon OS 4:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: Photon OS 4 (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Photon OS 4**:
-
-           .. parsed-literal::
-
-               sudo rpm --import \ |photonos4-latest-gpg|\
-
-               curl -fsSL \ |photonos4-latest-download|\  | sudo tee /etc/yum.repos.d/salt.repo
-
-               tdnf clean all
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Photon OS 4 (Major onedir)
 

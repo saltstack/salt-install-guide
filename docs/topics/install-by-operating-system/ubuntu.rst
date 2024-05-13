@@ -28,19 +28,6 @@ amd64 architecture:
 
    .. tab-set::
 
-       .. tab-item:: Ubuntu 22.04 (Jammy) (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Ubuntu 22.04 (Jammy)**:
-
-           .. parsed-literal::
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu22-latest-gpg-amd64|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu22-latest-download-amd64|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-           .. include:: ../_includes/gpg-keys.rst
-
        .. tab-item:: Ubuntu 22.04 (Jammy) (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
@@ -107,19 +94,6 @@ arm64 architecture:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: Ubuntu 22.04 (Jammy) (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Ubuntu 22.04 (Jammy)**:
-
-           .. parsed-literal::
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu22-latest-gpg-arm64|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |ubuntu22-latest-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-           .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Ubuntu 22.04 (Jammy) (Major onedir)
 
@@ -188,21 +162,6 @@ amd64 architecture:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: Ubuntu 20.04 (Focal) (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Ubuntu 20.04 (Focal)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu20-latest-gpg-amd64|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] \ |ubuntu20-latest-download-amd64|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-          .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Ubuntu 20.04 (Major onedir)
 
@@ -273,21 +232,6 @@ arm64 architecture:
    **Click the tab for the Salt version you would like to pin for updates:**
 
    .. tab-set::
-
-       .. tab-item:: Ubuntu 20.04 (Focal) (Latest onedir)
-
-           To pin your Salt upgrades to the :ref:`latest` :ref:`onedir` package
-           of Salt for **Ubuntu 20.04 (Focal)**:
-
-           .. parsed-literal::
-
-               mkdir /etc/apt/keyrings
-
-               sudo curl -fsSL -o /etc/apt/keyrings/salt-archive-keyring-2023.gpg \ |ubuntu20-latest-gpg-arm64|\
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=arm64] \ |ubuntu20-latest-download-arm64|\" | sudo tee /etc/apt/sources.list.d/salt.list
-
-          .. include:: ../_includes/gpg-keys.rst
 
        .. tab-item:: Ubuntu 20.04 (Major onedir)
 
