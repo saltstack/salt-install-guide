@@ -182,6 +182,7 @@ html_theme_options = {
         "color-brand-primary": "#66CCF4",
         "color-brand-content": "#66CCF4",
     },
+    "announcement": "You are currently viewing the <strong>3007 STS</strong> version of the Salt install guide. Use the LTS version of Salt in production environments.<br /> To change to the 3006 LTS version, use the version selector at the bottom of the left menu bar.",
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
