@@ -85,13 +85,6 @@ Overview of supported operating systems
     - Full
     -
 
-  * - `Debian`_ 10
-    - amd64, arm64
-    - Yes
-    - Yes
-    - Full
-    - Yes
-
   * - `Debian`_ 11
     - amd64, arm64
     - Yes
@@ -106,14 +99,7 @@ Overview of supported operating systems
     - Full
     - Yes
 
-  * - `Fedora`_ 37
-    - x86_64, aarch64 / arm64
-    - Yes
-    - Yes
-    - Full
-    - Yes
-
-  * - `Fedora`_ 38
+  * - `Fedora`_ 40
     - x86_64, aarch64 / arm64
     - Yes
     - Yes
@@ -168,13 +154,6 @@ Overview of supported operating systems
     - Yes
     - Full
     - [#f1]_
-
-  * - `Photon OS`_ 3
-    - x86_64, aarch64 / arm64
-    - Yes
-    - Yes
-    - Full
-    -
 
   * - `Photon OS`_ 4
     - x86_64, aarch64 / arm64
@@ -233,6 +212,13 @@ Overview of supported operating systems
     - Yes
 
   * - `Ubuntu`_ 22.04
+    - amd64, arm64
+    - Yes
+    - Yes
+    - Full
+    - Yes
+
+  * - `Ubuntu`_ 24.04
     - amd64, arm64
     - Yes
     - Yes
@@ -392,14 +378,14 @@ supported by the Salt Project.
 
 Debian
 ------
-Debian stable, oldstable, and oldoldstable versions.
+Debian stable, oldstable, and oldoldstable (if it is not EOL) versions.
 
 https://wiki.debian.org/DebianReleases
 
 
 Fedora
 ------
-Fedora version support mirrors that of the upstream maintainer.
+Only the latest major release of Fedora is supported.
 
 
 RedHat
@@ -424,7 +410,7 @@ https://www.oracle.com/technetwork/server-storage/linux/overview/index.html
 
 Photon OS
 ---------
-Photon OS 3.0, 4.0, and 5.0.
+Photon OS 4.0 and 5.0.
 
 
 SLES
