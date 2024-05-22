@@ -52,14 +52,14 @@ To revert to a previous version of Salt:
 
            .. include:: _includes/previous-version-note.rst
 
-       .. tab-item:: Debian 10
+       .. tab-item:: Ubuntu 24.04
 
            .. code-block:: bash
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/debian/10/amd64/minor/3006.X buster main" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/minor/3006.X noble main" | sudo tee /etc/apt/sources.list.d/salt.list
+
 
            .. include:: _includes/previous-version-note.rst
-
 
        .. tab-item:: Ubuntu 22.04
 
@@ -69,7 +69,6 @@ To revert to a previous version of Salt:
 
 
            .. include:: _includes/previous-version-note.rst
-
 
        .. tab-item:: Ubuntu 20.04
 

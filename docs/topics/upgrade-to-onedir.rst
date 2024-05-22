@@ -175,7 +175,7 @@ Repository paths
     - https://repo.saltproject.io/py3/debian/
 
   * - Fedora
-    - Hosted on Fedora repos
+    - https://repo.saltproject.io/salt/py3/fedora/
     - Hosted on Fedora repos
 
   * - MacOS
