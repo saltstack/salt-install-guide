@@ -78,3 +78,11 @@ if THREE_VERSIONS:
 # Write dynamic sitevars file
 with open(sitevars_updated_file, "w") as sitevars_updated_file_writer:
     sitevars_updated_file_writer.write(sitevars_updated)
+
+# Write latest announcements file
+latest_announcements = requests.get(
+    "https://gitlab.com/saltstack/open/docs/salt-install-guide/-/snippets/3722105/raw/main/announcements.rst"
+)
+announcements_file = Path("docs", "topics", "announcements.rst")
+with open(announcements_file, "w") as announcements_updated_file_writer:
+    announcements_updated_file_writer.write(latest_announcements.text)

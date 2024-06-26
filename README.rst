@@ -2,9 +2,9 @@
 Salt install guide
 ==================
 
-.. image:: https://img.shields.io/badge/slack-Salt%20Project-blue.svg?logo=slack
-   :alt: Salt Project Slack Community
-   :target: https://via.vmw.com/salt-slack
+.. image:: https://img.shields.io/badge/slack-Salt%20Project-blue.svg?logo=discord
+   :alt: Salt Project Discord Community
+   :target: https://discord.gg/YVQamSwV3g
 
 .. image:: https://img.shields.io/pypi/dm/salt?label=pypi%20downloads
    :alt: PyPi Package Downloads
