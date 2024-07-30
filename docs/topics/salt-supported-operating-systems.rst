@@ -34,14 +34,14 @@ Overview of supported operating systems
     - Yes
     - Yes
     - Full
-    - Yes
+    -
 
   * - `AlmaLinux`_ 9
     - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
-    - Yes
+    -
 
   * - `Amazon Linux`_ 2
     - x86_64, aarch64 / arm64
@@ -64,20 +64,6 @@ Overview of supported operating systems
     - Reasonable
     - Yes
 
-  * - `CentOS`_ 7
-    - x86_64, aarch64 / arm64
-    - Yes
-    - Yes
-    - Full
-    - Yes
-
-  * - `CentOS`_ Stream 8
-    - x86_64, aarch64 / arm64
-    - Yes
-    - Yes
-    - Full
-    -
-
   * - `CentOS`_ Stream 9
     - x86_64, aarch64 / arm64
     - Yes
@@ -99,26 +85,12 @@ Overview of supported operating systems
     - Full
     - Yes
 
-  * - `Fedora`_ 39
+  * - `Fedora`_ 40
     - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
     - Yes
-
-  * - `FreeBSD`_ 12.4
-    -
-    - Yes
-    - Yes
-    - Reasonable
-    -
-
-  * - `FreeBSD`_ 13.1
-    -
-    - Yes
-    - Yes
-    - Reasonable
-    -
 
   * - `macOS`_ 12
     - x86_64
@@ -128,27 +100,20 @@ Overview of supported operating systems
     -
 
   * - `macOS`_ 13
-    - x86_64
+    - x86_64, arm64
     -
     - Yes
     - Full
     -
 
-  * - `macOS`_ 13
-    - arm64
-    -
-    - Yes
-    - Full
-    -
-
-  * - `openSUSE`_ Leap 15.4
+  * - `openSUSE`_ Leap 15.5
     -
     - Yes
     - Yes
     - Reasonable
-    -
+    - Yes
 
-  * - `Oracle Linux`_ 7, 8, 9
+  * - `Oracle Linux`_ 8, 9
     - x86_64, aarch64 / arm64
     - Yes
     - Yes
@@ -169,13 +134,6 @@ Overview of supported operating systems
     - Full
     -
 
-  * - `RedHat`_ 7
-    - x86_64, aarch64 / arm64
-    - Yes
-    - Yes
-    - Full
-    - Yes
-
   * - `RedHat`_ 8
     - x86_64, aarch64 / arm64
     - Yes
@@ -190,6 +148,20 @@ Overview of supported operating systems
     - Full
     - Yes
 
+  * - `Rocky Linux`_ 8
+    - x86_64, aarch64 / arm64
+    - Yes
+    - Yes
+    - Full
+    - Yes
+
+  * - `Rocky Linux`_ 9
+    - x86_64, aarch64 / arm64
+    - Yes
+    - Yes
+    - Full
+    - Yes
+
   * - `SLES`_ 12 SP5
     -
     - Yes
@@ -197,7 +169,7 @@ Overview of supported operating systems
     - Full
     -
 
-  * - `SLES`_ 15 SP4
+  * - `SLES`_ 15 SP5
     -
     - Yes
     - Yes
@@ -212,6 +184,13 @@ Overview of supported operating systems
     - Yes
 
   * - `Ubuntu`_ 22.04
+    - amd64, arm64
+    - Yes
+    - Yes
+    - Full
+    - Yes
+
+  * - `Ubuntu`_ 24.04
     - amd64, arm64
     - Yes
     - Yes
@@ -292,7 +271,7 @@ architectures:
   * - RedHat
     -  * x86_64
        * aarch64 / amd64
-    - RedHat, CentOS, Fedora
+    - RedHat, CentOS, Rocky Linux, Fedora
 
   * - Windows
     -  * x86
@@ -365,13 +344,12 @@ Amazon Linux 2 and 2023 are supported.
 
 CentOS
 ------
-CentOS versions through Production Phase 3 Support. Versions in ELS are not
-supported by the Salt Project.
+Only CentOS Stream 9 is supported.
 
 
 Debian
 ------
-Debian stable, oldstable, and oldoldstable versions.
+Debian stable, oldstable, and oldoldstable (if it is not EOL) versions.
 
 https://wiki.debian.org/DebianReleases
 
@@ -389,6 +367,11 @@ supported by the Salt Project.
 https://access.redhat.com/support/policy/updates/errata
 
 
+Rocky Linux
+-----------
+Actively supported versions of Rocky Linux.
+
+
 macOS
 -----
 The latest three versions of macOS, including arm64 (M Series).
@@ -396,7 +379,7 @@ The latest three versions of macOS, including arm64 (M Series).
 
 Oracle Linux
 ------------
-Oracle Linux versions 7, 8, and 9.
+Oracle Linux versions 8 and 9.
 
 https://www.oracle.com/technetwork/server-storage/linux/overview/index.html
 
