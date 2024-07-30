@@ -6,17 +6,17 @@ Fedora
 
 These instructions explain how to install Salt on Fedora operating systems:
 
-* `Install Salt on Fedora 39 x86_64`_
-* `Install Salt on Fedora 39 aarch64 and arm64`_
+* `Install Salt on Fedora 40 x86_64`_
+* `Install Salt on Fedora 40 aarch64 and arm64`_
 
 .. include:: ../_includes/what-is-onedir.rst
 
 .. include:: ../_includes/intro-install-by-os.rst
 
 
-Install Salt on Fedora 39 x86_64
+Install Salt on Fedora 40 x86_64
 ================================
-To install Salt on Fedora 39 for x86_64 architecture:
+To install Salt on Fedora 40 for x86_64 architecture:
 
 #. Run the following commands to install the Salt Project repository and key:
 
@@ -24,29 +24,29 @@ To install Salt on Fedora 39 for x86_64 architecture:
 
    .. tab-set::
 
-       .. tab-item:: Fedora 39 (Major onedir)
+       .. tab-item:: Fedora 40 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
-           of Salt for **Fedora 39**:
+           of Salt for **Fedora 40**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |fedora39-major-gpg-x86_64|\
+               sudo rpm --import \ |fedora40-major-gpg-x86_64|\
 
-               curl -fsSL \ |fedora39-major-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |fedora40-major-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
 
            .. include:: ../_includes/gpg-keys.rst
 
-       .. tab-item:: Fedora 39 (Minor onedir)
+       .. tab-item:: Fedora 40 (Minor onedir)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
-           of Salt for **Fedora 39**:
+           of Salt for **Fedora 40**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |fedora39-minor-gpg-x86_64|\
+               sudo rpm --import \ |fedora40-minor-gpg-x86_64|\
 
-               curl -fsSL \ |fedora39-minor-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |fedora40-minor-download-x86_64|\  | sudo tee /etc/yum.repos.d/salt.repo
 
            .. include:: ../_includes/gpg-keys.rst
 
@@ -94,9 +94,9 @@ To install Salt on Fedora 39 for x86_64 architecture:
 .. include:: ../_includes/post-install-by-os.rst
 
 
-Install Salt on Fedora 39 aarch64 and arm64
+Install Salt on Fedora 40 aarch64 and arm64
 ===========================================
-To install Salt on Fedora 39 for aarch64 and arm64 architectures:
+To install Salt on Fedora 40 for aarch64 and arm64 architectures:
 
 #. Run the following commands to install the Salt Project repository and key:
 
@@ -104,29 +104,29 @@ To install Salt on Fedora 39 for aarch64 and arm64 architectures:
 
    .. tab-set::
 
-       .. tab-item:: Fedora 39 (Major onedir)
+       .. tab-item:: Fedora 40 (Major onedir)
 
            To pin your Salt upgrades to the :ref:`major` :ref:`onedir` package
-           of Salt for **Fedora 39**:
+           of Salt for **Fedora 40**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |fedora39-major-gpg-arm64|\
+               sudo rpm --import \ |fedora40-major-gpg-arm64|\
 
-               curl -fsSL \ |fedora39-major-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |fedora40-major-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
 
            .. include:: ../_includes/gpg-keys.rst
 
-       .. tab-item:: Fedora 39 (Minor onedir)
+       .. tab-item:: Fedora 40 (Minor onedir)
 
            To pin your Salt upgrades to the :ref:`minor` :ref:`onedir` package
-           of Salt for **Fedora 39**:
+           of Salt for **Fedora 40**:
 
            .. parsed-literal::
 
-               sudo rpm --import \ |fedora39-minor-gpg-arm64|\
+               sudo rpm --import \ |fedora40-minor-gpg-arm64|\
 
-               curl -fsSL \ |fedora39-minor-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
+               curl -fsSL \ |fedora40-minor-download-arm64|\  | sudo tee /etc/yum.repos.d/salt.repo
 
            .. include:: ../_includes/gpg-keys.rst
 
