@@ -194,18 +194,18 @@
 .. |rhel7-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/minor/CURRENT_MINOR.repo
 
 .. |ubuntu24-latest-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |ubuntu24-latest-download-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/latest jammy main
+.. |ubuntu24-latest-download-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/latest noble main
 .. |ubuntu24-major-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |ubuntu24-major-download-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/CURRENT_MAJOR jammy main
+.. |ubuntu24-major-download-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/CURRENT_MAJOR noble main
 .. |ubuntu24-minor-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |ubuntu24-minor-download-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/minor/CURRENT_MINOR jammy main
+.. |ubuntu24-minor-download-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/minor/CURRENT_MINOR noble main
 
 .. |ubuntu24-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |ubuntu24-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/latest jammy main
+.. |ubuntu24-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/latest noble main
 .. |ubuntu24-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |ubuntu24-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/CURRENT_MAJOR jammy main
+.. |ubuntu24-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/CURRENT_MAJOR noble main
 .. |ubuntu24-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
-.. |ubuntu24-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/minor/CURRENT_MINOR jammy main
+.. |ubuntu24-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/arm64/minor/CURRENT_MINOR noble main
 
 .. |ubuntu22-latest-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |ubuntu22-latest-download-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/latest jammy main
