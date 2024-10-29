@@ -56,47 +56,33 @@
 .. |amazon-linux2023-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |amazon-linux2023-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/amazon/2023/arm64/minor/CURRENT_MINOR.repo
 
-.. |centos9-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos9-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest.repo
-.. |centos9-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos9-major-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/CURRENT_MAJOR.repo
-.. |centos9-minor-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos9-minor-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/minor/CURRENT_MINOR.repo
+.. |rocky9-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky9-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/latest.repo
+.. |rocky9-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky9-major-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/CURRENT_MAJOR.repo
+.. |rocky9-minor-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky9-minor-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/x86_64/minor/CURRENT_MINOR.repo
 
-.. |centos9-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos9-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/latest.repo
-.. |centos9-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos9-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/CURRENT_MAJOR.repo
-.. |centos9-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos9-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/minor/CURRENT_MINOR.repo
+.. |rocky9-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky9-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/latest.repo
+.. |rocky9-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky9-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/CURRENT_MAJOR.repo
+.. |rocky9-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky9-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/9/arm64/minor/CURRENT_MINOR.repo
 
-.. |centos8-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos8-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/latest.repo
-.. |centos8-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos8-major-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/CURRENT_MAJOR.repo
-.. |centos8-minor-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos8-minor-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/minor/CURRENT_MINOR.repo
+.. |rocky8-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky8-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/latest.repo
+.. |rocky8-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky8-major-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/CURRENT_MAJOR.repo
+.. |rocky8-minor-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky8-minor-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/x86_64/minor/CURRENT_MINOR.repo
 
-.. |centos8-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos8-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/latest.repo
-.. |centos8-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos8-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/CURRENT_MAJOR.repo
-.. |centos8-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos8-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/minor/CURRENT_MINOR.repo
-
-.. |centos7-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos7-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/latest.repo
-.. |centos7-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos7-major-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/CURRENT_MAJOR.repo
-.. |centos7-minor-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos7-minor-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/minor/CURRENT_MINOR.repo
-
-.. |centos7-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos7-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/latest.repo
-.. |centos7-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos7-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/CURRENT_MAJOR.repo
-.. |centos7-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |centos7-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/minor/CURRENT_MINOR.repo
+.. |rocky8-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky8-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/latest.repo
+.. |rocky8-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky8-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/CURRENT_MAJOR.repo
+.. |rocky8-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
+.. |rocky8-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/minor/CURRENT_MINOR.repo
 
 .. |debian12-latest-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/12/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |debian12-latest-download-amd64| replace:: https://repo.saltproject.io/salt/py3/debian/12/amd64/latest bookworm main
@@ -185,20 +171,6 @@
 .. |rhel8-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/CURRENT_MAJOR.repo
 .. |rhel8-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
 .. |rhel8-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/8/arm64/minor/CURRENT_MINOR.repo
-
-.. |rhel7-latest-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |rhel7-latest-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/latest.repo
-.. |rhel7-major-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |rhel7-major-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/CURRENT_MAJOR.repo
-.. |rhel7-minor-gpg-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |rhel7-minor-download-x86_64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/x86_64/minor/CURRENT_MINOR.repo
-
-.. |rhel7-latest-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |rhel7-latest-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/latest.repo
-.. |rhel7-major-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |rhel7-major-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/CURRENT_MAJOR.repo
-.. |rhel7-minor-gpg-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/SALT-PROJECT-GPG-PUBKEY-2023.pub
-.. |rhel7-minor-download-arm64| replace:: https://repo.saltproject.io/salt/py3/redhat/7/arm64/minor/CURRENT_MINOR.repo
 
 .. |ubuntu24-latest-gpg-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/SALT-PROJECT-GPG-PUBKEY-2023.gpg
 .. |ubuntu24-latest-download-amd64| replace:: https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/latest noble main

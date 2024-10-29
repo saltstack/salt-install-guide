@@ -82,7 +82,7 @@ To upgrade Salt:
         - To reconfigure your repository from a pinned release to the latest
           release, you can either update the appropriate .repo file or uninstall
           the existing repo RPM and install the latest repo RPM. See
-          :ref:`install-rhel` and :ref:`install-centos` for more information.
+          :ref:`install-rhel`, :ref:`install-centos`, or :ref:`install-rocky` for more information.
 
           For additional information on configuring yum repositories, refer to
           your distribution's documentation.

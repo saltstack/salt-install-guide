@@ -180,6 +180,27 @@ Install the RedHat package using a yum package manager.
         :bdg-info:`Install Salt on RedHat`
 
 
+Rocky Linux
+===========
+Install the Rocky Linux package using a yum package manager.
+
+.. grid:: 2
+
+    .. grid-item-card:: Browse the repo for Rocky Linux packages
+        :class-card: sd-border-1
+        :link: https://repo.saltproject.io/salt/py3/redhat/
+
+        :bdg-danger:`Rocky Linux`
+        |supported-release-1-badge|
+
+    .. grid-item-card:: Rocky Linux install guide
+        :class-card: sd-border-1
+        :link: install-rocky
+        :link-type: ref
+
+        :bdg-info:`Install Salt on Rocky Linux`
+
+
 SUSE (SLES)
 ===========
 Install the SUSE (SLES) package from the SUSE package repository. SUSE creates
