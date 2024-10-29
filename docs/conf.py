@@ -141,7 +141,6 @@ extensions = [
     "sphinx.ext.todo",
     "sphinx-prompt",  # Required by sphinx_substitution_extensions
     "sphinx_inline_tabs",
-    # "sphinx_multiversion", # To ensure publishing of mulitple, versioned sites
     "sphinx_substitution_extensions",
 ]
 # Render TODO directives
