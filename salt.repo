@@ -1,0 +1,31 @@
+[salt-repo-3006-lts]
+name=Salt Repo for Salt v3006 LTS
+baseurl=https://packages.broadcom.com/artifactory/saltproject-rpm/
+skip_if_unavailable=True
+priority=10
+enabled=1
+enabled_metadata=1
+gpgcheck=1
+exclude=*3007* *3008* *3009* *3010*
+gpgkey=https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public
+
+[salt-repo-3007-sts]
+name=Salt Repo for Salt v3007 STS
+baseurl=https://packages.broadcom.com/artifactory/saltproject-rpm/
+skip_if_unavailable=True
+priority=10
+enabled=0
+enabled_metadata=1
+gpgcheck=1
+exclude=*3006* *3008* *3009* *3010*
+gpgkey=https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public
+
+[salt-repo-latest]
+name=Salt Repo for Salt LATEST release
+baseurl=https://packages.broadcom.com/artifactory/saltproject-rpm/
+skip_if_unavailable=True
+priority=10
+enabled=0
+enabled_metadata=1
+gpgcheck=1
+gpgkey=https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public
