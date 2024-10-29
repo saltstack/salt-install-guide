@@ -14,7 +14,7 @@ Bash shell script that installs Salt on any Linux/Unix platform. The script
 installs ``salt-master`` and ``salt-minion`` system packages and enables Salt
 services automatically.
 
-This script only works on Unix-like operating systems such as FreeBSD and Linux.
+This script only works on Unix-like operating systems such as Linux.
 For most installation, the best options are typically ``stable`` and a version.
 
 ``-P`` is also needed for Ubuntu-based distributions. If the bootstrap script

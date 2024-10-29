@@ -17,7 +17,7 @@ Welcome to the Salt download page!
   * PY2 packages are in the `archive repository <https://archive.repo.saltproject.io/>`__
     under the ``yum`` and ``apt`` directories. Other PY2 packages may be found
     under their respective directories, such as ``osx``, ``windows``,
-    ``freebsd``, and so forth.
+    and so forth.
 
 
 The following sections provide links to the repository for each operating

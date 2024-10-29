@@ -57,13 +57,6 @@ Overview of supported operating systems
     - Full
     - Yes
 
-  * - `Arch Linux`_ (latest)
-    - x86_64, aarch64
-    - Yes
-    - Yes
-    - Reasonable
-    - Yes
-
   * - `CentOS`_ Stream 9
     - x86_64, aarch64 / arm64
     - Yes
@@ -425,17 +418,6 @@ Since the Salt Project does not create or maintain the packages for these
 operating systems, no guarantee is made as to availability of packages. These
 guidelines are for reasonable-effort support only.
 
-
-Arch Linux
-----------
-Latest version of Arch Linux.
-
-
-FreeBSD
--------
-FreeBSD versions through end-of-life.
-
-https://www.freebsd.org/security/
 
 
 openSUSE
