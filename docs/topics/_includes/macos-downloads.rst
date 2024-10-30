@@ -1,19 +1,39 @@
+3006 LTS Downloads
+------------------
+
 .. list-table::
-  :widths: 10 10 40 40
+  :widths: 10 10 40
   :header-rows: 1
   :class: windows-mac-download
 
   * - Arch
-    - File type
+    - Salt Release Type
     - Download install file
-    - GPG
 
   * - x86_64
-    - pkg
-    - |macos-amd64-download|
-    - |macos-amd64-gpg|
+    - lts
+    - |macos-amd64-lts-download|
 
   * - arm64
-    - pkg
-    - |macos-arm64-download|
-    - |macos-amd64-gpg|
+    - lts
+    - |macos-arm64-lts-download|
+
+3007 STS Downloads
+------------------
+
+.. list-table::
+  :widths: 10 10 40
+  :header-rows: 1
+  :class: windows-mac-download
+
+  * - Arch
+    - Salt Release Type
+    - Download install file
+
+  * - x86_64
+    - sts
+    - |macos-amd64-sts-download|
+
+  * - arm64
+    - sts
+    - |macos-arm64-sts-download|

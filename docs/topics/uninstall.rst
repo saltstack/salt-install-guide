@@ -8,9 +8,9 @@ The process for removing Salt depends on the operating system and the method you
 used to install Salt:
 
 * **Linux-based systems** - If the operating system uses package management
-  tools (such as ``yum`` or ``apt``), then you would use the package manager to
-  uninstall. For example: ``yum remove <package name>`` or
-  ``sudo apt remove <package name>``.
+  tools (such as ``dnf`` or ``apt-get``), then you would use the package manager to
+  uninstall. For example: ``dnf remove <package name>`` or
+  ``sudo apt-get remove <package name>``.
 * **macOS and Windows** - The macOS and Windows installers have an uninstall
   option. Run the installer and select that option to uninstall Salt if you run
   that.

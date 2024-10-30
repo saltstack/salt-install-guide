@@ -26,13 +26,13 @@ Version support lifecycle
 
   * - 3007 STS
     - March 6, 2024
-    - October 18, 2024
-    - October 18, 2024
+    - January, 2025
+    - January, 2025
 
   * - 3006 LTS
     - April 18, 2023
-    - October 18, 2024
-    - October 18, 2025
+    - January, 2025
+    - January, 2026
 
 .. Note::
     Salt Project is committed to providing active support for the current LTS
@@ -49,6 +49,7 @@ See `Older version support lifecycle`_ for versions of Salt older than 3006.
 
 LTS/STS release and support policy
 ==================================
+
 Beginning with the 3006 release of Salt, the Salt Project will follow an LTS/STS
 release strategy. Under this strategy, the Salt Project will release one LTS
 (long-term support) release of Salt per year and one or more STS (short-term
@@ -151,6 +152,7 @@ CVE and critical support
 
 Older version support lifecycle
 ===============================
+
 The following table lists the support lifecycle for versions of Salt prior to
 the 3006 version:
 

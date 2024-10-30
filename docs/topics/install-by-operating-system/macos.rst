@@ -66,8 +66,8 @@ Browse the repo
 ===============
 
 .. card:: Browse the repo for macOS packages
-    :link: https://repo.saltproject.io/salt/py3/macos
+    :link: :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-generic/macos
     :width: 50%
 
     :bdg-primary:`macOS`
-    |supported-release-1-badge|
+    |minor-lts-version-badge|

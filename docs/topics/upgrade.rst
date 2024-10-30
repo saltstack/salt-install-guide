@@ -14,14 +14,6 @@ is in case of a security vulnerability.
 Salt can be upgraded either through your distribution's package manager or using
 PyPI if you have installed Salt with pip, the package installer for Python.
 
-.. Warning::
-    For SaltStack Config users: If you initially installed Salt using Salt
-    Crystal, you must also upgrade to later versions using Salt Crystal. For
-    more information, see
-    `How to Upgrade Salt Crystal <https://kb.vmware.com/s/article/50122482?lang=en_US&queryTerm=upgrade%20salt>`_.
-
-.. include:: _includes/fips-photon-os.rst
-
 
 Upgrade your Salt infrastructure
 ================================
@@ -34,7 +26,7 @@ To upgrade Salt:
 
        rpm -qi salt
        dpkg-query -l salt\*
-       yum list installed salt\*
+       dnf list installed salt\*
        salt --versions-report
        salt-call --local test.versions_report
 
@@ -78,26 +70,24 @@ To upgrade Salt:
           * :ref:`install-by-operating-system-index`
           * `Pin to a release for updates`_
 
-      * - Update RHEL or CentOS repository configuration
+      * - Update RHEL or CentOS repository configuration (if needed)
         - To reconfigure your repository from a pinned release to the latest
-          release, you can either update the appropriate .repo file or uninstall
-          the existing repo RPM and install the latest repo RPM. See
-          :ref:`install-rhel`, :ref:`install-centos`, or :ref:`install-rocky` for more information.
+          release, you can enable the appropriate STS/LTS repo an install as needed.
+          See :ref:`install-rpm` for more information.
 
-          For additional information on configuring yum repositories, refer to
+          For additional information on configuring yum/dnf repositories, refer to
           your distribution's documentation.
 
       * - Update Debian or Ubuntu repository configuration
         - To reconfigure your repository from a previously pinned release to the
-          latest release, update the source's configuration from the existing
-          source to the latest source listed on :ref:`install-debian` or
-          :ref:`install-ubuntu`.
+          latest release, update ``/etc/apt/preferences.d/salt-pin-1001`` as needed.
+          See :ref:`install-deb` for more information.
 
       * - Update macOS or Windows
         - To update Windows or macOS, download the latest installers and run them.
           See :ref:`install-macos` or :ref:`install-windows` for these downloads.
 
-#. After the repository file is updated, import the |release| GPG key.
+#. After the repository file is updated, import the |minor-lts-version| GPG key.
 
    .. include:: _includes/gpg-keys.rst
 

@@ -48,14 +48,14 @@ Overview of supported operating systems
     -
     - Yes
     - Full
-    - Yes
+    -
 
   * - `Amazon Linux`_ 2023
     - x86_64, aarch64 / arm64
     -
     - Yes
     - Full
-    - Yes
+    -
 
   * - `CentOS`_ Stream 9
     - x86_64, aarch64 / arm64
@@ -104,14 +104,14 @@ Overview of supported operating systems
     - Yes
     - Yes
     - Reasonable
-    - Yes
+    -
 
   * - `Oracle Linux`_ 8, 9
     - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
-    - [#f1]_
+    -
 
   * - `Photon OS`_ 4
     - x86_64, aarch64 / arm64
@@ -132,14 +132,14 @@ Overview of supported operating systems
     - Yes
     - Yes
     - Full
-    - Yes
+    -
 
   * - `RedHat`_ 9
     - x86_64, aarch64 / arm64
     - Yes
     - Yes
     - Full
-    - Yes
+    -
 
   * - `Rocky Linux`_ 8
     - x86_64, aarch64 / arm64
@@ -226,14 +226,12 @@ Overview of supported operating systems
     - Yes
 
 
-.. [#f1] Use RedHat or CentOS packages instead.
-
-
 Support definitions
 ===================
 
 Arch
 ----
+
 Arch is short for *architecture.* The Salt Project supports the following
 architectures:
 
@@ -319,6 +317,7 @@ The full automated test suite is run for the operating system packages.
 
 Full support policy by operating system
 =======================================
+
 This section outlines the general support and package creation policy for each
 operating system that is listed as having full support by the Salt Project.
 These guidelines are intended to help you understand how long a particular

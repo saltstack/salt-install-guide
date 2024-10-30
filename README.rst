@@ -38,7 +38,6 @@ The Salt Install Guide supplements and extends the core documentation for the
 help Salt users install ``salt`` in their environment, ultimately superseding
 documentation where applicable:
 
-* Install directions on `repo.saltproject.io <https://repo.saltproject.io/>`__
 * Install directions on `docs.saltproject.io <https://docs.saltproject.io/en/master/topics/installation/index.html>`__
 
 Contributions from anyone inside the Salt project community are always welcome.

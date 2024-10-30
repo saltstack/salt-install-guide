@@ -10,6 +10,10 @@ operating systems:
 * `Revert Salt on Debian/Ubuntu operating systems`_
 * `Revert Salt on RedHat operating systems`_
 
+.. warning::
+
+    Salt package repositories do not host versions of Salt older than 3006 LTS. This
+    means users will **NOT** be able to revert to older versions such as Salt 3005.
 
 Revert Salt on Debian/Ubuntu operating systems
 ==============================================
@@ -30,61 +34,50 @@ To revert to a previous version of Salt:
        minion:
            3006.5
 
-#. Run the following command to overwrite the ``salt.list`` file and pin your
-   version of Salt to a previous minor version, replacing the ``X`` in this
-   example with the desired previous version number:
+#. If needed, first run the following command to restrict to target LTS or STS available packages:
 
    .. tab-set::
 
-       .. tab-item:: Debian 12
+       .. tab-item:: 3006 LTS
+
+           Populate ``/etc/apt/preferences.d/salt-pin-1001`` in order to restrict upgrades to Salt 3006.x LTS:
 
            .. code-block:: bash
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/debian/12/amd64/minor/3006.X bookworm main" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo 'Package: salt-*
+               Pin: version 3006.*
+               Pin-Priority: 1001' | sudo tee /etc/apt/preferences.d/salt-pin-1001
 
            .. include:: _includes/previous-version-note.rst
 
-       .. tab-item:: Debian 11
+       .. tab-item:: 3007 STS
+
+           .. warning:: STS not recommended for Production
+
+               Salt Project recommends deploying LTS releases for Production environments.
+
+           Populate ``/etc/apt/preferences.d/salt-pin-1001`` in order to restrict upgrades to Salt 3006.x LTS:
 
            .. code-block:: bash
 
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/debian/11/amd64/minor/3006.X bullseye main" | sudo tee /etc/apt/sources.list.d/salt.list
-
-           .. include:: _includes/previous-version-note.rst
-
-       .. tab-item:: Ubuntu 24.04
-
-           .. code-block:: bash
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/24.04/amd64/minor/3006.X noble main" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-           .. include:: _includes/previous-version-note.rst
-
-       .. tab-item:: Ubuntu 22.04
-
-           .. code-block:: bash
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/22.04/amd64/minor/3006.X jammy main" | sudo tee /etc/apt/sources.list.d/salt.list
-
-
-           .. include:: _includes/previous-version-note.rst
-
-       .. tab-item:: Ubuntu 20.04
-
-           .. code-block:: bash
-
-               echo "deb [signed-by=/etc/apt/keyrings/salt-archive-keyring-2023.gpg arch=amd64] https://repo.saltproject.io/salt/py3/ubuntu/20.04/amd64/minor/3006.X focal main" | sudo tee /etc/apt/sources.list.d/salt.list
+               echo 'Package: salt-*
+               Pin: version 3007.*
+               Pin-Priority: 1001' | sudo tee /etc/apt/preferences.d/salt-pin-1001
 
            .. include:: _includes/previous-version-note.rst
 
 
-#. Run the following command to change your version of Salt and remove all Salt
-   services:
+#. Run the following commands to remove all Salt services:
 
    .. code-block:: bash
 
-       apt remove salt-common
+       apt-get remove salt-common
+       apt-get remove salt-master
+       apt-get remove salt-minion
+       apt-get remove salt-ssh
+       apt-get remove salt-syndic
+       apt-get remove salt-cloud
+       apt-get remove salt-api
 
 
 #. Run the following commands to update your package manager and install any of
@@ -92,7 +85,7 @@ To revert to a previous version of Salt:
 
    .. code-block:: bash
 
-       apt update
+       apt-get update
        apt-get install salt-master
        apt-get install salt-minion
        apt-get install salt-ssh
@@ -130,9 +123,7 @@ To revert to a previous version of Salt:
        minion:
            3006.5
 
-#. Run the following command to overwrite the ``salt.list`` file and pin your
-   version of Salt to a previous minor version, replacing the ``X`` in this
-   example with the desired previous version number:
+#. If needed, first run the following command to restrict to target LTS or STS available packages:
 
    .. tab-set::
 
@@ -165,19 +156,19 @@ To revert to a previous version of Salt:
 
    .. code-block:: bash
 
-       yum remove salt
+       dnf remove salt
 
 #. Update your package manager and install any of the Salt services as needed:
 
    .. code-block:: bash
 
-       yum makecache
-       yum install salt-master
-       yum install salt-minion
-       yum install salt-ssh
-       yum install salt-syndic
-       yum install salt-cloud
-       yum install salt-api
+       dnf makecache
+       dnf install salt-master
+       dnf install salt-minion
+       dnf install salt-ssh
+       dnf install salt-syndic
+       dnf install salt-cloud
+       dnf install salt-api
 
 #. Restart the salt services:
 

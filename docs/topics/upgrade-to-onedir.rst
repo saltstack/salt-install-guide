@@ -5,10 +5,7 @@ Upgrade to onedir
 =================
 
 Onedir is the Salt Project's new packaging system. Beginning with the release of
-Salt 3006 (Sulfur), the Salt Project will only offer onedir packages.
-
-.. include:: _includes/fips-photon-os.rst
-
+Salt 3006 LTS (Sulfur), the Salt Project will only offer onedir packages.
 
 .. _what-is-onedir:
 
@@ -34,7 +31,7 @@ Onedir packages are self-contained binaries of Salt. Onedir packages include:
     - :ref:`salt-python-version-support`
 
   * - Salt's required dependencies
-    - `Salt dependencies <https://github.com/saltstack/salt/blob/master/requirements/static/pkg/py3.9/linux.txt>`_
+    - `Salt dependencies <https://github.com/saltstack/salt/blob/master/requirements/static/pkg/py3.10/linux.txt>`_
 
 
 .. Warning::
@@ -46,48 +43,18 @@ Onedir packages are self-contained binaries of Salt. Onedir packages include:
     for that specific module for a list of required dependencies.
 
 
-Timeline for upgrading to onedir packaging
-==========================================
-In order to avoid disruption of services and continue getting upgraded versions
-of Salt, begin planning how you will update your Salt infrastructure to onedir.
-See `How to upgrade to onedir`_ for more information.
-
-.. list-table::
-  :widths: 15 85
-  :header-rows: 1
-  :stub-columns: 1
-
-  * - Salt version
-    - Packaging changes
-
-  * - 3005
-    -  * The Salt Project will begin to phase out the old, "classic" Salt
-         package builds.
-       * Both onedir packages and classic Salt package builds will be provided,
-         except for operating systems that are newly supported in 3005.
-
-  * - 3006
-    - The Salt Project will only support onedir packages going forward.
-
-
 How to upgrade to onedir
 ========================
-To upgrade to onedir:
+To upgrade to onedir, if you are upgrading from a Salt older than Salt 3006 LTS:
 
 #. On your Salt infrastructure (masters, minions, etc.), update the repository
-   path to point to the new onedir repository paths for your operating system.
-   See `Repository paths`_ for more information.
+   paths to point to the new ``packages.broadcom.com`` endpoints. See
+   :ref:`install-by-operating-system-index` for the specific commands.
 
-   .. Tip::
-       Rather than manually updating the configuration files with the correct
-       repository link, you can re-run the installation commands for your
-       operating system. When you re-run the commands, make sure you select the
-       instructions for the **onedir** version of the package. See
-       :ref:`install-by-operating-system-index` for the specific commands.
-
-#. After the repository file is updated, import the |release| GPG key.
-
-   .. include:: _includes/gpg-keys.rst
+#. After the repository files are updated, import the appropriate GPG key.
+   :ref:`install-deb` involves running a ``curl`` command, while RHEL-like
+   systems will automatically pick up the new GPG key on your behalf when you
+   update the repository configuration (`salt.repo`).
 
 #. Upgrade your Salt packages.
 
@@ -111,7 +78,7 @@ To upgrade to onedir:
       You can use ``salt-call pip.list`` to view existing modules that may need
       to be installed.
 
-      See also `Salt dependencies <https://github.com/saltstack/salt/blob/master/requirements/static/pkg/py3.9/linux.txt>`_
+      See also `Salt dependencies <https://github.com/saltstack/salt/blob/master/requirements/static/pkg/py3.10/linux.txt>`_
       for a list of the packages that are installed with onedir. Any package
       that is not on this list needs to be reinstalled.
 
@@ -152,44 +119,3 @@ To upgrade to onedir:
    already been built in a way that allows it to find the executables it needs.
    Adding Salt to the library search path could cause errors due to incompatible
    versions of system packages.
-
-
-Repository paths
-----------------
-
-.. list-table::
-  :widths: 10 50 40
-  :header-rows: 1
-  :stub-columns: 1
-
-  * -
-    - Onedir path
-    - Classic path
-
-  * - CentOS
-    - https://repo.saltproject.io/salt/py3/redhat/
-    - https://repo.saltproject.io/py3/redhat/
-
-  * - Debian
-    - https://repo.saltproject.io/salt/py3/debian/
-    - https://repo.saltproject.io/py3/debian/
-
-  * - Fedora
-    - https://repo.saltproject.io/salt/py3/fedora/
-    - Hosted on Fedora repos
-
-  * - MacOS
-    - https://repo.saltproject.io/salt/py3/macos/
-    - https://repo.saltproject.io/osx/
-
-  * - Redhat
-    - https://repo.saltproject.io/salt/py3/redhat/
-    - https://repo.saltproject.io/py3/redhat/
-
-  * - Ubuntu
-    - https://repo.saltproject.io/salt/py3/ubuntu/
-    - https://repo.saltproject.io/py3/ubuntu/
-
-  * - Windows
-    - https://repo.saltproject.io/salt/py3/windows/
-    - https://repo.saltproject.io/windows/
