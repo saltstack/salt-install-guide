@@ -5,7 +5,7 @@ Linux (DEB)
 ===========
 
 These instructions explain how to install Salt rpms on operating systems that
-are Debian-like (using `apt-get` install methods).
+are Debian-like (using ``apt-get`` install methods).
 
 For a list of supported and tested operating systems, for running Salt,
 see :ref:`salt-supported-operating-systems`.
