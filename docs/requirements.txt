@@ -1,12 +1,9 @@
-# If using version selector, use
-# Temporary Furo theme target for versioning
-# furo==2022.6.21
-Sphinx-Substitution-Extensions==2022.02.16
+furo>=2024.8.6
 requests>=2.31.0
-salt-furo-versioner @ git+https://github.com/ScriptAutomate/salt-furo-versioner@excelsior
-sphinx-copybutton==0.5.2
-sphinx-design==0.5.0
-sphinx-inline-tabs==2023.4.21
-sphinx-prompt==1.5.0
-sphinx-tabs==3.4.7
-sphinx==5.3.0
+sphinx-copybutton>=0.5.2
+sphinx-design>=0.5.0
+sphinx-inline-tabs>=2023.4.21
+sphinx-prompt>=1.5.0
+sphinx-substitution-extensions>=2022.02.16
+sphinx-tabs>=3.4.7
+sphinx>=5.3.0

@@ -136,9 +136,9 @@ def docs_html(session, clean, download_versions):
     session.install(*install_command, silent=True)
 
     # Pull down latest Salt version manifest and update sitevars, etc.
-    if download_versions:
-        version_updater_script = Path("tools", "version-updater.py")
-        session.run("python", str(version_updater_script), external=True)
+    # if download_versions:
+    #    version_updater_script = Path("tools", "version-updater.py")
+    #    session.run("python", str(version_updater_script), external=True)
 
     # Run sphinx
     build_dir = Path("docs", "_build", "html")

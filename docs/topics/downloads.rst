@@ -4,21 +4,9 @@
 Downloads
 =========
 
-.. include:: _includes/supported-salt-releases-sidebar.rst
-
-
 Welcome to the Salt download page!
 
-* Salt packages are hosted on `repo.saltproject.io <https://repo.saltproject.io/>`_.
-* For unsupported versions:
-
-  * PY3 packages are in the `archive repository <https://archive.repo.saltproject.io/>`_
-    under the ``py3`` and ``salt/py3`` directories.
-  * PY2 packages are in the `archive repository <https://archive.repo.saltproject.io/>`__
-    under the ``yum`` and ``apt`` directories. Other PY2 packages may be found
-    under their respective directories, such as ``osx``, ``windows``,
-    ``freebsd``, and so forth.
-
+* Salt packages are hosted on `packages.broadcom.com <https://packages.broadcom.com/>`_.
 
 The following sections provide links to the repository for each operating
 system as well as links to the installation instructions for each operating
@@ -30,92 +18,47 @@ system.
     verifying the package URL is an official Salt repository.
 
 
-Amazon Linux 2
-==============
-Install the Amazon Linux 2 package using a Linux package manager.
+Linux (RPM)
+===========
 
 .. grid:: 2
 
-    .. grid-item-card:: Browse the repo for Amazon Linux 2 packages
+    .. grid-item-card:: Browse the repo for RPM packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/amazon/
+        :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-rpm
 
-        :bdg-danger:`Amazon Linux 2`
-        |supported-release-1-badge|
+        :bdg-primary:`rpm`
+        |minor-lts-version-badge|
 
-    .. grid-item-card:: Amazon Linux 2 install guide
+    .. grid-item-card:: RPM install guide
         :class-card: sd-border-1
-        :link: install-amazon
+        :link: install-rpm
         :link-type: ref
 
-        :bdg-info:`Install Salt on Amazon Linux 2`
+        :bdg-info:`Install Salt on RHEL-like systems`
 
-
-CentOS
-======
-Install the CentOS package using a yum package manager.
+Linux (DEB)
+===========
 
 .. grid:: 2
 
-    .. grid-item-card:: Browse the repo for CentOS packages
+    .. grid-item-card:: Browse the repo for DEB packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/redhat/
+        :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-deb
 
-        :bdg-danger:`CentOS`
-        |supported-release-1-badge|
+        :bdg-primary:`rpm`
+        |minor-lts-version-badge|
 
-    .. grid-item-card:: CentOS install guide
+    .. grid-item-card:: DEB install guide
         :class-card: sd-border-1
-        :link: install-centos
+        :link: install-rpm
         :link-type: ref
 
-        :bdg-info:`Install Salt on CentOS`
-
-
-Debian
-======
-Install the Debian package using an apt package manager.
-
-.. grid:: 2
-
-    .. grid-item-card:: Browse the repo for Debian packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/debian/
-
-        :bdg-danger:`Debian`
-        |supported-release-1-badge|
-
-    .. grid-item-card:: Debian install guide
-        :class-card: sd-border-1
-        :link: install-debian
-        :link-type: ref
-
-        :bdg-info:`Install Salt on Debian`
-
-
-Fedora
-======
-Install the Fedora package using a yum package manager.
-
-.. grid:: 2
-
-    .. grid-item-card:: Browse the repo for Fedora packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/fedora/
-
-        :bdg-danger:`Fedora`
-        |supported-release-1-badge|
-
-    .. grid-item-card:: Fedora install guide
-        :class-card: sd-border-1
-        :link: install-fedora
-        :link-type: ref
-
-        :bdg-info:`Install Salt on Fedora`
-
+        :bdg-info:`Install Salt on Debian-like systems`
 
 macOS
 =====
+
 Download the macOS package and run the file to install Salt. See the
 :ref:`install-macos` install guide for more information.
 
@@ -125,10 +68,10 @@ Download the macOS package and run the file to install Salt. See the
 
     .. grid-item-card:: Browse the repo for macOS packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/macos
+        :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-generic/macos
 
         :bdg-danger:`macOS`
-        |supported-release-1-badge|
+        |minor-lts-version-badge|
 
     .. grid-item-card:: macOS install guide
         :class-card: sd-border-1
@@ -138,108 +81,9 @@ Download the macOS package and run the file to install Salt. See the
         :bdg-info:`Install Salt on macOS`
 
 
-Photon OS
-=========
-Install the Photon OS package using a tdnf package manager.
-
-.. grid:: 2
-
-    .. grid-item-card:: Browse the repo for Photon OS packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/photon/
-
-        :bdg-danger:`Photon OS`
-        |supported-release-1-badge|
-
-    .. grid-item-card:: Photon OS install guide
-        :class-card: sd-border-1
-        :link: install-photonos
-        :link-type: ref
-
-        :bdg-info:`Install Salt on Photon OS`
-
-
-RedHat
-======
-Install the RedHat package using a yum package manager.
-
-.. grid:: 2
-
-    .. grid-item-card:: Browse the repo for RedHat (RHEL) packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/redhat/
-
-        :bdg-danger:`RedHat`
-        |supported-release-1-badge|
-
-    .. grid-item-card:: RedHat install guide
-        :class-card: sd-border-1
-        :link: install-rhel
-        :link-type: ref
-
-        :bdg-info:`Install Salt on RedHat`
-
-
-Rocky Linux
-===========
-Install the Rocky Linux package using a yum package manager.
-
-.. grid:: 2
-
-    .. grid-item-card:: Browse the repo for Rocky Linux packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/redhat/
-
-        :bdg-danger:`Rocky Linux`
-        |supported-release-1-badge|
-
-    .. grid-item-card:: Rocky Linux install guide
-        :class-card: sd-border-1
-        :link: install-rocky
-        :link-type: ref
-
-        :bdg-info:`Install Salt on Rocky Linux`
-
-
-SUSE (SLES)
-===========
-Install the SUSE (SLES) package from the SUSE package repository. SUSE creates
-its own Salt packages and the Salt Project does not publish separate Salt
-packages for download.
-
-.. grid:: 2
-
-    .. grid-item-card:: SUSE (SLES) install guide
-        :class-card: sd-border-1
-        :link: install-sles
-        :link-type: ref
-
-        :bdg-info:`Install Salt on SUSE (SLES)`
-
-
-Ubuntu
-======
-Install the Ubuntu package using an apt package manager.
-
-.. grid:: 2
-
-    .. grid-item-card:: Browse the repo for Ubuntu packages
-        :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/ubuntu/
-
-        :bdg-danger:`Ubuntu`
-        |supported-release-1-badge|
-
-    .. grid-item-card:: Ubuntu install guide
-        :class-card: sd-border-1
-        :link: install-ubuntu
-        :link-type: ref
-
-        :bdg-info:`Install Salt on Ubuntu`
-
-
 Windows
 =======
+
 Download the Windows package and run the file to install Salt. See the
 :ref:`install-windows` install guide for more information.
 
@@ -249,10 +93,10 @@ Download the Windows package and run the file to install Salt. See the
 
     .. grid-item-card:: Browse the repo for Windows packages
         :class-card: sd-border-1
-        :link: https://repo.saltproject.io/salt/py3/windows/
+        :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-generic/windows
 
         :bdg-danger:`Windows`
-        |supported-release-1-badge|
+        |minor-lts-version-badge|
 
     .. grid-item-card:: Windows install guide
         :class-card: sd-border-1

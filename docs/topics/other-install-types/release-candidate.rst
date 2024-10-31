@@ -14,8 +14,7 @@ their Salt infrastructure.
     :color: primary
 
     Release candidates are early versions of Salt that are released prior to an
-    official Salt release. For LTS releases of Salt, the Salt Project releases
-    two RCs in the months leading up to the official LTS release.
+    official Salt release.
 
 
 Report bugs
@@ -28,54 +27,27 @@ and write ``[RC]`` in the issue title. For example:
 
 Install using packages
 ======================
-RC builds for a few major platforms are available at the Salt repository:
-https://repo.saltproject.io/salt_rc/
-
-RC builds are typically only available for the latest version of the operating
-system at the time the RC is available. Older versions of operating systems
-might not get an RC release.
+RC builds are available in the Salt package repositories.
 
 To install release candidate packages:
 
 #. Use the standard minor install instructions for your operating system. See
    :ref:`install-by-operating-system-index`.
 
-#. On the step where you normally import the Salt Project repository key and pin
-   the package to a specific version of Salt, after ``https://repo.saltproject.io``
-   insert ``salt_rc/`` before the remainder of the file path.
-
-   .. include:: ../_includes/gpg-keys.rst
-
+#. On the step where you normally enable / restrict to an LTS or STS version,
+   restrict to RC: **TBD**
 
    To install the latest RC, run the following commands:
 
    .. tab-set::
 
-       .. tab-item:: RHEL 9
+       .. tab-item:: Linux (RPM)
 
-           .. parsed-literal::
+            TBD
 
-               sudo rpm --import \ |rhel-release-candidate-gpg|\
+       .. tab-item:: Linux (DEB)
 
-               curl -fsSL |rhel-release-candidate| | sudo tee /etc/yum.repos.d/salt.repo
-
-       .. tab-item:: Ubuntu 22.04 (Jammy)
-
-           .. parsed-literal::
-
-               sudo curl -fsSL -o |ubuntu-release-candidate-gpg|\
-
-               echo "deb |ubuntu-release-candidate| | sudo tee /etc/apt/sources.list.d/salt.list
-
-       .. tab-item:: Debian 11 (Bullseye)
-
-           .. parsed-literal::
-
-               sudo mkdir -p /etc/apt/keyrings
-
-               sudo curl -fsSL -o |debian-release-candidate-gpg|
-
-               echo "deb |debian-release-candidate| | sudo tee  /etc/apt/sources.list.d/salt.list
+            TBD
 
        .. tab-item:: Windows
 
@@ -104,41 +76,13 @@ You can install a release candidate of Salt using one of the scripts in the
 
 .. tab-set::
 
-    .. tab-item:: Linux/macOS
+    .. tab-item:: Linux
 
-        Run the following command for the latest RC release, using
-        |release-candidate-version| as an example:
-
-        .. parsed-literal::
-
-            curl -o install_salt.sh -L https://bootstrap.saltproject.io
-            sudo sh install_salt.sh -P -x |bootstrap-release-candidate|
-
-        To install a master using Salt bootstrap, use the ``-M`` flag. For example:
-
-        .. parsed-literal::
-
-            curl -o install_salt.sh -L https://bootstrap.saltproject.io
-            sudo sh install_salt.sh -P -M -x |bootstrap-release-candidate|
-
-        If you want to install only a master and not a minion using Salt bootstrap, use
-        the ``-M`` and ``-N`` flags. For example:
-
-        .. parsed-literal::
-
-            curl -o install_salt.sh -L https://bootstrap.saltproject.io
-            sudo sh install_salt.sh -P -M -N -x |bootstrap-release-candidate|
+        TBD
 
     .. tab-item:: Windows
 
-        Run the following command to install the latest RC release:
-
-        .. parsed-literal::
-
-            Set-ExecutionPolicy RemoteSigned -Scope Process -Force
-            [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]'Tls12'
-            Invoke-WebRequest -Uri https://winbootstrap.saltproject.io -OutFile .\\bootstrap.ps1
-            .\\bootstrap.ps1 -RepoUrl |windows-release-candidate-url|
+        TBD
 
 
 Install using pip
@@ -157,7 +101,7 @@ To install the release candidate using pip from `PyPi <https://pypi.org/>`_:
 
            .. code-block:: bash
 
-               sudo yum install python3-pip python3-devel gcc gcc-c++
+               sudo dnf install python3-pip python3-devel gcc gcc-c++
 
        .. tab-item:: Debian systems
 

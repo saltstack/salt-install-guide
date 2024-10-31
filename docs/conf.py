@@ -19,7 +19,6 @@ import os
 import requests
 from docutils import nodes
 from docutils.nodes import Element
-from salt_furo_versioner import make_html_context
 from sphinx.writers.html import HTMLTranslator
 
 
@@ -94,7 +93,7 @@ rst_prolog = """
 )
 
 # Pull release from "release" in sitevars.rst
-release = [s for s in site_vars if "|release|" in s][0].split(":: ")[1]
+release = [s for s in site_vars if "|minor-lts-version|" in s][0].split(":: ")[1]
 version = release
 
 # Grab major version for URL version selector generation
@@ -104,6 +103,7 @@ current_version = version.split(".")[0]
 # Furo theme version selector setup
 ##
 # Pull from JSON in GitLab Snippet
+"""
 supported_versions_json = requests.get(
     "https://gitlab.com/saltstack/open/docs/salt-install-guide/-/snippets/2580440/raw/main/supported-versions.json"
 )
@@ -124,6 +124,7 @@ html_context = make_html_context(
     latest_version=latest_version,
     versions=versions,
 )
+"""
 
 # -- General configuration ---------------------------------------------------
 
@@ -181,7 +182,7 @@ html_theme_options = {
         "color-brand-primary": "#66CCF4",
         "color-brand-content": "#66CCF4",
     },
-    "announcement": "You are currently viewing the <strong>3007 STS</strong> version of the Salt install guide. Use the LTS version of Salt in production environments.<br /> To change to the 3006 LTS version, use the version selector at the bottom of the left menu bar.",
+    "announcement": "IMPORTANT ANNOUNCEMENT: repo.saltproject.io has migrated to packages.broadcom.com!<br />A review and update of installation automation is advised.",
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

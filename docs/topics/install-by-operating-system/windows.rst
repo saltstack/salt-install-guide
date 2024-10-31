@@ -31,8 +31,6 @@ If you are unsure which installer to use, use the Nullsoft (EXE) installer.
 
 Onedir packages are currently only available for the Nullsoft (EXE) installer.
 
-.. include:: ../_includes/warning-about-old-packages.rst
-
 
 Install directory locations
 ---------------------------
@@ -434,8 +432,7 @@ Browse the repo
 
 .. card:: Browse the repo for Windows packages
     :class-card: sd-border-1
-    :link: https://repo.saltproject.io/salt/py3/windows/
+    :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-generic/windows
     :width: 50%
 
     :bdg-primary:`Windows`
-    :bdg-secondary:`Python3`

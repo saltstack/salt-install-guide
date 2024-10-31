@@ -9,7 +9,7 @@ Bootstrap installation
 
 About the Salt bootstrap installation
 =====================================
-The `Salt Bootstrap project <https://bootstrap.saltproject.io>`_ maintains a
+The `Salt Bootstrap project <https://github.com/saltstack/salt-bootstrap>`_ maintains a
 Bash shell script that installs Salt on any Linux/Unix platform. The script
 installs ``salt-master`` and ``salt-minion`` system packages and enables Salt
 services automatically.
@@ -25,7 +25,7 @@ For example:
 
 .. parsed-literal::
 
-    bootstrap-salt.sh -P stable |release|
+    bootstrap-salt.sh -P stable |minor-lts-version|
 
 For more information, see:
 
@@ -52,14 +52,14 @@ The bootstrap script can be used to install specific services:
 
    .. code-block:: bash
 
-       curl -o bootstrap-salt.sh -L https://bootstrap.saltproject.io
+       curl -o bootstrap-salt.sh -L https://github.com/saltstack/salt-bootstrap/releases/latest/download/bootstrap-salt.sh
 
    .. Note::
        Alternatively, to download the bash script and run it immediately, use:
 
        .. code-block:: bash
 
-           curl -L https://bootstrap.saltproject.io | sudo sh -s --
+           curl -L https://github.com/saltstack/salt-bootstrap/releases/latest/download/bootstrap-salt.sh | sudo sh -s --
 
 
    .. Warning::
@@ -142,7 +142,7 @@ Installation types
 
       .. parsed-literal::
 
-          bootstrap-salt.sh -P stable |release|
+          bootstrap-salt.sh -P stable |minor-lts-version|
           bootstrap-salt.sh stable v3004.2
 
   * - ``onedir``
@@ -240,8 +240,8 @@ The following are the most commonly used bootstrap options:
 
       .. parsed-literal::
 
-          bootstrap-salt.sh -A 192.0.2.1 stable |release|
-          bootstrap-salt.sh -A fqdn.example.com stable |release|
+          bootstrap-salt.sh -A 192.0.2.1 stable |minor-lts-version|
+          bootstrap-salt.sh -A fqdn.example.com stable |minor-lts-version|
 
   * - ``-i <minion ID>``
     - The ``-i`` flag sets the ``/etc/salt/minion_id`` file to the minion ID you
@@ -257,8 +257,8 @@ The following are the most commonly used bootstrap options:
 
       .. parsed-literal::
 
-          bootstrap-salt.sh -i apache-server-1 stable |release|
-          bootstrap-salt.sh -i center-3-rack-2 stable |release|
+          bootstrap-salt.sh -i apache-server-1 stable |minor-lts-version|
+          bootstrap-salt.sh -i center-3-rack-2 stable |minor-lts-version|
 
   * - ``-R``
     - Specify a custom repository URL if you have created a mirror repository
