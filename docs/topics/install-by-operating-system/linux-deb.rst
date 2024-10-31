@@ -5,7 +5,7 @@ Linux (DEB)
 ===========
 
 These instructions explain how to install Salt rpms on operating systems that
-are Debian-like (using `apt-get` install methods).
+are Debian-like (using ``apt-get`` install methods).
 
 For a list of supported and tested operating systems, for running Salt,
 see :ref:`salt-supported-operating-systems`.
@@ -21,7 +21,7 @@ Install Salt DEBs
        # Ensure keyrings dir exists
        mkdir -p /etc/apt/keyrings
        # Download public key
-       curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring-2023.pgp
+       curl -fsSL https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public | sudo tee /etc/apt/keyrings/salt-archive-keyring.pgp
        # Create apt repo target configuration
        curl -fsSL https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources | sudo tee /etc/apt/sources.list.d/salt.sources
 

@@ -9,6 +9,6 @@ Description: Salt has many possible uses, including configuration management.
 Enabled: yes
 Types: deb
 URIs: https://packages.broadcom.com/artifactory/saltproject-deb
-Signed-By: /etc/apt/keyrings/salt-archive-keyring-2023.pgp
+Signed-By: /etc/apt/keyrings/salt-archive-keyring.pgp
 Suites: stable
 Components: main

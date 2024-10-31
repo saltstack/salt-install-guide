@@ -5,7 +5,7 @@ Linux (RPM)
 ===========
 
 These instructions explain how to install Salt rpms on operating systems that
-are RHEL-like (using `dnf` install methods).
+are RHEL-like (using ``dnf`` install methods).
 
 For a list of supported and tested operating systems, for running Salt,
 see :ref:`salt-supported-operating-systems`.
@@ -30,7 +30,7 @@ Install Salt RPMs
        downloads classic packages of older versions of Salt instead of the
        onedir packages.
 
-       During depsolving, when choosing the best provider among several, `yum`
+       During depsolving, when choosing the best provider among several, ``dnf``
        respects the priority of each provider's repository. The value is an
        integer from 1 to 99, with 1 being the most preferred repository and 99
        the least preferred. By default all repositories have the priority of 80.
@@ -69,6 +69,22 @@ Install Salt RPMs
                     sudo dnf install salt-cloud-3006.9
                     sudo dnf install salt-api-3006.9
 
+            ``dnf versionlock`` can be used to pin to minor versions, if wanting to be
+            excluded during ``dnf upgrade`` runs on a system.
+
+            .. code-block:: bash
+
+                    sudo dnf install 'dnf-command(versionlock)'
+
+            .. code-block:: bash
+
+                    sudo dnf versionlock add salt
+                    sudo dnf versionlock add salt-master
+                    sudo dnf versionlock add salt-minion
+                    sudo dnf versionlock add salt-ssh
+                    sudo dnf versionlock add salt-syndic
+                    sudo dnf versionlock add salt-cloud
+                    sudo dnf versionlock add salt-api
 
        .. tab-item:: 3007 STS
 
@@ -108,6 +124,22 @@ Install Salt RPMs
                     sudo dnf install salt-cloud-3007.1
                     sudo dnf install salt-api-3007.1
 
+            ``dnf versionlock`` can be used to pin to minor versions, if wanting to be
+            excluded during ``dnf upgrade`` runs on a system.
+
+            .. code-block:: bash
+
+                    sudo dnf install 'dnf-command(versionlock)'
+
+            .. code-block:: bash
+
+                    sudo dnf versionlock add salt
+                    sudo dnf versionlock add salt-master
+                    sudo dnf versionlock add salt-minion
+                    sudo dnf versionlock add salt-ssh
+                    sudo dnf versionlock add salt-syndic
+                    sudo dnf versionlock add salt-cloud
+                    sudo dnf versionlock add salt-api
 
        .. tab-item:: LATEST Available
 
@@ -146,6 +178,23 @@ Install Salt RPMs
                     sudo dnf install salt-syndic-3007.1
                     sudo dnf install salt-cloud-3007.1
                     sudo dnf install salt-api-3007.1
+
+            ``dnf versionlock`` can be used to pin to minor versions, if wanting to be
+            excluded during ``dnf upgrade`` runs on a system.
+
+            .. code-block:: bash
+
+                    sudo dnf install 'dnf-command(versionlock)'
+
+            .. code-block:: bash
+
+                    sudo dnf versionlock add salt
+                    sudo dnf versionlock add salt-master
+                    sudo dnf versionlock add salt-minion
+                    sudo dnf versionlock add salt-ssh
+                    sudo dnf versionlock add salt-syndic
+                    sudo dnf versionlock add salt-cloud
+                    sudo dnf versionlock add salt-api
 
 #. Enable and start the Salt services:
 
