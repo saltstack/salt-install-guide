@@ -216,7 +216,7 @@ Browse the repo
 
 .. card:: Browse the repo for RPM packages
     :class-card: sd-border-1
-    :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-rpm
+    :link: https://packages.broadcom.com/artifactory/saltproject-rpm/
     :width: 50%
 
     :bdg-primary:`rpm`

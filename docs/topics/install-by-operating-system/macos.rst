@@ -66,7 +66,7 @@ Browse the repo
 ===============
 
 .. card:: Browse the repo for macOS packages
-    :link: :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-generic/macos
+    :link: :link: https://packages.broadcom.com/artifactory/saltproject-generic/macos
     :width: 50%
 
     :bdg-primary:`macOS`
