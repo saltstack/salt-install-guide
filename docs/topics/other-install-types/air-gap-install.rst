@@ -11,11 +11,10 @@ About air-gapped installations
 ==============================
 
 To install Salt in an air-gapped environment, you can create a local mirror of
-the Salt Project repositories using a sync tool such as
-``wget`` or ``rclone``.
+the Salt Project repositories using a sync tool such as ``rclone`` or ``wget``.
 
-Create a local mirror with ``rclone``
-=====================================
+Create a local mirror with ``rclone`` (faster)
+==============================================
 
 .. note::
 
@@ -77,8 +76,8 @@ To set up local mirrors with ``rclone``:
                   RCLONE_WEBDAV_URL=https://packages.broadcom.com/artifactory/ RCLONE_WEBDAV_VENDOR=other rclone sync --fast-list -c -v :webdav:saltproject-generic/ ./saltproject-generic/
 
 
-Create a local mirror with ``wget``
-===================================
+Create a local mirror with ``wget`` (slower)
+============================================
 
 .. note::
 
