@@ -9,6 +9,7 @@ Bootstrap installation
 
 About the Salt bootstrap installation
 =====================================
+
 The `Salt Bootstrap project <https://github.com/saltstack/salt-bootstrap>`_ maintains a
 Bash shell script that installs Salt on any Linux/Unix platform. The script
 installs ``salt-master`` and ``salt-minion`` system packages and enables Salt

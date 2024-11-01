@@ -1,0 +1,12 @@
+.announcement {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.announcement + .page {
+    padding-top: var(--header-height);
+}
+.announcement + .page .mobile-header {
+    top: var(--header-height);
+}

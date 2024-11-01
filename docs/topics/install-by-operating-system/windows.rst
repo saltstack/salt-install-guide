@@ -432,7 +432,7 @@ Browse the repo
 
 .. card:: Browse the repo for Windows packages
     :class-card: sd-border-1
-    :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-generic/windows
+    :link: https://packages.broadcom.com/artifactory/saltproject-generic/windows
     :width: 50%
 
     :bdg-primary:`Windows`

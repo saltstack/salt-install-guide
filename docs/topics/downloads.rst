@@ -25,7 +25,7 @@ Linux (RPM)
 
     .. grid-item-card:: Browse the repo for RPM packages
         :class-card: sd-border-1
-        :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-rpm
+        :link: https://packages.broadcom.com/artifactory/saltproject-rpm
 
         :bdg-primary:`rpm`
         |minor-lts-version-badge|
@@ -44,14 +44,14 @@ Linux (DEB)
 
     .. grid-item-card:: Browse the repo for DEB packages
         :class-card: sd-border-1
-        :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-deb
+        :link: https://packages.broadcom.com/artifactory/saltproject-deb
 
-        :bdg-primary:`rpm`
+        :bdg-primary:`deb`
         |minor-lts-version-badge|
 
     .. grid-item-card:: DEB install guide
         :class-card: sd-border-1
-        :link: install-rpm
+        :link: install-deb
         :link-type: ref
 
         :bdg-info:`Install Salt on Debian-like systems`
@@ -68,7 +68,7 @@ Download the macOS package and run the file to install Salt. See the
 
     .. grid-item-card:: Browse the repo for macOS packages
         :class-card: sd-border-1
-        :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-generic/macos
+        :link: https://packages.broadcom.com/artifactory/saltproject-generic/macos
 
         :bdg-danger:`macOS`
         |minor-lts-version-badge|
@@ -93,7 +93,7 @@ Download the Windows package and run the file to install Salt. See the
 
     .. grid-item-card:: Browse the repo for Windows packages
         :class-card: sd-border-1
-        :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-generic/windows
+        :link: https://packages.broadcom.com/artifactory/saltproject-generic/windows
 
         :bdg-danger:`Windows`
         |minor-lts-version-badge|

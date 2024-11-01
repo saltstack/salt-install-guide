@@ -27,6 +27,7 @@ and write ``[RC]`` in the issue title. For example:
 
 Install using packages
 ======================
+
 RC builds are available in the Salt package repositories.
 
 To install release candidate packages:

@@ -182,7 +182,7 @@ html_theme_options = {
         "color-brand-primary": "#66CCF4",
         "color-brand-content": "#66CCF4",
     },
-    "announcement": "IMPORTANT ANNOUNCEMENT: repo.saltproject.io has migrated to packages.broadcom.com!<br />A review and update of installation automation is advised.",
+    "announcement": '<font color="orange"><strong>IMPORTANT ANNOUNCEMENT:</strong> repo.saltproject.io has migrated to packages.broadcom.com!<br /><strong><a href="https://saltproject.io/blog/salt-install-guide-overhaul/" target="_blank" rel="noopener noreferrer">Click here for latest update (2024-10-31)</a></strong></font>',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -193,6 +193,7 @@ html_static_path = ["_static"]
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://example.com)
 html_css_files = [
+    "css/announcement-sticky.css",
     "css/import-all-salt-docs.css",
     "css/local-testing.css",
 ]

@@ -1,9 +1,9 @@
 The Salt Project provides public repositories for packages on the
 public Broadcom Artifactory endpoint:
 
-* `Salt Project RPM Repo <https://packages.broadcom.com/ui/repos/tree/General/saltproject-rpm>`__
-* `Salt Project DEB Repo <https://packages.broadcom.com/ui/repos/tree/General/saltproject-deb>`__
-* `Salt Project Generic Repo (Windows, MacOS, etc.) <https://packages.broadcom.com/ui/repos/tree/General/saltproject-generic>`__
+* `Salt Project RPM Repo <https://packages.broadcom.com/artifactory/saltproject-rpm>`__
+* `Salt Project DEB Repo <https://packages.broadcom.com/artifactory/saltproject-deb>`__
+* `Salt Project Generic Repo (Windows, MacOS, etc.) <https://packages.broadcom.com/artifactory/saltproject-generic>`__
 
 The preferred method for installing Salt is using distribution packages. This
 method ensures that:

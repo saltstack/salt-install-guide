@@ -222,7 +222,7 @@ Browse the repo
 
 .. card:: Browse the repo for DEB packages
     :class-card: sd-border-1
-    :link: https://packages.broadcom.com/ui/repos/tree/General/saltproject-deb
+    :link: https://packages.broadcom.com/artifactory/saltproject-deb/
     :width: 50%
 
     :bdg-primary:`deb`
