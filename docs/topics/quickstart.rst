@@ -52,7 +52,7 @@ Install Salt with the quickstart script
 In this exercise:
 
 - You will install the quickstart version of Salt, which is a lightweight
-  version of Salt designed to show you it7s key features.
+  version of Salt designed to show you it's key features.
 - Then, you will try a few commands to demonstrate howSalt can quickly retrieve
   helpful information about your system.
 
