@@ -182,7 +182,7 @@ html_theme_options = {
         "color-brand-primary": "#66CCF4",
         "color-brand-content": "#66CCF4",
     },
-    "announcement": '<font color="orange"><strong>IMPORTANT ANNOUNCEMENT:</strong> repo.saltproject.io has migrated to packages.broadcom.com!<br /><strong><a href="https://saltproject.io/blog/salt-install-guide-overhaul/" target="_blank" rel="noopener noreferrer">Click here for latest update (2024-10-31)</a></strong></font>',
+    "announcement": '<font color="orange"><strong>IMPORTANT ANNOUNCEMENT:</strong> repo.saltproject.io has migrated to packages.broadcom.com!<br /><strong><a href="https://saltproject.io/blog/new-salt-bootstrap-release-2024-11-07/" target="_blank" rel="noopener noreferrer">Click here for latest update (2024-11-07)</a></strong></font>',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
