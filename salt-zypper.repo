@@ -1,0 +1,9 @@
+[salt-repo-latest]
+name=Salt Repo for Salt LATEST release
+baseurl=https://packages.broadcom.com/artifactory/saltproject-rpm/
+skip_if_unavailable=True
+priority=10
+enabled=1
+enabled_metadata=1
+gpgcheck=1
+gpgkey=https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public
