@@ -2,7 +2,7 @@
 minimum_pre_commit_version: 2.9.3
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v5.0.0
     hooks:
       - id: check-merge-conflict
         description: Check for files that contain merge conflict strings.
@@ -28,20 +28,20 @@ repos:
           Sort the lines in specified files (defaults to alphabetical).
           You must provide list of target files as input in your .pre-commit-config.yaml file.
         files: ^(.*requirements.*\.txt|\.brokignore)$
-  - repo: https://github.com/timothycrosley/isort
-    rev: "5.12.0"
+  - repo: https://github.com/PyCQA/isort
+    rev: "5.13.2"
     hooks:
       - id: isort
         description: isort is a Python utility / library to sort imports automatically.
         files: ^((noxfile|conf)|docs/.*)\.py$
   - repo: https://github.com/psf/black
-    rev: 23.9.1
+    rev: 24.10.0
     hooks:
       - id: black
         description: Forces best practice formatting of Python code files.
         files: ^((noxfile|conf)|docs/conf|tools/version-updater|docs/_includes/python/.*)\.py$
   - repo: https://github.com/myint/rstcheck
-    rev: v6.2.0
+    rev: v6.2.4
     hooks:
       - id: rstcheck
         description: Checks syntax of reStructuredText/rst and code blocks nested within it.
@@ -49,12 +49,12 @@ repos:
         additional_dependencies: [sphinx]
         files: ^(index|docs/.*|docs/_includes/.*|README|CONTRIBUTING)\.rst$
   - repo: https://github.com/asottile/blacken-docs
-    rev: 1.16.0
+    rev: 1.19.1
     hooks:
       - id: blacken-docs
         description: Run black on python code blocks in documentation files.
         files: ^(index|docs/.*|docs/_includes/.*)\.rst$
-        additional_dependencies: [black==23.9.1]
+        additional_dependencies: [black==24.10.0]
 
 #  - repo: https://github.com/saltstack/mirrors-nox
 #    rev: v2022.11.21

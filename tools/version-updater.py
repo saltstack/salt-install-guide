@@ -1,6 +1,7 @@
 """
 Script to download Salt versions manifest and prep docs where version specific info is required
 """
+
 from pathlib import Path
 import json
 import shutil
