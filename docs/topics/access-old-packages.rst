@@ -21,4 +21,4 @@ policy for older versions.
 
     Packages for unsupported versions of Salt, older than Salt 3006 LTS, are
     **NO LONGER AVAILABLE** in the Salt package repositories. See
-    `Salt Blog: Salt Project Package Repository (repo.saltproject.io) Migration and Guidance <https://saltproject.io/blog/salt-project-package-repo-migration-and-guidance/>`__
+    `FAQs from Salt Project Repo Migration and Open Hour <https://saltproject.io/blog/post-migration-salt-project-faqs/>`__
