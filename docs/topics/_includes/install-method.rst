@@ -13,4 +13,6 @@ method ensures that:
 
 .. Note::
     Salt is often distributed in split packages, but only the ``salt-master``
-    and ``salt-minion`` packages are required for Salt to function.
+    and ``salt-minion`` packages are required for Salt to function. If only
+    desiring to run Salt in a masterless setup, then only ``salt-minion`` is
+    required.
