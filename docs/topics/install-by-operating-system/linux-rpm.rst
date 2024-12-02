@@ -7,6 +7,16 @@ Linux (RPM)
 These instructions explain how to install Salt rpms on operating systems that
 are RHEL-like (using ``dnf`` install methods).
 
+.. Note::
+    Salt packages for SUSE and Photon OS are provided via their own OS package repositories.
+    SUSE and Photon OS create their own Salt packages that aren't ``onedir`` (``relenv``) based, and are
+    patched to be further integrated with their respective operating systems.
+
+    Salt Project **does not** provide custom directions for working with ``zypper``, ``tdnf``, or other
+    non-DNF package managers to install packages from the Salt Project RPM repository.
+
+    RPM packages, hosted by Salt Project, are still tested on SUSE and Photon OS operating systems via our CI/CD.
+
 For a list of supported and tested operating systems, for running Salt,
 see :ref:`salt-supported-operating-systems`.
 
