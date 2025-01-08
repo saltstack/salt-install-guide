@@ -1,6 +1,6 @@
 .. sidebar:: **Supported Salt releases**
 
-    |minor-lts-version-badge| |minor-sts-version-badge|
+    |minor-one-version-badge| |minor-two-version-badge|
 
     **See also**
 

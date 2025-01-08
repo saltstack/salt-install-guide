@@ -87,7 +87,7 @@ To upgrade Salt:
         - To update Windows or macOS, download the latest installers and run them.
           See :ref:`install-macos` or :ref:`install-windows` for these downloads.
 
-#. After the repository file is updated, import the |minor-lts-version| GPG key.
+#. After the repository file is updated, import the |minor-one-version| GPG key.
 
    .. include:: _includes/gpg-keys.rst
 

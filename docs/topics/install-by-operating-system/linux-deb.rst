@@ -29,16 +29,20 @@ Install Salt DEBs
 
 #. Install the salt-minion, salt-master, or other Salt components:
 
+   .. warning:: STS not recommended for Production
+
+      Salt Project recommends deploying LTS releases for Production environments.
+
    .. tab-set::
 
-       .. tab-item:: 3006 LTS
+       .. tab-item:: |major-one-version-text|
 
-            Populate ``/etc/apt/preferences.d/salt-pin-1001`` in order to restrict upgrades to Salt 3006.x LTS:
+            Populate ``/etc/apt/preferences.d/salt-pin-1001`` in order to restrict upgrades to Salt |major-one-version-text|:
 
-            .. code-block:: bash
+            .. parsed-literal::
 
                     echo 'Package: salt-*
-                    Pin: version 3006.*
+                    Pin: version |major-one-version|.*
                     Pin-Priority: 1001' | sudo tee /etc/apt/preferences.d/salt-pin-1001
 
             Available installs:
@@ -55,15 +59,15 @@ Install Salt DEBs
             If wanting to install by a target point release, append the specific Salt
             full release version. For example:
 
-            .. code-block:: bash
+            .. parsed-literal::
 
-                    sudo apt-get install salt-common=3006.9
-                    sudo apt-get install salt-master=3006.9
-                    sudo apt-get install salt-minion=3006.9
-                    sudo apt-get install salt-ssh=3006.9
-                    sudo apt-get install salt-syndic=3006.9
-                    sudo apt-get install salt-cloud=3006.9
-                    sudo apt-get install salt-api=3006.9
+                    sudo apt-get install salt-common=\ |minor-one-version|
+                    sudo apt-get install salt-master=\ |minor-one-version|
+                    sudo apt-get install salt-minion=\ |minor-one-version|
+                    sudo apt-get install salt-ssh=\ |minor-one-version|
+                    sudo apt-get install salt-syndic=\ |minor-one-version|
+                    sudo apt-get install salt-cloud=\ |minor-one-version|
+                    sudo apt-get install salt-api=\ |minor-one-version|
 
             .. code-block:: bash
 
@@ -80,25 +84,21 @@ Install Salt DEBs
 
                 If going with a non-latest point release of a target major version, you may be
                 required to install other salt packages in a pinned fashion. For example, to install
-                ``salt-minion=3006.8``, a user will be required to install ``salt-common`` at the same version:
+                ``salt-minion``, a user will be required to install ``salt-common`` at the same version:
 
-                .. code-block:: bash
+                .. parsed-literal::
 
-                    sudo apt-get install salt-minion=3006.8 salt-common=3006.8
+                    sudo apt-get install salt-minion=\ |minor-one-version| salt-common=\ |minor-one-version|
 
 
-       .. tab-item:: 3007 STS
+       .. tab-item:: |major-two-version-text|
 
-            .. warning:: STS not recommended for Production
+            Populate ``/etc/apt/preferences.d/salt-pin-1001`` in order to restrict upgrades to Salt |major-two-version-text|:
 
-                Salt Project recommends deploying LTS releases for Production environments.
-
-            Populate ``/etc/apt/preferences.d/salt-pin-1001`` in order to restrict upgrades to Salt 3007.x STS:
-
-            .. code-block:: bash
+            .. parsed-literal::
 
                     echo 'Package: salt-*
-                    Pin: version 3007.*
+                    Pin: version |major-two-version|.*
                     Pin-Priority: 1001' | sudo tee /etc/apt/preferences.d/salt-pin-1001
 
             Available installs:
@@ -115,15 +115,15 @@ Install Salt DEBs
             If wanting to install by a target point release, append the specific Salt
             full release version. For example:
 
-            .. code-block:: bash
+            .. parsed-literal::
 
-                    sudo apt-get install salt-common=3007.1
-                    sudo apt-get install salt-master=3007.1
-                    sudo apt-get install salt-minion=3007.1
-                    sudo apt-get install salt-ssh=3007.1
-                    sudo apt-get install salt-syndic=3007.1
-                    sudo apt-get install salt-cloud=3007.1
-                    sudo apt-get install salt-api=3007.1
+                    sudo apt-get install salt-common=\ |minor-two-version|
+                    sudo apt-get install salt-master=\ |minor-two-version|
+                    sudo apt-get install salt-minion=\ |minor-two-version|
+                    sudo apt-get install salt-ssh=\ |minor-two-version|
+                    sudo apt-get install salt-syndic=\ |minor-two-version|
+                    sudo apt-get install salt-cloud=\ |minor-two-version|
+                    sudo apt-get install salt-api=\ |minor-two-version|
 
             .. code-block:: bash
 
@@ -140,18 +140,14 @@ Install Salt DEBs
 
                 If going with a non-latest point release of a target major version, you may be
                 required to install other salt packages in a pinned fashion. For example, to install
-                ``salt-minion=3007.0``, a user will be required to install ``salt-common`` at the same version:
+                ``salt-minion``, a user will be required to install ``salt-common`` at the same version:
 
-                .. code-block:: bash
+                .. parsed-literal::
 
-                    sudo apt-get install salt-minion==3007.0 salt-common==3007.0
+                    sudo apt-get install salt-minion=\ |minor-two-version| salt-common=\ |minor-two-version|
 
 
        .. tab-item:: LATEST Available
-
-            .. warning:: STS not recommended for Production
-
-                Salt Project recommends deploying LTS releases for Production environments.
 
             If users would like to leave installs to come from either LTS or STS, whichever
             major version is latest.
@@ -170,15 +166,15 @@ Install Salt DEBs
             If wanting to install by a target point release, append the specific Salt
             full release version. For example:
 
-            .. code-block:: bash
+            .. parsed-literal::
 
-                    sudo apt-get install salt-common=3007.1
-                    sudo apt-get install salt-master=3007.1
-                    sudo apt-get install salt-minion=3007.1
-                    sudo apt-get install salt-ssh=3007.1
-                    sudo apt-get install salt-syndic=3007.1
-                    sudo apt-get install salt-cloud=3007.1
-                    sudo apt-get install salt-api=3007.1
+                    sudo apt-get install salt-common=\ |minor-latest-version|
+                    sudo apt-get install salt-master=\ |minor-latest-version|
+                    sudo apt-get install salt-minion=\ |minor-latest-version|
+                    sudo apt-get install salt-ssh=\ |minor-latest-version|
+                    sudo apt-get install salt-syndic=\ |minor-latest-version|
+                    sudo apt-get install salt-cloud=\ |minor-latest-version|
+                    sudo apt-get install salt-api=\ |minor-latest-version|
 
             .. code-block:: bash
 
@@ -195,11 +191,11 @@ Install Salt DEBs
 
                 If going with a non-latest point release of a target major version, you may be
                 required to install other salt packages in a pinned fashion. For example, to install
-                ``salt-minion=3007.0``, a user will be required to install ``salt-common`` at the same version:
+                ``salt-minion``, a user will be required to install ``salt-common`` at the same version:
 
-                .. code-block:: bash
+                .. parsed-literal::
 
-                    sudo apt-get install salt-minion==3007.0 salt-common==3007.0
+                    sudo apt-get install salt-minion=\ |minor-latest-version| salt-common=\ |minor-latest-version|
 
 
 #. Enable and start the Salt services
@@ -226,4 +222,3 @@ Browse the repo
     :width: 50%
 
     :bdg-primary:`deb`
-    |minor-lts-version-badge|

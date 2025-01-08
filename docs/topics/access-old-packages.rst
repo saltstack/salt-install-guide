@@ -6,8 +6,8 @@ Access old packages of Salt
 
 The current supported versions of Salt are:
 
-* Salt |minor-lts-version|
-* Salt |minor-sts-version|
+* Salt |minor-one-version|
+* Salt |minor-two-version|
 
 See :ref:`salt-version-support-lifecycle` for more information about the support
 policy for older versions.

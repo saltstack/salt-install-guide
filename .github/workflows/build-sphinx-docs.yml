@@ -22,14 +22,14 @@ defaults:
 jobs:
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.13'
           cache: pip
       - name: Run pre-commit
         run: |
@@ -39,7 +39,7 @@ jobs:
           pre-commit run -a -v --color always
       - name: Build docs
         run: |
-          nox -e 'docs-html(download_versions=True, clean=True)'
+          nox -e 'docs-html(gen_sitevars=True, clean=True)'
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
@@ -52,7 +52,7 @@ jobs:
   deploy:
     permissions:
       contents: write
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs:
       - build
     if: success() && startsWith(github.ref, 'refs/tags/')

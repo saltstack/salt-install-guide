@@ -18,8 +18,8 @@ The Salt Project team provides **full support** for the package-installed versio
 
 ``relenv`` is currently pinned to the following major Python versions in Salt:
 
-- Salt 3006 LTS: |relenv-lts-python-version|
-- Salt 3007 STS: |relenv-sts-python-version|
+- Salt |major-one-version-text|: |relenv-one-python-version|
+- Salt |major-two-version-text|: |relenv-two-python-version|
 
 Reasonable-effort support
 =========================

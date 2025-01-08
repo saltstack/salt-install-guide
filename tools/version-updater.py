@@ -5,33 +5,47 @@ Script to download Salt versions manifest and prep docs where version specific i
 from pathlib import Path
 import json
 import shutil
-import requests
 
-# Download and parse supported salt versions manifest
-supported_versions_json = requests.get(
-    "https://gitlab.com/saltstack/open/docs/salt-install-guide/-/snippets/2580440/raw/main/supported-versions.json"
-)
-supported_versions = supported_versions_json.json()
+# Parse supported salt versions manifest
+supported_versions_json = Path("tools", "supported-versions.json")
+with open(supported_versions_json, "r") as supported_versions_json_reader:
+    supported_versions = json.load(supported_versions_json_reader)
+supported_minor_versions = list(supported_versions["versions"].keys())
 supported_major_versions = [
-    full_version.split(".")[0]
-    for full_version in supported_versions["supported_versions"]
+    version_entry.split(".")[0] for version_entry in supported_minor_versions
 ]
 supported_major_versions.sort(reverse=True)
-supported_minor_versions = supported_versions["supported_versions"]
 supported_minor_versions.sort(reverse=True)
+
+# Discover default install version
+non_default = []
+for supported_minor_version in supported_minor_versions:
+    if supported_versions["versions"][supported_minor_version]["default"]:
+        default_version = supported_minor_version
+    else:
+        non_default.append(supported_minor_version)
 
 # Assign vars
 LATEST_MAJOR = supported_major_versions[0]
-OLD_MAJOR = supported_major_versions[1]
+ONE_MAJOR = default_version.split(".")[0]
+TWO_MAJOR = non_default[0].split(".")[0]
 LATEST_MINOR = supported_minor_versions[0]
-OLD_MINOR = supported_minor_versions[1]
-RC_RELEASE = supported_versions["release_candidate_version"]
+ONE_MINOR = default_version
+TWO_MINOR = non_default[0]
+LATEST_SUPPORT_TYPE = supported_versions["versions"][LATEST_MINOR]["type"]
+ONE_SUPPORT_TYPE = supported_versions["versions"][ONE_MINOR]["type"]
+TWO_SUPPORT_TYPE = supported_versions["versions"][TWO_MINOR]["type"]
+ONE_RELENV_PYTHON = supported_versions["versions"][ONE_MINOR]["relenv_python"]
+TWO_RELENV_PYTHON = supported_versions["versions"][TWO_MINOR]["relenv_python"]
+RC_FULL_VERSION = supported_versions["release_candidate_version"]
 
 # Check if three major versions of salt are currently supported
 if len(supported_major_versions) > 2:
     THREE_VERSIONS = True
-    OLDEST_MAJOR = supported_major_versions[2]
-    OLDEST_MINOR = supported_minor_versions[2]
+    THREE_MAJOR = non_default[1].split(".")[0]
+    THREE_MINOR = non_default[1]
+    THREE_SUPPORT_TYPE = supported_versions["versions"][THREE_MINOR]["type"]
+    THREE_RELENV_PYTHON = supported_versions["versions"][THREE_MINOR]["relenv_python"]
 else:
     THREE_VERSIONS = False
 
@@ -43,47 +57,32 @@ shutil.copyfile(sitevars_template_file, sitevars_updated_file)
 # Update new sitevars file
 with open(sitevars_updated_file, "r") as sitevars_updated_file_reader:
     sitevars_template = sitevars_updated_file_reader.read()
-    sitevars_template_list = sitevars_template.splitlines()
-
-# Find CURRENT* vars
-for sitevars_line in sitevars_template_list:
-    if "|current-major-version|" in sitevars_line:
-        CURRENT_MAJOR = sitevars_line.split(" ")[-1]
-        break
-CURRENT_MINOR = None
-for salt_minor_version in supported_minor_versions:
-    if CURRENT_MAJOR in salt_minor_version:
-        CURRENT_MINOR = salt_minor_version
-        break
-
-# Needed for testing new versions of salt
-if CURRENT_MINOR == None:
-    CURRENT_MINOR = f"{CURRENT_MAJOR}.0"
 
 # Replace all var placeholders
 sitevars_updated = (
     sitevars_template.replace("LATEST_MAJOR", LATEST_MAJOR)
-    .replace("OLD_MAJOR", OLD_MAJOR)
+    .replace("ONE_MAJOR", ONE_MAJOR)
+    .replace("TWO_MAJOR", TWO_MAJOR)
     .replace("LATEST_MINOR", LATEST_MINOR)
-    .replace("OLD_MINOR", OLD_MINOR)
-    .replace("RC_RELEASE", RC_RELEASE)
-    .replace("CURRENT_MAJOR", CURRENT_MAJOR)
-    .replace("CURRENT_MINOR", CURRENT_MINOR)
+    .replace("ONE_MINOR", ONE_MINOR)
+    .replace("TWO_MINOR", TWO_MINOR)
+    .replace("LATEST_SUPPORT_TYPE", LATEST_SUPPORT_TYPE)
+    .replace("ONE_SUPPORT_TYPE", ONE_SUPPORT_TYPE)
+    .replace("TWO_SUPPORT_TYPE", TWO_SUPPORT_TYPE)
+    .replace("TWO_LOWER_SUPPORT_TYPE", TWO_SUPPORT_TYPE.lower())
+    .replace("ONE_RELENV_PYTHON", ONE_RELENV_PYTHON)
+    .replace("TWO_RELENV_PYTHON", TWO_RELENV_PYTHON)
+    .replace("RC_FULL_VERSION", RC_FULL_VERSION)
 )
 
 if THREE_VERSIONS:
-    sitevars_updated = sitevars_template.replace("OLDEST_MAJOR", OLDEST_MAJOR).replace(
-        "OLDEST_MINOR", OLDEST_MINOR
+    sitevars_updated = (
+        sitevars_updated.replace("THREE_MAJOR", THREE_MAJOR)
+        .replace("THREE_MINOR", THREE_MINOR)
+        .replace("THREE_SUPPORT_TYPE", TWO_SUPPORT_TYPE)
+        .replace("THREE_RELENV_PYTHON", THREE_RELENV_PYTHON)
     )
 
 # Write dynamic sitevars file
 with open(sitevars_updated_file, "w") as sitevars_updated_file_writer:
     sitevars_updated_file_writer.write(sitevars_updated)
-
-# Write latest announcements file
-latest_announcements = requests.get(
-    "https://gitlab.com/saltstack/open/docs/salt-install-guide/-/snippets/3722105/raw/main/announcements.rst"
-)
-announcements_file = Path("docs", "topics", "announcements.rst")
-with open(announcements_file, "w") as announcements_updated_file_writer:
-    announcements_updated_file_writer.write(latest_announcements.text)

@@ -24,7 +24,7 @@ For example:
 
 .. parsed-literal::
 
-    bootstrap-salt.sh stable |minor-lts-version|
+    bootstrap-salt.sh stable |minor-one-version|
 
 The source code and reference documentation for the bootstrap scripts are in the
 ``salt-bootstrap`` repository:

@@ -16,7 +16,7 @@
 import datetime
 import os
 
-import requests
+# import requests
 from docutils import nodes
 from docutils.nodes import Element
 from sphinx.writers.html import HTMLTranslator
@@ -93,38 +93,11 @@ rst_prolog = """
 )
 
 # Pull release from "release" in sitevars.rst
-release = [s for s in site_vars if "|minor-lts-version|" in s][0].split(":: ")[1]
+release = [s for s in site_vars if "|minor-one-version|" in s][0].split(":: ")[1]
 version = release
 
 # Grab major version for URL version selector generation
 current_version = version.split(".")[0]
-
-##
-# Furo theme version selector setup
-##
-# Pull from JSON in GitLab Snippet
-"""
-supported_versions_json = requests.get(
-    "https://gitlab.com/saltstack/open/docs/salt-install-guide/-/snippets/2580440/raw/main/supported-versions.json"
-)
-supported_versions = supported_versions_json.json()
-supported_major_versions = [
-    full_version.split(".")[0]
-    for full_version in supported_versions["supported_versions"]
-]
-supported_major_versions.sort()
-
-# Build out version menu
-latest_version = supported_versions["latest_version"].split(".")[0]
-versions = supported_major_versions
-url_prefix = "https://docs.saltproject.io/salt/install-guide/en/"
-html_context = make_html_context(
-    url_prefix=url_prefix,
-    current_version=current_version,
-    latest_version=latest_version,
-    versions=versions,
-)
-"""
 
 # -- General configuration ---------------------------------------------------
 
@@ -182,7 +155,7 @@ html_theme_options = {
         "color-brand-primary": "#66CCF4",
         "color-brand-content": "#66CCF4",
     },
-    "announcement": '<font color="orange"><strong>IMPORTANT ANNOUNCEMENT:</strong> repo.saltproject.io has migrated to packages.broadcom.com!<br /><strong><a href="https://saltproject.io/blog/post-migration-salt-project-faqs/" target="_blank" rel="noopener noreferrer">Click here for latest update (2024-11-22)</a></strong></font>',
+    "announcement": '<font color="orange"><strong>IMPORTANT ANNOUNCEMENT:</strong> repo.saltproject.io has migrated to packages.broadcom.com!<br /><strong><a href="https://saltproject.io/blog/post-migration-salt-project-faqs/" target="_blank" rel="noopener noreferrer">Click here for migration FAQs (2024-11-22)</a></strong></font>',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

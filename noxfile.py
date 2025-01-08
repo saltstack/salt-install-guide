@@ -119,8 +119,8 @@ def docs_versions_update(session):
 
 @nox.session(name="docs-html", python="3")
 @nox.parametrize("clean", [False, True])
-@nox.parametrize("download_versions", [False, True])
-def docs_html(session, clean, download_versions):
+@nox.parametrize("gen_sitevars", [False, True])
+def docs_html(session, clean, gen_sitevars):
     """
     Build Sphinx HTML Documentation
     """
@@ -135,10 +135,10 @@ def docs_html(session, clean, download_versions):
     install_command = ["--progress-bar=off", "-r", str(requirements_file)]
     session.install(*install_command, silent=True)
 
-    # Pull down latest Salt version manifest and update sitevars, etc.
-    # if download_versions:
-    #    version_updater_script = Path("tools", "version-updater.py")
-    #    session.run("python", str(version_updater_script), external=True)
+    # Update sitevars from tools/supported-versions.json manifest
+    if gen_sitevars:
+        version_updater_script = Path("tools", "version-updater.py")
+        session.run("python", str(version_updater_script), external=True)
 
     # Run sphinx
     build_dir = Path("docs", "_build", "html")

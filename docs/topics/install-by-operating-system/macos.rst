@@ -70,4 +70,3 @@ Browse the repo
     :width: 50%
 
     :bdg-primary:`macOS`
-    |minor-lts-version-badge|

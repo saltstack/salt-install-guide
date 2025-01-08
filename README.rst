@@ -10,10 +10,6 @@ Salt install guide
    :alt: PyPi Package Downloads
    :target: https://pypi.org/project/salt
 
-.. image:: https://img.shields.io/twitch/status/saltprojectoss
-   :alt: Salt Project Twitch Channel
-   :target: https://www.twitch.tv/saltprojectoss
-
 .. image:: https://img.shields.io/reddit/subreddit-subscribers/saltstack?style=social
    :alt: Salt Project subreddit
    :target: https://www.reddit.com/r/saltstack/
@@ -27,24 +23,21 @@ Salt install guide
 
 If you're looking to install Salt, you've come to the right place!
 
-- `View the Sphinx-built documentation here <https://saltstack.gitlab.io/open/docs/salt-install-guide>`__
-- `View the source repo here <https://gitlab.com/saltstack/open/docs/salt-install-guide>`__
+- `View the Sphinx-built documentation here <https://docs.saltproject.io/salt/install-guide/en/latest/>`__
+- `View the source repo here <https://github.com/saltstack/salt-install-guide>`__
 
 About the Salt install guide
 ============================
 
 The Salt Install Guide supplements and extends the core documentation for the
 `Salt Project <https://github.com/saltstack/salt>`__. This guide is intended to
-help Salt users install ``salt`` in their environment, ultimately superseding
-documentation where applicable:
-
-* Install directions on `docs.saltproject.io <https://docs.saltproject.io/en/master/topics/installation/index.html>`__
+help Salt users install ``salt`` in their environment.
 
 Contributions from anyone inside the Salt project community are always welcome.
 Please read the :ref:`contributing` for more information. The contributing
 guide can also be found in the source repository:
 
-* `CONTRIBUTING.rst <https://gitlab.com/saltstack/open/docs/salt-install-guide/-/blob/master/CONTRIBUTING.rst>`__
+* `CONTRIBUTING.rst <https://github.com/saltstack/salt-install-guide/-/blob/master/CONTRIBUTING.rst>`__
 
 
 Related links
@@ -77,7 +70,7 @@ The following documentation is part of the Salt Project documentation:
 * `Module documentation <https://docs.saltproject.io/en/latest/py-modindex.html>`__:
   The Salt modules and state modules explain the use cases and arguments needed
   to execute the Salt modules.
-* `Salt User Guide <https://saltstack.gitlab.io/open/docs/salt-user-guide/>`__:
+* `Salt User Guide <https://docs.saltproject.io/salt/user-guide/en/latest/>`__:
   The Salt User Guide supplements and extends the core documentation for the
   Salt Project. This guide is intended to help Salt users learn about Salt's
   core concepts and features. It was originally authored by Alan Cugler and
@@ -96,8 +89,28 @@ This repository uses the following tools:
   web.
 * Sphinx applies the
   `Furo Theme for Sphinx <https://pradyunsg.me/furo/>`__ to render the site.
-* The guide is hosted directly on GitLab using the
-  `GitLab pages <https://docs.gitlab.com/ee/user/project/pages/>`__ feature.
-* GitLab handles the
-  `CI/CD pipeline <https://gitlab.com/saltstack/open/docs/salt-install-guide/-/pipelines>`__
+* The guide is hosted directly on GitHub using the
+  `GitHub pages <https://pages.github.com/>`__ feature.
+* GitHub Actions handle the
+  `CI/CD pipelines <https://github.com/saltstack/salt-install-guide/actions>`__
   for the project.
+
+Release Process
+===============
+
+New releases of the ``salt-install-guide`` are required in order to ensure the latest docs changes
+make it into ``docs.saltproject.io``, which are collectively published via a private repository
+called ``builddocs``. ``builddocs`` will do the following:
+
+* Downloads the latest tarball builds from GitHub Releases of target docs repos
+    * ``salt-install-guide``
+    * ``salt-user-guide``
+* Build reference docs from ``salt`` repo for supported release versions
+
+To cut a new release of ``salt-install-guide``:
+
+* Create and push a new tag via git
+* The new tag will trigger a GitHub Action workflow which will create a new release
+    * The new release will include the latest built tarball!
+* Upon completion of a new ``salt-install-guide`` release, a new workflow must be launched
+  via ``builddocs`` if wanting these changes to be immediately live
