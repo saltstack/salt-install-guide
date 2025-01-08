@@ -26,8 +26,8 @@ Version support lifecycle
 
   * - 3007 STS
     - March 6, 2024
-    - January, 2026
-    - January, 2027
+    - April, 2025
+    - April, 2025
 
   * - 3006 LTS
     - April 18, 2023
