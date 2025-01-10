@@ -28,7 +28,7 @@ Linux (RPM)
         :link: https://packages.broadcom.com/artifactory/saltproject-rpm
 
         :bdg-primary:`rpm`
-        |minor-lts-version-badge|
+        |minor-one-version-badge|
 
     .. grid-item-card:: RPM install guide
         :class-card: sd-border-1
@@ -47,7 +47,7 @@ Linux (DEB)
         :link: https://packages.broadcom.com/artifactory/saltproject-deb
 
         :bdg-primary:`deb`
-        |minor-lts-version-badge|
+        |minor-one-version-badge|
 
     .. grid-item-card:: DEB install guide
         :class-card: sd-border-1
@@ -71,7 +71,7 @@ Download the macOS package and run the file to install Salt. See the
         :link: https://packages.broadcom.com/artifactory/saltproject-generic/macos
 
         :bdg-danger:`macOS`
-        |minor-lts-version-badge|
+        |minor-one-version-badge|
 
     .. grid-item-card:: macOS install guide
         :class-card: sd-border-1
@@ -96,7 +96,7 @@ Download the Windows package and run the file to install Salt. See the
         :link: https://packages.broadcom.com/artifactory/saltproject-generic/windows
 
         :bdg-danger:`Windows`
-        |minor-lts-version-badge|
+        |minor-one-version-badge|
 
     .. grid-item-card:: Windows install guide
         :class-card: sd-border-1

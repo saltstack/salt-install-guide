@@ -1,5 +1,5 @@
-3006 LTS Downloads
-------------------
+|major-one-version-text| Downloads
+----------------------------------
 
 .. list-table::
   :widths: 10 10 40
@@ -12,14 +12,14 @@
 
   * - x86_64
     - lts
-    - |macos-amd64-lts-download|
+    - |macos-amd64-one-download|
 
   * - arm64
     - lts
-    - |macos-arm64-lts-download|
+    - |macos-arm64-one-download|
 
-3007 STS Downloads
-------------------
+|major-two-version-text| Downloads
+----------------------------------
 
 .. list-table::
   :widths: 10 10 40
@@ -32,8 +32,8 @@
 
   * - x86_64
     - sts
-    - |macos-amd64-sts-download|
+    - |macos-amd64-two-download|
 
   * - arm64
     - sts
-    - |macos-arm64-sts-download|
+    - |macos-arm64-two-download|

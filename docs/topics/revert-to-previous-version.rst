@@ -29,42 +29,10 @@ To revert to a previous version of Salt:
 
    Example output:
 
-   .. code-block:: bash
+   .. parsed-literal::
 
        minion:
-           3006.5
-
-#. If needed, first run the following command to restrict to target LTS or STS available packages:
-
-   .. tab-set::
-
-       .. tab-item:: 3006 LTS
-
-           Populate ``/etc/apt/preferences.d/salt-pin-1001`` in order to restrict upgrades to Salt 3006.x LTS:
-
-           .. code-block:: bash
-
-               echo 'Package: salt-*
-               Pin: version 3006.*
-               Pin-Priority: 1001' | sudo tee /etc/apt/preferences.d/salt-pin-1001
-
-           .. include:: _includes/previous-version-note.rst
-
-       .. tab-item:: 3007 STS
-
-           .. warning:: STS not recommended for Production
-
-               Salt Project recommends deploying LTS releases for Production environments.
-
-           Populate ``/etc/apt/preferences.d/salt-pin-1001`` in order to restrict upgrades to Salt 3006.x LTS:
-
-           .. code-block:: bash
-
-               echo 'Package: salt-*
-               Pin: version 3007.*
-               Pin-Priority: 1001' | sudo tee /etc/apt/preferences.d/salt-pin-1001
-
-           .. include:: _includes/previous-version-note.rst
+           |minor-one-version|
 
 
 #. Run the following commands to remove all Salt services:
@@ -79,19 +47,7 @@ To revert to a previous version of Salt:
        apt-get remove salt-cloud
        apt-get remove salt-api
 
-
-#. Run the following commands to update your package manager and install any of
-   the Salt services as needed:
-
-   .. code-block:: bash
-
-       apt-get update
-       apt-get install salt-master
-       apt-get install salt-minion
-       apt-get install salt-ssh
-       apt-get install salt-syndic
-       apt-get install salt-cloud
-       apt-get install salt-api
+#. Refer to the install directions, and restrict to target LTS or STS available packages via :ref:`install-deb`
 
 #. Verify the version of Salt you are running to ensure you are on the previous
    version. For example:
@@ -118,38 +74,10 @@ To revert to a previous version of Salt:
 
    Example output:
 
-   .. code-block:: bash
+   .. parsed-literal::
 
        minion:
-           3006.5
-
-#. If needed, first run the following command to restrict to target LTS or STS available packages:
-
-   .. tab-set::
-
-       .. tab-item:: RHEL 9
-
-           .. code-block:: bash
-
-               curl -fsSL https://repo.saltproject.io/salt/py3/redhat/9/x86_64/minor/3006.X.repo | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: _includes/previous-version-note.rst
-
-       .. tab-item:: RHEL 8
-
-           .. code-block:: bash
-
-               curl -fsSL https://repo.saltproject.io/salt/py3/redhat/8/x86_64/minor/3006.X.repo | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: _includes/previous-version-note.rst
-
-       .. tab-item:: RHEL 7
-
-           .. code-block:: bash
-
-               curl -fsSL https://repo.saltproject.io/salt/py3/redhat/7/x86_64/minor/3006.X.repo | sudo tee /etc/yum.repos.d/salt.repo
-
-           .. include:: _includes/previous-version-note.rst
+           |minor-one-version|
 
 #. Run the following command to change your version of Salt and remove all Salt
    services:
@@ -157,6 +85,8 @@ To revert to a previous version of Salt:
    .. code-block:: bash
 
        dnf remove salt
+
+#. Refer to the install directions, and restrict to target LTS or STS available packages via :ref:`install-rpm`
 
 #. Update your package manager and install any of the Salt services as needed:
 

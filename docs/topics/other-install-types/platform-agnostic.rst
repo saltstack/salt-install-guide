@@ -10,17 +10,21 @@ Platform agnostic installation (pip)
 About platform agonistic installation
 =====================================
 
+.. Warning::
+    Installing ``salt`` via ``pip`` only has **reasonable-effort support.**.
+    For more information, see :ref:`salt-python-version-support`
+
 Salt can be installed in a platform-agnostic way using the Python package
 installer ``pip`` from `pypi.org <https://pypi.org>`_.
 
-You can use ``pip`` to install other packages that will complement your Salt
+You can also use ``pip`` to install other packages that will complement your Salt
 code.
 
 A benefit of using ``pip`` is the ability to install Salt in Python virtual
 environments and Conda environments.
 
 .. Warning::
-    If you pip install a library using the salt-pip install method, the Python
+    If you pip install a library using the ``salt-pip`` install method, the Python
     package installs into the onedir file location. Any scripts installed by the
     Python library will not be accessible from the usual system Python paths.
     Scripts installed by the Python library need to be called directly using the

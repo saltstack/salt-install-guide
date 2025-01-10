@@ -52,9 +52,13 @@ Install Salt RPMs
 
 #. Install the salt-minion, salt-master, or other Salt components:
 
+   .. warning:: STS not recommended for Production
+
+      Salt Project recommends deploying LTS releases for Production environments.
+
    .. tab-set::
 
-       .. tab-item:: 3006 LTS
+       .. tab-item:: |major-one-version-text|
 
             Available installs:
 
@@ -70,14 +74,14 @@ Install Salt RPMs
             If wanting to install by a target point release, append the specific Salt
             full release version. For example:
 
-            .. code-block:: bash
+            .. parsed-literal::
 
-                    sudo dnf install salt-master-3006.9
-                    sudo dnf install salt-minion-3006.9
-                    sudo dnf install salt-ssh-3006.9
-                    sudo dnf install salt-syndic-3006.9
-                    sudo dnf install salt-cloud-3006.9
-                    sudo dnf install salt-api-3006.9
+                    sudo dnf install salt-master-|minor-one-version|
+                    sudo dnf install salt-minion-|minor-one-version|
+                    sudo dnf install salt-ssh-|minor-one-version|
+                    sudo dnf install salt-syndic-|minor-one-version|
+                    sudo dnf install salt-cloud-|minor-one-version|
+                    sudo dnf install salt-api-|minor-one-version|
 
             ``dnf versionlock`` can be used to pin to minor versions, if wanting to be
             excluded during ``dnf upgrade`` runs on a system.
@@ -96,20 +100,16 @@ Install Salt RPMs
                     sudo dnf versionlock add salt-cloud
                     sudo dnf versionlock add salt-api
 
-       .. tab-item:: 3007 STS
+       .. tab-item:: |major-two-version-text|
 
-            .. warning:: STS not recommended for Production
+            If users would like to restrict their installs to the Salt |major-two-version-text| point releases,
+            these install steps include enabling Salt |major-two-version-text| release downloads.
 
-                Salt Project recommends deploying LTS releases for Production environments.
+            .. parsed-literal::
 
-            If users would like to restrict their installs to the Salt 3007 STS point releases,
-            these install steps include enabling Salt 3007 STS release downloads.
-
-            .. code-block:: bash
-
-                    # Enable the Salt 3007 STS repo
+                    # Enable the Salt |major-two-version-text| repo
                     sudo dnf config-manager --set-disable salt-repo-*
-                    sudo dnf config-manager --set-enabled salt-repo-3007-sts
+                    sudo dnf config-manager --set-enabled salt-repo-|major-two-version-repo-postfix|
 
             Available installs:
 
@@ -125,14 +125,14 @@ Install Salt RPMs
             If wanting to install by a target point release, append the specific Salt
             full release version. For example:
 
-            .. code-block:: bash
+            .. parsed-literal::
 
-                    sudo dnf install salt-master-3007.1
-                    sudo dnf install salt-minion-3007.1
-                    sudo dnf install salt-ssh-3007.1
-                    sudo dnf install salt-syndic-3007.1
-                    sudo dnf install salt-cloud-3007.1
-                    sudo dnf install salt-api-3007.1
+                    sudo dnf install salt-master-|minor-two-version|
+                    sudo dnf install salt-minion-|minor-two-version|
+                    sudo dnf install salt-ssh-|minor-two-version|
+                    sudo dnf install salt-syndic-|minor-two-version|
+                    sudo dnf install salt-cloud-|minor-two-version|
+                    sudo dnf install salt-api-|minor-two-version|
 
             ``dnf versionlock`` can be used to pin to minor versions, if wanting to be
             excluded during ``dnf upgrade`` runs on a system.
@@ -152,10 +152,6 @@ Install Salt RPMs
                     sudo dnf versionlock add salt-api
 
        .. tab-item:: LATEST Available
-
-            .. warning:: STS not recommended for Production
-
-                Salt Project recommends deploying LTS releases for Production environments.
 
             If users would like to leave installs to come from either LTS or STS, whichever
             major version is latest.
@@ -180,14 +176,14 @@ Install Salt RPMs
             If wanting to install by a target point release, append the specific Salt
             full release version. For example:
 
-            .. code-block:: bash
+            .. parsed-literal::
 
-                    sudo dnf install salt-master-3007.1
-                    sudo dnf install salt-minion-3007.1
-                    sudo dnf install salt-ssh-3007.1
-                    sudo dnf install salt-syndic-3007.1
-                    sudo dnf install salt-cloud-3007.1
-                    sudo dnf install salt-api-3007.1
+                    sudo dnf install salt-master-|minor-latest-version|
+                    sudo dnf install salt-minion-|minor-latest-version|
+                    sudo dnf install salt-ssh-|minor-latest-version|
+                    sudo dnf install salt-syndic-|minor-latest-version|
+                    sudo dnf install salt-cloud-|minor-latest-version|
+                    sudo dnf install salt-api-|minor-latest-version|
 
             ``dnf versionlock`` can be used to pin to minor versions, if wanting to be
             excluded during ``dnf upgrade`` runs on a system.
@@ -230,4 +226,3 @@ Browse the repo
     :width: 50%
 
     :bdg-primary:`rpm`
-    |minor-lts-version-badge|

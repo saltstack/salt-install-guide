@@ -42,10 +42,10 @@ After a successful installation of Salt:
 
     Example response:
 
-    .. code-block:: bash
+    .. parsed-literal::
 
         minion1:
-          3004.2
+          |minor-one-version|
 
 
 Next steps

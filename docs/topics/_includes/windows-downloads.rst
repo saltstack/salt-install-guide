@@ -1,5 +1,5 @@
-3006 LTS Downloads
-------------------
+|major-one-version-text| Downloads
+----------------------------------
 
 .. list-table::
   :widths: 10 10 15 65
@@ -14,25 +14,25 @@
   * - AMD64
     - exe
     - LTS
-    - |windows-amd64-exe-lts-download|
+    - |windows-amd64-exe-one-download|
 
   * - AMD64
     - msi
     - LTS
-    - |windows-amd64-msi-lts-download|
+    - |windows-amd64-msi-one-download|
 
   * - x86
     - exe
     - LTS
-    - |windows-x86-exe-lts-download|
+    - |windows-x86-exe-one-download|
 
   * - x86
     - msi
     - LTS
-    - |windows-x86-msi-lts-download|
+    - |windows-x86-msi-one-download|
 
-3007 STS Downloads
-------------------
+|major-two-version-text| Downloads
+----------------------------------
 
 .. list-table::
   :widths: 10 10 15 65
@@ -47,19 +47,19 @@
   * - AMD64
     - exe
     - STS
-    - |windows-amd64-exe-sts-download|
+    - |windows-amd64-exe-two-download|
 
   * - AMD64
     - msi
     - STS
-    - |windows-amd64-msi-sts-download|
+    - |windows-amd64-msi-two-download|
 
   * - x86
     - exe
     - STS
-    - |windows-x86-exe-sts-download|
+    - |windows-x86-exe-two-download|
 
   * - x86
     - msi
     - STS
-    - |windows-x86-msi-sts-download|
+    - |windows-x86-msi-two-download|
