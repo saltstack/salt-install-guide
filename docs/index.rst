@@ -65,4 +65,4 @@ Install Salt
    Open a Salt issue to report bugs <https://github.com/saltstack/salt/issues/new/choose>
    Open an Install Guide docs issue <https://github.com/saltstack/salt-install-guide/issues/new>
    Salt docs contributing guide <https://saltstack.gitlab.io/open/docs/docs-hub/topics/contributing.html>
-   Salt Install Guide source <https://github.com/saltstack//salt-install-guide>
+   Salt Install Guide source <https://github.com/saltstack/salt-install-guide>
