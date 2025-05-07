@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Salt Project Community Discord
+    url: https://discord.gg/J7b7EscrAs
+    about: Please ask and answer questions in our community Discord server.
+  - name: Salt Project GitHub Discussions
+    url: https://github.com/saltstack/salt/discussions
+    about: Unable to use Discord? Drop by our GitHub Discussions forum for Q&A.
+  - name: Report a security vulnerability
+    url: https://github.com/saltstack/salt/security/policy
+    about: Please review our security policy for more details.
