@@ -177,5 +177,8 @@ def docs(session) -> None:
     args = ["--watch", ".", "--open-browser", "docs", str(build_dir)]
     if build_dir.exists():
         shutil.rmtree(build_dir)
+        # Generate sitevars
+        version_updater_script = Path("tools", "version-updater.py")
+        session.run("python", str(version_updater_script), external=True)
 
     session.run("sphinx-autobuild", *args)

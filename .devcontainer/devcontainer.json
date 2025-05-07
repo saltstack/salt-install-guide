@@ -1,0 +1,49 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+{
+	"name": "salt-install-guide",
+
+	// README at: https://github.com/devcontainers/templates/tree/main/src/python
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	// Python container image is needed for running python-based tests (ex. orphaned-content.py)
+	// "image": "mcr.microsoft.com/devcontainers/python:3.13-bookworm",
+
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {
+		// node / npm is required for markdownlint-cli2
+		// By default, installs lts version
+		// "ghcr.io/devcontainers/features/node:1": {}
+	// },
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": ""
+
+	// There is also a postStartCommand that executes every time the container starts.
+	// The parameters behave exactly like postCreateCommand, but the commands execute on start rather than create.
+	// "postStartCommand": ""
+
+	// There is also a postAttachCommand that executes every time the container attaches to a workspace.
+	// The parameters behave exactly like postCreateCommand, but the commands execute on a started container after the workspace is available under /workspaces/
+	// "postAttachCommand": {},
+
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				// Extension to work with Python
+				"ms-python.python"
+			]
+		}
+	}
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
