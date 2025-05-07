@@ -92,12 +92,7 @@ rst_prolog = """
     "\n".join(site_vars[:])
 )
 
-# Pull release from "release" in sitevars.rst
-release = [s for s in site_vars if "|minor-one-version|" in s][0].split(":: ")[1]
-version = release
-
-# Grab major version for URL version selector generation
-current_version = version.split(".")[0]
+version = "latest"
 
 # -- General configuration ---------------------------------------------------
 
@@ -155,7 +150,7 @@ html_theme_options = {
         "color-brand-primary": "#66CCF4",
         "color-brand-content": "#66CCF4",
     },
-    "announcement": '<font color="orange"><strong>IMPORTANT ANNOUNCEMENT:</strong> repo.saltproject.io has migrated to packages.broadcom.com!<br /><strong><a href="https://saltproject.io/blog/post-migration-salt-project-faqs/" target="_blank" rel="noopener noreferrer">Click here for migration FAQs (2024-11-22)</a></strong></font>',
+    # "announcement": '<font color="orange"><strong>IMPORTANT ANNOUNCEMENT:</strong> repo.saltproject.io has migrated to packages.broadcom.com!<br /><strong><a href="https://saltproject.io/blog/post-migration-salt-project-faqs/" target="_blank" rel="noopener noreferrer">Click here for migration FAQs (2024-11-22)</a></strong></font>',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

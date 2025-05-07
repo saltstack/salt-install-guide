@@ -1,0 +1,79 @@
+name: Docs Feedback Report
+description: File a Docs feedback report.
+title: "[DOCS]: "
+assignees:
+  - scriptautomate-bc
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this docs feedback report!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Description of Issue
+      description: A clear and concise description of what the problem is.
+      placeholder: Ex. I'm always frustrated when [...]
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of Salt is impacted?
+      options:
+        - 3006
+        - 3007
+        - Latest
+        - N/A
+      default: N/A
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating System
+      description: What Operating Systems are impacted?
+      multiple: true
+      options:
+        - AlmaLinux 8
+        - AlmaLinux 9
+        - Amazon Linux 2
+        - Amazon Linux 2023
+        - CentOS Stream 9
+        - Debian 11
+        - Debian 12
+        - Fedora
+        - MacOS 13
+        - MacOS 14
+        - openSUSE Leap
+        - Oracle Linux 8
+        - Oracle Linux 9
+        - Photon OS 4
+        - Photon OS 5
+        - RedHat 8
+        - RedHat 9
+        - Rocky Linux 8
+        - Rocky Linux 9
+        - SLES 12 SP5
+        - SLES 15 SP6
+        - Ubuntu 20.04
+        - Ubuntu 22.04
+        - Ubuntu 24.04
+        - Windows Desktop 10
+        - Windows Desktop 11
+        - Windows 2016
+        - Windows 2019
+        - Windows 2022
+        - N/A
+      default: N/A
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant shell output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+    validations:
+      required: false
