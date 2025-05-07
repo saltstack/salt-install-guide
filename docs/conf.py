@@ -92,12 +92,7 @@ rst_prolog = """
     "\n".join(site_vars[:])
 )
 
-# Pull release from "release" in sitevars.rst
-release = [s for s in site_vars if "|minor-one-version|" in s][0].split(":: ")[1]
-version = release
-
-# Grab major version for URL version selector generation
-current_version = version.split(".")[0]
+version = "latest"
 
 # -- General configuration ---------------------------------------------------
 
@@ -120,7 +115,7 @@ extensions = [
 # Render TODO directives
 todo_include_todos = True
 
-source_suffix = ".rst"
+source_suffix = {".rst": "restructuredtext"}
 
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ["_templates"]
@@ -136,7 +131,6 @@ exclude_patterns = [
     "topics/_includes/*.rst",
     "_templates/*.rst",
 ]
-
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -155,7 +149,7 @@ html_theme_options = {
         "color-brand-primary": "#66CCF4",
         "color-brand-content": "#66CCF4",
     },
-    "announcement": '<font color="orange"><strong>IMPORTANT ANNOUNCEMENT:</strong> repo.saltproject.io has migrated to packages.broadcom.com!<br /><strong><a href="https://saltproject.io/blog/post-migration-salt-project-faqs/" target="_blank" rel="noopener noreferrer">Click here for migration FAQs (2024-11-22)</a></strong></font>',
+    # "announcement": '<font color="orange"><strong>IMPORTANT ANNOUNCEMENT:</strong> repo.saltproject.io has migrated to packages.broadcom.com!<br /><strong><a href="https://saltproject.io/blog/post-migration-salt-project-faqs/" target="_blank" rel="noopener noreferrer">Click here for migration FAQs (2024-11-22)</a></strong></font>',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -172,10 +166,6 @@ html_css_files = [
 ]
 
 copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
-
-# Sphinx Multiversion options
-# smv_branch_whitelist = r'^30.*$'
-# smv_latest_version = "3005"
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -198,25 +188,3 @@ html_logo = "_static/img/SaltProject_altlogo_blue.png"
 # html_favicon = "https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_Logomark_teal.png"
 # Example for <4.0.0 of Sphinx, if added into _static/img/ and html_static_path is valid
 html_favicon = "_static/img/SaltProject_Logomark_teal.png"
-
-###
-# PDF Generation / LaTeX configuration
-###
-# If generating PDFs in the future, should ensure external logo is copied local
-# https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_altlogo_teal.png?inline=true
-# latex_logo = "docs/_static/img/SaltProject_verticallogo_black.png"
-
-# Linux Biolinum, Linux Libertine: https://en.wikipedia.org/wiki/Linux_Libertine
-# Source Code Pro: https://github.com/adobe-fonts/source-code-pro/releases
-latex_elements = {
-    "inputenc": "",
-    "utf8extra": "",
-    "preamble": r"""
-    \usepackage{fontspec}
-    \setsansfont{Linux Biolinum O}
-    \setromanfont{Linux Libertine O}
-    \setmonofont{Source Code Pro}
-""",
-}
-
-suppress_warnings = ["autosectionlabel.*"]
