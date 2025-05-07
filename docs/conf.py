@@ -115,7 +115,7 @@ extensions = [
 # Render TODO directives
 todo_include_todos = True
 
-source_suffix = ".rst"
+source_suffix = {".rst": "restructuredtext"}
 
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ["_templates"]
@@ -131,7 +131,6 @@ exclude_patterns = [
     "topics/_includes/*.rst",
     "_templates/*.rst",
 ]
-
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -168,10 +167,6 @@ html_css_files = [
 
 copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
 
-# Sphinx Multiversion options
-# smv_branch_whitelist = r'^30.*$'
-# smv_latest_version = "3005"
-
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 # For example, official Salt Project docs use images from the salt-branding-guide
@@ -193,25 +188,3 @@ html_logo = "_static/img/SaltProject_altlogo_blue.png"
 # html_favicon = "https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_Logomark_teal.png"
 # Example for <4.0.0 of Sphinx, if added into _static/img/ and html_static_path is valid
 html_favicon = "_static/img/SaltProject_Logomark_teal.png"
-
-###
-# PDF Generation / LaTeX configuration
-###
-# If generating PDFs in the future, should ensure external logo is copied local
-# https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_altlogo_teal.png?inline=true
-# latex_logo = "docs/_static/img/SaltProject_verticallogo_black.png"
-
-# Linux Biolinum, Linux Libertine: https://en.wikipedia.org/wiki/Linux_Libertine
-# Source Code Pro: https://github.com/adobe-fonts/source-code-pro/releases
-latex_elements = {
-    "inputenc": "",
-    "utf8extra": "",
-    "preamble": r"""
-    \usepackage{fontspec}
-    \setsansfont{Linux Biolinum O}
-    \setromanfont{Linux Libertine O}
-    \setmonofont{Source Code Pro}
-""",
-}
-
-suppress_warnings = ["autosectionlabel.*"]
