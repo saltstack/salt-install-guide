@@ -20,7 +20,8 @@ body:
     id: version
     attributes:
       label: Version
-      description: What version of Salt is impacted?
+      description: What versions of Salt are impacted?
+      multiple: true
       options:
         - 3006
         - 3007
