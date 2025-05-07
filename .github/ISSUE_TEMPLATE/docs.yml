@@ -27,7 +27,7 @@ body:
         - 3007
         - Latest
         - N/A
-      default: N/A
+      default: 0
     validations:
       required: true
   - type: dropdown
@@ -67,7 +67,7 @@ body:
         - Windows 2019
         - Windows 2022
         - N/A
-      default: N/A
+      default: 0
     validations:
       required: true
   - type: textarea
