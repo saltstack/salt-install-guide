@@ -111,6 +111,7 @@ extensions = [
     "sphinx-prompt",  # Required by sphinx_substitution_extensions
     "sphinx_inline_tabs",
     "sphinx_substitution_extensions",
+    "sphinx-sitemap",
 ]
 # Render TODO directives
 todo_include_todos = True
@@ -143,6 +144,7 @@ exclude_patterns = [
 html_show_sourcelink = True  # False on private repos; True on public repos
 html_theme = "furo"
 html_title = "Salt install guide"
+html_baseurl = "https://docs.saltproject.io/salt/install-guide/en/latest/"
 
 html_theme_options = {
     "dark_css_variables": {
