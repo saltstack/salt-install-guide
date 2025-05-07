@@ -29,13 +29,13 @@ repos:
           You must provide list of target files as input in your .pre-commit-config.yaml file.
         files: ^(.*requirements.*\.txt|\.brokignore)$
   - repo: https://github.com/PyCQA/isort
-    rev: "5.13.2"
+    rev: "6.0.1"
     hooks:
       - id: isort
         description: isort is a Python utility / library to sort imports automatically.
         files: ^((noxfile|conf)|docs/.*)\.py$
   - repo: https://github.com/psf/black
-    rev: 24.10.0
+    rev: 25.1.0
     hooks:
       - id: black
         description: Forces best practice formatting of Python code files.
@@ -54,17 +54,17 @@ repos:
       - id: blacken-docs
         description: Run black on python code blocks in documentation files.
         files: ^(index|docs/.*|docs/_includes/.*)\.rst$
-        additional_dependencies: [black==24.10.0]
+        additional_dependencies: [black==25.1.0]
 
-#  - repo: https://github.com/saltstack/mirrors-nox
-#    rev: v2022.11.21
-#    hooks:
-#      - id: nox
-#        alias: Generate Sphinx docs
-#        description: Generate Sphinx docs, ensure they build
-#        pass_filenames: false
-#        args:
-#          - -e
-#          - 'docs-html(download_versions=True, clean=True)'
-#          - --
-#          - -vv
+  - repo: https://github.com/saltstack/mirrors-nox
+    rev: v2022.11.21
+    hooks:
+      - id: nox
+        alias: Generate Sphinx docs
+        description: Generate Sphinx docs, ensure they build
+        pass_filenames: false
+        args:
+          - -e
+          - 'docs-html(gen_sitevars=True, clean=True)'
+          - --
+          - -vv
