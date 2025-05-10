@@ -111,7 +111,7 @@ extensions = [
     "sphinx-prompt",  # Required by sphinx_substitution_extensions
     "sphinx_inline_tabs",
     "sphinx_substitution_extensions",
-    "sphinx-sitemap",
+    "sphinx_sitemap",
 ]
 # Render TODO directives
 todo_include_todos = True
