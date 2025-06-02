@@ -1,6 +1,6 @@
 {
     "versions": {
-        "3006.10": {
+        "3006.11": {
             "default": true,
             "type": "LTS",
             "relenv_python": "3.10"
