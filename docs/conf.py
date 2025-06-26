@@ -108,7 +108,6 @@ extensions = [
     "sphinx_copybutton",
     "sphinx_design",
     "sphinx.ext.todo",
-    "sphinx-prompt",  # Required by sphinx_substitution_extensions
     "sphinx_inline_tabs",
     "sphinx_substitution_extensions",
     "sphinx_sitemap",
