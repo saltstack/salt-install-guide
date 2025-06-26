@@ -43,6 +43,13 @@ Overview of supported operating systems
     - Full
     -
 
+  * - `AlmaLinux`_ 10
+    - x86_64, aarch64 / arm64
+    - Yes
+    - Yes
+    - Full
+    -
+
   * - `Amazon Linux`_ 2
     - x86_64, aarch64 / arm64
     -
@@ -85,14 +92,21 @@ Overview of supported operating systems
     - Full
     - Yes
 
-  * - `macOS`_ 12
-    - x86_64
+  * - `macOS`_ 13
+    - x86_64, arm64
     -
     - Yes
     - Full
     -
 
-  * - `macOS`_ 13
+  * - `macOS`_ 14
+    - x86_64, arm64
+    -
+    - Yes
+    - Full
+    -
+
+  * - `macOS`_ 15
     - x86_64, arm64
     -
     - Yes
@@ -141,6 +155,13 @@ Overview of supported operating systems
     - Full
     -
 
+  * - `RedHat`_ 10
+    - x86_64, aarch64 / arm64
+    - Yes
+    - Yes
+    - Full
+    -
+
   * - `Rocky Linux`_ 8
     - x86_64, aarch64 / arm64
     - Yes
@@ -155,6 +176,13 @@ Overview of supported operating systems
     - Full
     - Yes
 
+  * - `Rocky Linux`_ 10
+    - x86_64, aarch64 / arm64
+    - Yes
+    - Yes
+    - Full
+    -
+
   * - `SLES`_ 12 SP5
     -
     - Yes
@@ -168,13 +196,6 @@ Overview of supported operating systems
     - Yes
     - Full
     -
-
-  * - `Ubuntu`_ 20.04
-    - amd64, arm64
-    - Yes
-    - Yes
-    - Full
-    - Yes
 
   * - `Ubuntu`_ 22.04
     - amd64, arm64
@@ -209,16 +230,23 @@ Overview of supported operating systems
     -
     - Yes
     - Full
-    - Yes
+    -
 
   * - `Windows`_ 2019
     - x86, AMD64
     -
     - Yes
     - Full
-    - Yes
+    -
 
   * - `Windows`_ 2022
+    - x86, AMD64
+    -
+    - Yes
+    - Full
+    - Yes
+
+  * - `Windows`_ 2025
     - x86, AMD64
     -
     - Yes

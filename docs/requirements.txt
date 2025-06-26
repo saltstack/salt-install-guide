@@ -2,7 +2,6 @@ furo>=2024.8.6
 sphinx-copybutton>=0.5.2
 sphinx-design>=0.5.0
 sphinx-inline-tabs>=2023.4.21
-sphinx-prompt>=1.5.0
 sphinx-sitemap==2.6.0
 sphinx-substitution-extensions>=2022.02.16
 sphinx-tabs>=3.4.7
