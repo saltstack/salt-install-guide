@@ -179,7 +179,7 @@ For example:
 
   salt:
     log_level: debug
-  salt-call
+  salt-call:
     log_level: debug
 
 
