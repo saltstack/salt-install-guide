@@ -26,13 +26,13 @@ Version support lifecycle
 
   * - 3007 STS
     - March 6, 2024
-    - November, 2025
-    - November, 2025
+    - January, 2026
+    - January, 2026
 
   * - 3006 LTS
     - April 18, 2023
-    - November, 2025
-    - November, 2026
+    - January, 2026
+    - January, 2027
 
 .. Note::
     Salt Project is committed to providing active support for the current LTS
