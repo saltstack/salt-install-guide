@@ -28,8 +28,6 @@
                 New to Salt? Try this tutorial
 
 
-.. include:: /topics/_includes/supported-salt-releases-sidebar.rst
-
 Welcome to the Salt install guide! This guide provides instructions for
 installing Salt on :ref:`salt-supported-operating-systems`. It also explains
 how to configure Salt, start Salt services, and verify your installation.

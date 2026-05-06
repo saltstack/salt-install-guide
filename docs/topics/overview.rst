@@ -6,4 +6,6 @@
 Install overview
 ================
 
+.. include:: _includes/supported-salt-releases-sidebar.rst
+
 .. include:: _includes/install-overview.rst
