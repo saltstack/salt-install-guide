@@ -1,15 +1,15 @@
 {
     "versions": {
         "3006.25": {
-            "default": true,
+            "default": false,
             "type": "LTS",
             "relenv_python": "3.10"
         },
-        "3007.14": {
-            "default": false,
-            "type": "STS",
+        "3008.0": {
+            "default": true,
+            "type": "LTS",
             "relenv_python": "3.10"
         }
     },
-    "release_candidate_version": "3008.0rc4"
+    "release_candidate_version": "3009.0rc1"
 }
