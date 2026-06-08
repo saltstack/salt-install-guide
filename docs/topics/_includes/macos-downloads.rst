@@ -31,9 +31,9 @@
     - Download install file
 
   * - x86_64
-    - sts
+    - lts
     - |macos-amd64-two-download|
 
   * - arm64
-    - sts
+    - lts
     - |macos-arm64-two-download|

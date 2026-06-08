@@ -29,6 +29,35 @@ for the latest announcements.
 Release announcements
 =====================
 
+* **May 27, 2026:** `3008.0 <https://docs.saltproject.io/en/3008/topics/releases/3008.0.html>`_ is now available.
+* **May 13, 2026:** `3006.25 <https://docs.saltproject.io/en/3006/topics/releases/3006.25.html>`_ is now available.
+* **April 29, 2026:** `3007.14 <https://docs.saltproject.io/en/3007/topics/releases/3007.14.html>`_ is now available.
+* **April 23, 2026:** `3006.24 <https://docs.saltproject.io/en/3006/topics/releases/3006.24.html>`_ is now available.
+* **February 23, 2026:** `3006.23 <https://docs.saltproject.io/en/3006/topics/releases/3006.23.html>`_ is now available.
+* **February 21, 2026:** `3006.22 <https://docs.saltproject.io/en/3006/topics/releases/3006.22.html>`_ is now available.
+* **February 11, 2026:** `3007.13 <https://docs.saltproject.io/en/3007/topics/releases/3007.13.html>`_ is now available.
+* **February 11, 2026:** `3006.21 <https://docs.saltproject.io/en/3006/topics/releases/3006.21.html>`_ is now available.
+* **February 5, 2026:** `3007.12 <https://docs.saltproject.io/en/3007/topics/releases/3007.12.html>`_ is now available.
+* **February 5, 2026:** `3006.20 <https://docs.saltproject.io/en/3006/topics/releases/3006.20.html>`_ is now available.
+* **January 9, 2026:** `3007.11 <https://docs.saltproject.io/en/3007/topics/releases/3007.11.html>`_ is now available.
+* **January 9, 2026:** `3006.19 <https://docs.saltproject.io/en/3006/topics/releases/3006.19.html>`_ is now available.
+* **December 18, 2025:** `3007.10 <https://docs.saltproject.io/en/3007/topics/releases/3007.10.html>`_ is now available.
+* **December 18, 2025:** `3006.18 <https://docs.saltproject.io/en/3006/topics/releases/3006.18.html>`_ is now available.
+* **November 20, 2025:** `3007.9 <https://docs.saltproject.io/en/3007/topics/releases/3007.9.html>`_ is now available.
+* **November 20, 2025:** `3006.17 <https://docs.saltproject.io/en/3006/topics/releases/3006.17.html>`_ is now available.
+* **September 18, 2025:** `3007.8 <https://docs.saltproject.io/en/3007/topics/releases/3007.8.html>`_ is now available.
+* **September 17, 2025:** `3006.16 <https://docs.saltproject.io/en/3006/topics/releases/3006.16.html>`_ is now available.
+* **August 28, 2025:** `3007.7 <https://docs.saltproject.io/en/3007/topics/releases/3007.7.html>`_ is now available.
+* **August 28, 2025:** `3006.15 <https://docs.saltproject.io/en/3006/topics/releases/3006.15.html>`_ is now available.
+* **July 10, 2025:** `3007.6 <https://docs.saltproject.io/en/3007/topics/releases/3007.6.html>`_ is now available.
+* **July 10, 2025:** `3006.14 <https://docs.saltproject.io/en/3006/topics/releases/3006.14.html>`_ is now available.
+* **June 26, 2025:** `3007.5 <https://docs.saltproject.io/en/3007/topics/releases/3007.5.html>`_ is now available.
+* **June 26, 2025:** `3006.13 <https://docs.saltproject.io/en/3006/topics/releases/3006.13.html>`_ is now available.
+* **June 12, 2025:** `3007.4 <https://docs.saltproject.io/en/3007/topics/releases/3007.4.html>`_ is now available.
+* **June 12, 2025:** `3006.12 <https://docs.saltproject.io/en/3006/topics/releases/3006.12.html>`_ is now available.
+* **June 4, 2025:** `3007.3 <https://docs.saltproject.io/en/3007/topics/releases/3007.3.html>`_ is now available.
+* **June 2, 2025:** `3006.11 <https://docs.saltproject.io/en/3006/topics/releases/3006.11.html>`_ is now available.
+* **May 13, 2025:** `3007.2 <https://docs.saltproject.io/en/3007/topics/releases/3007.2.html>`_ is now available.
 * **March 19, 2025:** `3006.10 <https://docs.saltproject.io/en/3006/topics/releases/3006.10.html>`_ is now available.
 * **July 30, 2024:** `3006.9 <https://docs.saltproject.io/en/3006/topics/releases/3006.9.html>`_ is now available.
 * **May 22, 2024:** `3007.1 <https://docs.saltproject.io/en/3007/topics/releases/3007.1.html>`_ is now available.
