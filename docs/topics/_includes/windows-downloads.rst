@@ -46,20 +46,20 @@
 
   * - AMD64
     - exe
-    - STS
+    - LTS
     - |windows-amd64-exe-two-download|
 
   * - AMD64
     - msi
-    - STS
+    - LTS
     - |windows-amd64-msi-two-download|
 
   * - x86
     - exe
-    - STS
+    - LTS
     - |windows-x86-exe-two-download|
 
   * - x86
     - msi
-    - STS
+    - LTS
     - |windows-x86-msi-two-download|
