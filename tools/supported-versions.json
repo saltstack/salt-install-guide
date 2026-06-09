@@ -8,7 +8,7 @@
         "3008.0": {
             "default": true,
             "type": "LTS",
-            "relenv_python": "3.10"
+            "relenv_python": "3.14"
         }
     },
     "release_candidate_version": "3009.0rc1"
