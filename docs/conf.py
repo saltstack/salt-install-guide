@@ -139,7 +139,7 @@ exclude_patterns = [
 #
 
 html_show_sourcelink = True  # False on private repos; True on public repos
-html_theme = 'pydata_sphinx_theme'
+html_theme = "pydata_sphinx_theme"
 html_title = project
 html_baseurl = "https://docs.saltproject.io/salt/install-guide/"
 
