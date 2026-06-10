@@ -118,7 +118,7 @@ todo_include_todos = True
 source_suffix = {".rst": "restructuredtext"}
 
 # Add any paths that contain templates here, relative to this directory.
-# templates_path = ["_templates"]
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -138,11 +138,9 @@ exclude_patterns = [
 # a list of builtin themes.
 #
 
-# Base Furo Theme requirements
-# More: https://pradyunsg.me/furo/customisation/
 html_show_sourcelink = True  # False on private repos; True on public repos
-html_theme = "furo"
-html_title = "Salt install guide"
+html_theme = 'pydata_sphinx_theme'
+html_title = project
 html_baseurl = "https://docs.saltproject.io/salt/install-guide/"
 
 # Extends baseurl, in combination with version value
@@ -153,13 +151,19 @@ sitemap_excludes = [
     "genindex.html",
 ]
 
+html_logo = None
 html_theme_options = {
-    "dark_css_variables": {
-        "color-brand-primary": "#66CCF4",
-        "color-brand-content": "#66CCF4",
+    "logo": {
+        "image_light": "_static/img/SaltProject_altlogo_blue.png",
+        "image_dark": "_static/img/SaltProject_altlogo_blue.png",
     },
-    # "announcement": '<font color="orange"><strong>IMPORTANT ANNOUNCEMENT:</strong> repo.saltproject.io has migrated to packages.broadcom.com!<br /><strong><a href="https://saltproject.io/blog/post-migration-salt-project-faqs/" target="_blank" rel="noopener noreferrer">Click here for migration FAQs (2024-11-22)</a></strong></font>',
+    "navbar_start": ["navbar-logo"],
+    "navbar_center": ["navbar-nav", "header-links"],
+    "navbar_end": ["theme-switcher", "navbar-icon-links"],
+    "navigation_depth": 4,
 }
+
+html_sidebars = {"**": ["globaltoc.html"]}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -175,16 +179,6 @@ html_css_files = [
 ]
 
 copybutton_selector = "div:not(.no-copybutton) > div.highlight > pre"
-
-# The name of an image file (relative to this directory) to place at the top
-# of the sidebar.
-# For example, official Salt Project docs use images from the salt-branding-guide
-# https://gitlab.com/saltstack/open/salt-branding-guide/
-#
-# Example for >=4.0.0 of Sphinx (support for favicon via URL)
-# html_logo = "https://gitlab.com/saltstack/open/salt-branding-guide/-/raw/master/logos/SaltProject_altlogo_teal.png"
-# Example for <4.0.0 of Sphinx, if added into _static/img/ and html_static_path is valid
-html_logo = "_static/img/SaltProject_altlogo_blue.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
