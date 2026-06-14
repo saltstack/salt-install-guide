@@ -1,0 +1,76 @@
+name: Release docs
+
+# Manually triggered after the Salt release is cut. Finds the open
+# topic/release/* PR, merges it, then pushes an annotated tag of the form
+# v<major>.<minor+1>.0 with message "v<salt_version> release". The existing
+# build-sphinx-docs.yml workflow takes it from there on tag push.
+
+on:
+  workflow_dispatch:
+    inputs:
+      salt_version:
+        description: 'Salt version, e.g. 3008.1'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge open topic/release/* PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          prs=$(gh pr list --repo "$REPO" --state open \
+                  --json number,headRefName,title \
+                  --jq '[.[] | select(.headRefName | startswith("topic/release/"))]')
+          count=$(echo "$prs" | jq 'length')
+          if [[ "$count" -ne 1 ]]; then
+            echo "::error::expected 1 open topic/release/* PR, found $count"
+            echo "$prs" | jq -r '.[] | "  #\(.number) [\(.headRefName)] \(.title)"' >&2
+            exit 1
+          fi
+          pr=$(echo "$prs" | jq -r '.[0].number')
+          echo "merging PR #$pr"
+          gh pr merge --repo "$REPO" "$pr" --merge
+
+      - name: Compute next tag (minor bump of latest)
+        id: tag
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          latest=$(gh api "repos/$REPO/tags" --jq '.[0].name')
+          v=${latest#v}
+          IFS='.' read -r maj min _ <<<"$v"
+          next="v${maj}.$((min + 1)).0"
+          echo "latest=$latest next=$next"
+          echo "next=$next" >> "$GITHUB_OUTPUT"
+
+      - name: Push annotated tag on main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          NEXT: ${{ steps.tag.outputs.next }}
+          SALT_VERSION: ${{ inputs.salt_version }}
+        run: |
+          set -euo pipefail
+          sleep 5  # let main settle after merge
+          sha=$(gh api "repos/$REPO/commits/main" --jq '.sha')
+          tag_sha=$(gh api -X POST "repos/$REPO/git/tags" \
+            -f tag="$NEXT" \
+            -f message="v${SALT_VERSION} release" \
+            -f object="$sha" \
+            -f type=commit \
+            --jq '.sha')
+          gh api -X POST "repos/$REPO/git/refs" \
+            -f ref="refs/tags/$NEXT" \
+            -f sha="$tag_sha" >/dev/null
+          echo "pushed $NEXT -> $sha"
