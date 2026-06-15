@@ -77,6 +77,32 @@ jobs:
           fi
           echo "lookup: $pr"
 
+      - name: Check if release already complete
+        id: done_check
+        if: steps.detect.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          SALT: ${{ steps.detect.outputs.salt_version }}
+        run: |
+          set -euo pipefail
+          # Canonical end-state marker: the repo's tag annotation convention is
+          # "v<salt_version> release" (e.g. "v3008.0 release"). If the latest
+          # tag already carries this annotation for our salt_version, the
+          # release is done and downstream steps short-circuit.
+          latest=$(gh api "repos/$REPO/tags" --jq '.[0].name // empty')
+          if [[ -n "$latest" ]]; then
+            obj=$(gh api "repos/$REPO/git/refs/tags/$latest" --jq '.object')
+            if [[ "$(echo "$obj" | jq -r '.type')" == "tag" ]]; then
+              sha=$(echo "$obj" | jq -r '.sha')
+              msg=$(gh api "repos/$REPO/git/tags/$sha" --jq '.message')
+              if [[ "$msg" == *"v${SALT} release"* ]]; then
+                echo "::notice::latest tag $latest annotated for Salt $SALT — done"
+                echo "done=true" >> "$GITHUB_OUTPUT"
+              fi
+            fi
+          fi
+
       - name: Checkout main
         if: steps.detect.outputs.skip != 'true' && steps.lookup.outputs.pr_number == ''
         uses: actions/checkout@v4
@@ -116,7 +142,7 @@ jobs:
             --body "Automated update of supported-versions.json for Salt $SALT point release."
 
       - name: Wait for required PR checks
-        if: steps.detect.outputs.skip != 'true' && steps.lookup.outputs.merged != 'true'
+        if: steps.detect.outputs.skip != 'true' && steps.lookup.outputs.merged != 'true' && steps.done_check.outputs.done != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           BRANCH: ${{ steps.detect.outputs.branch }}
@@ -126,7 +152,7 @@ jobs:
           gh pr checks "$BRANCH" --watch --required || true
 
       - name: Merge PR
-        if: steps.detect.outputs.skip != 'true' && steps.lookup.outputs.merged != 'true'
+        if: steps.detect.outputs.skip != 'true' && steps.lookup.outputs.merged != 'true' && steps.done_check.outputs.done != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           BRANCH: ${{ steps.detect.outputs.branch }}
@@ -134,8 +160,8 @@ jobs:
           set -euo pipefail
           gh pr merge "$BRANCH" --merge
 
-      - name: Push annotated release tag (idempotent)
-        if: steps.detect.outputs.skip != 'true'
+      - name: Push annotated release tag
+        if: steps.detect.outputs.skip != 'true' && steps.done_check.outputs.done != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
@@ -146,10 +172,6 @@ jobs:
           v=${latest#v}
           IFS='.' read -r maj min _ <<<"$v"
           next="v${maj}.$((min + 1)).0"
-          if gh api "repos/$REPO/git/refs/tags/$next" >/dev/null 2>&1; then
-            echo "tag $next already exists, skipping"
-            exit 0
-          fi
           sleep 5
           sha=$(gh api "repos/$REPO/commits/main" --jq '.sha')
           tag_sha=$(gh api -X POST "repos/$REPO/git/tags" \
