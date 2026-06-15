@@ -29,6 +29,7 @@ for the latest announcements.
 Release announcements
 =====================
 
+* **June 11, 2026:** `3008.1 <https://docs.saltproject.io/en/3008/topics/releases/3008.1.html>`_ is now available.
 * **May 27, 2026:** `3008.0 <https://docs.saltproject.io/en/3008/topics/releases/3008.0.html>`_ is now available.
 * **May 13, 2026:** `3006.25 <https://docs.saltproject.io/en/3006/topics/releases/3006.25.html>`_ is now available.
 * **April 29, 2026:** `3007.14 <https://docs.saltproject.io/en/3007/topics/releases/3007.14.html>`_ is now available.
