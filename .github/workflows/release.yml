@@ -35,6 +35,11 @@ concurrency:
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      # gh CLI needs repo context for `pr list/merge/checks/create`. Setting
+      # GH_REPO at job level means those calls work before checkout (the
+      # lookup step runs before any checkout).
+      GH_REPO: ${{ github.repository }}
     steps:
       - name: Detect target salt version
         id: detect
