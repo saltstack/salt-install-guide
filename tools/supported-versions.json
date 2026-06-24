@@ -5,7 +5,7 @@
             "type": "LTS",
             "relenv_python": "3.10"
         },
-        "3008.1": {
+        "3006.26": {
             "default": true,
             "type": "LTS",
             "relenv_python": "3.14"
