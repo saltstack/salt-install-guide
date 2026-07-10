@@ -119,6 +119,18 @@ To upgrade Salt:
 #. With Salt now updated, verify your configuration is correct and restore it
    if necessary.
 
+   .. Warning::
+       If you are upgrading a Salt master from 3006.x or 3007.x to 3008.x,
+       Salt 3008.0 restructured the master's minion data cache so that
+       grains are stored in a dedicated cache bank instead of a combined
+       per-minion blob. Cached grains data from a pre-3008 master is not
+       automatically migrated, which can cause grain-based targeting
+       (``-G``), ``mine.get``, and cached pillar/grains lookups to return
+       stale or empty results on the master. After upgrading the master,
+       run ``salt '*' saltutil.refresh_grains`` on minions (or wait for
+       their next scheduled pillar/highstate refresh) to repopulate the
+       master's grains cache.
+
 If you stopped the daemon(s) prior to upgrading, you will need to restart the
 daemons. See `Restart and upgrade minions used in state runs`_ for more information.
 
