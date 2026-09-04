@@ -71,13 +71,6 @@ Overview of supported operating systems
     - Full
     -
 
-  * - `Debian`_ 11
-    - amd64, arm64
-    - Yes
-    - Yes
-    - Full
-    - Yes
-
   * - `Debian`_ 12
     - amd64, arm64
     - Yes
