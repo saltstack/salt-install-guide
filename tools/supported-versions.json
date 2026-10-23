@@ -1,11 +1,11 @@
 {
     "versions": {
-        "3006.28": {
+        "3006.29": {
             "default": false,
             "type": "LTS",
             "relenv_python": "3.10"
         },
-        "3008.3": {
+        "3008.4": {
             "default": true,
             "type": "LTS",
             "relenv_python": "3.14"
